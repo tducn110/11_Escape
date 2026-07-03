@@ -138,22 +138,7 @@ function CountrysideBackdrop() {
 
 export default function App() {
   return (
-    <div
-      style={{
-        width: "100%",
-        minHeight: "100dvh",
-        overflow: "hidden",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        fontFamily: "Be Vietnam Pro, sans-serif",
-        boxSizing: "border-box",
-        paddingTop: "max(12px, env(safe-area-inset-top))",
-        paddingRight: "max(12px, env(safe-area-inset-right))",
-        paddingBottom: "max(12px, env(safe-area-inset-bottom))",
-        paddingLeft: "max(12px, env(safe-area-inset-left))",
-      }}
-    >
+    <div className="app-viewport">
       <CountrysideBackdrop />
       <TribeOutGame />
     </div>

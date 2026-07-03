@@ -177,6 +177,35 @@ Checkpoint:
 
 - `checkpoint: final production cleanup`
 
+### Task 8: Single-Screen Lock And Previous Screen Reuse Audit
+
+Goal:
+
+- Remove all unwanted vertical and horizontal page scrolling.
+- Keep the full game inside a locked single-screen viewport.
+- Audit previous game repos for reusable screen and shell patterns.
+- Reuse minimal shared screen components where they improve structure.
+
+Acceptance:
+
+- `html`, `body`, and `#root` cannot scroll vertically or horizontally.
+- The game remains inside one viewport without page dragging.
+- Board, HUD, controls, and overlays remain visible.
+- Previous-project screens and components are audited.
+- Reused patterns are documented.
+- If a previous component is not reused, the reason is documented.
+
+Validation:
+
+- `npm run build`
+- `npm run typecheck`
+- `npm test`
+- manual viewport checks at `375x667`, `390x844`, `430x932`, `768x1024`, `1440x900`
+
+Checkpoint:
+
+- `checkpoint: single-screen lock and screen reuse audit`
+
 ## Acceptance Criteria
 
 Gameplay:
@@ -208,4 +237,5 @@ Code:
 - Runtime files are clearly owned.
 - Generated scaffold no longer pollutes production runtime.
 - Build, typecheck, and tests pass.
-
+- Single-screen lock is enforced without hiding needed gameplay UI.
+- Reuse audit exists under `docs/audit/PREVIOUS_SCREEN_REUSE_AUDIT.md`.
