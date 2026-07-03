@@ -9,6 +9,7 @@ import {
   applyTapUnit,
 } from "./gameLogic";
 import { LEVELS } from "./levels";
+import { loadTribeOutProgress, persistTribeOutProgress } from "./tribeOutStorage";
 import "./tribeOut.css";
 
 function useCellSize(boardRows: number, boardCols: number) {
@@ -34,7 +35,10 @@ function useCellSize(boardRows: number, boardCols: number) {
 }
 
 export function TribeOutGame() {
-  const [gameState, setGameState] = useState(() => buildInitialGameState(0));
+  const [gameState, setGameState] = useState(() => {
+    const savedProgress = loadTribeOutProgress();
+    return buildInitialGameState(0, savedProgress.coins);
+  });
   const [bumpingId, setBumpingId] = useState<string | null>(null);
   const bumpTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -42,12 +46,17 @@ export function TribeOutGame() {
   const cellSize = useCellSize(level.boardRows, level.boardCols);
 
   const handleTap = (entityId: string) => {
-    const newState = applyTapUnit(entityId, gameState);
-    setGameState(newState);
+    const savedProgress = loadTribeOutProgress();
+    const { nextState, progressSnapshot } = applyTapUnit(entityId, gameState, savedProgress);
+    setGameState(nextState);
 
-    if (newState.lastBumpedEntityId) {
+    if (progressSnapshot) {
+      persistTribeOutProgress(progressSnapshot);
+    }
+
+    if (nextState.lastBumpedEntityId) {
       if (bumpTimerRef.current) clearTimeout(bumpTimerRef.current);
-      setBumpingId(newState.lastBumpedEntityId);
+      setBumpingId(nextState.lastBumpedEntityId);
       bumpTimerRef.current = setTimeout(() => setBumpingId(null), 700);
     }
   };

@@ -10,8 +10,8 @@
 
 1. `[x]` Task 1: planning docs and codegraph initialization
 2. `[x]` Task 2: project validation baseline
-3. `[-]` Task 3: gameplay logic extraction and tests
-4. `[ ]` Task 4: responsive shell hardening
+3. `[x]` Task 3: gameplay logic extraction and tests
+4. `[-]` Task 4: responsive shell hardening
 5. `[ ]` Task 5: accessibility and input
 6. `[ ]` Task 6: scaffold cleanup
 7. `[ ]` Task 7: final production verification
@@ -45,9 +45,11 @@
 
 - Scope: storage extraction from `gameLogic.ts`, focused game logic tests.
 - Validation:
-  - pending
+  - `npm run typecheck`
+  - `npm test`
+  - `npm run build`
 - Checkpoint:
-  - pending
+  - `checkpoint: gameplay logic tests stable`
 
 ### Task 4
 

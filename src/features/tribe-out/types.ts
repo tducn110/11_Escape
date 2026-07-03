@@ -34,3 +34,13 @@ export interface GameState {
   lastEscapedEntityId: string | null;
   coinsEarnedThisLevel: number;
 }
+
+export interface TribeOutProgressSnapshot {
+  coins: number;
+  highestUnlockedLevel: number;
+}
+
+export interface TribeOutTapResult {
+  nextState: GameState;
+  progressSnapshot: TribeOutProgressSnapshot | null;
+}

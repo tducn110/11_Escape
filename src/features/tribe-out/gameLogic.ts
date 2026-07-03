@@ -1,4 +1,4 @@
-import type { TribeOutEntity, GameState } from "./types";
+import type { TribeOutEntity, GameState, TribeOutProgressSnapshot, TribeOutTapResult } from "./types";
 import { LEVELS } from "./levels";
 
 export function getOccupiedCells(entity: TribeOutEntity): { row: number; col: number }[] {
@@ -73,15 +73,18 @@ export function canExit(
   return true;
 }
 
-export function buildInitialGameState(levelIndex: number): GameState {
+function sanitizeCoins(savedCoins: number): number {
+  return Number.isFinite(savedCoins) ? savedCoins : 0;
+}
+
+export function buildInitialGameState(levelIndex: number, savedCoins = 0): GameState {
   const level = LEVELS[levelIndex];
   const entities = level.entities.map(e => ({ ...e, escaped: false }));
   const totalUnits = entities.filter(e => e.type === "unit").length;
-  const savedCoins = parseInt(localStorage.getItem("tribeout_coins") ?? "0", 10);
   return {
     currentLevelIndex: levelIndex,
     lives: level.lives,
-    coins: isNaN(savedCoins) ? 0 : savedCoins,
+    coins: sanitizeCoins(savedCoins),
     escapedCount: 0,
     totalUnits,
     status: "playing",
@@ -128,10 +131,30 @@ export function resetLevel(state: GameState): GameState {
   };
 }
 
-export function applyTapUnit(unitId: string, state: GameState): GameState {
-  if (state.status !== "playing") return state;
+function buildWinProgressSnapshot(
+  state: GameState,
+  nextCoins: number,
+  savedProgress: TribeOutProgressSnapshot
+): TribeOutProgressSnapshot {
+  return {
+    coins: nextCoins,
+    highestUnlockedLevel: Math.max(savedProgress.highestUnlockedLevel, state.currentLevelIndex + 1),
+  };
+}
+
+export function applyTapUnit(
+  unitId: string,
+  state: GameState,
+  savedProgress: TribeOutProgressSnapshot
+): TribeOutTapResult {
+  if (state.status !== "playing") {
+    return { nextState: state, progressSnapshot: null };
+  }
+
   const entity = state.entities.find(e => e.id === unitId);
-  if (!entity || entity.type === "obstacle" || entity.escaped) return state;
+  if (!entity || entity.type === "obstacle" || entity.escaped) {
+    return { nextState: state, progressSnapshot: null };
+  }
 
   const level = LEVELS[state.currentLevelIndex];
 
@@ -144,35 +167,39 @@ export function applyTapUnit(unitId: string, state: GameState): GameState {
 
     let bonusCoins = 0;
     let newStatus: GameState["status"] = "playing";
+    let progressSnapshot: TribeOutProgressSnapshot | null = null;
 
     if (allEscaped) {
       newStatus = "won";
       bonusCoins = 50 + state.lives * 20;
       const totalCoins = state.coins + 10 + bonusCoins;
-      localStorage.setItem("tribeout_coins", String(totalCoins));
-      const prev = parseInt(localStorage.getItem("tribeout_highest_level") ?? "0", 10);
-      const next = Math.max(isNaN(prev) ? 0 : prev, state.currentLevelIndex + 1);
-      localStorage.setItem("tribeout_highest_level", String(next));
+      progressSnapshot = buildWinProgressSnapshot(state, totalCoins, savedProgress);
     }
 
     return {
-      ...state,
-      entities: newEntities,
-      escapedCount: newEscapedCount,
-      coins: state.coins + 10 + bonusCoins,
-      coinsEarnedThisLevel: state.coinsEarnedThisLevel + 10 + bonusCoins,
-      status: newStatus,
-      lastEscapedEntityId: unitId,
-      lastBumpedEntityId: null,
+      nextState: {
+        ...state,
+        entities: newEntities,
+        escapedCount: newEscapedCount,
+        coins: state.coins + 10 + bonusCoins,
+        coinsEarnedThisLevel: state.coinsEarnedThisLevel + 10 + bonusCoins,
+        status: newStatus,
+        lastEscapedEntityId: unitId,
+        lastBumpedEntityId: null,
+      },
+      progressSnapshot,
     };
   } else {
     const newLives = state.lives - 1;
     return {
-      ...state,
-      lives: newLives,
-      status: newLives <= 0 ? "lost" : "playing",
-      lastBumpedEntityId: unitId,
-      lastEscapedEntityId: null,
+      nextState: {
+        ...state,
+        lives: newLives,
+        status: newLives <= 0 ? "lost" : "playing",
+        lastBumpedEntityId: unitId,
+        lastEscapedEntityId: null,
+      },
+      progressSnapshot: null,
     };
   }
 }
