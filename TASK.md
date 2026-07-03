@@ -13,8 +13,8 @@
 3. `[x]` Task 3: gameplay logic extraction and tests
 4. `[x]` Task 4: responsive shell hardening
 5. `[x]` Task 5: accessibility and input
-6. `[-]` Task 6: scaffold cleanup
-7. `[ ]` Task 7: final production verification
+6. `[x]` Task 6: scaffold cleanup
+7. `[-]` Task 7: final production verification
 
 ## Task Records
 
@@ -75,9 +75,12 @@
 
 - Scope: scaffold file cleanup and dependency cleanup in a validated phase.
 - Validation:
-  - pending
+  - `npm install`
+  - `npm run build`
+  - `npm run typecheck`
+  - `npm test`
 - Checkpoint:
-  - pending
+  - `checkpoint: generated scaffold cleanup`
 
 ### Task 7
 
