@@ -9,8 +9,8 @@
 ## Active Sequence
 
 1. `[x]` Task 1: planning docs and codegraph initialization
-2. `[-]` Task 2: project validation baseline
-3. `[ ]` Task 3: gameplay logic extraction and tests
+2. `[x]` Task 2: project validation baseline
+3. `[-]` Task 3: gameplay logic extraction and tests
 4. `[ ]` Task 4: responsive shell hardening
 5. `[ ]` Task 5: accessibility and input
 6. `[ ]` Task 6: scaffold cleanup
@@ -34,9 +34,12 @@
 
 - Scope: package identity, runtime deps, TS/Vitest baseline, scripts, README/title.
 - Validation:
-  - pending
+  - `npm install`
+  - `npm run build`
+  - `npm run typecheck`
+  - `npm test`
 - Checkpoint:
-  - pending
+  - `checkpoint: project validation baseline`
 
 ### Task 3
 
