@@ -14,7 +14,7 @@
 4. `[x]` Task 4: responsive shell hardening
 5. `[x]` Task 5: accessibility and input
 6. `[x]` Task 6: scaffold cleanup
-7. `[-]` Task 7: final production verification
+7. `[x]` Task 7: final production verification
 
 ## Task Records
 
@@ -86,6 +86,10 @@
 
 - Scope: final verification pass and production checkpoint.
 - Validation:
-  - pending
+  - `git status --short`
+  - `npm run build`
+  - `npm run typecheck`
+  - `npm test`
+  - `codegraph` reindexed after cleanup
 - Checkpoint:
-  - pending
+  - `checkpoint: final production cleanup`
