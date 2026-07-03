@@ -1,4 +1,4 @@
-import type { CSSProperties } from "react";
+import { useId, type CSSProperties } from "react";
 
 interface WinProps {
   level: number;
@@ -38,11 +38,15 @@ const cardStyle: CSSProperties = {
 };
 
 export function WinOverlay({ level, escapedCount, coinsEarned, isLastLevel, onNextLevel, onReplay }: WinProps) {
+  const titleId = useId();
+  const descriptionId = useId();
+
   return (
-    <div style={overlayBase}>
+    <div style={overlayBase} role="dialog" aria-modal="true" aria-labelledby={titleId} aria-describedby={descriptionId}>
       <div style={cardStyle}>
         <div style={{ fontSize: 48, lineHeight: 1, marginBottom: 8 }}>🎉</div>
         <h2
+          id={titleId}
           style={{
             fontSize: 26,
             fontWeight: 900,
@@ -54,6 +58,7 @@ export function WinOverlay({ level, escapedCount, coinsEarned, isLastLevel, onNe
           Màn {level} Hoàn Thành!
         </h2>
         <p
+          id={descriptionId}
           style={{
             fontSize: 14,
             color: "#8a7d65",
@@ -89,6 +94,8 @@ export function WinOverlay({ level, escapedCount, coinsEarned, isLastLevel, onNe
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
           {!isLastLevel ? (
             <button
+              type="button"
+              aria-label={isLastLevel ? "Chơi lại từ đầu" : "Sang màn tiếp theo"}
               className="tribe-btn-primary"
               onClick={onNextLevel}
               style={{ padding: "13px 28px", fontSize: 16 }}
@@ -105,6 +112,8 @@ export function WinOverlay({ level, escapedCount, coinsEarned, isLastLevel, onNe
             </button>
           )}
           <button
+            type="button"
+            aria-label="Chơi lại màn hiện tại"
             className="tribe-btn-ghost"
             onClick={onReplay}
             style={{ padding: "11px 28px", fontSize: 15 }}
@@ -118,11 +127,15 @@ export function WinOverlay({ level, escapedCount, coinsEarned, isLastLevel, onNe
 }
 
 export function LoseOverlay({ onRestart }: LoseProps) {
+  const titleId = useId();
+  const descriptionId = useId();
+
   return (
-    <div style={overlayBase}>
+    <div style={overlayBase} role="dialog" aria-modal="true" aria-labelledby={titleId} aria-describedby={descriptionId}>
       <div style={cardStyle}>
         <div style={{ fontSize: 48, lineHeight: 1, marginBottom: 8 }}>💔</div>
         <h2
+          id={titleId}
           style={{
             fontSize: 26,
             fontWeight: 900,
@@ -134,6 +147,7 @@ export function LoseOverlay({ onRestart }: LoseProps) {
           Hết Mạng!
         </h2>
         <p
+          id={descriptionId}
           style={{
             fontSize: 14,
             color: "#8a7d65",
@@ -144,6 +158,8 @@ export function LoseOverlay({ onRestart }: LoseProps) {
           Bộ lạc cần bạn thử lại!
         </p>
         <button
+          type="button"
+          aria-label="Chơi lại màn hiện tại"
           className="tribe-btn-primary"
           onClick={onRestart}
           style={{ padding: "13px 32px", fontSize: 16, width: "100%" }}

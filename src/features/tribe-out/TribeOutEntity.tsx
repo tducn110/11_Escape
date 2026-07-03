@@ -25,6 +25,21 @@ interface Props {
   onTap: (id: string) => void;
 }
 
+const DIRECTION_LABELS: Record<Direction, string> = {
+  up: "lên trên",
+  down: "xuống dưới",
+  left: "sang trái",
+  right: "sang phải",
+};
+
+function getEntityAriaLabel(entity: TribeOutEntity): string {
+  if (entity.type === "obstacle") {
+    return `Chướng ngại vật kích thước ${entity.width}x${entity.height}`;
+  }
+
+  return `Nhân vật đi ${DIRECTION_LABELS[entity.direction ?? "right"]}, kích thước ${entity.width}x${entity.height}`;
+}
+
 export function TribeOutEntityComponent({ entity, cellSize, isBumping, onTap }: Props) {
   const [animState, setAnimState] = useState<"idle" | "bump" | "escape">("idle");
   const [hidden, setHidden] = useState(false);
@@ -81,6 +96,24 @@ export function TribeOutEntityComponent({ entity, cellSize, isBumping, onTap }: 
   }
 
   const spriteSize = Math.min(width, height);
+  const ariaLabel = getEntityAriaLabel(entity);
+
+  const handleActivate = () => {
+    if (!isObstacle) {
+      onTap(entity.id);
+    }
+  };
+
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (isObstacle) {
+      return;
+    }
+
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      handleActivate();
+    }
+  };
 
   return (
     <div
@@ -96,9 +129,11 @@ export function TribeOutEntityComponent({ entity, cellSize, isBumping, onTap }: 
     >
       <div
         ref={innerRef}
-        onClick={() => !isObstacle && onTap(entity.id)}
+        onClick={handleActivate}
+        onKeyDown={handleKeyDown}
         role={isObstacle ? "img" : "button"}
-        aria-label={isObstacle ? "Chướng ngại vật" : `Nhân vật hướng ${dir}`}
+        aria-label={ariaLabel}
+        tabIndex={isObstacle ? -1 : 0}
         style={{
           width: "100%",
           height: "100%",
@@ -109,9 +144,10 @@ export function TribeOutEntityComponent({ entity, cellSize, isBumping, onTap }: 
           userSelect: "none",
           WebkitUserSelect: "none",
           animation,
-          minWidth: 40,
-          minHeight: 40,
+          minWidth: 44,
+          minHeight: 44,
           touchAction: "manipulation",
+          outlineOffset: 4,
         }}
       >
         {isObstacle ? (

@@ -11,9 +11,9 @@
 1. `[x]` Task 1: planning docs and codegraph initialization
 2. `[x]` Task 2: project validation baseline
 3. `[x]` Task 3: gameplay logic extraction and tests
-4. `[-]` Task 4: responsive shell hardening
-5. `[ ]` Task 5: accessibility and input
-6. `[ ]` Task 6: scaffold cleanup
+4. `[x]` Task 4: responsive shell hardening
+5. `[x]` Task 5: accessibility and input
+6. `[-]` Task 6: scaffold cleanup
 7. `[ ]` Task 7: final production verification
 
 ## Task Records
@@ -55,17 +55,21 @@
 
 - Scope: responsive measurement and shell sizing stability.
 - Validation:
-  - pending
+  - `npm run build`
+  - `npm run typecheck`
+  - `npm test`
 - Checkpoint:
-  - pending
+  - `checkpoint: responsive shell and accessibility stable`
 
 ### Task 5
 
 - Scope: keyboard/touch/click accessibility and overlay semantics.
 - Validation:
-  - pending
+  - `npm run build`
+  - `npm run typecheck`
+  - `npm test`
 - Checkpoint:
-  - pending
+  - `checkpoint: responsive shell and accessibility stable`
 
 ### Task 6
 
