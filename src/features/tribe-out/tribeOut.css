@@ -1,0 +1,148 @@
+/* ─── Idle breathing ─────────────────────────────── */
+@keyframes tribeBreath {
+  0%, 100% { transform: scale(1) translateY(0); }
+  50%       { transform: scale(1.05) translateY(-2px); }
+}
+
+/* ─── Escape ─────────────────────────────────────── */
+@keyframes tribeEscapeRight {
+  0%   { transform: translateX(0);     opacity: 1; }
+  70%  { opacity: 0.9; }
+  100% { transform: translateX(220px); opacity: 0; }
+}
+@keyframes tribeEscapeLeft {
+  0%   { transform: translateX(0);      opacity: 1; }
+  70%  { opacity: 0.9; }
+  100% { transform: translateX(-220px); opacity: 0; }
+}
+@keyframes tribeEscapeUp {
+  0%   { transform: translateY(0);      opacity: 1; }
+  70%  { opacity: 0.9; }
+  100% { transform: translateY(-220px); opacity: 0; }
+}
+@keyframes tribeEscapeDown {
+  0%   { transform: translateY(0);     opacity: 1; }
+  70%  { opacity: 0.9; }
+  100% { transform: translateY(220px); opacity: 0; }
+}
+
+/* ─── Bump ───────────────────────────────────────── */
+@keyframes tribeBumpRight {
+  0%, 100% { transform: translateX(0); }
+  30%       { transform: translateX(14px); }
+  65%       { transform: translateX(-5px); }
+}
+@keyframes tribeBumpLeft {
+  0%, 100% { transform: translateX(0); }
+  30%       { transform: translateX(-14px); }
+  65%       { transform: translateX(5px); }
+}
+@keyframes tribeBumpUp {
+  0%, 100% { transform: translateY(0); }
+  30%       { transform: translateY(-14px); }
+  65%       { transform: translateY(5px); }
+}
+@keyframes tribeBumpDown {
+  0%, 100% { transform: translateY(0); }
+  30%       { transform: translateY(14px); }
+  65%       { transform: translateY(-5px); }
+}
+
+/* ─── HUD score pop ──────────────────────────────── */
+@keyframes tribeScorePop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}
+
+/* ─── Heart lost ─────────────────────────────────── */
+@keyframes tribeHeartShake {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  20%       { transform: rotate(-18deg) scale(1.2); }
+  50%       { transform: rotate(14deg) scale(0.9); }
+  75%       { transform: rotate(-8deg) scale(1.05); }
+}
+
+/* ─── Overlay pop-in ─────────────────────────────── */
+@keyframes tribeOverlayIn {
+  0%   { opacity: 0; transform: scale(0.85) translateY(20px); }
+  60%  { transform: scale(1.04) translateY(-4px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ─── Board cell ─────────────────────────────────── */
+.tribe-cell {
+  border: 1px solid rgba(42, 36, 24, 0.10);
+  border-radius: 6px;
+  background: rgba(42, 36, 24, 0.03);
+  pointer-events: none;
+}
+
+/* ─── Game shell ─────────────────────────────────── */
+.tribe-shell {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background: #fdf6ea;
+  border: 2.5px solid #2a2418;
+  border-radius: 28px;
+  box-shadow:
+    0 18px 46px rgba(42, 36, 24, 0.30),
+    0 4px 12px rgba(42, 36, 24, 0.12);
+  overflow: hidden;
+  position: relative;
+}
+
+/* ─── HUD stat ───────────────────────────────────── */
+.tribe-hud-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+.tribe-hud-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #8a7d65;
+}
+.tribe-hud-value {
+  font-size: 22px;
+  font-weight: 900;
+  color: #2a2418;
+  line-height: 1;
+}
+
+/* ─── CTA button ─────────────────────────────────── */
+.tribe-btn-primary {
+  background: linear-gradient(180deg, #f08a48 0%, #e87432 100%);
+  border: 3px solid #b85a22;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 800;
+  font-family: "Be Vietnam Pro", sans-serif;
+  cursor: pointer;
+  transition: box-shadow 0.15s, transform 0.1s;
+  box-shadow: 0 6px 18px rgba(232, 116, 50, 0.40);
+}
+.tribe-btn-primary:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 8px rgba(232, 116, 50, 0.30);
+}
+
+.tribe-btn-ghost {
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px solid #8a7d65;
+  border-radius: 999px;
+  color: #2a2418;
+  font-weight: 700;
+  font-family: "Be Vietnam Pro", sans-serif;
+  cursor: pointer;
+  transition: box-shadow 0.15s, transform 0.1s;
+}
+.tribe-btn-ghost:active {
+  transform: scale(0.96);
+}
+.tribe-btn-ghost:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
