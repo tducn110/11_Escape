@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, memo } from "react";
 import type { TribeOutEntity, Direction } from "./types";
-import { AnimalSprite } from "./AnimalSprite";
+import { GameSprite } from "./assets/GameSprite";
 
 const ESCAPE_ANIM: Record<Direction, string> = {
   right: "tribeEscapeRight 0.55s ease-out forwards",
@@ -18,10 +18,11 @@ const BUMP_ANIM: Record<Direction, string> = {
 
 const GAP = 4;
 
-interface Props {
+interface TribeOutEntityProps {
   entity: TribeOutEntity;
   cellSize: number;
   isBumping: boolean;
+  bumpNonce?: number;
   onTap: (id: string) => void;
 }
 
@@ -40,11 +41,19 @@ function getEntityAriaLabel(entity: TribeOutEntity): string {
   return `Nhân vật đi ${DIRECTION_LABELS[entity.direction ?? "right"]}, kích thước ${entity.width}x${entity.height}`;
 }
 
-export function TribeOutEntityComponent({ entity, cellSize, isBumping, onTap }: Props) {
+export const TribeOutEntityComponent = memo(function TribeOutEntityComponent({
+  entity,
+  cellSize,
+  isBumping,
+  bumpNonce = 0,
+  onTap,
+}: TribeOutEntityProps) {
   const [animState, setAnimState] = useState<"idle" | "bump" | "escape">("idle");
-  const [hidden, setHidden] = useState(false);
-  const prevEscapedRef = useRef(entity.escaped ?? false);
-  const prevBumpingRef = useRef(false);
+  const [hidden, setHidden] = useState(entity.escaped);
+  
+  const prevBumpingRef = useRef(isBumping);
+  const prevEscapedRef = useRef(entity.escaped);
+  const prevBumpNonceRef = useRef(bumpNonce);
   const innerRef = useRef<HTMLDivElement>(null);
 
   // Detect escape transition and level-reset (escaped → not escaped)
@@ -61,9 +70,10 @@ export function TribeOutEntityComponent({ entity, cellSize, isBumping, onTap }: 
     }
   }, [entity.escaped]);
 
-  // Detect bump
+  // Detect bump transition
   useEffect(() => {
-    if (isBumping && !prevBumpingRef.current) {
+    const nonceChanged = bumpNonce > 0 && bumpNonce !== prevBumpNonceRef.current;
+    if ((isBumping && !prevBumpingRef.current) || nonceChanged) {
       if (innerRef.current) {
         innerRef.current.style.animation = "none";
         void innerRef.current.offsetHeight;
@@ -71,10 +81,12 @@ export function TribeOutEntityComponent({ entity, cellSize, isBumping, onTap }: 
       setAnimState("bump");
       const t = setTimeout(() => setAnimState("idle"), 600);
       prevBumpingRef.current = isBumping;
+      prevBumpNonceRef.current = bumpNonce;
       return () => clearTimeout(t);
     }
     prevBumpingRef.current = isBumping;
-  }, [isBumping]);
+    prevBumpNonceRef.current = bumpNonce;
+  }, [isBumping, bumpNonce]);
 
   if (hidden) return null;
 
@@ -144,34 +156,18 @@ export function TribeOutEntityComponent({ entity, cellSize, isBumping, onTap }: 
           userSelect: "none",
           WebkitUserSelect: "none",
           animation,
-          minWidth: 44,
-          minHeight: 44,
           touchAction: "manipulation",
           outlineOffset: 4,
         }}
       >
-        {isObstacle ? (
-          <ObstacleSprite size={spriteSize} />
-        ) : (
-          <AnimalSprite assetKey={entity.assetKey} direction={dir} size={spriteSize} />
-        )}
+        <GameSprite 
+          assetKey={isObstacle ? "rock" : entity.assetKey}
+          isObstacle={isObstacle}
+          direction={dir}
+          size={spriteSize}
+        />
       </div>
     </div>
   );
-}
+});
 
-function ObstacleSprite({ size }: { size: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 100 100" style={{ display: "block" }}>
-      <ellipse cx="50" cy="82" rx="30" ry="8" fill="rgba(42,36,24,0.18)" />
-      <path
-        d="M22 72 Q16 46 34 34 Q46 24 62 30 Q84 38 82 60 Q80 76 60 78 Q38 82 22 72 Z"
-        fill="#9e9282"
-        stroke="#6b6154"
-        strokeWidth="3"
-      />
-      <path d="M40 42 Q52 40 60 48" stroke="#6b6154" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-      <path d="M34 58 Q46 60 56 56" stroke="#6b6154" strokeWidth="2" fill="none" strokeLinecap="round" opacity="0.6" />
-    </svg>
-  );
-}

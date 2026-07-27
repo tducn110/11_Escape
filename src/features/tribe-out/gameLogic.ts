@@ -92,6 +92,7 @@ export function buildInitialGameState(levelIndex: number, savedCoins = 0): GameS
     lastBumpedEntityId: null,
     lastEscapedEntityId: null,
     coinsEarnedThisLevel: 0,
+    timeRemaining: level.timeLimit,
   };
 }
 
@@ -110,6 +111,7 @@ export function buildNextLevelState(currentState: GameState, nextLevelIndex: num
     lastBumpedEntityId: null,
     lastEscapedEntityId: null,
     coinsEarnedThisLevel: 0,
+    timeRemaining: level.timeLimit,
   };
 }
 
@@ -120,7 +122,7 @@ export function resetLevel(state: GameState): GameState {
   return {
     currentLevelIndex: state.currentLevelIndex,
     lives: level.lives,
-    coins: state.coins,
+    coins: Math.max(0, state.coins - state.coinsEarnedThisLevel),
     escapedCount: 0,
     totalUnits,
     status: "playing",
@@ -128,6 +130,7 @@ export function resetLevel(state: GameState): GameState {
     lastBumpedEntityId: null,
     lastEscapedEntityId: null,
     coinsEarnedThisLevel: 0,
+    timeRemaining: level.timeLimit,
   };
 }
 
@@ -139,6 +142,7 @@ function buildWinProgressSnapshot(
   return {
     coins: nextCoins,
     highestUnlockedLevel: Math.max(savedProgress.highestUnlockedLevel, state.currentLevelIndex + 1),
+    currentLevelIndex: state.currentLevelIndex,
   };
 }
 

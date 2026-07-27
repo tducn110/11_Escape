@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { GameButton } from "../../components/game/GameButton";
+import { Button } from "../../components/shared/Button";
 import { GameShell } from "../../components/game/GameShell";
 import { useMeasuredElementSize } from "../../components/game/useMeasuredElementSize";
 import { TribeOutHUD } from "./TribeOutHUD";
@@ -13,6 +13,10 @@ import {
 } from "./gameLogic";
 import { LEVELS } from "./levels";
 import { loadTribeOutProgress, persistTribeOutProgress } from "./tribeOutStorage";
+import { tribeOutAudio } from "./audio/tribeOutAudio";
+import { IconButton } from "../../components/shared/IconButton";
+import { LogoBubble } from "../../components/shared/LogoBubble";
+import { Trophy, Settings, RotateCcw } from "lucide-react";
 import "./tribeOut.css";
 
 function getCellSize(boardRows: number, boardCols: number, availableWidth: number, availableHeight: number) {
@@ -29,22 +33,78 @@ function getCellSize(boardRows: number, boardCols: number, availableWidth: numbe
   return Math.max(32, Math.min(byWidth, byHeight, 80));
 }
 
-export function TribeOutGame() {
+interface Props {
+  onBoom?: () => void;
+  onDashboard?: () => void;
+  onSettings?: () => void;
+}
+
+export function TribeOutGame({ onBoom, onDashboard, onSettings }: Props = {}) {
   const [gameState, setGameState] = useState(() => {
     const savedProgress = loadTribeOutProgress();
-    return buildInitialGameState(0, savedProgress.coins);
+    const savedLevel = savedProgress.currentLevelIndex !== undefined ? savedProgress.currentLevelIndex : savedProgress.highestUnlockedLevel;
+    const startLevel = Math.max(0, Math.min(savedLevel, LEVELS.length - 1));
+    return buildInitialGameState(startLevel, savedProgress.coins);
   });
   const [bumpingId, setBumpingId] = useState<string | null>(null);
+  const [bumpNonce, setBumpNonce] = useState(0);
   const bumpTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const gameStateRef = useRef(gameState);
   const { ref: boardAreaRef, size: boardAreaSize } = useMeasuredElementSize<HTMLDivElement>();
 
   const level = LEVELS[gameState.currentLevelIndex];
   const cellSize = getCellSize(level.boardRows, level.boardCols, boardAreaSize.width, boardAreaSize.height);
 
+  useEffect(() => {
+    if (gameState.status !== "playing" || gameState.timeRemaining === undefined) return;
+    
+    if (gameState.timeRemaining <= 0) {
+      setGameState(prev => {
+        const nextState = { ...prev, status: "lost" };
+        gameStateRef.current = nextState as typeof prev;
+        tribeOutAudio.playGameOver();
+        return nextState as typeof prev;
+      });
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      setGameState(prev => {
+        if (prev.status !== "playing" || prev.timeRemaining === undefined || prev.timeRemaining <= 0) {
+          return prev;
+        }
+        const newTime = prev.timeRemaining - 1;
+        const nextState = {
+          ...prev,
+          timeRemaining: newTime,
+          status: newTime <= 0 ? "lost" : prev.status,
+        };
+        gameStateRef.current = nextState as typeof prev;
+        return nextState as typeof prev;
+      });
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [gameState.status, gameState.timeRemaining]);
+
+  useEffect(() => {
+    return () => {
+      if (bumpTimerRef.current) clearTimeout(bumpTimerRef.current);
+    };
+  }, []);
+
   const handleTap = (entityId: string) => {
+    const currentState = gameStateRef.current;
     const savedProgress = loadTribeOutProgress();
-    const { nextState, progressSnapshot } = applyTapUnit(entityId, gameState, savedProgress);
+    const { nextState, progressSnapshot } = applyTapUnit(entityId, currentState, savedProgress);
+    
+    gameStateRef.current = nextState;
     setGameState(nextState);
+
+    if (currentState.status !== "won" && nextState.status === "won") {
+      onBoom?.();
+      tribeOutAudio.playWin();
+    }
 
     if (progressSnapshot) {
       persistTribeOutProgress(progressSnapshot);
@@ -53,71 +113,102 @@ export function TribeOutGame() {
     if (nextState.lastBumpedEntityId) {
       if (bumpTimerRef.current) clearTimeout(bumpTimerRef.current);
       setBumpingId(nextState.lastBumpedEntityId);
+      setBumpNonce(prev => prev + 1);
+      tribeOutAudio.playBump();
       bumpTimerRef.current = setTimeout(() => setBumpingId(null), 700);
+    } else if (nextState.escapedCount > currentState.escapedCount) {
+      tribeOutAudio.playEscape();
     }
   };
 
   const handleRestart = () => {
     if (bumpTimerRef.current) clearTimeout(bumpTimerRef.current);
     setBumpingId(null);
-    setGameState(resetLevel(gameState));
+    const nextState = resetLevel(gameStateRef.current);
+    gameStateRef.current = nextState;
+    setGameState(nextState);
+
+    const savedProgress = loadTribeOutProgress();
+    persistTribeOutProgress({
+      ...savedProgress,
+      coins: nextState.coins,
+    });
   };
 
   const handleNextLevel = () => {
     if (bumpTimerRef.current) clearTimeout(bumpTimerRef.current);
     setBumpingId(null);
-    const nextIndex = (gameState.currentLevelIndex + 1) % LEVELS.length;
-    setGameState(buildNextLevelState(gameState, nextIndex));
+    const currentState = gameStateRef.current;
+    const nextIndex = (currentState.currentLevelIndex + 1) % LEVELS.length;
+    const nextState = buildNextLevelState(currentState, nextIndex);
+    
+    gameStateRef.current = nextState;
+    setGameState(nextState);
+    
+    const savedProgress = loadTribeOutProgress();
+    persistTribeOutProgress({
+      ...savedProgress,
+      currentLevelIndex: nextIndex,
+    });
   };
 
   const boardWidth = level.boardCols * cellSize;
   const boardHeight = level.boardRows * cellSize;
-  const shellWidth = Math.min(boardWidth + 38, 520);
+  const shellWidth = boardWidth + 40;
 
   const controls = (
     <>
-      <GameButton
-        aria-label="Thử lại màn hiện tại"
-        variant="ghost"
-        onClick={handleRestart}
-      >
-        🔄 Thử lại
-      </GameButton>
-
-      <GameButton
-        aria-label="Gợi ý, hiện chưa khả dụng"
-        variant="ghost"
-        disabled
-        aria-disabled="true"
-        title="Coming soon"
-      >
-        💡 Gợi ý
-      </GameButton>
-
       {gameState.status === "won" && (
-        <GameButton
+        <Button
           aria-label="Sang màn tiếp theo"
           variant="primary"
           onClick={handleNextLevel}
         >
           Màn Tiếp →
-        </GameButton>
+        </Button>
       )}
     </>
   );
 
   return (
-    <div className="tribe-game-root" style={{ width: `min(100%, ${Math.max(shellWidth, 0)}px)` }}>
+    <div className="tribe-game-root" style={{ width: "100%", maxWidth: shellWidth }}>
       <GameShell
         header={(
-          <TribeOutHUD
-            level={gameState.currentLevelIndex + 1}
-            lives={gameState.lives}
-            maxLives={level.lives}
-            escapedCount={gameState.escapedCount}
-            totalUnits={gameState.totalUnits}
-            coins={gameState.coins}
-          />
+          <div className="flex flex-col gap-[12px]">
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex items-center gap-2">
+                <LogoBubble label="T" size={34} />
+                <div className="min-w-0">
+                  <div className="text-[18px] font-black text-[#2a2418] leading-[1.05]">
+                    Thoát Khỏi Rừng
+                  </div>
+                  <div className="text-[11px] font-extrabold text-[#8a7d65] tracking-[0.5px] mt-0.5">
+                    11 Escape
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <IconButton label="Thành Tích" onClick={onDashboard} size={36}>
+                  <Trophy size={18} />
+                </IconButton>
+                <IconButton label="Cài đặt" onClick={onSettings} size={36}>
+                  <Settings size={20} />
+                </IconButton>
+                <IconButton label="Chơi lại" onClick={handleRestart} size={36}>
+                  <RotateCcw size={18} />
+                </IconButton>
+              </div>
+            </div>
+            <TribeOutHUD
+              level={gameState.currentLevelIndex + 1}
+              lives={gameState.lives}
+              maxLives={level.lives}
+              escapedCount={gameState.escapedCount}
+              totalUnits={gameState.totalUnits}
+              coins={gameState.coins}
+              timeRemaining={gameState.timeRemaining}
+            />
+          </div>
         )}
         notice={
           level.tutorialText && gameState.escapedCount === 0 && gameState.status === "playing" ? (
@@ -135,6 +226,7 @@ export function TribeOutGame() {
           boardCols={level.boardCols}
           cellSize={cellSize}
           bumpingId={bumpingId}
+          bumpNonce={bumpNonce}
           onTap={handleTap}
         />
 
@@ -150,7 +242,10 @@ export function TribeOutGame() {
           />
         )}
         {gameState.status === "lost" && (
-          <LoseOverlay onRestart={handleRestart} />
+          <LoseOverlay 
+            onRestart={handleRestart} 
+            reason={gameState.lives <= 0 ? "lives" : "time"} 
+          />
         )}
         </div>
       </GameShell>

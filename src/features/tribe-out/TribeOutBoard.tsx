@@ -7,10 +7,11 @@ interface Props {
   boardCols: number;
   cellSize: number;
   bumpingId: string | null;
+  bumpNonce: number;
   onTap: (id: string) => void;
 }
 
-export function TribeOutBoard({ entities, boardRows, boardCols, cellSize, bumpingId, onTap }: Props) {
+export function TribeOutBoard({ entities, boardRows, boardCols, cellSize, bumpingId, bumpNonce, onTap }: Props) {
   const boardWidth  = boardCols * cellSize;
   const boardHeight = boardRows * cellSize;
   const pad = 10;
@@ -76,6 +77,7 @@ export function TribeOutBoard({ entities, boardRows, boardCols, cellSize, bumpin
           entity={entity}
           cellSize={cellSize}
           isBumping={bumpingId === entity.id}
+          bumpNonce={bumpingId === entity.id ? bumpNonce : 0}
           onTap={onTap}
         />
       ))}

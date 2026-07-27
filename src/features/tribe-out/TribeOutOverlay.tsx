@@ -1,5 +1,5 @@
 import { useId, type CSSProperties } from "react";
-import { GameButton } from "../../components/game/GameButton";
+import { Button } from "../../components/shared/Button";
 import { GameOverlayFrame } from "../../components/game/GameOverlayFrame";
 
 interface WinProps {
@@ -13,6 +13,7 @@ interface WinProps {
 
 interface LoseProps {
   onRestart: () => void;
+  reason: "lives" | "time";
 }
 
 const overlayBase: CSSProperties = {
@@ -43,35 +44,38 @@ export function WinOverlay({ level, escapedCount, coinsEarned, isLastLevel, onNe
           description={`Thoát ${escapedCount} nhân vật`}
           badge={<span className="tribe-overlay-coins">🪙 +{coinsEarned}</span>}
           actions={
-            <>
+            <div className="flex flex-col gap-2.5 w-full">
               {!isLastLevel ? (
-                <GameButton
+                <Button
                   aria-label="Sang màn tiếp theo"
                   variant="primary"
-                  fullWidth
+                  size="md"
+                  style={{ width: "100%" }}
                   onClick={onNextLevel}
                 >
                   Màn Tiếp →
-                </GameButton>
+                </Button>
               ) : (
-                <GameButton
+                <Button
                   aria-label="Chơi lại từ đầu"
                   variant="primary"
-                  fullWidth
+                  size="md"
+                  style={{ width: "100%" }}
                   onClick={onNextLevel}
                 >
                   Chơi Lại Từ Đầu 🔄
-                </GameButton>
+                </Button>
               )}
-              <GameButton
+              <Button
                 aria-label="Chơi lại màn hiện tại"
                 variant="ghost"
-                fullWidth
+                size="md"
+                style={{ width: "100%" }}
                 onClick={onReplay}
               >
                 Chơi Lại Màn Này
-              </GameButton>
-            </>
+              </Button>
+            </div>
           }
         />
         </div>
@@ -80,30 +84,34 @@ export function WinOverlay({ level, escapedCount, coinsEarned, isLastLevel, onNe
   );
 }
 
-export function LoseOverlay({ onRestart }: LoseProps) {
+export function LoseOverlay({ onRestart, reason }: LoseProps) {
   const titleId = useId();
   const descriptionId = useId();
+
+  const title = reason === "time" ? "Hết Giờ!" : "Hết Mạng!";
+  const description = reason === "time" ? "Bạn đã không kịp giải cứu bộ lạc!" : "Bộ lạc cần bạn thử lại!";
 
   return (
     <div style={overlayBase} role="dialog" aria-modal="true" aria-labelledby={titleId} aria-describedby={descriptionId}>
       <div style={{ width: "100%", display: "flex", justifyContent: "center", padding: "16px" }}>
         <div className="tribe-overlay-card">
-        <div style={{ fontSize: 48, lineHeight: 1, marginBottom: 8 }}>💔</div>
-        <div id={titleId} style={{ display: "none" }}>Hết Mạng!</div>
-        <div id={descriptionId} style={{ display: "none" }}>Bộ lạc cần bạn thử lại!</div>
+        <div style={{ fontSize: 48, lineHeight: 1, marginBottom: 8 }}>{reason === "time" ? "⏱️" : "💔"}</div>
+        <div id={titleId} style={{ display: "none" }}>{title}</div>
+        <div id={descriptionId} style={{ display: "none" }}>{description}</div>
         <GameOverlayFrame
-          title="Hết Mạng!"
-          description="Bộ lạc cần bạn thử lại!"
+          title={title}
+          description={description}
           tone="danger"
           actions={
-            <GameButton
+            <Button
               aria-label="Chơi lại màn hiện tại"
-              variant="primary"
-              fullWidth
+              variant="danger"
+              size="md"
+              style={{ width: "100%" }}
               onClick={onRestart}
             >
               Thử Lại 🔄
-            </GameButton>
+            </Button>
           }
         />
         </div>

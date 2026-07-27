@@ -18,6 +18,7 @@ export interface TribeOutLevel {
   boardRows: number;
   boardCols: number;
   lives: number;
+  timeLimit?: number;
   tutorialText?: string;
   entities: TribeOutEntity[];
 }
@@ -33,11 +34,13 @@ export interface GameState {
   lastBumpedEntityId: string | null;
   lastEscapedEntityId: string | null;
   coinsEarnedThisLevel: number;
+  timeRemaining?: number;
 }
 
 export interface TribeOutProgressSnapshot {
   coins: number;
   highestUnlockedLevel: number;
+  currentLevelIndex?: number;
 }
 
 export interface TribeOutTapResult {

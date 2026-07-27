@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
+
 html,
 body,
 #root {
@@ -17,6 +19,7 @@ body {
   font-family: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   touch-action: manipulation;
+  background-color: #f5ecd7;
 }
 
 #root {

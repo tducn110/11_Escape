@@ -8,6 +8,7 @@ interface Props {
   escapedCount: number;
   totalUnits: number;
   coins: number;
+  timeRemaining?: number;
 }
 
 function Heart({ full }: { full: boolean }) {
@@ -25,7 +26,7 @@ function Heart({ full }: { full: boolean }) {
   );
 }
 
-export function TribeOutHUD({ level, lives, maxLives, escapedCount, totalUnits, coins }: Props) {
+export function TribeOutHUD({ level, lives, maxLives, escapedCount, totalUnits, coins, timeRemaining }: Props) {
   const prevCoinsRef = useRef(coins);
   const [coinPopping, setCoinPopping] = useState(false);
 
@@ -59,6 +60,13 @@ export function TribeOutHUD({ level, lives, maxLives, escapedCount, totalUnits, 
           </div>
         )}
       />
+      {timeRemaining !== undefined && (
+        <HudStat 
+          label="T.Gian" 
+          value={`${timeRemaining}s`} 
+          valueStyle={{ color: timeRemaining <= 5 ? "#d4183d" : "#2a2418" }}
+        />
+      )}
       <HudStat label="Màn" value={level} />
       <HudStat
         label="Thoát"
