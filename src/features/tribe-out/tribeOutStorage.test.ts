@@ -1,69 +1,83 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
+import { LEVELS } from "./levels";
 import {
-  loadTribeOutProgress,
-  persistTribeOutProgress,
   clearTribeOutProgress,
+  loadTribeOutProgress,
+  migrateLegacyProgress,
+  persistTribeOutProgress,
+  sanitizeProgress,
+  type StorageLike,
 } from "./tribeOutStorage";
 
 describe("tribeOutStorage", () => {
   let store: Record<string, string> = {};
 
+  const storage: StorageLike = {
+    getItem: (key: string) => store[key] ?? null,
+    setItem: (key: string, value: string) => {
+      store[key] = value;
+    },
+    removeItem: (key: string) => {
+      delete store[key];
+    },
+  };
+
   beforeEach(() => {
     store = {};
     vi.stubGlobal("window", {
-      localStorage: {
-        getItem: (key: string) => store[key] ?? null,
-        setItem: (key: string, value: string) => {
-          store[key] = value;
-        },
-        removeItem: (key: string) => {
-          delete store[key];
-        },
-        clear: () => {
-          store = {};
-        },
-      },
+      localStorage: storage,
     });
   });
 
-  it("should return fallback values when storage is empty", () => {
-    const progress = loadTribeOutProgress();
-    expect(progress).toEqual({
-      coins: 0,
-      highestUnlockedLevel: 0,
-      currentLevelIndex: 0,
-    });
+  it("returns defaults when storage is empty", () => {
+    const progress = loadTribeOutProgress(LEVELS);
+    expect(progress.currentLevelId).toBe(LEVELS[0].id);
+    expect(progress.unlockedLevelIds).toEqual([LEVELS[0].id]);
+    expect(progress.starsByLevelId).toEqual({});
   });
 
-  it("should persist and load progress correctly", () => {
-    persistTribeOutProgress({
-      coins: 150,
-      highestUnlockedLevel: 5,
-      currentLevelIndex: 3,
-    });
+  it("persists and reloads canonical progress", () => {
+    const progress = sanitizeProgress({
+      schemaVersion: 2,
+      levelSetVersion: 2,
+      unlockedLevelIds: [LEVELS[0].id, LEVELS[1].id],
+      currentLevelId: LEVELS[1].id,
+      starsByLevelId: { [LEVELS[1].id]: 3 },
+    }, LEVELS);
 
-    const progress = loadTribeOutProgress();
-    expect(progress).toEqual({
-      coins: 150,
-      highestUnlockedLevel: 5,
-      currentLevelIndex: 3,
-    });
+    persistTribeOutProgress(progress);
+
+    expect(loadTribeOutProgress(LEVELS)).toEqual(progress);
+    expect(store.tribeout_progress).toBeDefined();
+    expect(store.tribeout_coins).toBeUndefined();
   });
 
-  it("should clear progress correctly", () => {
-    persistTribeOutProgress({
-      coins: 200,
-      highestUnlockedLevel: 10,
-      currentLevelIndex: 8,
+  it("migrates legacy numeric keys and resets stars once", () => {
+    store.tribeout_current_level = "3";
+    store.tribeout_highest_level = "4";
+    store.tribeout_level_stars = JSON.stringify({ 1: 3, 4: 2 });
+
+    const progress = migrateLegacyProgress(storage, LEVELS);
+    expect(progress.currentLevelId).toBe(LEVELS[2].id);
+    expect(progress.unlockedLevelIds).toContain(LEVELS[3].id);
+    expect(progress.starsByLevelId).toEqual({});
+  });
+
+  it("clear removes canonical and legacy keys", () => {
+    store.tribeout_progress = JSON.stringify({
+      schemaVersion: 2,
+      levelSetVersion: 2,
+      unlockedLevelIds: [LEVELS[0].id],
+      currentLevelId: LEVELS[0].id,
+      starsByLevelId: {},
     });
+    store.tribeout_coins = "10";
+    store.tribeout_current_level = "1";
+    store.tribeout_highest_level = "2";
+    store.tribeout_level_stars = "{}";
 
     clearTribeOutProgress();
 
-    const progress = loadTribeOutProgress();
-    expect(progress).toEqual({
-      coins: 0,
-      highestUnlockedLevel: 0,
-      currentLevelIndex: 0,
-    });
+    expect(store).toEqual({});
   });
 });

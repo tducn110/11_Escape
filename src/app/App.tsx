@@ -3,6 +3,7 @@ import { TribeOutGame } from "../features/tribe-out/TribeOutGame";
 import { CountrysideBackdrop } from "../components/background/CountrysideBackdrop";
 import { DashboardScreen } from "../features/tribe-out/screens/Dashboard";
 import { SettingsScreen } from "../features/tribe-out/screens/Settings";
+import { LEVELS } from "../features/tribe-out/levels";
 import { loadTribeOutProgress } from "../features/tribe-out/tribeOutStorage";
 import { tribeOutAudio } from "../features/tribe-out/audio/tribeOutAudio";
 
@@ -10,7 +11,7 @@ type Screen = "game" | "dashboard" | "settings";
 
 export default function App() {
   const [screen, setScreen] = useState<Screen>("game");
-  const [progress, setProgress] = useState(loadTribeOutProgress());
+  const [progress, setProgress] = useState(() => loadTribeOutProgress(LEVELS));
   const [scenery, setScenery] = useState<"normal" | "boom">("normal");
   const sceneryTimerRef = useRef<number | null>(null);
 
@@ -34,7 +35,7 @@ export default function App() {
   // Sync progress occasionally
   useEffect(() => {
     if (screen === "dashboard") {
-      setProgress(loadTribeOutProgress());
+      setProgress(loadTribeOutProgress(LEVELS));
     }
   }, [screen]);
 
@@ -63,14 +64,12 @@ export default function App() {
         minHeight: "100dvh",
         width: "100%",
         overflow: "hidden",
-        background: "#f5ecd7",
+        background: "#74d77c",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
         fontFamily: "'Be Vietnam Pro', sans-serif",
-        paddingTop: "env(safe-area-inset-top)",
-        paddingBottom: "env(safe-area-inset-bottom)",
         boxSizing: "border-box",
       }}
     >
@@ -81,7 +80,7 @@ export default function App() {
           position: "relative",
           zIndex: 1,
           width: "100%",
-          maxWidth: screen === "game" ? 1080 : 460,
+          maxWidth: screen === "game" ? 1280 : 460,
           height: "100%",
           minHeight: 0,
           display: "flex",
@@ -94,7 +93,20 @@ export default function App() {
         }}
       >
         {screen === "dashboard" && (
-          <div style={{ width: "100%", height: "100%", padding: "16px 12px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div
+            style={{
+              width: "100%",
+              height: "100%",
+              padding: "16px 12px",
+              paddingTop: "max(16px, env(safe-area-inset-top))",
+              paddingRight: "max(12px, env(safe-area-inset-right))",
+              paddingBottom: "max(16px, env(safe-area-inset-bottom))",
+              paddingLeft: "max(12px, env(safe-area-inset-left))",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <DashboardScreen 
               progress={progress}
               onBack={() => setScreen("game")}
@@ -103,7 +115,20 @@ export default function App() {
         )}
 
         {screen === "settings" && (
-          <div style={{ width: "100%", height: "100%", padding: "16px 12px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div
+            style={{
+              width: "100%",
+              height: "100%",
+              padding: "16px 12px",
+              paddingTop: "max(16px, env(safe-area-inset-top))",
+              paddingRight: "max(12px, env(safe-area-inset-right))",
+              paddingBottom: "max(16px, env(safe-area-inset-bottom))",
+              paddingLeft: "max(12px, env(safe-area-inset-left))",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <SettingsScreen
               musicEnabled={musicEnabled}
               sfxEnabled={sfxEnabled}
@@ -126,6 +151,7 @@ export default function App() {
           }}
         >
           <TribeOutGame 
+            isActive={screen === "game"}
             onBoom={handleBoom} 
             onDashboard={() => setScreen("dashboard")}
             onSettings={() => setScreen("settings")}

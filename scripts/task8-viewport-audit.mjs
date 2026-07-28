@@ -9,7 +9,9 @@ const viewports = [
   { width: 375, height: 667, mobile: true, label: "375x667" },
   { width: 390, height: 844, mobile: true, label: "390x844" },
   { width: 430, height: 932, mobile: true, label: "430x932" },
+  { width: 844, height: 390, mobile: true, label: "844x390" },
   { width: 768, height: 1024, mobile: true, label: "768x1024" },
+  { width: 1366, height: 768, mobile: false, label: "1366x768" },
   { width: 1440, height: 900, mobile: false, label: "1440x900" },
 ];
 
@@ -117,6 +119,15 @@ async function captureViewport(viewport) {
   await client.send("Page.enable");
   await client.send("Runtime.enable");
   await client.send("DOM.enable");
+  await client.send("Page.addScriptToEvaluateOnNewDocument", {
+    source: `
+      localStorage.removeItem("tribeout_progress");
+      localStorage.removeItem("tribeout_highest_level");
+      localStorage.removeItem("tribeout_current_level");
+      localStorage.removeItem("tribeout_level_stars");
+      localStorage.removeItem("tribeout_coins");
+    `,
+  });
 
   await client.send("Emulation.setDeviceMetricsOverride", {
     width: viewport.width,
@@ -137,6 +148,9 @@ async function captureViewport(viewport) {
       const board = document.querySelector('[aria-label="Bàn chơi 2048"]') || document.querySelector('.tribe-board-center');
       const hud = document.querySelector('.game-shell__header');
       const controls = document.querySelector('.game-shell__controls');
+      const canvas = board?.querySelector('canvas') ?? null;
+      const buttons = Array.from(document.querySelectorAll('[role="button"]'));
+      const buttonLabels = buttons.map((node) => node.getAttribute('aria-label') ?? '');
       const toRect = (node) => {
         if (!node) return null;
         const rect = node.getBoundingClientRect();
@@ -159,12 +173,36 @@ async function captureViewport(viewport) {
         boardRect: toRect(board),
         hudRect: toRect(hud),
         controlsRect: toRect(controls),
+        canvasRect: toRect(canvas),
+        canvasBackingSize: canvas ? { width: canvas.width, height: canvas.height } : null,
+        canvasMatchesBoard: Boolean(
+          canvas &&
+          board &&
+          Math.abs(canvas.getBoundingClientRect().width - board.getBoundingClientRect().width) <= 1 &&
+          Math.abs(canvas.getBoundingClientRect().height - board.getBoundingClientRect().height) <= 1
+        ),
         verticalScrollable: docEl.scrollHeight > docEl.clientHeight + 1,
         horizontalScrollable: docEl.scrollWidth > docEl.clientWidth + 1,
-        unitButtons: Array.from(document.querySelectorAll('[role="button"]')).filter((node) => node.getAttribute('aria-label')?.startsWith('Nhân vật')).length,
+        unitButtons: buttonLabels.filter((label) => label.startsWith('Nhân vật')).length,
+        nonUnitButtons: buttonLabels.filter((label) => label && !label.startsWith('Nhân vật')).length,
+        nonUnitEntityButtons: buttonLabels.filter((label) => /^(Chướng ngại vật|Cổng|Công tắc)/.test(label)).length,
       };
     })()`
   );
+
+  if (baseMetrics.nonUnitButtons !== 0 || baseMetrics.nonUnitEntityButtons !== 0) {
+    throw new Error(`Unexpected non-unit button exposure: ${JSON.stringify({
+      nonUnitButtons: baseMetrics.nonUnitButtons,
+      nonUnitEntityButtons: baseMetrics.nonUnitEntityButtons,
+    })}`);
+  }
+
+  const baseScreenshot = await client.send("Page.captureScreenshot", {
+    format: "png",
+    fromSurface: true,
+  });
+  const baseScreenshotPath = path.join(OUTPUT_DIR, `${viewport.label}-base.png`);
+  await fs.writeFile(baseScreenshotPath, Buffer.from(baseScreenshot.data, "base64"));
 
   await clickUnit(client, 0);
   await delay(700);
@@ -225,9 +263,7 @@ async function captureViewport(viewport) {
   const afterNext = await evaluate(
     client,
     `(() => {
-      const levelValue = Array.from(document.querySelectorAll('.game-hud-stat__label'))
-        .find((node) => node.textContent?.trim() === 'Màn')
-        ?.nextElementSibling?.textContent?.trim() ?? null;
+      const levelValue = document.querySelector('.tribe-game-header__level')?.textContent?.trim() ?? null;
       return { levelValue };
     })()`
   );
@@ -244,6 +280,7 @@ async function captureViewport(viewport) {
 
   return {
     viewport: viewport.label,
+    baseScreenshotPath,
     screenshotPath,
     baseMetrics,
     afterWin,
