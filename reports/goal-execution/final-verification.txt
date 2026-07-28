@@ -1,0 +1,21 @@
+Final verification snapshot
+
+Date: 2026-07-28
+
+Passed gates:
+- typecheck
+- test
+- build
+- levels:validate
+- levels:solve
+- levels:report
+
+Repo changes included:
+- canonical puzzle engine and runtime data flow
+- canonical progress storage migration
+- level catalog tooling and reports
+- cleanup of legacy level generator / solver scripts
+- viewport audit script update for canonical progress cleanup
+
+Known manual-QA limitation:
+- live Chrome CDP audit did not complete in this environment because port 9222 was not reachable during execution

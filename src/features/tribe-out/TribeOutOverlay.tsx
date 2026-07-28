@@ -5,7 +5,7 @@ import { GameOverlayFrame } from "../../components/game/GameOverlayFrame";
 interface WinProps {
   level: number;
   escapedCount: number;
-  coinsEarned: number;
+  stars: number;
   isLastLevel: boolean;
   onNextLevel: () => void;
   onReplay: () => void;
@@ -13,7 +13,6 @@ interface WinProps {
 
 interface LoseProps {
   onRestart: () => void;
-  reason: "lives" | "time";
 }
 
 const overlayBase: CSSProperties = {
@@ -28,7 +27,7 @@ const overlayBase: CSSProperties = {
   backdropFilter: "blur(3px)",
 };
 
-export function WinOverlay({ level, escapedCount, coinsEarned, isLastLevel, onNextLevel, onReplay }: WinProps) {
+export function WinOverlay({ level, escapedCount, stars, isLastLevel, onNextLevel, onReplay }: WinProps) {
   const titleId = useId();
   const descriptionId = useId();
 
@@ -42,7 +41,13 @@ export function WinOverlay({ level, escapedCount, coinsEarned, isLastLevel, onNe
         <GameOverlayFrame
           title={`Màn ${level} Hoàn Thành!`}
           description={`Thoát ${escapedCount} nhân vật`}
-          badge={<span className="tribe-overlay-coins">🪙 +{coinsEarned}</span>}
+          badge={
+            <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
+              <span style={{ color: "#ffd700", fontSize: 20 }}>
+                {"★".repeat(stars)}{"☆".repeat(3 - stars)}
+              </span>
+            </div>
+          }
           actions={
             <div className="flex flex-col gap-2.5 w-full">
               {!isLastLevel ? (
@@ -84,23 +89,20 @@ export function WinOverlay({ level, escapedCount, coinsEarned, isLastLevel, onNe
   );
 }
 
-export function LoseOverlay({ onRestart, reason }: LoseProps) {
+export function LoseOverlay({ onRestart }: LoseProps) {
   const titleId = useId();
   const descriptionId = useId();
-
-  const title = reason === "time" ? "Hết Giờ!" : "Hết Mạng!";
-  const description = reason === "time" ? "Bạn đã không kịp giải cứu bộ lạc!" : "Bộ lạc cần bạn thử lại!";
 
   return (
     <div style={overlayBase} role="dialog" aria-modal="true" aria-labelledby={titleId} aria-describedby={descriptionId}>
       <div style={{ width: "100%", display: "flex", justifyContent: "center", padding: "16px" }}>
         <div className="tribe-overlay-card">
-        <div style={{ fontSize: 48, lineHeight: 1, marginBottom: 8 }}>{reason === "time" ? "⏱️" : "💔"}</div>
-        <div id={titleId} style={{ display: "none" }}>{title}</div>
-        <div id={descriptionId} style={{ display: "none" }}>{description}</div>
+        <div style={{ fontSize: 48, lineHeight: 1, marginBottom: 8 }}>💔</div>
+        <div id={titleId} style={{ display: "none" }}>Hết Mạng!</div>
+        <div id={descriptionId} style={{ display: "none" }}>Bộ lạc cần bạn thử lại!</div>
         <GameOverlayFrame
-          title={title}
-          description={description}
+          title="Hết Mạng!"
+          description="Bộ lạc cần bạn thử lại!"
           tone="danger"
           actions={
             <Button

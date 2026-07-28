@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef, memo } from "react";
-import type { TribeOutEntity, Direction } from "./types";
+import type { Direction, TribeOutEntity } from "./types";
 import { GameSprite } from "./assets/GameSprite";
+import type { IsoBoardLayout } from "./isometric";
+import { projectIsoEntity } from "./isometric";
 
 const ESCAPE_ANIM: Record<Direction, string> = {
   right: "tribeEscapeRight 0.55s ease-out forwards",
@@ -16,13 +18,12 @@ const BUMP_ANIM: Record<Direction, string> = {
   down:  "tribeBumpDown 0.48s ease-out",
 };
 
-const GAP = 4;
-
 interface TribeOutEntityProps {
   entity: TribeOutEntity;
-  cellSize: number;
+  layout: IsoBoardLayout;
   isBumping: boolean;
   bumpNonce?: number;
+  isHinted?: boolean;
   onTap: (id: string) => void;
 }
 
@@ -37,38 +38,47 @@ function getEntityAriaLabel(entity: TribeOutEntity): string {
   if (entity.type === "obstacle") {
     return `Chướng ngại vật kích thước ${entity.width}x${entity.height}`;
   }
-
-  return `Nhân vật đi ${DIRECTION_LABELS[entity.direction ?? "right"]}, kích thước ${entity.width}x${entity.height}`;
+  if (entity.type === "gate") {
+    return `Cổng ${entity.open ? "đang mở" : "đang đóng"} kích thước ${entity.width}x${entity.height}`;
+  }
+  if (entity.type === "switch") {
+    return `Công tắc ${entity.activated ? "đã kích hoạt" : "chưa kích hoạt"} kích thước ${entity.width}x${entity.height}`;
+  }
+  const direction = entity.type === "unit" ? entity.direction : "right";
+  return `Nhân vật đi ${DIRECTION_LABELS[direction]}, kích thước ${entity.width}x${entity.height}`;
 }
 
 export const TribeOutEntityComponent = memo(function TribeOutEntityComponent({
   entity,
-  cellSize,
+  layout,
   isBumping,
   bumpNonce = 0,
+  isHinted,
   onTap,
 }: TribeOutEntityProps) {
   const [animState, setAnimState] = useState<"idle" | "bump" | "escape">("idle");
-  const [hidden, setHidden] = useState(entity.escaped);
+  const isUnitType = entity.type === "unit";
+  const escaped = isUnitType ? Boolean(entity.escaped) : false;
+  const [hidden, setHidden] = useState(escaped);
   
   const prevBumpingRef = useRef(isBumping);
-  const prevEscapedRef = useRef(entity.escaped);
+  const prevEscapedRef = useRef(escaped);
   const prevBumpNonceRef = useRef(bumpNonce);
   const innerRef = useRef<HTMLDivElement>(null);
 
   // Detect escape transition and level-reset (escaped → not escaped)
   useEffect(() => {
-    if (entity.escaped && !prevEscapedRef.current) {
+    if (escaped && !prevEscapedRef.current) {
       setAnimState("escape");
       prevEscapedRef.current = true;
       const t = setTimeout(() => setHidden(true), 580);
       return () => clearTimeout(t);
-    } else if (!entity.escaped && prevEscapedRef.current) {
+    } else if (!escaped && prevEscapedRef.current) {
       setHidden(false);
       setAnimState("idle");
       prevEscapedRef.current = false;
     }
-  }, [entity.escaped]);
+  }, [escaped]);
 
   // Detect bump transition
   useEffect(() => {
@@ -90,34 +100,41 @@ export const TribeOutEntityComponent = memo(function TribeOutEntityComponent({
 
   if (hidden) return null;
 
+  const isUnit = isUnitType && !escaped;
   const isObstacle = entity.type === "obstacle";
-  const dir = entity.direction;
-
-  const top    = entity.row * cellSize + GAP;
-  const left   = entity.col * cellSize + GAP;
-  const width  = entity.width  * cellSize - GAP * 2;
-  const height = entity.height * cellSize - GAP * 2;
+  const isGate = entity.type === "gate";
+  const isSwitch = entity.type === "switch";
+  const blocksPointer = isObstacle || isGate || isSwitch;
+  const isInteractive = isUnit;
+  
+  const dir = entity.type === "unit" ? entity.direction : undefined;
+  const projected = projectIsoEntity(layout, entity);
+  const size = Math.max(32, Math.round(projected.size));
+  const left = Math.round(projected.x - size / 2);
+  const top = Math.round(projected.y - size * (blocksPointer ? 0.78 : (isSwitch ? 0.5 : 0.9)));
+  const width = size;
+  const height = size;
 
   let animation = "";
   if (animState === "escape" && dir) {
     animation = ESCAPE_ANIM[dir];
   } else if (animState === "bump" && dir) {
     animation = BUMP_ANIM[dir];
-  } else if (!isObstacle) {
+  } else if (isUnit) {
     animation = "tribeBreath 2.8s ease-in-out infinite";
   }
 
-  const spriteSize = Math.min(width, height);
+  const spriteSize = Math.max(24, Math.round(Math.min(width, height) * 0.92));
   const ariaLabel = getEntityAriaLabel(entity);
 
   const handleActivate = () => {
-    if (!isObstacle) {
+    if (isInteractive) {
       onTap(entity.id);
     }
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
-    if (isObstacle) {
+    if (!isInteractive) {
       return;
     }
 
@@ -127,6 +144,10 @@ export const TribeOutEntityComponent = memo(function TribeOutEntityComponent({
     }
   };
 
+  let assetKey = entity.assetKey;
+  if (isGate) assetKey = entity.open ? "gate-open" : "gate-closed";
+  if (isSwitch) assetKey = entity.activated ? "switch-active" : "switch-inactive";
+
   return (
     <div
       style={{
@@ -135,34 +156,37 @@ export const TribeOutEntityComponent = memo(function TribeOutEntityComponent({
         left,
         width,
         height,
-        zIndex: isObstacle ? 1 : 2,
-        pointerEvents: isObstacle ? "none" : "auto",
+        zIndex: isSwitch ? projected.zIndex - 10 : projected.zIndex,
+        pointerEvents: blocksPointer ? "none" : "auto",
       }}
     >
       <div
         ref={innerRef}
-        onClick={handleActivate}
-        onKeyDown={handleKeyDown}
-        role={isObstacle ? "img" : "button"}
+        onClick={isInteractive ? handleActivate : undefined}
+        onKeyDown={isInteractive ? handleKeyDown : undefined}
+        role={isInteractive ? "button" : "img"}
         aria-label={ariaLabel}
-        tabIndex={isObstacle ? -1 : 0}
+        tabIndex={isInteractive ? 0 : -1}
         style={{
           width: "100%",
           height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          cursor: isObstacle ? "default" : "pointer",
+          cursor: isInteractive ? "pointer" : "default",
           userSelect: "none",
           WebkitUserSelect: "none",
           animation,
+          filter: isHinted ? "drop-shadow(0 0 12px #fff) brightness(1.2)" : "none",
           touchAction: "manipulation",
           outlineOffset: 4,
+          transform: "translateZ(0)",
         }}
       >
         <GameSprite 
-          assetKey={isObstacle ? "rock" : entity.assetKey}
-          isObstacle={isObstacle}
+          assetKey={assetKey}
+          isObstacle={blocksPointer}
+          isSwitch={isSwitch}
           direction={dir}
           size={spriteSize}
         />
@@ -170,4 +194,3 @@ export const TribeOutEntityComponent = memo(function TribeOutEntityComponent({
     </div>
   );
 });
-

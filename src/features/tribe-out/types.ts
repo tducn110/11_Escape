@@ -1,46 +1,44 @@
-export type Direction = "up" | "down" | "left" | "right";
-export type EntityType = "unit" | "obstacle";
+export type {
+  Direction,
+  EntityId,
+  EntityType,
+  LevelId,
+  PuzzleAction,
+  PuzzleActionOutcome,
+  PuzzleActionResult,
+  PuzzleEntity,
+  PuzzleState,
+  StarRating,
+  TribeOutLevel,
+  UnitEntity,
+} from "./puzzle";
 
-export interface TribeOutEntity {
-  id: string;
-  type: EntityType;
-  assetKey: string;
-  row: number;
-  col: number;
-  width: number;
-  height: number;
-  direction?: Direction;
-  escaped?: boolean;
-}
+import type { PuzzleState, StarRating, LevelId, EntityId, PuzzleEntity, PuzzleLevel as DomainPuzzleLevel } from "./puzzle";
 
-export interface TribeOutLevel {
-  id: number;
-  boardRows: number;
-  boardCols: number;
-  lives: number;
-  timeLimit?: number;
-  tutorialText?: string;
-  entities: TribeOutEntity[];
-}
+export type TribeOutEntity = PuzzleEntity;
+export type PuzzleLevel = DomainPuzzleLevel;
 
 export interface GameState {
-  currentLevelIndex: number;
+  currentLevelId: LevelId;
   lives: number;
-  coins: number;
   escapedCount: number;
   totalUnits: number;
   status: "playing" | "won" | "lost";
-  entities: TribeOutEntity[];
-  lastBumpedEntityId: string | null;
-  lastEscapedEntityId: string | null;
-  coinsEarnedThisLevel: number;
+  puzzle: PuzzleState;
+  lastBumpedEntityId: EntityId | null;
+  lastEscapedEntityId: EntityId | null;
   timeRemaining?: number;
+  hintsUsed: number;
+  stars: StarRating;
+  selectedTool: "none" | "rotate";
 }
 
 export interface TribeOutProgressSnapshot {
-  coins: number;
-  highestUnlockedLevel: number;
-  currentLevelIndex?: number;
+  schemaVersion: number;
+  levelSetVersion: number;
+  unlockedLevelIds: LevelId[];
+  currentLevelId: LevelId;
+  starsByLevelId: Partial<Record<LevelId, StarRating>>;
 }
 
 export interface TribeOutTapResult {

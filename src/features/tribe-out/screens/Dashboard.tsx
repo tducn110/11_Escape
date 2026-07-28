@@ -1,4 +1,4 @@
-import { Trophy, Coins } from "lucide-react";
+import { Trophy, Star } from "lucide-react";
 import { Button } from "../../../components/shared/Button";
 import type { TribeOutProgressSnapshot } from "../types";
 import { LEVELS } from "../levels";
@@ -9,10 +9,18 @@ interface DashboardProps {
   onPlay?: () => void;
 }
 
+function resolveLevelIndex(levelId: TribeOutProgressSnapshot["currentLevelId"]): number {
+  return LEVELS.findIndex(level => level.id === levelId);
+}
+
 export function DashboardScreen({ progress, onBack, onPlay }: DashboardProps) {
   const handleBack = onBack ?? onPlay ?? (() => {});
-  const highestLevel = Math.min((progress.highestUnlockedLevel ?? 0) + 1, LEVELS.length);
-  const coins = progress.coins ?? 0;
+  const unlockedIndices = progress.unlockedLevelIds
+    .map(resolveLevelIndex)
+    .filter(index => index >= 0);
+  const highestLevel = unlockedIndices.length > 0 ? Math.max(...unlockedIndices) + 1 : 1;
+  const completedLevels = Object.values(progress.starsByLevelId).filter(stars => (stars ?? 0) > 0).length;
+  const totalStars = Object.values(progress.starsByLevelId).reduce<number>((sum, stars) => sum + Number(stars ?? 0), 0);
 
   return (
     <div
@@ -34,9 +42,9 @@ export function DashboardScreen({ progress, onBack, onPlay }: DashboardProps) {
       <section className="flex flex-col gap-[12px] text-left">
         <div className="flex items-center justify-between gap-[12px] shrink-0">
           <div className="flex items-center gap-[8px]">
-            <Coins size={22} className="text-[#e87432]" />
+            <Star size={22} className="text-[#e87432]" />
             <h2 className="m-0 text-[18px] leading-[1.2] text-[#2a2418] font-extrabold">
-              Tài Sản
+              Tiến Trình
             </h2>
           </div>
         </div>
@@ -50,17 +58,61 @@ export function DashboardScreen({ progress, onBack, onPlay }: DashboardProps) {
             }}
           >
             <div className="h-[34px] w-full min-w-0 rounded-[10px] grid place-items-center text-[11px] font-extrabold px-[10px] leading-none bg-[#e87432] text-white">
-              Vàng
+              Mở Khóa
             </div>
 
             <div className="min-w-0">
               <span className="text-[13px] font-bold text-[#4a4232] truncate leading-tight">
-                Tổng xu thu thập
+                Màn đã mở
               </span>
             </div>
 
             <div className="min-w-0 whitespace-nowrap text-[#e87432] text-[13px] font-extrabold text-right">
-              {coins.toLocaleString("vi-VN")}
+              {highestLevel}/{LEVELS.length}
+            </div>
+          </div>
+
+          <div
+            className="grid grid-cols-[auto_minmax(0,1fr)_minmax(58px,auto)] items-center gap-[8px] rounded-[16px] p-[10px_12px] sm:grid-cols-[auto_minmax(0,1fr)_minmax(68px,auto)] sm:gap-[12px] sm:p-[12px_16px]"
+            style={{
+              background: "rgba(25,77,65,0.12)",
+              border: "2px solid rgba(25,77,65,0.3)",
+            }}
+          >
+            <div className="h-[34px] w-full min-w-0 rounded-[10px] grid place-items-center text-[11px] font-extrabold px-[10px] leading-none bg-[#195d41] text-white">
+              Sao
+            </div>
+
+            <div className="min-w-0">
+              <span className="text-[13px] font-bold text-[#4a4232] truncate leading-tight">
+                Màn hoàn thành
+              </span>
+            </div>
+
+            <div className="min-w-0 whitespace-nowrap text-[#195d41] text-[13px] font-extrabold text-right">
+              {completedLevels}
+            </div>
+          </div>
+
+          <div
+            className="grid grid-cols-[auto_minmax(0,1fr)_minmax(58px,auto)] items-center gap-[8px] rounded-[16px] p-[10px_12px] sm:grid-cols-[auto_minmax(0,1fr)_minmax(68px,auto)] sm:gap-[12px] sm:p-[12px_16px]"
+            style={{
+              background: "rgba(232,116,50,0.12)",
+              border: "2px solid rgba(232,116,50,0.3)",
+            }}
+          >
+            <div className="h-[34px] w-full min-w-0 rounded-[10px] grid place-items-center text-[11px] font-extrabold px-[10px] leading-none bg-[#e87432] text-white">
+              Tổng
+            </div>
+
+            <div className="min-w-0">
+              <span className="text-[13px] font-bold text-[#4a4232] truncate leading-tight">
+                Sao đã kiếm
+              </span>
+            </div>
+
+            <div className="min-w-0 whitespace-nowrap text-[#e87432] text-[13px] font-extrabold text-right">
+              {totalStars}/300
             </div>
           </div>
         </div>
