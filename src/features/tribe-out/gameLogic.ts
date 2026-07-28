@@ -1,178 +1,189 @@
-import type { TribeOutEntity, GameState } from "./types";
-import { LEVELS } from "./levels";
+import type {
+  EntityId,
+  GameState,
+  PuzzleLevel,
+  PuzzleState,
+  StarRating,
+  TribeOutLevel,
+  TribeOutProgressSnapshot,
+  TribeOutTapResult,
+} from "./types";
+import { LEVELS, LEVEL_BY_ID, LEVEL_INDEX_BY_ID, LEVEL_SET_VERSION } from "./levels";
+import {
+  applyPuzzleAction,
+  canExitUnit,
+  createInitialPuzzleState,
+  getForwardCellsUntilExit,
+  getOccupiedCells,
+  isInsideBoard,
+  isPuzzleComplete,
+  listLegalPuzzleActions,
+  getEntityById,
+} from "./puzzle";
 
-export function getOccupiedCells(entity: TribeOutEntity): { row: number; col: number }[] {
-  const cells: { row: number; col: number }[] = [];
-  for (let r = entity.row; r < entity.row + entity.height; r++) {
-    for (let c = entity.col; c < entity.col + entity.width; c++) {
-      cells.push({ row: r, col: c });
-    }
-  }
-  return cells;
+function getLevel(levelId: TribeOutLevel["id"]): TribeOutLevel {
+  return LEVEL_BY_ID.get(levelId) ?? LEVELS[0];
 }
 
-export function isInsideBoard(row: number, col: number, boardRows: number, boardCols: number): boolean {
-  return row >= 0 && row < boardRows && col >= 0 && col < boardCols;
+function clonePuzzleState(level: PuzzleLevel): PuzzleState {
+  return createInitialPuzzleState(level);
 }
 
-// Returns a map from "row,col" → entityId for all non-escaped entities.
-export function buildOccupancyMap(entities: TribeOutEntity[]): Map<string, string> {
-  const map = new Map<string, string>();
-  for (const entity of entities) {
-    if (entity.type === "unit" && entity.escaped) continue;
-    for (const cell of getOccupiedCells(entity)) {
-      map.set(`${cell.row},${cell.col}`, entity.id);
-    }
-  }
-  return map;
-}
+function buildGameState(level: TribeOutLevel, puzzleState = clonePuzzleState(level), overrides: Partial<GameState> = {}): GameState {
+  const totalUnits = level.entities.filter(entity => entity.type === "unit").length;
 
-// Returns every cell in front of the unit's leading edge until the board boundary.
-export function getForwardCellsUntilExit(
-  unit: TribeOutEntity,
-  boardRows: number,
-  boardCols: number
-): { row: number; col: number }[] {
-  const cells: { row: number; col: number }[] = [];
-  const { direction, row, col, width, height } = unit;
-
-  if (direction === "up") {
-    for (let r = row - 1; r >= 0; r--) {
-      for (let c = col; c < col + width; c++) cells.push({ row: r, col: c });
-    }
-  } else if (direction === "down") {
-    for (let r = row + height; r < boardRows; r++) {
-      for (let c = col; c < col + width; c++) cells.push({ row: r, col: c });
-    }
-  } else if (direction === "left") {
-    for (let c = col - 1; c >= 0; c--) {
-      for (let r = row; r < row + height; r++) cells.push({ row: r, col: c });
-    }
-  } else if (direction === "right") {
-    for (let c = col + width; c < boardCols; c++) {
-      for (let r = row; r < row + height; r++) cells.push({ row: r, col: c });
-    }
-  }
-
-  return cells;
-}
-
-export function canExit(
-  unit: TribeOutEntity,
-  entities: TribeOutEntity[],
-  boardRows: number,
-  boardCols: number
-): boolean {
-  if (!unit.direction) return false;
-  const occupancyMap = buildOccupancyMap(entities);
-  const forwardCells = getForwardCellsUntilExit(unit, boardRows, boardCols);
-  for (const cell of forwardCells) {
-    const occupantId = occupancyMap.get(`${cell.row},${cell.col}`);
-    if (occupantId && occupantId !== unit.id) return false;
-  }
-  return true;
-}
-
-export function buildInitialGameState(levelIndex: number): GameState {
-  const level = LEVELS[levelIndex];
-  const entities = level.entities.map(e => ({ ...e, escaped: false }));
-  const totalUnits = entities.filter(e => e.type === "unit").length;
-  const savedCoins = parseInt(localStorage.getItem("tribeout_coins") ?? "0", 10);
   return {
-    currentLevelIndex: levelIndex,
+    currentLevelId: level.id,
     lives: level.lives,
-    coins: isNaN(savedCoins) ? 0 : savedCoins,
     escapedCount: 0,
     totalUnits,
     status: "playing",
-    entities,
+    puzzle: puzzleState,
     lastBumpedEntityId: null,
     lastEscapedEntityId: null,
-    coinsEarnedThisLevel: 0,
+    timeRemaining: level.timeLimit,
+    hintsUsed: 0,
+    stars: 0,
+    selectedTool: "none",
+    ...overrides,
   };
 }
 
-export function buildNextLevelState(currentState: GameState, nextLevelIndex: number): GameState {
-  const level = LEVELS[nextLevelIndex];
-  const entities = level.entities.map(e => ({ ...e, escaped: false }));
-  const totalUnits = entities.filter(e => e.type === "unit").length;
-  return {
-    currentLevelIndex: nextLevelIndex,
-    lives: level.lives,
-    coins: currentState.coins,
-    escapedCount: 0,
-    totalUnits,
-    status: "playing",
-    entities,
-    lastBumpedEntityId: null,
-    lastEscapedEntityId: null,
-    coinsEarnedThisLevel: 0,
-  };
+export function getAvailableUnits(state: GameState, boardRows: number, boardCols: number): EntityId[] {
+  return listLegalPuzzleActions({ boardRows, boardCols }, state.puzzle)
+    .filter(action => action.type === "exit")
+    .map(action => action.entityId)
+    .filter(entityId => {
+      const entity = getEntityById(state.puzzle, entityId);
+      return Boolean(entity && entity.type === "unit" && !entity.escaped && canExitUnit({ boardRows, boardCols }, state.puzzle, entity));
+    });
+}
+
+export function buildInitialGameState(levelId: TribeOutLevel["id"]): GameState {
+  const level = getLevel(levelId);
+  return buildGameState(level, clonePuzzleState(level));
+}
+
+export function buildNextLevelState(_currentState: GameState, nextLevelId: TribeOutLevel["id"]): GameState {
+  const level = getLevel(nextLevelId);
+  return buildGameState(level, clonePuzzleState(level), {
+    currentLevelId: level.id,
+  });
 }
 
 export function resetLevel(state: GameState): GameState {
-  const level = LEVELS[state.currentLevelIndex];
-  const entities = level.entities.map(e => ({ ...e, escaped: false }));
-  const totalUnits = entities.filter(e => e.type === "unit").length;
+  const level = getLevel(state.currentLevelId);
+  return buildGameState(level, clonePuzzleState(level), {
+    currentLevelId: level.id,
+  });
+}
+
+function calculateAvailableStars(stateBeforeWin: GameState, level: TribeOutLevel): StarRating {
+  let stars = 1;
+  if (stateBeforeWin.lives === level.lives) {
+    stars += 1;
+  }
+  if (stateBeforeWin.hintsUsed === 0 && (stateBeforeWin.timeRemaining ?? 1) > 0) {
+    stars += 1;
+  }
+  return Math.min(3, stars) as StarRating;
+}
+
+export function calculateStars(stateBeforeWin: GameState, level: TribeOutLevel): StarRating {
+  return calculateAvailableStars(stateBeforeWin, level);
+}
+
+export function buildWinProgressSnapshot(
+  progress: TribeOutProgressSnapshot,
+  completedLevelId: TribeOutLevel["id"],
+  stars: StarRating,
+): TribeOutProgressSnapshot {
+  const completedLevelIndex = LEVEL_INDEX_BY_ID.get(completedLevelId) ?? -1;
+  const nextLevel = completedLevelIndex >= 0 ? LEVELS[completedLevelIndex + 1] : undefined;
+  const unlockedLevelIds = new Set(progress.unlockedLevelIds);
+  unlockedLevelIds.add(completedLevelId);
+  if (nextLevel) {
+    unlockedLevelIds.add(nextLevel.id);
+  }
+
   return {
-    currentLevelIndex: state.currentLevelIndex,
-    lives: level.lives,
-    coins: state.coins,
-    escapedCount: 0,
-    totalUnits,
-    status: "playing",
-    entities,
-    lastBumpedEntityId: null,
-    lastEscapedEntityId: null,
-    coinsEarnedThisLevel: 0,
+    schemaVersion: progress.schemaVersion,
+    levelSetVersion: LEVEL_SET_VERSION,
+    unlockedLevelIds: [...unlockedLevelIds],
+    currentLevelId: completedLevelId,
+    starsByLevelId: {
+      ...progress.starsByLevelId,
+      [completedLevelId]: Math.max(progress.starsByLevelId[completedLevelId] ?? 0, stars) as StarRating,
+    },
   };
 }
 
-export function applyTapUnit(unitId: string, state: GameState): GameState {
-  if (state.status !== "playing") return state;
-  const entity = state.entities.find(e => e.id === unitId);
-  if (!entity || entity.type === "obstacle" || entity.escaped) return state;
+export function applyTapUnit(
+  unitId: string,
+  state: GameState,
+  savedProgress: TribeOutProgressSnapshot,
+): TribeOutTapResult {
+  if (state.status !== "playing") {
+    return { nextState: state, progressSnapshot: null };
+  }
 
-  const level = LEVELS[state.currentLevelIndex];
+  const level = getLevel(state.currentLevelId);
+  const actionResult = applyPuzzleAction(level, state.puzzle, { type: "exit", entityId: unitId });
 
-  if (canExit(entity, state.entities, level.boardRows, level.boardCols)) {
-    const newEntities = state.entities.map(e =>
-      e.id === unitId ? { ...e, escaped: true } : e
-    );
-    const newEscapedCount = state.escapedCount + 1;
-    const allEscaped = newEntities.filter(e => e.type === "unit").every(e => e.escaped);
+  if (actionResult.outcome === "invalid_target") {
+    return { nextState: state, progressSnapshot: null };
+  }
 
-    let bonusCoins = 0;
-    let newStatus: GameState["status"] = "playing";
-
-    if (allEscaped) {
-      newStatus = "won";
-      bonusCoins = 50 + state.lives * 20;
-      const totalCoins = state.coins + 10 + bonusCoins;
-      localStorage.setItem("tribeout_coins", String(totalCoins));
-      const prev = parseInt(localStorage.getItem("tribeout_highest_level") ?? "0", 10);
-      const next = Math.max(isNaN(prev) ? 0 : prev, state.currentLevelIndex + 1);
-      localStorage.setItem("tribeout_highest_level", String(next));
-    }
-
+  if (actionResult.outcome === "blocked_path") {
+    const nextLives = state.lives - 1;
     return {
-      ...state,
-      entities: newEntities,
-      escapedCount: newEscapedCount,
-      coins: state.coins + 10 + bonusCoins,
-      coinsEarnedThisLevel: state.coinsEarnedThisLevel + 10 + bonusCoins,
-      status: newStatus,
-      lastEscapedEntityId: unitId,
-      lastBumpedEntityId: null,
-    };
-  } else {
-    const newLives = state.lives - 1;
-    return {
-      ...state,
-      lives: newLives,
-      status: newLives <= 0 ? "lost" : "playing",
-      lastBumpedEntityId: unitId,
-      lastEscapedEntityId: null,
+      nextState: {
+        ...state,
+        lives: nextLives,
+        status: nextLives <= 0 ? "lost" : "playing",
+        lastBumpedEntityId: unitId,
+        lastEscapedEntityId: null,
+      },
+      progressSnapshot: null,
     };
   }
+
+  const escapedCount = state.escapedCount + 1;
+  const puzzle = actionResult.nextState;
+  const completed = isPuzzleComplete(puzzle);
+  const stars = completed ? calculateStars(state, level) : state.stars;
+  const nextState: GameState = {
+    ...state,
+    puzzle,
+    escapedCount,
+    lastBumpedEntityId: null,
+    lastEscapedEntityId: unitId,
+    stars,
+    status: completed ? "won" : "playing",
+  };
+
+  return {
+    nextState,
+    progressSnapshot: completed ? buildWinProgressSnapshot(savedProgress, level.id, stars) : null,
+  };
 }
+
+export function applyRotateUnit(state: GameState, unitId: string): GameState {
+  if (state.status !== "playing") return state;
+
+  const level = getLevel(state.currentLevelId);
+  const actionResult = applyPuzzleAction(level, state.puzzle, { type: "rotate", entityId: unitId });
+  if (actionResult.outcome !== "accepted") {
+    return state;
+  }
+
+  return {
+    ...state,
+    puzzle: actionResult.nextState,
+    selectedTool: "none",
+  };
+}
+
+export { getOccupiedCells, isInsideBoard, getForwardCellsUntilExit };
+export { canExitUnit as canExit };
+export { buildOccupancyMap } from "./puzzle";

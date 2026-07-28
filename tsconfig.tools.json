@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": [
+    "scripts/levels/**/*.ts",
+    "src/features/tribe-out/puzzle/**/*.ts",
+    "src/features/tribe-out/types.ts",
+    "src/features/tribe-out/levels.ts"
+  ],
+  "exclude": [
+    "src/**/*.tsx",
+    "src/components/**/*.tsx",
+    "src/app/**/*.tsx",
+    "src/features/tribe-out/screens/**/*.tsx"
+  ]
+}

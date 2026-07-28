@@ -1,0 +1,5005 @@
+{
+  "totalLevels": 100,
+  "reports": [
+    {
+      "levelId": "level-001",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-002",
+      "phase": 1,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-003",
+      "phase": 1,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-004",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-005",
+      "phase": 1,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-006",
+      "phase": 1,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-007",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-008",
+      "phase": 1,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-009",
+      "phase": 1,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-010",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-011",
+      "phase": 1,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-012",
+      "phase": 1,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-013",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-014",
+      "phase": 1,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-015",
+      "phase": 1,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-016",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-017",
+      "phase": 1,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-018",
+      "phase": 1,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-019",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-020",
+      "phase": 1,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-021",
+      "phase": 2,
+      "unitCount": 3,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-022",
+      "phase": 2,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-023",
+      "phase": 2,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-024",
+      "phase": 2,
+      "unitCount": 4,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-025",
+      "phase": 2,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-026",
+      "phase": 2,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-027",
+      "phase": 2,
+      "unitCount": 3,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-028",
+      "phase": 2,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-029",
+      "phase": 2,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-030",
+      "phase": 2,
+      "unitCount": 4,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-031",
+      "phase": 2,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-032",
+      "phase": 2,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-033",
+      "phase": 2,
+      "unitCount": 3,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-034",
+      "phase": 2,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-035",
+      "phase": 2,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-036",
+      "phase": 2,
+      "unitCount": 4,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-037",
+      "phase": 2,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-038",
+      "phase": 2,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-039",
+      "phase": 2,
+      "unitCount": 3,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-040",
+      "phase": 2,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-041",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-042",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-043",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-044",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-045",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-046",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-047",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-048",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-049",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-050",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-051",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-052",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-053",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-054",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-055",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-056",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-057",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-058",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-059",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-060",
+      "phase": 3,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.33333333333333337,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-061",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-062",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-063",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-064",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-065",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-066",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-067",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-068",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-069",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-070",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-071",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-072",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-073",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-074",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-075",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-076",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-077",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-078",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-079",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-080",
+      "phase": 4,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-081",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-082",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-083",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-084",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-085",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-086",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-087",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-088",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-089",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-090",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-091",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-092",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-093",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-094",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-095",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-096",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-097",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-098",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-099",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-100",
+      "phase": 5,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.75,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    }
+  ]
+}

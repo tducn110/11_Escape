@@ -1,9 +1,11 @@
-import type { CSSProperties } from "react";
+import { useId, type CSSProperties } from "react";
+import { Button } from "../../components/shared/Button";
+import { GameOverlayFrame } from "../../components/game/GameOverlayFrame";
 
 interface WinProps {
   level: number;
   escapedCount: number;
-  coinsEarned: number;
+  stars: number;
   isLastLevel: boolean;
   onNextLevel: () => void;
   onReplay: () => void;
@@ -25,92 +27,62 @@ const overlayBase: CSSProperties = {
   backdropFilter: "blur(3px)",
 };
 
-const cardStyle: CSSProperties = {
-  background: "#fdf6ea",
-  border: "2.5px solid #2a2418",
-  borderRadius: 24,
-  padding: "28px 32px",
-  textAlign: "center",
-  maxWidth: 300,
-  width: "90%",
-  animation: "tribeOverlayIn 0.42s cubic-bezier(0.34,1.56,0.64,1) forwards",
-  boxShadow: "0 14px 40px rgba(42,36,24,0.22)",
-};
+export function WinOverlay({ level, escapedCount, stars, isLastLevel, onNextLevel, onReplay }: WinProps) {
+  const titleId = useId();
+  const descriptionId = useId();
 
-export function WinOverlay({ level, escapedCount, coinsEarned, isLastLevel, onNextLevel, onReplay }: WinProps) {
   return (
-    <div style={overlayBase}>
-      <div style={cardStyle}>
+    <div style={overlayBase} role="dialog" aria-modal="true" aria-labelledby={titleId} aria-describedby={descriptionId}>
+      <div style={{ width: "100%", display: "flex", justifyContent: "center", padding: "16px" }}>
+        <div className="tribe-overlay-card">
         <div style={{ fontSize: 48, lineHeight: 1, marginBottom: 8 }}>🎉</div>
-        <h2
-          style={{
-            fontSize: 26,
-            fontWeight: 900,
-            color: "#2a2418",
-            margin: "0 0 4px",
-            fontFamily: "Be Vietnam Pro, sans-serif",
-          }}
-        >
-          Màn {level} Hoàn Thành!
-        </h2>
-        <p
-          style={{
-            fontSize: 14,
-            color: "#8a7d65",
-            margin: "0 0 14px",
-            fontFamily: "Be Vietnam Pro, sans-serif",
-          }}
-        >
-          Thoát {escapedCount} nhân vật
-        </p>
-
-        <div
-          style={{
-            background: "rgba(232,116,50,0.1)",
-            border: "1.5px solid rgba(232,116,50,0.35)",
-            borderRadius: 14,
-            padding: "10px 18px",
-            marginBottom: 20,
-            display: "inline-block",
-          }}
-        >
-          <span
-            style={{
-              fontSize: 22,
-              fontWeight: 900,
-              color: "#d99820",
-              fontFamily: "Be Vietnam Pro, sans-serif",
-            }}
-          >
-            🪙 +{coinsEarned}
-          </span>
-        </div>
-
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-          {!isLastLevel ? (
-            <button
-              className="tribe-btn-primary"
-              onClick={onNextLevel}
-              style={{ padding: "13px 28px", fontSize: 16 }}
-            >
-              Màn Tiếp →
-            </button>
-          ) : (
-            <button
-              className="tribe-btn-primary"
-              onClick={onNextLevel}
-              style={{ padding: "13px 28px", fontSize: 16 }}
-            >
-              Chơi Lại Từ Đầu 🔄
-            </button>
-          )}
-          <button
-            className="tribe-btn-ghost"
-            onClick={onReplay}
-            style={{ padding: "11px 28px", fontSize: 15 }}
-          >
-            Chơi Lại Màn Này
-          </button>
+        <div id={titleId} style={{ display: "none" }}>Màn {level} Hoàn Thành!</div>
+        <div id={descriptionId} style={{ display: "none" }}>Thoát {escapedCount} nhân vật</div>
+        <GameOverlayFrame
+          title={`Màn ${level} Hoàn Thành!`}
+          description={`Thoát ${escapedCount} nhân vật`}
+          badge={
+            <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
+              <span style={{ color: "#ffd700", fontSize: 20 }}>
+                {"★".repeat(stars)}{"☆".repeat(3 - stars)}
+              </span>
+            </div>
+          }
+          actions={
+            <div className="flex flex-col gap-2.5 w-full">
+              {!isLastLevel ? (
+                <Button
+                  aria-label="Sang màn tiếp theo"
+                  variant="primary"
+                  size="md"
+                  style={{ width: "100%" }}
+                  onClick={onNextLevel}
+                >
+                  Màn Tiếp →
+                </Button>
+              ) : (
+                <Button
+                  aria-label="Chơi lại từ đầu"
+                  variant="primary"
+                  size="md"
+                  style={{ width: "100%" }}
+                  onClick={onNextLevel}
+                >
+                  Chơi Lại Từ Đầu 🔄
+                </Button>
+              )}
+              <Button
+                aria-label="Chơi lại màn hiện tại"
+                variant="ghost"
+                size="md"
+                style={{ width: "100%" }}
+                onClick={onReplay}
+              >
+                Chơi Lại Màn Này
+              </Button>
+            </div>
+          }
+        />
         </div>
       </div>
     </div>
@@ -118,38 +90,33 @@ export function WinOverlay({ level, escapedCount, coinsEarned, isLastLevel, onNe
 }
 
 export function LoseOverlay({ onRestart }: LoseProps) {
+  const titleId = useId();
+  const descriptionId = useId();
+
   return (
-    <div style={overlayBase}>
-      <div style={cardStyle}>
+    <div style={overlayBase} role="dialog" aria-modal="true" aria-labelledby={titleId} aria-describedby={descriptionId}>
+      <div style={{ width: "100%", display: "flex", justifyContent: "center", padding: "16px" }}>
+        <div className="tribe-overlay-card">
         <div style={{ fontSize: 48, lineHeight: 1, marginBottom: 8 }}>💔</div>
-        <h2
-          style={{
-            fontSize: 26,
-            fontWeight: 900,
-            color: "#d4183d",
-            margin: "0 0 8px",
-            fontFamily: "Be Vietnam Pro, sans-serif",
-          }}
-        >
-          Hết Mạng!
-        </h2>
-        <p
-          style={{
-            fontSize: 14,
-            color: "#8a7d65",
-            margin: "0 0 20px",
-            fontFamily: "Be Vietnam Pro, sans-serif",
-          }}
-        >
-          Bộ lạc cần bạn thử lại!
-        </p>
-        <button
-          className="tribe-btn-primary"
-          onClick={onRestart}
-          style={{ padding: "13px 32px", fontSize: 16, width: "100%" }}
-        >
-          Thử Lại 🔄
-        </button>
+        <div id={titleId} style={{ display: "none" }}>Hết Mạng!</div>
+        <div id={descriptionId} style={{ display: "none" }}>Bộ lạc cần bạn thử lại!</div>
+        <GameOverlayFrame
+          title="Hết Mạng!"
+          description="Bộ lạc cần bạn thử lại!"
+          tone="danger"
+          actions={
+            <Button
+              aria-label="Chơi lại màn hiện tại"
+              variant="danger"
+              size="md"
+              style={{ width: "100%" }}
+              onClick={onRestart}
+            >
+              Thử Lại 🔄
+            </Button>
+          }
+        />
+        </div>
       </div>
     </div>
   );

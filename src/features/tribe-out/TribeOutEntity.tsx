@@ -1,6 +1,8 @@
-import { useState, useEffect, useRef } from "react";
-import type { TribeOutEntity, Direction } from "./types";
-import { AnimalSprite } from "./AnimalSprite";
+import { useState, useEffect, useRef, memo } from "react";
+import type { Direction, TribeOutEntity } from "./types";
+import { GameSprite } from "./assets/GameSprite";
+import type { IsoBoardLayout } from "./isometric";
+import { projectIsoEntity } from "./isometric";
 
 const ESCAPE_ANIM: Record<Direction, string> = {
   right: "tribeEscapeRight 0.55s ease-out forwards",
@@ -16,39 +18,72 @@ const BUMP_ANIM: Record<Direction, string> = {
   down:  "tribeBumpDown 0.48s ease-out",
 };
 
-const GAP = 4;
-
-interface Props {
+interface TribeOutEntityProps {
   entity: TribeOutEntity;
-  cellSize: number;
+  layout: IsoBoardLayout;
   isBumping: boolean;
+  bumpNonce?: number;
+  isHinted?: boolean;
   onTap: (id: string) => void;
 }
 
-export function TribeOutEntityComponent({ entity, cellSize, isBumping, onTap }: Props) {
+const DIRECTION_LABELS: Record<Direction, string> = {
+  up: "lên trên",
+  down: "xuống dưới",
+  left: "sang trái",
+  right: "sang phải",
+};
+
+function getEntityAriaLabel(entity: TribeOutEntity): string {
+  if (entity.type === "obstacle") {
+    return `Chướng ngại vật kích thước ${entity.width}x${entity.height}`;
+  }
+  if (entity.type === "gate") {
+    return `Cổng ${entity.open ? "đang mở" : "đang đóng"} kích thước ${entity.width}x${entity.height}`;
+  }
+  if (entity.type === "switch") {
+    return `Công tắc ${entity.activated ? "đã kích hoạt" : "chưa kích hoạt"} kích thước ${entity.width}x${entity.height}`;
+  }
+  const direction = entity.type === "unit" ? entity.direction : "right";
+  return `Nhân vật đi ${DIRECTION_LABELS[direction]}, kích thước ${entity.width}x${entity.height}`;
+}
+
+export const TribeOutEntityComponent = memo(function TribeOutEntityComponent({
+  entity,
+  layout,
+  isBumping,
+  bumpNonce = 0,
+  isHinted,
+  onTap,
+}: TribeOutEntityProps) {
   const [animState, setAnimState] = useState<"idle" | "bump" | "escape">("idle");
-  const [hidden, setHidden] = useState(false);
-  const prevEscapedRef = useRef(entity.escaped ?? false);
-  const prevBumpingRef = useRef(false);
+  const isUnitType = entity.type === "unit";
+  const escaped = isUnitType ? Boolean(entity.escaped) : false;
+  const [hidden, setHidden] = useState(escaped);
+  
+  const prevBumpingRef = useRef(isBumping);
+  const prevEscapedRef = useRef(escaped);
+  const prevBumpNonceRef = useRef(bumpNonce);
   const innerRef = useRef<HTMLDivElement>(null);
 
   // Detect escape transition and level-reset (escaped → not escaped)
   useEffect(() => {
-    if (entity.escaped && !prevEscapedRef.current) {
+    if (escaped && !prevEscapedRef.current) {
       setAnimState("escape");
       prevEscapedRef.current = true;
       const t = setTimeout(() => setHidden(true), 580);
       return () => clearTimeout(t);
-    } else if (!entity.escaped && prevEscapedRef.current) {
+    } else if (!escaped && prevEscapedRef.current) {
       setHidden(false);
       setAnimState("idle");
       prevEscapedRef.current = false;
     }
-  }, [entity.escaped]);
+  }, [escaped]);
 
-  // Detect bump
+  // Detect bump transition
   useEffect(() => {
-    if (isBumping && !prevBumpingRef.current) {
+    const nonceChanged = bumpNonce > 0 && bumpNonce !== prevBumpNonceRef.current;
+    if ((isBumping && !prevBumpingRef.current) || nonceChanged) {
       if (innerRef.current) {
         innerRef.current.style.animation = "none";
         void innerRef.current.offsetHeight;
@@ -56,31 +91,62 @@ export function TribeOutEntityComponent({ entity, cellSize, isBumping, onTap }: 
       setAnimState("bump");
       const t = setTimeout(() => setAnimState("idle"), 600);
       prevBumpingRef.current = isBumping;
+      prevBumpNonceRef.current = bumpNonce;
       return () => clearTimeout(t);
     }
     prevBumpingRef.current = isBumping;
-  }, [isBumping]);
+    prevBumpNonceRef.current = bumpNonce;
+  }, [isBumping, bumpNonce]);
 
   if (hidden) return null;
 
+  const isUnit = isUnitType && !escaped;
   const isObstacle = entity.type === "obstacle";
-  const dir = entity.direction;
-
-  const top    = entity.row * cellSize + GAP;
-  const left   = entity.col * cellSize + GAP;
-  const width  = entity.width  * cellSize - GAP * 2;
-  const height = entity.height * cellSize - GAP * 2;
+  const isGate = entity.type === "gate";
+  const isSwitch = entity.type === "switch";
+  const blocksPointer = isObstacle || isGate || isSwitch;
+  const isInteractive = isUnit;
+  
+  const dir = entity.type === "unit" ? entity.direction : undefined;
+  const projected = projectIsoEntity(layout, entity);
+  const size = Math.max(32, Math.round(projected.size));
+  const left = Math.round(projected.x - size / 2);
+  const top = Math.round(projected.y - size * (blocksPointer ? 0.78 : (isSwitch ? 0.5 : 0.9)));
+  const width = size;
+  const height = size;
 
   let animation = "";
   if (animState === "escape" && dir) {
     animation = ESCAPE_ANIM[dir];
   } else if (animState === "bump" && dir) {
     animation = BUMP_ANIM[dir];
-  } else if (!isObstacle) {
+  } else if (isUnit) {
     animation = "tribeBreath 2.8s ease-in-out infinite";
   }
 
-  const spriteSize = Math.min(width, height);
+  const spriteSize = Math.max(24, Math.round(Math.min(width, height) * 0.92));
+  const ariaLabel = getEntityAriaLabel(entity);
+
+  const handleActivate = () => {
+    if (isInteractive) {
+      onTap(entity.id);
+    }
+  };
+
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (!isInteractive) {
+      return;
+    }
+
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      handleActivate();
+    }
+  };
+
+  let assetKey = entity.assetKey;
+  if (isGate) assetKey = entity.open ? "gate-open" : "gate-closed";
+  if (isSwitch) assetKey = entity.activated ? "switch-active" : "switch-inactive";
 
   return (
     <div
@@ -90,52 +156,41 @@ export function TribeOutEntityComponent({ entity, cellSize, isBumping, onTap }: 
         left,
         width,
         height,
-        zIndex: isObstacle ? 1 : 2,
-        pointerEvents: isObstacle ? "none" : "auto",
+        zIndex: isSwitch ? projected.zIndex - 10 : projected.zIndex,
+        pointerEvents: blocksPointer ? "none" : "auto",
       }}
     >
       <div
         ref={innerRef}
-        onClick={() => !isObstacle && onTap(entity.id)}
-        role={isObstacle ? "img" : "button"}
-        aria-label={isObstacle ? "Chướng ngại vật" : `Nhân vật hướng ${dir}`}
+        onClick={isInteractive ? handleActivate : undefined}
+        onKeyDown={isInteractive ? handleKeyDown : undefined}
+        role={isInteractive ? "button" : "img"}
+        aria-label={ariaLabel}
+        tabIndex={isInteractive ? 0 : -1}
         style={{
           width: "100%",
           height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          cursor: isObstacle ? "default" : "pointer",
+          cursor: isInteractive ? "pointer" : "default",
           userSelect: "none",
           WebkitUserSelect: "none",
           animation,
-          minWidth: 40,
-          minHeight: 40,
+          filter: isHinted ? "drop-shadow(0 0 12px #fff) brightness(1.2)" : "none",
           touchAction: "manipulation",
+          outlineOffset: 4,
+          transform: "translateZ(0)",
         }}
       >
-        {isObstacle ? (
-          <ObstacleSprite size={spriteSize} />
-        ) : (
-          <AnimalSprite assetKey={entity.assetKey} direction={dir} size={spriteSize} />
-        )}
+        <GameSprite 
+          assetKey={assetKey}
+          isObstacle={blocksPointer}
+          isSwitch={isSwitch}
+          direction={dir}
+          size={spriteSize}
+        />
       </div>
     </div>
   );
-}
-
-function ObstacleSprite({ size }: { size: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 100 100" style={{ display: "block" }}>
-      <ellipse cx="50" cy="82" rx="30" ry="8" fill="rgba(42,36,24,0.18)" />
-      <path
-        d="M22 72 Q16 46 34 34 Q46 24 62 30 Q84 38 82 60 Q80 76 60 78 Q38 82 22 72 Z"
-        fill="#9e9282"
-        stroke="#6b6154"
-        strokeWidth="3"
-      />
-      <path d="M40 42 Q52 40 60 48" stroke="#6b6154" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-      <path d="M34 58 Q46 60 56 56" stroke="#6b6154" strokeWidth="2" fill="none" strokeLinecap="round" opacity="0.6" />
-    </svg>
-  );
-}
+});

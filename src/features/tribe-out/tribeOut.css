@@ -6,46 +6,46 @@
 
 /* ─── Escape ─────────────────────────────────────── */
 @keyframes tribeEscapeRight {
-  0%   { transform: translateX(0);     opacity: 1; }
+  0%   { transform: translate(0, 0); opacity: 1; }
   70%  { opacity: 0.9; }
-  100% { transform: translateX(220px); opacity: 0; }
+  100% { transform: translate(220px, 110px); opacity: 0; }
 }
 @keyframes tribeEscapeLeft {
-  0%   { transform: translateX(0);      opacity: 1; }
+  0%   { transform: translate(0, 0); opacity: 1; }
   70%  { opacity: 0.9; }
-  100% { transform: translateX(-220px); opacity: 0; }
+  100% { transform: translate(-220px, -110px); opacity: 0; }
 }
 @keyframes tribeEscapeUp {
-  0%   { transform: translateY(0);      opacity: 1; }
+  0%   { transform: translate(0, 0); opacity: 1; }
   70%  { opacity: 0.9; }
-  100% { transform: translateY(-220px); opacity: 0; }
+  100% { transform: translate(220px, -110px); opacity: 0; }
 }
 @keyframes tribeEscapeDown {
-  0%   { transform: translateY(0);     opacity: 1; }
+  0%   { transform: translate(0, 0); opacity: 1; }
   70%  { opacity: 0.9; }
-  100% { transform: translateY(220px); opacity: 0; }
+  100% { transform: translate(-220px, 110px); opacity: 0; }
 }
 
 /* ─── Bump ───────────────────────────────────────── */
 @keyframes tribeBumpRight {
-  0%, 100% { transform: translateX(0); }
-  30%       { transform: translateX(14px); }
-  65%       { transform: translateX(-5px); }
+  0%, 100% { transform: translate(0, 0); }
+  30%       { transform: translate(14px, 7px); }
+  65%       { transform: translate(-5px, -2.5px); }
 }
 @keyframes tribeBumpLeft {
-  0%, 100% { transform: translateX(0); }
-  30%       { transform: translateX(-14px); }
-  65%       { transform: translateX(5px); }
+  0%, 100% { transform: translate(0, 0); }
+  30%       { transform: translate(-14px, -7px); }
+  65%       { transform: translate(5px, 2.5px); }
 }
 @keyframes tribeBumpUp {
-  0%, 100% { transform: translateY(0); }
-  30%       { transform: translateY(-14px); }
-  65%       { transform: translateY(5px); }
+  0%, 100% { transform: translate(0, 0); }
+  30%       { transform: translate(14px, -7px); }
+  65%       { transform: translate(-5px, 2.5px); }
 }
 @keyframes tribeBumpDown {
-  0%, 100% { transform: translateY(0); }
-  30%       { transform: translateY(14px); }
-  65%       { transform: translateY(-5px); }
+  0%, 100% { transform: translate(0, 0); }
+  30%       { transform: translate(-14px, 7px); }
+  65%       { transform: translate(5px, -2.5px); }
 }
 
 /* ─── HUD score pop ──────────────────────────────── */
@@ -79,25 +79,255 @@
 }
 
 /* ─── Game shell ─────────────────────────────────── */
+.app-viewport {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
+  overscroll-behavior: none;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  box-sizing: border-box;
+  padding:
+    max(10px, env(safe-area-inset-top))
+    max(10px, env(safe-area-inset-right))
+    max(10px, env(safe-area-inset-bottom))
+    max(10px, env(safe-area-inset-left));
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.tribe-game-root {
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.game-shell,
 .tribe-shell {
   font-family: "Be Vietnam Pro", sans-serif;
-  background: #fdf6ea;
-  border: 2.5px solid #2a2418;
-  border-radius: 28px;
-  box-shadow:
-    0 18px 46px rgba(42, 36, 24, 0.30),
-    0 4px 12px rgba(42, 36, 24, 0.12);
-  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
   position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-shell__header {
+  z-index: 10;
+  width: min(100%, 920px);
+  margin: 0 auto;
+  padding:
+    max(12px, env(safe-area-inset-top))
+    clamp(14px, 3vw, 28px)
+    8px;
+  border: 0;
+  background: transparent;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.game-shell__notice {
+  position: relative;
+  z-index: 9;
+  width: min(100%, 760px);
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+.game-shell__board-area {
+  flex: 1;
+  min-height: 0;
+  padding: 0 4px max(10px, env(safe-area-inset-bottom));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.game-shell__controls {
+  display: flex;
+  gap: 10px;
+  padding: 8px 16px max(12px, env(safe-area-inset-bottom));
+  border: 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.game-shell__controls:empty {
+  display: none;
+}
+
+.tribe-board-center {
+  position: relative;
+  flex-shrink: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.tribe-game-header {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.tribe-game-header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+}
+
+.tribe-game-header__identity {
+  min-width: 0;
+  color: #ffffff;
+  text-shadow:
+    0 2px 0 rgba(22, 105, 67, 0.42),
+    0 4px 12px rgba(14, 85, 52, 0.3);
+}
+
+.tribe-game-header__title {
+  overflow: hidden;
+  font-size: 21px;
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tribe-game-header__level {
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  opacity: 0.82;
+}
+
+.tribe-game-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.tribe-game-hud {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(15, 87, 54, 0.32);
+}
+
+.tribe-game-hud__status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.tribe-game-hud__hearts,
+.tribe-game-hud__meta,
+.tribe-game-hud__metric {
+  display: flex;
+  align-items: center;
+}
+
+.tribe-game-hud__hearts {
+  gap: 4px;
+}
+
+.tribe-game-hud__heart {
+  filter: drop-shadow(0 3px 4px rgba(128, 39, 56, 0.24));
+}
+
+.tribe-game-hud__meta {
+  gap: 12px;
+}
+
+.tribe-game-hud__metric {
+  gap: 5px;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.tribe-game-hud__metric[data-danger="true"] {
+  color: #ffe1e5;
+}
+
+.tribe-game-hud__progress {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.tribe-game-hud__track {
+  position: relative;
+  height: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(17, 102, 63, 0.22);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 2px 4px rgba(24, 106, 65, 0.18);
+}
+
+.tribe-game-hud__fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  min-width: 0;
+  border-radius: inherit;
+  background: #fff4a8;
+  box-shadow: 0 0 8px rgba(255, 241, 135, 0.52);
+  transition: width 0.28s ease;
+}
+
+.tribe-game-hud__progress-value {
+  min-width: 48px;
+  font-size: 19px;
+  line-height: 1;
+  text-align: right;
+}
+
+.tribe-tutorial-banner {
+  padding: 2px 16px 7px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 2px 8px rgba(15, 87, 54, 0.4);
+}
+
+.game-hud-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
 }
 
 /* ─── HUD stat ───────────────────────────────────── */
-.tribe-hud-stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1px;
-}
+.game-hud-stat__label,
 .tribe-hud-label {
   font-size: 9px;
   font-weight: 700;
@@ -105,6 +335,7 @@
   text-transform: uppercase;
   color: #8a7d65;
 }
+.game-hud-stat__value,
 .tribe-hud-value {
   font-size: 22px;
   font-weight: 900;
@@ -113,36 +344,195 @@
 }
 
 /* ─── CTA button ─────────────────────────────────── */
+.game-button {
+  min-height: 44px;
+  padding: 10px 22px;
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 800;
+  font-family: "Be Vietnam Pro", sans-serif;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: box-shadow 0.15s, transform 0.1s, opacity 0.1s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.game-button--primary,
 .tribe-btn-primary {
   background: linear-gradient(180deg, #f08a48 0%, #e87432 100%);
   border: 3px solid #b85a22;
-  border-radius: 999px;
   color: #fff;
-  font-weight: 800;
-  font-family: "Be Vietnam Pro", sans-serif;
-  cursor: pointer;
-  transition: box-shadow 0.15s, transform 0.1s;
   box-shadow: 0 6px 18px rgba(232, 116, 50, 0.40);
 }
+
+.game-button--primary:active,
 .tribe-btn-primary:active {
   transform: scale(0.96);
   box-shadow: 0 2px 8px rgba(232, 116, 50, 0.30);
 }
 
+.game-button--ghost,
 .tribe-btn-ghost {
   background: rgba(255, 255, 255, 0.85);
   border: 2px solid #8a7d65;
-  border-radius: 999px;
   color: #2a2418;
-  font-weight: 700;
-  font-family: "Be Vietnam Pro", sans-serif;
-  cursor: pointer;
-  transition: box-shadow 0.15s, transform 0.1s;
 }
+
+.game-button--ghost:active,
 .tribe-btn-ghost:active {
   transform: scale(0.96);
 }
+
+.game-button:disabled,
 .tribe-btn-ghost:disabled {
   opacity: 0.45;
   cursor: default;
+}
+
+.tribe-overlay-card {
+  width: min(100%, 320px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.game-overlay-frame {
+  background: #fdf6ea;
+  border: 2.5px solid #2a2418;
+  border-radius: 24px;
+  padding: 22px 20px;
+  width: 100%;
+  animation: tribeOverlayIn 0.42s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  box-shadow: 0 14px 40px rgba(42, 36, 24, 0.22);
+  box-sizing: border-box;
+}
+
+.game-overlay-frame__title {
+  margin: 0 0 4px;
+  font-size: clamp(24px, 5.8vw, 26px);
+  font-weight: 900;
+}
+
+.game-overlay-frame__description {
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: #8a7d65;
+}
+
+.game-overlay-frame__badge {
+  margin-bottom: 18px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.game-overlay-frame__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 640px) {
+  .app-viewport {
+    padding:
+      max(8px, calc(env(safe-area-inset-top) + 4px))
+      max(8px, env(safe-area-inset-right))
+      max(8px, env(safe-area-inset-bottom))
+      max(8px, env(safe-area-inset-left));
+  }
+
+  .game-shell__header {
+    padding:
+      max(10px, env(safe-area-inset-top))
+      12px
+      6px;
+  }
+
+  .game-shell__board-area {
+    padding: 0 0 max(8px, env(safe-area-inset-bottom));
+  }
+
+  .game-shell__controls {
+    gap: 8px;
+    padding: 8px 10px 10px;
+  }
+
+  .game-button {
+    padding: 9px 16px;
+    font-size: 13px;
+  }
+
+  .game-hud-stat__value {
+    font-size: 20px;
+  }
+
+  .tribe-game-header {
+    gap: 9px;
+  }
+
+  .tribe-game-header__top {
+    gap: 8px;
+  }
+
+  .tribe-game-header__title {
+    font-size: 18px;
+  }
+
+  .tribe-game-header__level {
+    font-size: 10px;
+  }
+
+  .tribe-game-header__actions {
+    gap: 6px;
+  }
+
+  .tribe-game-hud__progress {
+    gap: 9px;
+  }
+
+  .tribe-game-hud__progress-value {
+    min-width: 44px;
+    font-size: 18px;
+  }
+}
+
+@media (max-height: 520px) and (orientation: landscape) {
+  .game-shell__header {
+    padding-top: max(5px, env(safe-area-inset-top));
+    padding-bottom: 3px;
+  }
+
+  .game-shell__notice {
+    display: none;
+  }
+
+  .tribe-game-header {
+    gap: 5px;
+  }
+
+  .tribe-game-header__top {
+    min-height: 38px;
+  }
+
+  .tribe-game-header__title {
+    font-size: 17px;
+  }
+
+  .tribe-game-header__level {
+    display: none;
+  }
+
+  .tribe-game-hud {
+    display: grid;
+    grid-template-columns: auto minmax(220px, 1fr);
+    align-items: center;
+    gap: 16px;
+  }
+
+  .tribe-game-hud__meta {
+    gap: 9px;
+  }
 }
