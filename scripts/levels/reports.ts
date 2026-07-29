@@ -2,40 +2,40 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import type { ValidationIssue } from "./validator";
 import type { DifficultyReport } from "./analyzer";
-
-const REPORT_DIR = resolve(process.cwd(), "reports/levels");
+import type { SolveCost, SolverDiagnostics, SolverPath, SolveStatus } from "./solver";
+import type { LevelAuthoringManifest } from "./catalog/manifests";
 
 export interface SolutionReport {
   levelId: string;
-  status: "SOLVABLE" | "UNSOLVABLE" | "INCONCLUSIVE";
-  solverPath: "FAST_EXIT_CLOSURE" | "STATEFUL_ROTATE_SEARCH";
-  cost: unknown;
+  status: SolveStatus;
+  solverPath: SolverPath;
+  cost: SolveCost | null;
   actions: unknown[];
   finalStateKey: string | null;
-  diagnostics: {
-    exploredStates: number;
-    generatedStates: number;
-    prunedDominatedStates: number;
-    collapsedExitActions: number;
-    frontierPeak: number;
-    elapsedMs: number;
-    stateBudget: number;
-    timeBudgetMs: number;
-  };
+  diagnostics: SolverDiagnostics;
   reason: string | null;
 }
 
-function ensureReportDir() {
-  mkdirSync(REPORT_DIR, { recursive: true });
+export interface ManifestReport {
+  generatorVersion: string;
+  manifests: readonly LevelAuthoringManifest[];
 }
 
-export function writeValidationReport(issues: ValidationIssue[]) {
-  ensureReportDir();
-  writeFileSync(resolve(REPORT_DIR, "validation.json"), `${JSON.stringify({ valid: issues.length === 0, issues }, null, 2)}\n`);
+function ensureReportDir(reportDir: string) {
+  mkdirSync(reportDir, { recursive: true });
 }
 
-export function writeSolutionsReport(results: SolutionReport[]) {
-  ensureReportDir();
+function reportPath(reportDir: string, filename: string): string {
+  return resolve(reportDir, filename);
+}
+
+export function writeValidationReport(issues: ValidationIssue[], reportDir = resolve(process.cwd(), "reports/levels")) {
+  ensureReportDir(reportDir);
+  writeFileSync(reportPath(reportDir, "validation.json"), `${JSON.stringify({ valid: issues.length === 0, issues }, null, 2)}\n`);
+}
+
+export function writeSolutionsReport(results: SolutionReport[], reportDir = resolve(process.cwd(), "reports/levels")) {
+  ensureReportDir(reportDir);
   const payload = {
     totalLevels: results.length,
     solvedLevels: results.filter(result => result.status === "SOLVABLE").length,
@@ -43,9 +43,9 @@ export function writeSolutionsReport(results: SolutionReport[]) {
     unsolvedLevels: results.filter(result => result.status === "UNSOLVABLE").length,
     results,
   };
-  writeFileSync(resolve(REPORT_DIR, "solutions.json"), `${JSON.stringify(payload, null, 2)}\n`);
+  writeFileSync(reportPath(reportDir, "solutions.json"), `${JSON.stringify(payload, null, 2)}\n`);
   writeFileSync(
-    resolve(REPORT_DIR, "solutions.md"),
+    reportPath(reportDir, "solutions.md"),
     [
       "# Level Solutions",
       "",
@@ -58,15 +58,15 @@ export function writeSolutionsReport(results: SolutionReport[]) {
   );
 }
 
-export function writeDifficultyReports(reports: DifficultyReport[]) {
-  ensureReportDir();
+export function writeDifficultyReports(reports: DifficultyReport[], reportDir = resolve(process.cwd(), "reports/levels")) {
+  ensureReportDir(reportDir);
   const json = {
     totalLevels: reports.length,
     reports,
   };
-  writeFileSync(resolve(REPORT_DIR, "difficulty.json"), `${JSON.stringify(json, null, 2)}\n`);
+  writeFileSync(reportPath(reportDir, "difficulty.json"), `${JSON.stringify(json, null, 2)}\n`);
   writeFileSync(
-    resolve(REPORT_DIR, "difficulty.csv"),
+    reportPath(reportDir, "difficulty.csv"),
     [
       "levelId,phase,unitCount,obstacleCount,gateCount,switchCount,multiCellUnitCount,initialAvailableMoves,minRotateRequired",
       ...reports.map(report => [
@@ -84,7 +84,7 @@ export function writeDifficultyReports(reports: DifficultyReport[]) {
     ].join("\n"),
   );
   writeFileSync(
-    resolve(REPORT_DIR, "difficulty.md"),
+    reportPath(reportDir, "difficulty.md"),
     [
       "# Difficulty Reports",
       "",
@@ -93,4 +93,9 @@ export function writeDifficultyReports(reports: DifficultyReport[]) {
       "",
     ].join("\n"),
   );
+}
+
+export function writeManifestReport(report: ManifestReport, reportDir = resolve(process.cwd(), "reports/levels")) {
+  ensureReportDir(reportDir);
+  writeFileSync(reportPath(reportDir, "manifests.json"), `${JSON.stringify(report, null, 2)}\n`);
 }

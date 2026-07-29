@@ -1,0 +1,180 @@
+{
+  "packageName": "tribe-out-complete-goal-specification",
+  "repositoryPath": "/home/pro/Downloads/intern/11_Escape",
+  "extractTarget": "/home/pro/Downloads/intern/11_Escape/goal",
+  "specificationStatus": "SPEC_READY",
+  "fileCountExcludingManifest": 34,
+  "totalBytesExcludingManifest": 1131308,
+  "files": [
+    {
+      "path": "AGENT_INSTRUCTIONS.md",
+      "bytes": 1522,
+      "sha256": "beb0b0f41c5e6ca640f41bf454f5829696d57f0949cacaf2404add3228215d5e"
+    },
+    {
+      "path": "IMPLEMENTATION_ORDER.md",
+      "bytes": 3196,
+      "sha256": "afc0d84d22bdc216e9f82115a7dbd7ac0f3f78ac439ae9148297873b6ad91cfc"
+    },
+    {
+      "path": "MASTER_EXECUTION_SPEC.md",
+      "bytes": 3794,
+      "sha256": "a4f586262bd0c00207bf060bba08742b460c499eabeee7144f93061e3427bef7"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2191,
+      "sha256": "cb965d732a92b8f7d7ac0b357887010e5c15629272db8b962539ca398acbb957"
+    },
+    {
+      "path": "SPECIFICATION_STATUS.md",
+      "bytes": 645,
+      "sha256": "d98236ef4e0a1697714cdf71b44c5164c08841ea20192b8533e2698ed6791ee0"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 4108,
+      "sha256": "c9de4488a35f6b01d710db1131d936334121ebc6b4e5a320027d074aca520a1e"
+    },
+    {
+      "path": "TRACEABILITY_MATRIX.md",
+      "bytes": 2698,
+      "sha256": "5c11b54d8e217b6ec7dbab6deccaff6d7c08c0b404991197eebbc31ded1f343f"
+    },
+    {
+      "path": "contracts/01_CURRENT_STATE.md",
+      "bytes": 4202,
+      "sha256": "38c0c0263b9c9769211adfe26a73405d8dcccab0d797374af9b3ac82acd1dc02"
+    },
+    {
+      "path": "contracts/02_TARGET_ARCHITECTURE.md",
+      "bytes": 4897,
+      "sha256": "cea4c7d93776aded54d6eb6e91477a93aa8b15803c85b4eadd7348a50074f5ec"
+    },
+    {
+      "path": "contracts/03_DOMAIN_CONTRACT.md",
+      "bytes": 7165,
+      "sha256": "fe3c2fa236a1dc5eb4ccccafcd2b6f80ef65972e0c703cad215a46affad09396"
+    },
+    {
+      "path": "contracts/04_AUTHORING_AND_REPORT_SCHEMAS.md",
+      "bytes": 3305,
+      "sha256": "1b7428f161c5f2f88089bf37fb42e90237fcb88ca1c22ef5d740790b464b2bc2"
+    },
+    {
+      "path": "diagrams/action-transition.mmd",
+      "bytes": 669,
+      "sha256": "3216aa89d94acf6b2ff9b12ac20a46473d229b69bb26bf72980a1c0348a14364"
+    },
+    {
+      "path": "diagrams/goal-dependency-graph.mmd",
+      "bytes": 557,
+      "sha256": "444e79671fefd9d8d1012b6b60902dea7eab04c776f9eedd874f53f89be994aa"
+    },
+    {
+      "path": "diagrams/level-generation-pipeline.mmd",
+      "bytes": 654,
+      "sha256": "719d6a811558827f91c83d8a6a2b81fc67cad2d498f8aaf718dfd3a556f359ef"
+    },
+    {
+      "path": "diagrams/progress-migration.mmd",
+      "bytes": 554,
+      "sha256": "33d7443c268a5633b85ccab49d771328ff6f50d36f0ee6f03c77ed354b7f3762"
+    },
+    {
+      "path": "diagrams/solver-selection.mmd",
+      "bytes": 599,
+      "sha256": "428203a3a96f8acbff2920ac5bed6ea82bcb833466793670248a5aa4b5365e31"
+    },
+    {
+      "path": "diagrams/system-architecture.mmd",
+      "bytes": 479,
+      "sha256": "efbed15295040128f8767046707855d80d2e0e649d282bed627d9449f277cde2"
+    },
+    {
+      "path": "implementation/00_ONE_TIME_TRIAGE.md",
+      "bytes": 2819,
+      "sha256": "4c924ad0eb486324a502364a3a8b4f4e9edb514bc72717530542ac8553d1f47d"
+    },
+    {
+      "path": "implementation/01_FILE_BY_FILE_SPECIFICATION.md",
+      "bytes": 10883,
+      "sha256": "a8eba5f1937bd552945109911a80c10fbb9fa74d49577d83ac46d351209a7e47"
+    },
+    {
+      "path": "implementation/02_VALIDATOR_AND_TOOLCHAIN.md",
+      "bytes": 4133,
+      "sha256": "69d9097c87a9a71391e4216819343f0c02c6b1332db23f35d8adaef20e6766b9"
+    },
+    {
+      "path": "implementation/03_HYBRID_SOLVER.md",
+      "bytes": 5410,
+      "sha256": "c0b47c441a2cb1d5cee5086d3f5aea492bfcf705c2e3a074b0d4f38a628bbeb8"
+    },
+    {
+      "path": "implementation/04_DIFFICULTY_ANALYZER.md",
+      "bytes": 5250,
+      "sha256": "c9c455f51730d8ad6d2168f1f9dc34c96c31904cbc7b95d4b43e0ad0a44542a6"
+    },
+    {
+      "path": "implementation/05_100_LEVEL_CATALOG.md",
+      "bytes": 9156,
+      "sha256": "be775ad4a1c0624430b0eb05d7db067098bbaff6618ceb99ba0117a1f7382ac9"
+    },
+    {
+      "path": "implementation/06_PROGRESS_AND_ECONOMY_REMOVAL.md",
+      "bytes": 4275,
+      "sha256": "09ba92a86e2b4fd1f143ee6fd2640b85017a50f473853032d8b0aa61e6d0ed5c"
+    },
+    {
+      "path": "implementation/07_RUNTIME_INTEGRATION.md",
+      "bytes": 4905,
+      "sha256": "cb236344eebcc06b222b0ae4d7beba1b3052fa690031fae9826add0577481fa3"
+    },
+    {
+      "path": "implementation/08_GENERATOR_ALGORITHMS.md",
+      "bytes": 5615,
+      "sha256": "de0d6fc2777241f062f92045f2503e829472ca4477bf65635924db19e556e409"
+    },
+    {
+      "path": "quality/01_TEST_MATRIX.md",
+      "bytes": 3976,
+      "sha256": "9d6e9fd499a80e55edc82231f50c6471602a9a7db5bb90fc473cd5ac18c6f938"
+    },
+    {
+      "path": "quality/02_COMMANDS_AND_QUALITY_GATES.md",
+      "bytes": 3009,
+      "sha256": "ce8eef6c4e3ca470ad567d23013af4c584653a35d59b594e60e9b295074c3ffd"
+    },
+    {
+      "path": "quality/03_MANUAL_QA.md",
+      "bytes": 2301,
+      "sha256": "1a3abc865f436b8295920122faefb9e8183493647181ef201341662ee16395b4"
+    },
+    {
+      "path": "quality/04_EVIDENCE_AND_COMPLETION_PROTOCOL.md",
+      "bytes": 2868,
+      "sha256": "5a90e52fe66d9be87dd3fb868764a9e62fdf02b021e535c7359e3d2e18668684"
+    },
+    {
+      "path": "quality/05_GLOBAL_DEFINITION_OF_DONE.md",
+      "bytes": 2768,
+      "sha256": "f39b004b39a54fcc6bd4188e9de6e8f16286e12074ccb81350b7d6bae640e7a2"
+    },
+    {
+      "path": "source/Logic.md",
+      "bytes": 34228,
+      "sha256": "f4dae2067c810e158546518c507e479d5671c072a5374f6f2eb3f11990e032d5"
+    },
+    {
+      "path": "source/OVERRIDES_AND_DECISIONS.md",
+      "bytes": 2861,
+      "sha256": "3ba1c5a02ba30cfb8b61a5728a06b1252f018304b5f90ca1e893f3682624273d"
+    },
+    {
+      "path": "source/repomix-output.xml",
+      "bytes": 985616,
+      "sha256": "8403d38c8e07bd776f2356b739c5247afa743bbafcf93fd912435c31800a0e3e"
+    }
+  ]
+}

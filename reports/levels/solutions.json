@@ -8,7 +8,10 @@
       "levelId": "level-001",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 2
+      },
       "actions": [
         {
           "action": {
@@ -27,14 +30,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right",
       "diagnostics": {
-        "exploredStates": 3,
-        "generatedStates": 3,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 2,
         "frontierPeak": 0,
-        "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "elapsedMs": 1,
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -42,7 +45,10 @@
       "levelId": "level-002",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -68,14 +74,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -83,7 +89,10 @@
       "levelId": "level-003",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -116,14 +125,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -131,7 +140,10 @@
       "levelId": "level-004",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 2
+      },
       "actions": [
         {
           "action": {
@@ -150,14 +162,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right",
       "diagnostics": {
-        "exploredStates": 3,
-        "generatedStates": 3,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 2,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -165,7 +177,10 @@
       "levelId": "level-005",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -191,14 +206,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -206,7 +221,10 @@
       "levelId": "level-006",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -239,14 +257,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -254,7 +272,10 @@
       "levelId": "level-007",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 2
+      },
       "actions": [
         {
           "action": {
@@ -273,14 +294,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right",
       "diagnostics": {
-        "exploredStates": 3,
-        "generatedStates": 3,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 2,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -288,7 +309,10 @@
       "levelId": "level-008",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -314,14 +338,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -329,7 +353,10 @@
       "levelId": "level-009",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -362,14 +389,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -377,7 +404,10 @@
       "levelId": "level-010",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 2
+      },
       "actions": [
         {
           "action": {
@@ -396,14 +426,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right",
       "diagnostics": {
-        "exploredStates": 3,
-        "generatedStates": 3,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 2,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -411,7 +441,10 @@
       "levelId": "level-011",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -437,14 +470,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -452,7 +485,10 @@
       "levelId": "level-012",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -485,14 +521,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -500,7 +536,10 @@
       "levelId": "level-013",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 2
+      },
       "actions": [
         {
           "action": {
@@ -519,14 +558,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right",
       "diagnostics": {
-        "exploredStates": 3,
-        "generatedStates": 3,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 2,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -534,7 +573,10 @@
       "levelId": "level-014",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -560,14 +602,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -575,7 +617,10 @@
       "levelId": "level-015",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -608,14 +653,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -623,7 +668,10 @@
       "levelId": "level-016",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 2
+      },
       "actions": [
         {
           "action": {
@@ -642,14 +690,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right",
       "diagnostics": {
-        "exploredStates": 3,
-        "generatedStates": 3,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 2,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -657,7 +705,10 @@
       "levelId": "level-017",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -683,14 +734,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -698,7 +749,10 @@
       "levelId": "level-018",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -731,14 +785,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -746,7 +800,10 @@
       "levelId": "level-019",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 2
+      },
       "actions": [
         {
           "action": {
@@ -765,14 +822,14 @@
       ],
       "finalStateKey": "r:0|u:u0:1:right|u:u1:1:right",
       "diagnostics": {
-        "exploredStates": 3,
-        "generatedStates": 3,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 2,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -780,7 +837,10 @@
       "levelId": "level-020",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -806,14 +866,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -821,7 +881,10 @@
       "levelId": "level-021",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -847,14 +910,14 @@
       ],
       "finalStateKey": "r:0|o:o0|o:o1|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -862,7 +925,10 @@
       "levelId": "level-022",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -895,14 +961,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -910,7 +976,10 @@
       "levelId": "level-023",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -936,14 +1005,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -951,7 +1020,10 @@
       "levelId": "level-024",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -984,14 +1056,14 @@
       ],
       "finalStateKey": "r:0|o:o0|o:o1|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -999,7 +1071,10 @@
       "levelId": "level-025",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1025,14 +1100,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1040,7 +1115,10 @@
       "levelId": "level-026",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -1073,14 +1151,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
-        "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "elapsedMs": 1,
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1088,7 +1166,10 @@
       "levelId": "level-027",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1114,14 +1195,14 @@
       ],
       "finalStateKey": "r:0|o:o0|o:o1|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1129,7 +1210,10 @@
       "levelId": "level-028",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -1162,14 +1246,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1177,7 +1261,10 @@
       "levelId": "level-029",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1203,14 +1290,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1218,7 +1305,10 @@
       "levelId": "level-030",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -1251,14 +1341,14 @@
       ],
       "finalStateKey": "r:0|o:o0|o:o1|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1266,7 +1356,10 @@
       "levelId": "level-031",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1292,14 +1385,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1307,7 +1400,10 @@
       "levelId": "level-032",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -1340,14 +1436,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1355,7 +1451,10 @@
       "levelId": "level-033",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1381,14 +1480,14 @@
       ],
       "finalStateKey": "r:0|o:o0|o:o1|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1396,7 +1495,10 @@
       "levelId": "level-034",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -1429,14 +1531,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1444,7 +1546,10 @@
       "levelId": "level-035",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1470,14 +1575,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1485,7 +1590,10 @@
       "levelId": "level-036",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -1518,14 +1626,14 @@
       ],
       "finalStateKey": "r:0|o:o0|o:o1|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1533,7 +1641,10 @@
       "levelId": "level-037",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1559,14 +1670,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
-        "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "elapsedMs": 1,
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1574,7 +1685,10 @@
       "levelId": "level-038",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -1607,14 +1721,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1622,7 +1736,10 @@
       "levelId": "level-039",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1648,14 +1765,14 @@
       ],
       "finalStateKey": "r:0|o:o0|o:o1|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 4,
-        "generatedStates": 4,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1663,7 +1780,10 @@
       "levelId": "level-040",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -1696,14 +1816,14 @@
       ],
       "finalStateKey": "r:0|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1711,7 +1831,10 @@
       "levelId": "level-041",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1737,14 +1860,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
-        "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "elapsedMs": 5,
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1752,7 +1875,10 @@
       "levelId": "level-042",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1778,14 +1904,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1793,7 +1919,10 @@
       "levelId": "level-043",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1819,14 +1948,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1834,7 +1963,10 @@
       "levelId": "level-044",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1860,14 +1992,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1875,7 +2007,10 @@
       "levelId": "level-045",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1901,14 +2036,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1916,7 +2051,10 @@
       "levelId": "level-046",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1942,14 +2080,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1957,7 +2095,10 @@
       "levelId": "level-047",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -1983,14 +2124,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -1998,7 +2139,10 @@
       "levelId": "level-048",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -2024,14 +2168,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2039,7 +2183,10 @@
       "levelId": "level-049",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -2065,14 +2212,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2080,7 +2227,10 @@
       "levelId": "level-050",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -2106,14 +2256,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
-        "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "elapsedMs": 1,
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2121,7 +2271,10 @@
       "levelId": "level-051",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -2147,14 +2300,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2162,7 +2315,10 @@
       "levelId": "level-052",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -2188,14 +2344,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2203,7 +2359,10 @@
       "levelId": "level-053",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -2229,14 +2388,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2244,7 +2403,10 @@
       "levelId": "level-054",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -2270,14 +2432,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2285,7 +2447,10 @@
       "levelId": "level-055",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -2311,14 +2476,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2326,7 +2491,10 @@
       "levelId": "level-056",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -2352,14 +2520,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2367,7 +2535,10 @@
       "levelId": "level-057",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -2393,14 +2564,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2408,7 +2579,10 @@
       "levelId": "level-058",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -2434,14 +2608,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2449,7 +2623,10 @@
       "levelId": "level-059",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -2475,14 +2652,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2490,7 +2667,10 @@
       "levelId": "level-060",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 3
+      },
       "actions": [
         {
           "action": {
@@ -2516,14 +2696,14 @@
       ],
       "finalStateKey": "r:0|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right",
       "diagnostics": {
-        "exploredStates": 5,
-        "generatedStates": 5,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 3,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2531,7 +2711,10 @@
       "levelId": "level-061",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -2564,14 +2747,14 @@
       ],
       "finalStateKey": "r:1|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 31,
-        "generatedStates": 31,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2579,7 +2762,10 @@
       "levelId": "level-062",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -2612,69 +2798,72 @@
       ],
       "finalStateKey": "r:2|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 90,
-        "generatedStates": 90,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
     {
       "levelId": "level-063",
       "status": "SOLVABLE",
-      "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "solverPath": "STATEFUL_ROTATE_SEARCH",
+      "cost": {
+        "rotateCount": 1,
+        "totalActionCount": 5
+      },
       "actions": [
-        {
-          "action": {
-            "type": "rotate",
-            "entityId": "u0"
-          },
-          "stateKey": "r:0|o:o0|o:o1|u:u0:0:left|u:u1:0:right|u:u2:0:right|u:u3:0:right"
-        },
-        {
-          "action": {
-            "type": "exit",
-            "entityId": "u0"
-          },
-          "stateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:0:right|u:u3:0:right"
-        },
         {
           "action": {
             "type": "exit",
             "entityId": "u3"
           },
-          "stateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:0:right|u:u3:1:right"
+          "stateKey": "r:1|o:o0|o:o1|u:u0:0:down|u:u1:0:right|u:u2:0:right|u:u3:1:right"
         },
         {
           "action": {
             "type": "exit",
             "entityId": "u2"
           },
-          "stateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:1:right|u:u3:1:right"
+          "stateKey": "r:1|o:o0|o:o1|u:u0:0:down|u:u1:0:right|u:u2:1:right|u:u3:1:right"
         },
         {
           "action": {
             "type": "exit",
             "entityId": "u1"
           },
+          "stateKey": "r:1|o:o0|o:o1|u:u0:0:down|u:u1:1:right|u:u2:1:right|u:u3:1:right"
+        },
+        {
+          "action": {
+            "type": "rotate",
+            "entityId": "u0"
+          },
+          "stateKey": "r:0|o:o0|o:o1|u:u0:0:left|u:u1:1:right|u:u2:1:right|u:u3:1:right"
+        },
+        {
+          "action": {
+            "type": "exit",
+            "entityId": "u0"
+          },
           "stateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:1:right|u:u2:1:right|u:u3:1:right"
         }
       ],
       "finalStateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 27,
-        "generatedStates": 27,
+        "exploredStates": 3,
+        "generatedStates": 1,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
-        "frontierPeak": 0,
+        "collapsedExitActions": 4,
+        "frontierPeak": 1,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2682,7 +2871,10 @@
       "levelId": "level-064",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -2715,14 +2907,14 @@
       ],
       "finalStateKey": "r:2|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 90,
-        "generatedStates": 90,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
-        "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "elapsedMs": 1,
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2730,7 +2922,10 @@
       "levelId": "level-065",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -2763,69 +2958,72 @@
       ],
       "finalStateKey": "r:1|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 31,
-        "generatedStates": 31,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
     {
       "levelId": "level-066",
       "status": "SOLVABLE",
-      "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "solverPath": "STATEFUL_ROTATE_SEARCH",
+      "cost": {
+        "rotateCount": 1,
+        "totalActionCount": 5
+      },
       "actions": [
-        {
-          "action": {
-            "type": "rotate",
-            "entityId": "u0"
-          },
-          "stateKey": "r:1|o:o0|o:o1|u:u0:0:left|u:u1:0:right|u:u2:0:right|u:u3:0:right"
-        },
-        {
-          "action": {
-            "type": "exit",
-            "entityId": "u0"
-          },
-          "stateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:0:right|u:u3:0:right"
-        },
         {
           "action": {
             "type": "exit",
             "entityId": "u3"
           },
-          "stateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:0:right|u:u3:1:right"
+          "stateKey": "r:2|o:o0|o:o1|u:u0:0:down|u:u1:0:right|u:u2:0:right|u:u3:1:right"
         },
         {
           "action": {
             "type": "exit",
             "entityId": "u2"
           },
-          "stateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:1:right|u:u3:1:right"
+          "stateKey": "r:2|o:o0|o:o1|u:u0:0:down|u:u1:0:right|u:u2:1:right|u:u3:1:right"
         },
         {
           "action": {
             "type": "exit",
             "entityId": "u1"
           },
+          "stateKey": "r:2|o:o0|o:o1|u:u0:0:down|u:u1:1:right|u:u2:1:right|u:u3:1:right"
+        },
+        {
+          "action": {
+            "type": "rotate",
+            "entityId": "u0"
+          },
+          "stateKey": "r:1|o:o0|o:o1|u:u0:0:left|u:u1:1:right|u:u2:1:right|u:u3:1:right"
+        },
+        {
+          "action": {
+            "type": "exit",
+            "entityId": "u0"
+          },
           "stateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:1:right|u:u2:1:right|u:u3:1:right"
         }
       ],
       "finalStateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 86,
-        "generatedStates": 86,
+        "exploredStates": 3,
+        "generatedStates": 1,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
-        "frontierPeak": 0,
+        "collapsedExitActions": 4,
+        "frontierPeak": 1,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2833,7 +3031,10 @@
       "levelId": "level-067",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -2866,14 +3067,14 @@
       ],
       "finalStateKey": "r:1|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 31,
-        "generatedStates": 31,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2881,7 +3082,10 @@
       "levelId": "level-068",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -2914,69 +3118,72 @@
       ],
       "finalStateKey": "r:2|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 90,
-        "generatedStates": 90,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
     {
       "levelId": "level-069",
       "status": "SOLVABLE",
-      "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "solverPath": "STATEFUL_ROTATE_SEARCH",
+      "cost": {
+        "rotateCount": 1,
+        "totalActionCount": 5
+      },
       "actions": [
-        {
-          "action": {
-            "type": "rotate",
-            "entityId": "u0"
-          },
-          "stateKey": "r:0|o:o0|o:o1|u:u0:0:left|u:u1:0:right|u:u2:0:right|u:u3:0:right"
-        },
-        {
-          "action": {
-            "type": "exit",
-            "entityId": "u0"
-          },
-          "stateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:0:right|u:u3:0:right"
-        },
         {
           "action": {
             "type": "exit",
             "entityId": "u3"
           },
-          "stateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:0:right|u:u3:1:right"
+          "stateKey": "r:1|o:o0|o:o1|u:u0:0:down|u:u1:0:right|u:u2:0:right|u:u3:1:right"
         },
         {
           "action": {
             "type": "exit",
             "entityId": "u2"
           },
-          "stateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:1:right|u:u3:1:right"
+          "stateKey": "r:1|o:o0|o:o1|u:u0:0:down|u:u1:0:right|u:u2:1:right|u:u3:1:right"
         },
         {
           "action": {
             "type": "exit",
             "entityId": "u1"
           },
+          "stateKey": "r:1|o:o0|o:o1|u:u0:0:down|u:u1:1:right|u:u2:1:right|u:u3:1:right"
+        },
+        {
+          "action": {
+            "type": "rotate",
+            "entityId": "u0"
+          },
+          "stateKey": "r:0|o:o0|o:o1|u:u0:0:left|u:u1:1:right|u:u2:1:right|u:u3:1:right"
+        },
+        {
+          "action": {
+            "type": "exit",
+            "entityId": "u0"
+          },
           "stateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:1:right|u:u2:1:right|u:u3:1:right"
         }
       ],
       "finalStateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 27,
-        "generatedStates": 27,
+        "exploredStates": 3,
+        "generatedStates": 1,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
-        "frontierPeak": 0,
+        "collapsedExitActions": 4,
+        "frontierPeak": 1,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -2984,7 +3191,10 @@
       "levelId": "level-070",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3017,14 +3227,14 @@
       ],
       "finalStateKey": "r:2|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 90,
-        "generatedStates": 90,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3032,7 +3242,10 @@
       "levelId": "level-071",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3065,69 +3278,72 @@
       ],
       "finalStateKey": "r:1|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 31,
-        "generatedStates": 31,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
     {
       "levelId": "level-072",
       "status": "SOLVABLE",
-      "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "solverPath": "STATEFUL_ROTATE_SEARCH",
+      "cost": {
+        "rotateCount": 1,
+        "totalActionCount": 5
+      },
       "actions": [
-        {
-          "action": {
-            "type": "rotate",
-            "entityId": "u0"
-          },
-          "stateKey": "r:1|o:o0|o:o1|u:u0:0:left|u:u1:0:right|u:u2:0:right|u:u3:0:right"
-        },
-        {
-          "action": {
-            "type": "exit",
-            "entityId": "u0"
-          },
-          "stateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:0:right|u:u3:0:right"
-        },
         {
           "action": {
             "type": "exit",
             "entityId": "u3"
           },
-          "stateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:0:right|u:u3:1:right"
+          "stateKey": "r:2|o:o0|o:o1|u:u0:0:down|u:u1:0:right|u:u2:0:right|u:u3:1:right"
         },
         {
           "action": {
             "type": "exit",
             "entityId": "u2"
           },
-          "stateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:1:right|u:u3:1:right"
+          "stateKey": "r:2|o:o0|o:o1|u:u0:0:down|u:u1:0:right|u:u2:1:right|u:u3:1:right"
         },
         {
           "action": {
             "type": "exit",
             "entityId": "u1"
           },
+          "stateKey": "r:2|o:o0|o:o1|u:u0:0:down|u:u1:1:right|u:u2:1:right|u:u3:1:right"
+        },
+        {
+          "action": {
+            "type": "rotate",
+            "entityId": "u0"
+          },
+          "stateKey": "r:1|o:o0|o:o1|u:u0:0:left|u:u1:1:right|u:u2:1:right|u:u3:1:right"
+        },
+        {
+          "action": {
+            "type": "exit",
+            "entityId": "u0"
+          },
           "stateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:1:right|u:u2:1:right|u:u3:1:right"
         }
       ],
       "finalStateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 86,
-        "generatedStates": 86,
+        "exploredStates": 3,
+        "generatedStates": 1,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
-        "frontierPeak": 0,
+        "collapsedExitActions": 4,
+        "frontierPeak": 1,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3135,7 +3351,10 @@
       "levelId": "level-073",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3168,14 +3387,14 @@
       ],
       "finalStateKey": "r:1|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 31,
-        "generatedStates": 31,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
-        "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "elapsedMs": 1,
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3183,7 +3402,10 @@
       "levelId": "level-074",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3216,69 +3438,72 @@
       ],
       "finalStateKey": "r:2|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 90,
-        "generatedStates": 90,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
     {
       "levelId": "level-075",
       "status": "SOLVABLE",
-      "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "solverPath": "STATEFUL_ROTATE_SEARCH",
+      "cost": {
+        "rotateCount": 1,
+        "totalActionCount": 5
+      },
       "actions": [
-        {
-          "action": {
-            "type": "rotate",
-            "entityId": "u0"
-          },
-          "stateKey": "r:0|o:o0|o:o1|u:u0:0:left|u:u1:0:right|u:u2:0:right|u:u3:0:right"
-        },
-        {
-          "action": {
-            "type": "exit",
-            "entityId": "u0"
-          },
-          "stateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:0:right|u:u3:0:right"
-        },
         {
           "action": {
             "type": "exit",
             "entityId": "u3"
           },
-          "stateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:0:right|u:u3:1:right"
+          "stateKey": "r:1|o:o0|o:o1|u:u0:0:down|u:u1:0:right|u:u2:0:right|u:u3:1:right"
         },
         {
           "action": {
             "type": "exit",
             "entityId": "u2"
           },
-          "stateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:1:right|u:u3:1:right"
+          "stateKey": "r:1|o:o0|o:o1|u:u0:0:down|u:u1:0:right|u:u2:1:right|u:u3:1:right"
         },
         {
           "action": {
             "type": "exit",
             "entityId": "u1"
           },
+          "stateKey": "r:1|o:o0|o:o1|u:u0:0:down|u:u1:1:right|u:u2:1:right|u:u3:1:right"
+        },
+        {
+          "action": {
+            "type": "rotate",
+            "entityId": "u0"
+          },
+          "stateKey": "r:0|o:o0|o:o1|u:u0:0:left|u:u1:1:right|u:u2:1:right|u:u3:1:right"
+        },
+        {
+          "action": {
+            "type": "exit",
+            "entityId": "u0"
+          },
           "stateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:1:right|u:u2:1:right|u:u3:1:right"
         }
       ],
       "finalStateKey": "r:0|o:o0|o:o1|u:u0:1:left|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 27,
-        "generatedStates": 27,
+        "exploredStates": 3,
+        "generatedStates": 1,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
-        "frontierPeak": 0,
+        "collapsedExitActions": 4,
+        "frontierPeak": 1,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3286,7 +3511,10 @@
       "levelId": "level-076",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3319,14 +3547,14 @@
       ],
       "finalStateKey": "r:2|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 90,
-        "generatedStates": 90,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3334,7 +3562,10 @@
       "levelId": "level-077",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3367,69 +3598,72 @@
       ],
       "finalStateKey": "r:1|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 31,
-        "generatedStates": 31,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
     {
       "levelId": "level-078",
       "status": "SOLVABLE",
-      "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "solverPath": "STATEFUL_ROTATE_SEARCH",
+      "cost": {
+        "rotateCount": 1,
+        "totalActionCount": 5
+      },
       "actions": [
-        {
-          "action": {
-            "type": "rotate",
-            "entityId": "u0"
-          },
-          "stateKey": "r:1|o:o0|o:o1|u:u0:0:left|u:u1:0:right|u:u2:0:right|u:u3:0:right"
-        },
-        {
-          "action": {
-            "type": "exit",
-            "entityId": "u0"
-          },
-          "stateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:0:right|u:u3:0:right"
-        },
         {
           "action": {
             "type": "exit",
             "entityId": "u3"
           },
-          "stateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:0:right|u:u3:1:right"
+          "stateKey": "r:2|o:o0|o:o1|u:u0:0:down|u:u1:0:right|u:u2:0:right|u:u3:1:right"
         },
         {
           "action": {
             "type": "exit",
             "entityId": "u2"
           },
-          "stateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:0:right|u:u2:1:right|u:u3:1:right"
+          "stateKey": "r:2|o:o0|o:o1|u:u0:0:down|u:u1:0:right|u:u2:1:right|u:u3:1:right"
         },
         {
           "action": {
             "type": "exit",
             "entityId": "u1"
           },
+          "stateKey": "r:2|o:o0|o:o1|u:u0:0:down|u:u1:1:right|u:u2:1:right|u:u3:1:right"
+        },
+        {
+          "action": {
+            "type": "rotate",
+            "entityId": "u0"
+          },
+          "stateKey": "r:1|o:o0|o:o1|u:u0:0:left|u:u1:1:right|u:u2:1:right|u:u3:1:right"
+        },
+        {
+          "action": {
+            "type": "exit",
+            "entityId": "u0"
+          },
           "stateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:1:right|u:u2:1:right|u:u3:1:right"
         }
       ],
       "finalStateKey": "r:1|o:o0|o:o1|u:u0:1:left|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 86,
-        "generatedStates": 86,
+        "exploredStates": 3,
+        "generatedStates": 1,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
-        "frontierPeak": 0,
+        "collapsedExitActions": 4,
+        "frontierPeak": 1,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3437,7 +3671,10 @@
       "levelId": "level-079",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3470,14 +3707,14 @@
       ],
       "finalStateKey": "r:1|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 31,
-        "generatedStates": 31,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3485,7 +3722,10 @@
       "levelId": "level-080",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3518,14 +3758,14 @@
       ],
       "finalStateKey": "r:2|o:o0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 90,
-        "generatedStates": 90,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3533,7 +3773,10 @@
       "levelId": "level-081",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3566,14 +3809,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3581,7 +3824,10 @@
       "levelId": "level-082",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3614,14 +3860,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3629,7 +3875,10 @@
       "levelId": "level-083",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3662,14 +3911,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3677,7 +3926,10 @@
       "levelId": "level-084",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3710,14 +3962,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3725,7 +3977,10 @@
       "levelId": "level-085",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3758,14 +4013,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3773,7 +4028,10 @@
       "levelId": "level-086",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3806,14 +4064,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3821,7 +4079,10 @@
       "levelId": "level-087",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3854,14 +4115,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3869,7 +4130,10 @@
       "levelId": "level-088",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3902,14 +4166,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3917,7 +4181,10 @@
       "levelId": "level-089",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3950,14 +4217,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -3965,7 +4232,10 @@
       "levelId": "level-090",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -3998,14 +4268,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -4013,7 +4283,10 @@
       "levelId": "level-091",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -4046,14 +4319,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -4061,7 +4334,10 @@
       "levelId": "level-092",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -4094,14 +4370,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -4109,7 +4385,10 @@
       "levelId": "level-093",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -4142,14 +4421,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
-        "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "elapsedMs": 1,
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -4157,7 +4436,10 @@
       "levelId": "level-094",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -4190,14 +4472,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -4205,7 +4487,10 @@
       "levelId": "level-095",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -4238,14 +4523,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -4253,7 +4538,10 @@
       "levelId": "level-096",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -4286,14 +4574,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -4301,7 +4589,10 @@
       "levelId": "level-097",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -4334,14 +4625,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -4349,7 +4640,10 @@
       "levelId": "level-098",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -4382,14 +4676,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -4397,7 +4691,10 @@
       "levelId": "level-099",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -4430,14 +4727,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|o:o0|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     },
@@ -4445,7 +4742,10 @@
       "levelId": "level-100",
       "status": "SOLVABLE",
       "solverPath": "FAST_EXIT_CLOSURE",
-      "cost": null,
+      "cost": {
+        "rotateCount": 0,
+        "totalActionCount": 4
+      },
       "actions": [
         {
           "action": {
@@ -4478,14 +4778,14 @@
       ],
       "finalStateKey": "r:2|g:g0:1|s:s0:1:g0|u:u0:1:right|u:u1:1:right|u:u2:1:right|u:u3:1:right",
       "diagnostics": {
-        "exploredStates": 124,
-        "generatedStates": 124,
+        "exploredStates": 1,
+        "generatedStates": 0,
         "prunedDominatedStates": 0,
-        "collapsedExitActions": 0,
+        "collapsedExitActions": 4,
         "frontierPeak": 0,
         "elapsedMs": 0,
-        "stateBudget": 0,
-        "timeBudgetMs": 0
+        "stateBudget": 250000,
+        "timeBudgetMs": 5000
       },
       "reason": null
     }

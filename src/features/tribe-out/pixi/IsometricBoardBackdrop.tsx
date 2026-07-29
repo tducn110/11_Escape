@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Application, Container, Graphics } from "pixi.js";
+import { Application, Container, Graphics, Assets, Texture, NineSliceSprite } from "pixi.js";
 import type { IsoBoardLayout } from "../isometric";
 import { projectIsoPoint } from "../isometric";
 
@@ -9,71 +9,13 @@ interface Props {
   boardCols: number;
 }
 
-function createTile(layout: IsoBoardLayout, row: number, col: number) {
-  const tile = new Graphics();
-  const halfWidth = Math.max(6, layout.tileWidth * 0.47);
-  const halfHeight = Math.max(4, layout.tileHeight * 0.46);
-  const depth = Math.max(4, layout.cellSize * 0.2);
-  const isLight = (row + col) % 2 === 0;
-
-  tile
-    .poly([
-      -halfWidth, 0,
-      0, halfHeight,
-      0, halfHeight + depth,
-      -halfWidth, depth,
-    ])
-    .fill({ color: isLight ? 0x219f62 : 0x1b9258 });
-
-  tile
-    .poly([
-      halfWidth, 0,
-      0, halfHeight,
-      0, halfHeight + depth,
-      halfWidth, depth,
-    ])
-    .fill({ color: isLight ? 0x168553 : 0x12794b });
-
-  tile
-    .poly([
-      0, -halfHeight,
-      halfWidth, 0,
-      0, halfHeight,
-      -halfWidth, 0,
-    ])
-    .fill({ color: isLight ? 0x46df88 : 0x36cf7a })
-    .stroke({
-      width: Math.max(1, layout.cellSize * 0.035),
-      color: 0x168c55,
-      alpha: 0.68,
-      join: "round",
-    });
-
-  tile
-    .moveTo(-halfWidth * 0.72, -halfHeight * 0.03)
-    .lineTo(0, -halfHeight * 0.72)
-    .lineTo(halfWidth * 0.72, -halfHeight * 0.03)
-    .stroke({
-      width: Math.max(1, layout.cellSize * 0.025),
-      color: 0xb5f3c9,
-      alpha: 0.38,
-      cap: "round",
-      join: "round",
-    });
-
-  if ((row * 5 + col * 3) % 11 === 0) {
-    tile
-      .circle(-halfWidth * 0.23, halfHeight * 0.12, Math.max(1.2, layout.cellSize * 0.035))
-      .fill({ color: 0xffa64d, alpha: 0.68 });
-  }
-
-  return tile;
-}
-
 export function IsometricBoardBackdrop({ layout, boardRows, boardCols }: Props) {
   const hostRef = useRef<HTMLDivElement | null>(null);
   const appRef = useRef<Application | null>(null);
   const sceneRef = useRef<Container | null>(null);
+  const tilePoolRef = useRef<(Graphics | NineSliceSprite)[]>([]);
+  const textureRef = useRef<Texture | null>(null);
+
   const layoutRef = useRef(layout);
   const boardRowsRef = useRef(boardRows);
   const boardColsRef = useRef(boardCols);
@@ -87,46 +29,104 @@ export function IsometricBoardBackdrop({ layout, boardRows, boardCols }: Props) 
     const app = appRef.current;
     if (!scene || !app?.renderer) return;
 
-    const currentLayout = layoutRef.current;
-    const currentRows = boardRowsRef.current;
-    const currentCols = boardColsRef.current;
-    const existingChildren = scene.removeChildren();
-    existingChildren.forEach((child) => child.destroy());
+    try {
+      const currentLayout = layoutRef.current;
+      const currentRows = boardRowsRef.current;
+      const currentCols = boardColsRef.current;
 
-    const lastPoint = projectIsoPoint(
-      currentLayout,
-      Math.max(0, currentRows - 1),
-      Math.max(0, currentCols - 1)
-    );
-    const shadow = new Graphics()
-      .ellipse(
-        currentLayout.stageWidth / 2,
-        lastPoint.y + currentLayout.cellSize * 0.58,
-        currentLayout.stageWidth * 0.43,
-        currentLayout.cellSize * 0.62
-      )
-      .fill({ color: 0x1f7b45, alpha: 0.24 });
-    shadow.zIndex = 0;
-    scene.addChild(shadow);
+      const totalTiles = currentRows * currentCols;
 
-    const grid: Array<{ row: number; col: number }> = [];
-    for (let row = 0; row < currentRows; row += 1) {
-      for (let col = 0; col < currentCols; col += 1) {
-        grid.push({ row, col });
+      // Hide all tiles in the pool
+      for (const tile of tilePoolRef.current) {
+        tile.visible = false;
       }
+
+      // Render shadow/background rect
+      let shadow = scene.getChildByLabel('boardShadow') as import('pixi.js').Graphics | null;
+      if (!shadow) {
+        shadow = new Graphics();
+        shadow.label = 'boardShadow';
+        shadow.zIndex = 0;
+        scene.addChild(shadow);
+      }
+      shadow.clear();
+      
+      shadow.rect(
+        currentLayout.originX,
+        currentLayout.originY,
+        currentLayout.stepX * currentCols,
+        currentLayout.stepY * currentRows
+      ).fill({ color: 0x1f7b45, alpha: 0.24 });
+
+      // Ensure we have enough tiles and of correct type
+      while (tilePoolRef.current.length < totalTiles) {
+        tilePoolRef.current.push(new Graphics());
+      }
+      
+      for (let i = 0; i < totalTiles; i++) {
+        let tile = tilePoolRef.current[i];
+        if (textureRef.current && tile instanceof Graphics) {
+          const sprite = new NineSliceSprite({
+            texture: textureRef.current,
+            leftWidth: 32,
+            topHeight: 32,
+            rightWidth: 32,
+            bottomHeight: 32,
+            width: currentLayout.cellSize - 8,
+            height: currentLayout.cellSize - 8,
+          });
+          scene.addChild(sprite);
+          scene.removeChild(tile);
+          tile.destroy();
+          tilePoolRef.current[i] = sprite;
+        } else if (!textureRef.current && tile instanceof NineSliceSprite) {
+          const gfx = new Graphics();
+          scene.addChild(gfx);
+          scene.removeChild(tile);
+          tile.destroy();
+          tilePoolRef.current[i] = gfx;
+        } else if (!tile.parent) {
+          scene.addChild(tile);
+        }
+      }
+
+      // Generate grid and sort by depth
+      const grid: Array<{ row: number; col: number }> = [];
+      for (let row = 0; row < currentRows; row += 1) {
+        for (let col = 0; col < currentCols; col += 1) {
+          grid.push({ row, col });
+        }
+      }
+
+      grid
+        .sort((a, b) => a.row + a.col - (b.row + b.col) || a.row - b.row || a.col - b.col)
+        .forEach(({ row, col }, index) => {
+          const point = projectIsoPoint(currentLayout, row, col);
+          const tile = tilePoolRef.current[index];
+
+          if (tile instanceof Graphics) {
+            tile.clear();
+            const halfW = currentLayout.tileWidth / 2;
+            const halfH = currentLayout.tileHeight / 2;
+            
+            tile.rect(-halfW, -halfH, currentLayout.tileWidth, currentLayout.tileHeight)
+                .fill({ color: 0x2e8f59, alpha: 0.8 })
+                .stroke({ color: 0x1f7b45, width: 2 });
+            tile.position.set(point.x, point.y);
+          } else if (tile instanceof NineSliceSprite) {
+            tile.width = currentLayout.cellSize - 8;
+            tile.height = currentLayout.cellSize - 8;
+            tile.position.set(point.x - tile.width / 2, point.y - tile.height / 2);
+          }
+
+          tile.zIndex = 10 + row + col;
+          tile.visible = true;
+        });
+
+      app.render();
+    } catch (err) {
+      console.error("Failed to render 2D board", err);
     }
-
-    grid
-      .sort((a, b) => a.row + a.col - (b.row + b.col) || a.row - b.row || a.col - b.col)
-      .forEach(({ row, col }) => {
-        const point = projectIsoPoint(currentLayout, row, col);
-        const tile = createTile(currentLayout, row, col);
-        tile.position.set(point.x, point.y);
-        tile.zIndex = 10 + row + col;
-        scene.addChild(tile);
-      });
-
-    app.render();
   };
 
   useEffect(() => {
@@ -173,6 +173,14 @@ export function IsometricBoardBackdrop({ layout, boardRows, boardCols }: Props) 
         layoutRef.current.stageWidth,
         layoutRef.current.stageHeight
       );
+      
+      try {
+        const tex = await Assets.load('/ Ground/ground1.png');
+        textureRef.current = tex;
+      } catch (err) {
+        console.warn('Could not load ground1.png', err);
+      }
+      
       renderBackdrop();
     };
 

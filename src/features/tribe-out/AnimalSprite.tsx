@@ -21,7 +21,6 @@ const ANIMALS: Record<string, AnimalDef> = {
   "villager-7": { body: "#9b7bc4", bodyDark: "#7355a0", ear: "#8868b2", belly: "#e0d3f0", label: "Tím" },   // purple
 };
 
-const ARROW_ROT: Record<Direction, number> = { up: 0, right: 90, down: 180, left: 270 };
 
 export function AnimalSprite({ assetKey, direction, size }: { assetKey: string; direction?: Direction; size: number }) {
   const a = ANIMALS[assetKey] ?? ANIMALS["villager-1"];
@@ -77,11 +76,9 @@ export function AnimalSprite({ assetKey, direction, size }: { assetKey: string; 
 
       {/* direction arrow badge */}
       {direction && (
-        <g transform={`rotate(${ARROW_ROT[direction]} 50 50)`}>
-          <g transform="translate(50 12)">
-            <circle r="10" fill="#fff" stroke={a.bodyDark} strokeWidth="2" />
-            <path d="M0 -4.5 L4.5 3 L-4.5 3 Z" fill={a.bodyDark} />
-          </g>
+        <g transform={`rotate(${{ down: 0, left: 90, up: 180, right: 270 }[direction]} 50 50) translate(50 85)`}>
+          <circle r="10" fill="#fff" stroke={a.bodyDark} strokeWidth="2" />
+          <path d="M0 4.5 L-4.5 -3 L4.5 -3 Z" fill={a.bodyDark} />
         </g>
       )}
     </svg>

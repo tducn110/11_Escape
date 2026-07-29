@@ -1,0 +1,14 @@
+
+> 11-escape@0.0.1 levels:report
+> tsx scripts/levels/cli/report.ts
+
+{
+  "report": {
+    "totalLevels": 100,
+    "validLevels": 100,
+    "solvedLevels": 100,
+    "issues": 0
+  },
+  "issues": [],
+  "outOfBand": 80
+}

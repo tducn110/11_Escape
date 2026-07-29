@@ -2,6 +2,7 @@ export type {
   Direction,
   EntityId,
   EntityType,
+  DifficultyPhase,
   LevelId,
   PuzzleAction,
   PuzzleActionOutcome,

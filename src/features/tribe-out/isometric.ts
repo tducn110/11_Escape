@@ -29,35 +29,33 @@ export function getIsoBoardLayout(
   availableWidth: number,
   availableHeight: number
 ): IsoBoardLayout {
-  const span = boardRows + boardCols;
-  const widthFactor = span * 0.76 + 1.16;
-  const heightFactor = Math.max(0, span - 2) * 0.38 + 2.65;
   const fallbackCellSize = 44;
 
   const safeWidth =
     availableWidth > 0
-      ? Math.max(0, Math.min(availableWidth, MAX_STAGE_WIDTH + BOARD_GUTTER) - BOARD_GUTTER)
-      : widthFactor * fallbackCellSize;
+      ? Math.max(0, Math.min(availableWidth, MAX_STAGE_WIDTH + BOARD_GUTTER) - BOARD_GUTTER * 2)
+      : boardCols * fallbackCellSize;
   const safeHeight =
     availableHeight > 0
-      ? Math.max(0, availableHeight - BOARD_GUTTER)
-      : heightFactor * fallbackCellSize;
-  const byWidth = Math.floor(safeWidth / widthFactor);
-  const byHeight = Math.floor(safeHeight / heightFactor);
+      ? Math.max(0, availableHeight - BOARD_GUTTER * 2)
+      : boardRows * fallbackCellSize;
+      
+  const byWidth = Math.floor(safeWidth / (boardCols + 1));
+  const byHeight = Math.floor(safeHeight / (boardRows + 1));
   const cellSize = clamp(
     Math.min(byWidth || fallbackCellSize, byHeight || fallbackCellSize, MAX_CELL_SIZE),
     MIN_CELL_SIZE,
     MAX_CELL_SIZE
   );
 
-  const tileWidth = Math.round(cellSize * 1.52);
-  const tileHeight = Math.round(cellSize * 0.76);
-  const stepX = tileWidth / 2;
-  const stepY = tileHeight / 2;
-  const paddingX = Math.round(cellSize * 0.58);
-  const paddingY = Math.round(cellSize * 0.5);
-  const stageWidth = Math.round(span * stepX + paddingX * 2);
-  const stageHeight = Math.round(Math.max(0, span - 2) * stepY + cellSize * 2.65);
+  const tileWidth = cellSize;
+  const tileHeight = cellSize;
+  const stepX = cellSize;
+  const stepY = cellSize;
+  const paddingX = cellSize * 0.5;
+  const paddingY = cellSize * 0.5;
+  const stageWidth = Math.round(boardCols * stepX + paddingX * 2);
+  const stageHeight = Math.round(boardRows * stepY + paddingY * 2);
 
   return {
     cellSize,
@@ -69,15 +67,15 @@ export function getIsoBoardLayout(
     paddingY,
     stageWidth,
     stageHeight,
-    originX: paddingX + boardRows * stepX,
-    originY: paddingY + cellSize * 1.15,
+    originX: paddingX,
+    originY: paddingY,
   };
 }
 
 export function projectIsoPoint(layout: IsoBoardLayout, row: number, col: number) {
   return {
-    x: layout.originX + (col - row) * layout.stepX,
-    y: layout.originY + (col + row) * layout.stepY,
+    x: layout.originX + col * layout.stepX + layout.stepX / 2,
+    y: layout.originY + row * layout.stepY + layout.stepY / 2,
   };
 }
 
@@ -86,17 +84,18 @@ export function projectIsoEntity(layout: IsoBoardLayout, entity: TribeOutEntity)
   const centerCol = entity.col + (entity.width - 1) / 2;
   const point = projectIsoPoint(layout, centerRow, centerCol);
   
-  // Z-index should be based on the furthest bottom tile (max row + max col)
+  // Z-index should be based on the row in 2D
   const lowestPoint = projectIsoPoint(layout, entity.row + entity.height - 1, entity.col + entity.width - 1);
 
-  const footprint = Math.max(entity.width, entity.height);
-  const baseSize = footprint * layout.cellSize;
-  const visualSize = entity.type === "obstacle" ? baseSize * 0.88 : baseSize * 1.08;
+  const scale = entity.type === "obstacle" ? 0.88 : 1.08;
+  const visualWidth = entity.width * layout.cellSize * scale;
+  const visualHeight = entity.height * layout.cellSize * scale;
 
   return {
     x: point.x,
     y: point.y,
     zIndex: 100 + Math.round(lowestPoint.y),
-    size: visualSize,
+    width: visualWidth,
+    height: visualHeight,
   };
 }

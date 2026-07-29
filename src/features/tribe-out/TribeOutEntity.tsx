@@ -34,6 +34,8 @@ const DIRECTION_LABELS: Record<Direction, string> = {
   right: "sang phải",
 };
 
+
+
 function getEntityAriaLabel(entity: TribeOutEntity): string {
   if (entity.type === "obstacle") {
     return `Chướng ngại vật kích thước ${entity.width}x${entity.height}`;
@@ -109,11 +111,10 @@ export const TribeOutEntityComponent = memo(function TribeOutEntityComponent({
   
   const dir = entity.type === "unit" ? entity.direction : undefined;
   const projected = projectIsoEntity(layout, entity);
-  const size = Math.max(32, Math.round(projected.size));
-  const left = Math.round(projected.x - size / 2);
-  const top = Math.round(projected.y - size * (blocksPointer ? 0.78 : (isSwitch ? 0.5 : 0.9)));
-  const width = size;
-  const height = size;
+  const width = Math.max(32, Math.round(projected.width));
+  const height = Math.max(32, Math.round(projected.height));
+  const left = Math.round(projected.x - width / 2);
+  const top = Math.round(projected.y - height / 2);
 
   let animation = "";
   if (animState === "escape" && dir) {
@@ -183,13 +184,23 @@ export const TribeOutEntityComponent = memo(function TribeOutEntityComponent({
           transform: "translateZ(0)",
         }}
       >
-        <GameSprite 
-          assetKey={assetKey}
-          isObstacle={blocksPointer}
-          isSwitch={isSwitch}
-          direction={dir}
-          size={spriteSize}
-        />
+        <div style={{
+          width: "100%",
+          height: "100%",
+          transform: "none",
+          transformOrigin: "center",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}>
+          <GameSprite 
+            assetKey={assetKey}
+            isObstacle={blocksPointer}
+            isSwitch={isSwitch}
+            direction={dir}
+            size={spriteSize}
+          />
+        </div>
       </div>
     </div>
   );

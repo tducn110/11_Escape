@@ -12,7 +12,7 @@ import {
   buildNextLevelState,
   resetLevel,
   applyTapUnit,
-  getAvailableUnits,
+  getRepresentativeHintAction,
   applyRotateUnit,
   buildWinProgressSnapshot,
 } from "./gameLogic";
@@ -184,10 +184,9 @@ export function TribeOutGame({ isActive = true, onBoom, onDashboard, onSettings 
   const handleHint = () => {
     if (gameState.status !== "playing" || hintedId !== null) return;
 
-    const available = getAvailableUnits(gameState, level.boardRows, level.boardCols);
-    if (available.length === 0) return;
+    const targetId = getRepresentativeHintAction(level, gameState.puzzle);
+    if (!targetId) return;
 
-    const targetId = available[0];
     setGameState(prev => ({
       ...prev,
       hintsUsed: prev.hintsUsed + 1,

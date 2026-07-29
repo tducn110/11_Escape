@@ -1,6 +1,5 @@
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { TribeOutGame } from "../features/tribe-out/TribeOutGame";
-import { CountrysideBackdrop } from "../components/background/CountrysideBackdrop";
 import { DashboardScreen } from "../features/tribe-out/screens/Dashboard";
 import { SettingsScreen } from "../features/tribe-out/screens/Settings";
 import { LEVELS } from "../features/tribe-out/levels";
@@ -12,8 +11,6 @@ type Screen = "game" | "dashboard" | "settings";
 export default function App() {
   const [screen, setScreen] = useState<Screen>("game");
   const [progress, setProgress] = useState(() => loadTribeOutProgress(LEVELS));
-  const [scenery, setScenery] = useState<"normal" | "boom">("normal");
-  const sceneryTimerRef = useRef<number | null>(null);
 
   const [sfxEnabled, setSfxEnabled] = useState(() => tribeOutAudio.isSfxEnabled());
   const [musicEnabled, setMusicEnabled] = useState(() => tribeOutAudio.isMusicEnabled());
@@ -39,32 +36,15 @@ export default function App() {
     }
   }, [screen]);
 
-  const handleBoom = useCallback(() => {
-    if (sceneryTimerRef.current !== null) {
-      window.clearTimeout(sceneryTimerRef.current);
-    }
-    setScenery("boom");
-    sceneryTimerRef.current = window.setTimeout(() => {
-      setScenery("normal");
-      sceneryTimerRef.current = null;
-    }, 4200);
-  }, []);
-
-  useEffect(() => {
-    return () => {
-      if (sceneryTimerRef.current !== null) window.clearTimeout(sceneryTimerRef.current);
-    };
-  }, []);
-
   return (
     <div
+      className="app-container"
       style={{
         position: "relative",
         height: "100dvh",
         minHeight: "100dvh",
         width: "100%",
         overflow: "hidden",
-        background: "#74d77c",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -73,14 +53,12 @@ export default function App() {
         boxSizing: "border-box",
       }}
     >
-      <CountrysideBackdrop scenery={scenery} />
-
       <main
         style={{
           position: "relative",
           zIndex: 1,
           width: "100%",
-          maxWidth: screen === "game" ? 1280 : 460,
+          maxWidth: screen === "game" ? "none" : 460,
           height: "100%",
           minHeight: 0,
           display: "flex",
@@ -152,7 +130,6 @@ export default function App() {
         >
           <TribeOutGame 
             isActive={screen === "game"}
-            onBoom={handleBoom} 
             onDashboard={() => setScreen("dashboard")}
             onSettings={() => setScreen("settings")}
           />

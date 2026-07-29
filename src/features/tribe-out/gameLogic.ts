@@ -17,8 +17,10 @@ import {
   getOccupiedCells,
   isInsideBoard,
   isPuzzleComplete,
-  listLegalPuzzleActions,
+  listLegalExitActions,
+  listLegalRotateActions,
   getEntityById,
+  getStateKey,
 } from "./puzzle";
 
 function getLevel(levelId: TribeOutLevel["id"]): TribeOutLevel {
@@ -50,13 +52,103 @@ function buildGameState(level: TribeOutLevel, puzzleState = clonePuzzleState(lev
 }
 
 export function getAvailableUnits(state: GameState, boardRows: number, boardCols: number): EntityId[] {
-  return listLegalPuzzleActions({ boardRows, boardCols }, state.puzzle)
-    .filter(action => action.type === "exit")
+  return listLegalExitActions({ boardRows, boardCols }, state.puzzle)
     .map(action => action.entityId)
     .filter(entityId => {
       const entity = getEntityById(state.puzzle, entityId);
       return Boolean(entity && entity.type === "unit" && !entity.escaped && canExitUnit({ boardRows, boardCols }, state.puzzle, entity));
     });
+}
+
+function applyExitClosure(level: TribeOutLevel, puzzle: PuzzleState) {
+  let state = puzzle;
+  const actions: { type: "exit"; entityId: EntityId }[] = [];
+
+  while (!isPuzzleComplete(state)) {
+    const exits = listLegalExitActions(level, state);
+    if (exits.length === 0) {
+      break;
+    }
+    const action = exits[0];
+    const result = applyPuzzleAction(level, state, action);
+    if (!result.accepted) {
+      break;
+    }
+    state = result.nextState;
+    actions.push(action);
+  }
+
+  return { state, actions };
+}
+
+export function getRepresentativeHintAction(level: TribeOutLevel, puzzle: PuzzleState): EntityId | null {
+  const initialClosure = applyExitClosure(level, puzzle);
+  if (initialClosure.actions.length > 0) {
+    return initialClosure.actions[0].entityId;
+  }
+  if (initialClosure.state.rotateChargesRemaining <= 0) {
+    return null;
+  }
+
+  const frontier: Array<{
+    puzzle: PuzzleState;
+    actionTrail: EntityId[];
+    rotateCount: number;
+    totalActionCount: number;
+  }> = [{
+    puzzle: initialClosure.state,
+    actionTrail: [],
+    rotateCount: 0,
+    totalActionCount: 0,
+  }];
+  const bestByState = new Map<string, { rotateCount: number; totalActionCount: number }>([
+    [getStateKey(initialClosure.state), { rotateCount: 0, totalActionCount: 0 }],
+  ]);
+
+  while (frontier.length > 0) {
+    frontier.sort((left, right) => {
+      if (left.rotateCount !== right.rotateCount) return left.rotateCount - right.rotateCount;
+      if (left.totalActionCount !== right.totalActionCount) return left.totalActionCount - right.totalActionCount;
+      return getStateKey(left.puzzle).localeCompare(getStateKey(right.puzzle));
+    });
+
+    const current = frontier.shift()!;
+    if (isPuzzleComplete(current.puzzle)) {
+      return current.actionTrail[0] ?? null;
+    }
+
+    for (const action of listLegalRotateActions(current.puzzle)) {
+      const rotated = applyPuzzleAction(level, current.puzzle, action);
+      if (!rotated.accepted) continue;
+
+      const closure = applyExitClosure(level, rotated.nextState);
+      const nextPuzzle = closure.state;
+      const nextTrail = [...current.actionTrail, action.entityId];
+      const nextCost = {
+        rotateCount: current.rotateCount + 1,
+        totalActionCount: current.totalActionCount + 1 + closure.actions.length,
+      };
+      const stateKey = getStateKey(nextPuzzle);
+      const best = bestByState.get(stateKey);
+      if (
+        best &&
+        (best.rotateCount < nextCost.rotateCount ||
+          (best.rotateCount === nextCost.rotateCount && best.totalActionCount <= nextCost.totalActionCount))
+      ) {
+        continue;
+      }
+
+      bestByState.set(stateKey, nextCost);
+      frontier.push({
+        puzzle: nextPuzzle,
+        actionTrail: nextTrail,
+        rotateCount: nextCost.rotateCount,
+        totalActionCount: nextCost.totalActionCount,
+      });
+    }
+  }
+
+  return null;
 }
 
 export function buildInitialGameState(levelId: TribeOutLevel["id"]): GameState {

@@ -17,58 +17,61 @@ const LEGACY_KEYS = [
 
 const CURRENT_SCHEMA_VERSION = 2;
 const CURRENT_LEVEL_SET_VERSION = LEVEL_SET_VERSION;
+const LEVEL_ID_PATTERN = /^level-\d{3}$/;
 
 function getStorage(): StorageLike | null {
-  if (typeof window === "undefined" || !window.localStorage) {
+  try {
+    if (typeof window === "undefined" || !window.localStorage) {
+      return null;
+    }
+    return window.localStorage;
+  } catch {
     return null;
   }
-  return window.localStorage;
+}
+
+function firstLevelId(catalog: readonly TribeOutLevel[]): LevelId {
+  return catalog[0]?.id ?? "level-001";
 }
 
 function defaultProgress(catalog: readonly TribeOutLevel[]): TribeOutProgressSnapshot {
-  const firstLevelId = catalog[0]?.id ?? "level-001";
+  const initialLevelId = firstLevelId(catalog);
   return {
     schemaVersion: CURRENT_SCHEMA_VERSION,
     levelSetVersion: CURRENT_LEVEL_SET_VERSION,
-    unlockedLevelIds: [firstLevelId],
-    currentLevelId: firstLevelId,
+    unlockedLevelIds: [initialLevelId],
+    currentLevelId: initialLevelId,
     starsByLevelId: {},
   };
 }
 
-function normalizeLevelId(value: unknown, catalog: readonly TribeOutLevel[]): LevelId | null {
-  if (typeof value === "string") {
-    return catalog.some(level => level.id === value) ? value : null;
+function safeGetItem(storage: StorageLike, key: string): string | null {
+  try {
+    return storage.getItem(key);
+  } catch {
+    return null;
   }
-  if (typeof value === "number" && Number.isInteger(value)) {
-    if (value >= 1 && value <= catalog.length) {
-      return catalog[value - 1].id;
-    }
-    if (value >= 0 && value < catalog.length) {
-      return catalog[value].id;
-    }
-  }
-  return null;
 }
 
-function normalizeStars(value: unknown, catalog: readonly TribeOutLevel[]): Partial<Record<LevelId, StarRating>> {
-  if (!value || typeof value !== "object") return {};
-  const entries = Object.entries(value as Record<string, unknown>);
-  const result: Partial<Record<LevelId, StarRating>> = {};
-
-  for (const [rawKey, rawStars] of entries) {
-    const levelId = normalizeLevelId(rawKey, catalog) ?? normalizeLevelId(Number(rawKey), catalog);
-    const stars = typeof rawStars === "number" && rawStars >= 0 && rawStars <= 3 ? rawStars as StarRating : null;
-    if (levelId !== null && stars !== null) {
-      result[levelId] = Math.max(result[levelId] ?? 0, stars) as StarRating;
-    }
+function safeSetItem(storage: StorageLike, key: string, value: string): boolean {
+  try {
+    storage.setItem(key, value);
+    return true;
+  } catch {
+    return false;
   }
+}
 
-  return result;
+function safeRemoveItem(storage: StorageLike, key: string): void {
+  try {
+    storage.removeItem(key);
+  } catch {
+    // ignore storage cleanup failures
+  }
 }
 
 function readJson(storage: StorageLike, key: string): unknown {
-  const raw = storage.getItem(key);
+  const raw = safeGetItem(storage, key);
   if (!raw) return null;
   try {
     return JSON.parse(raw);
@@ -77,77 +80,124 @@ function readJson(storage: StorageLike, key: string): unknown {
   }
 }
 
-function toUniqueLevelIds(values: unknown, catalog: readonly TribeOutLevel[]): LevelId[] {
-  if (!Array.isArray(values)) return [];
-  const ids: LevelId[] = [];
-  for (const value of values) {
-    const levelId = normalizeLevelId(value, catalog);
-    if (levelId !== null && !ids.includes(levelId)) {
-      ids.push(levelId);
-    }
+function clampLegacyIndex(value: unknown, catalog: readonly TribeOutLevel[]): number | null {
+  if (!Number.isInteger(value)) {
+    return null;
   }
-  return ids;
+  const numericValue = Number(value);
+  if (numericValue < 0) return 0;
+  if (numericValue >= catalog.length) return catalog.length - 1;
+  return numericValue;
+}
+
+function normalizeStableLevelId(value: unknown, catalog: readonly TribeOutLevel[]): LevelId | null {
+  if (typeof value !== "string" || !LEVEL_ID_PATTERN.test(value)) {
+    return null;
+  }
+  return catalog.some(level => level.id === value) ? value as LevelId : null;
+}
+
+function buildContiguousUnlockPrefix(highestIndex: number, catalog: readonly TribeOutLevel[]): LevelId[] {
+  const clampedHighest = Math.max(0, Math.min(highestIndex, catalog.length - 1));
+  return catalog.slice(0, clampedHighest + 1).map(level => level.id);
+}
+
+function normalizeStars(value: unknown, catalog: readonly TribeOutLevel[]): Partial<Record<LevelId, StarRating>> {
+  if (!value || typeof value !== "object") return {};
+
+  const result: Partial<Record<LevelId, StarRating>> = {};
+  for (const [rawKey, rawStars] of Object.entries(value as Record<string, unknown>)) {
+    const levelId = normalizeStableLevelId(rawKey, catalog);
+    if (!levelId) continue;
+    if (!Number.isInteger(rawStars)) continue;
+    const stars = Math.max(0, Math.min(3, Number(rawStars))) as StarRating;
+    result[levelId] = Math.max(result[levelId] ?? 0, stars) as StarRating;
+  }
+
+  return result;
+}
+
+function normalizeUnlockPrefix(values: unknown, catalog: readonly TribeOutLevel[]): LevelId[] {
+  const validIds = Array.isArray(values)
+    ? values.map(value => normalizeStableLevelId(value, catalog)).filter((value): value is LevelId => value !== null)
+    : [];
+
+  const highestIndex = validIds.reduce((maxIndex, levelId) => {
+    const nextIndex = catalog.findIndex(level => level.id === levelId);
+    return Math.max(maxIndex, nextIndex);
+  }, 0);
+
+  return buildContiguousUnlockPrefix(highestIndex, catalog);
+}
+
+function sanitizeCurrentLevelId(
+  candidate: unknown,
+  unlockedLevelIds: readonly LevelId[],
+  catalog: readonly TribeOutLevel[],
+): LevelId {
+  const stableLevelId = normalizeStableLevelId(candidate, catalog);
+  if (stableLevelId && unlockedLevelIds.includes(stableLevelId)) {
+    return stableLevelId;
+  }
+  return unlockedLevelIds.at(-1) ?? firstLevelId(catalog);
 }
 
 export function sanitizeProgress(value: unknown, catalog: readonly TribeOutLevel[] = LEVELS): TribeOutProgressSnapshot {
   const defaults = defaultProgress(catalog);
-  if (!value || typeof value !== "object") return defaults;
-
-  const raw = value as Partial<TribeOutProgressSnapshot> & { currentLevelIndex?: unknown; highestUnlockedLevel?: unknown; levelStars?: unknown };
-  const rawSchemaVersion = typeof raw.schemaVersion === "number" ? raw.schemaVersion : 0;
-  const rawLevelSetVersion = typeof raw.levelSetVersion === "number" ? raw.levelSetVersion : 0;
-  const schemaVersion = CURRENT_SCHEMA_VERSION;
-  const levelSetVersion = CURRENT_LEVEL_SET_VERSION;
-
-  const unlockedLevelIds = toUniqueLevelIds(raw.unlockedLevelIds, catalog);
-  const currentLevelId = normalizeLevelId(raw.currentLevelId, catalog)
-    ?? normalizeLevelId(raw.currentLevelIndex, catalog)
-    ?? normalizeLevelId(raw.highestUnlockedLevel, catalog)
-    ?? defaults.currentLevelId;
-
-  const migratedStars = rawSchemaVersion === CURRENT_SCHEMA_VERSION && rawLevelSetVersion === CURRENT_LEVEL_SET_VERSION
-    ? normalizeStars(raw.starsByLevelId ?? raw.levelStars, catalog)
-    : {};
-
-  const resolvedUnlocked = unlockedLevelIds.length > 0
-    ? unlockedLevelIds
-    : [currentLevelId];
-
-  return {
-    schemaVersion,
-    levelSetVersion,
-    unlockedLevelIds: resolvedUnlocked,
-    currentLevelId,
-    starsByLevelId: migratedStars,
-  };
-}
-
-export function migrateLegacyProgress(storage: StorageLike, catalog: readonly TribeOutLevel[] = LEVELS): TribeOutProgressSnapshot {
-  const defaults = defaultProgress(catalog);
-  const currentLevelIndex = readJson(storage, "tribeout_current_level");
-  const highestUnlockedLevel = readJson(storage, "tribeout_highest_level");
-  const legacyStars = readJson(storage, "tribeout_level_stars");
-
-  const currentLevelId = normalizeLevelId(currentLevelIndex, catalog)
-    ?? normalizeLevelId(highestUnlockedLevel, catalog)
-    ?? defaults.currentLevelId;
-
-  const unlockedLevelIds = new Set<LevelId>([currentLevelId]);
-  const highestLevelId = normalizeLevelId(highestUnlockedLevel, catalog);
-  if (highestLevelId !== null) {
-    unlockedLevelIds.add(highestLevelId);
+  if (!value || typeof value !== "object") {
+    return defaults;
   }
 
-  // Redesign scope resets old stars once.
-  void legacyStars;
+  const raw = value as Partial<TribeOutProgressSnapshot>;
+  const unlockedLevelIds = normalizeUnlockPrefix(raw.unlockedLevelIds, catalog);
+  const currentLevelId = sanitizeCurrentLevelId(raw.currentLevelId, unlockedLevelIds, catalog);
+  const starsByLevelId =
+    raw.levelSetVersion === CURRENT_LEVEL_SET_VERSION && raw.schemaVersion === CURRENT_SCHEMA_VERSION
+      ? normalizeStars(raw.starsByLevelId, catalog)
+      : {};
 
   return {
     schemaVersion: CURRENT_SCHEMA_VERSION,
     levelSetVersion: CURRENT_LEVEL_SET_VERSION,
-    unlockedLevelIds: [...unlockedLevelIds],
+    unlockedLevelIds,
+    currentLevelId,
+    starsByLevelId,
+  };
+}
+
+function persistCanonicalProgress(storage: StorageLike, progress: TribeOutProgressSnapshot): boolean {
+  const persisted = safeSetItem(storage, PROGRESS_KEY, JSON.stringify(progress));
+  if (!persisted) {
+    return false;
+  }
+  for (const key of LEGACY_KEYS) {
+    safeRemoveItem(storage, key);
+  }
+  return true;
+}
+
+export function migrateLegacyProgress(storage: StorageLike, catalog: readonly TribeOutLevel[] = LEVELS): TribeOutProgressSnapshot {
+  const defaults = defaultProgress(catalog);
+  const currentLevelIndex = clampLegacyIndex(readJson(storage, "tribeout_current_level"), catalog);
+  const highestUnlockedIndex = clampLegacyIndex(readJson(storage, "tribeout_highest_level"), catalog);
+  void readJson(storage, "tribeout_level_stars");
+
+  const highestIndex = highestUnlockedIndex ?? currentLevelIndex ?? 0;
+  const unlockedLevelIds = buildContiguousUnlockPrefix(highestIndex, catalog);
+  const currentLevelId = currentLevelIndex !== null
+    ? unlockedLevelIds[Math.min(currentLevelIndex, unlockedLevelIds.length - 1)] ?? defaults.currentLevelId
+    : unlockedLevelIds.at(-1) ?? defaults.currentLevelId;
+
+  const progress: TribeOutProgressSnapshot = {
+    schemaVersion: CURRENT_SCHEMA_VERSION,
+    levelSetVersion: CURRENT_LEVEL_SET_VERSION,
+    unlockedLevelIds,
     currentLevelId,
     starsByLevelId: {},
   };
+
+  persistCanonicalProgress(storage, progress);
+  return progress;
 }
 
 export function loadTribeOutProgress(catalog: readonly TribeOutLevel[] = LEVELS): TribeOutProgressSnapshot {
@@ -158,7 +208,20 @@ export function loadTribeOutProgress(catalog: readonly TribeOutLevel[] = LEVELS)
 
   const canonical = readJson(storage, PROGRESS_KEY);
   if (canonical) {
-    return sanitizeProgress(canonical, catalog);
+    const sanitized = sanitizeProgress(canonical, catalog);
+    const raw = canonical as Partial<TribeOutProgressSnapshot>;
+
+    if (
+      raw.schemaVersion !== sanitized.schemaVersion ||
+      raw.levelSetVersion !== sanitized.levelSetVersion ||
+      JSON.stringify(raw.unlockedLevelIds ?? []) !== JSON.stringify(sanitized.unlockedLevelIds) ||
+      raw.currentLevelId !== sanitized.currentLevelId ||
+      JSON.stringify(raw.starsByLevelId ?? {}) !== JSON.stringify(sanitized.starsByLevelId)
+    ) {
+      persistCanonicalProgress(storage, sanitized);
+    }
+
+    return sanitized;
   }
 
   return migrateLegacyProgress(storage, catalog);
@@ -168,26 +231,16 @@ export function persistTribeOutProgress(progress: TribeOutProgressSnapshot): voi
   const storage = getStorage();
   if (!storage) return;
 
-  try {
-    storage.setItem(PROGRESS_KEY, JSON.stringify(progress));
-    for (const key of LEGACY_KEYS) {
-      storage.removeItem(key);
-    }
-  } catch (error) {
-    console.warn("Failed to save TribeOut progress to localStorage:", error);
-  }
+  const sanitized = sanitizeProgress(progress, LEVELS);
+  persistCanonicalProgress(storage, sanitized);
 }
 
 export function clearTribeOutProgress(): void {
   const storage = getStorage();
   if (!storage) return;
 
-  try {
-    storage.removeItem(PROGRESS_KEY);
-    for (const key of LEGACY_KEYS) {
-      storage.removeItem(key);
-    }
-  } catch (error) {
-    console.warn("Failed to clear TribeOut progress from localStorage:", error);
+  safeRemoveItem(storage, PROGRESS_KEY);
+  for (const key of LEGACY_KEYS) {
+    safeRemoveItem(storage, key);
   }
 }

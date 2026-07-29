@@ -1,0 +1,31 @@
+
+> 11-escape@0.0.1 build
+> vite build
+
+vite v6.3.5 building for production...
+transforming...
+✓ 2542 modules transformed.
+rendering chunks...
+[plugin vite:reporter] 
+(!) /home/pro/Downloads/intern/11_Escape/src/features/tribe-out/assets/assetRegistry.ts is dynamically imported by /home/pro/Downloads/intern/11_Escape/src/features/tribe-out/audio/tribeOutAudio.ts but also statically imported by /home/pro/Downloads/intern/11_Escape/src/features/tribe-out/assets/GameSprite.tsx, dynamic import will not move module into another chunk.
+
+computing gzip size...
+dist/index.html                               0.79 kB │ gzip:   0.45 kB
+dist/assets/index--IlUhv70.css               27.42 kB │ gzip:   7.04 kB
+dist/assets/CanvasPool-CaPVdCLQ.js            0.78 kB │ gzip:   0.43 kB
+dist/assets/Filter-BtEfnECW.js                0.90 kB │ gzip:   0.48 kB
+dist/assets/canvasUtils-Cn6_u0at.js           5.77 kB │ gzip:   1.80 kB
+dist/assets/BufferResource-Dn5mAnRL.js       10.61 kB │ gzip:   2.80 kB
+dist/assets/webworkerAll-CZQ-QCUP.js         15.97 kB │ gzip:   5.09 kB
+dist/assets/CanvasRenderer-CYFRQTWn.js       18.07 kB │ gzip:   6.03 kB
+dist/assets/WebGPURenderer-H6y9ZQoq.js       39.13 kB │ gzip:  10.95 kB
+dist/assets/browserAll-BzhGEXJi.js           43.30 kB │ gzip:  11.38 kB
+dist/assets/RenderTargetSystem-C00OHcs5.js   47.10 kB │ gzip:  12.97 kB
+dist/assets/WebGLRenderer-D2wdP_oR.js        68.88 kB │ gzip:  18.91 kB
+dist/assets/index-CykB1hfS.js               564.38 kB │ gzip: 168.21 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 4.08s

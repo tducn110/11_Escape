@@ -1,0 +1,15 @@
+flowchart TD
+    T[Runtime receives entity activation] --> U{Live unit?}
+    U -->|No| I[Ignore: no life, charge, state, audio, or animation]
+    U -->|Yes, rotate tool| R[Apply rotate action]
+    U -->|Yes, normal tap| E[Apply exit action]
+    R --> RA{Accepted?}
+    RA -->|No| I
+    RA -->|Yes| RC[Update puzzle state and charge UI]
+    E --> EA{Result}
+    EA -->|BLOCKED_PATH| B[Runtime subtracts one life and triggers bump]
+    EA -->|Other rejection| I
+    EA -->|Accepted| X[Commit escaped unit + switches + gates atomically]
+    X --> W{Puzzle complete?}
+    W -->|No| C[Play escape feedback]
+    W -->|Yes| S[Calculate stars, persist progress, play win once]

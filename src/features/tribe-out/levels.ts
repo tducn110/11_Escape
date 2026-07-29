@@ -3,8 +3,9 @@ import type { TribeOutLevel } from "./types";
 export const LEVELS: readonly TribeOutLevel[] = [
   {
     "id": "level-001",
-    "boardRows": 4,
-    "boardCols": 4,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 22,
     "tutorialText": "Chạm vào nhân vật để họ chạy thoát!",
@@ -18,7 +19,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -28,14 +30,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-002",
-    "boardRows": 3,
-    "boardCols": 5,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 25,
     "tutorialText": "Nhân vật này đang cản đường nhân vật kia!",
@@ -49,7 +53,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -59,7 +64,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u2",
@@ -69,14 +75,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-003",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 28,
     "tutorialText": "Bạn có thể xoay nhân vật bằng nút Xoay ở dưới!",
@@ -90,7 +98,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -100,7 +109,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u2",
@@ -110,7 +120,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u3",
@@ -120,14 +131,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-004",
-    "boardRows": 3,
-    "boardCols": 4,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 22,
     "tutorialText": "Dùng công tắc để mở cổng!",
@@ -141,7 +154,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -151,7 +165,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
@@ -166,8 +181,9 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-005",
-    "boardRows": 4,
-    "boardCols": 5,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 25,
     "tutorialText": "Có những nhân vật chiếm nhiều hơn 1 ô!",
@@ -181,7 +197,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -191,7 +208,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u2",
@@ -201,14 +219,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-006",
-    "boardRows": 3,
-    "boardCols": 6,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 28,
     "rotateCharges": 0,
@@ -221,7 +241,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -231,7 +252,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u2",
@@ -241,7 +263,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u3",
@@ -251,14 +274,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-007",
-    "boardRows": 4,
-    "boardCols": 4,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 22,
     "rotateCharges": 0,
@@ -271,7 +296,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -281,14 +307,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-008",
-    "boardRows": 3,
-    "boardCols": 5,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 25,
     "rotateCharges": 0,
@@ -301,7 +329,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -311,7 +340,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u2",
@@ -321,7 +351,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
@@ -336,8 +367,9 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-009",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 28,
     "rotateCharges": 0,
@@ -350,7 +382,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -360,7 +393,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u2",
@@ -370,7 +404,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u3",
@@ -380,14 +415,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-010",
-    "boardRows": 3,
-    "boardCols": 4,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 22,
     "rotateCharges": 0,
@@ -400,7 +437,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -410,14 +448,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-011",
-    "boardRows": 4,
-    "boardCols": 5,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 25,
     "rotateCharges": 0,
@@ -430,7 +470,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -440,7 +481,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u2",
@@ -450,14 +492,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-012",
-    "boardRows": 3,
-    "boardCols": 6,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 28,
     "rotateCharges": 0,
@@ -470,7 +514,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -480,7 +525,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u2",
@@ -490,7 +536,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u3",
@@ -500,7 +547,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
@@ -515,8 +563,9 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-013",
-    "boardRows": 4,
-    "boardCols": 4,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 22,
     "rotateCharges": 0,
@@ -529,7 +578,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -539,14 +589,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-014",
-    "boardRows": 3,
-    "boardCols": 5,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 25,
     "rotateCharges": 0,
@@ -559,7 +611,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -569,7 +622,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u2",
@@ -579,14 +633,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-015",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 28,
     "rotateCharges": 0,
@@ -599,7 +655,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -609,7 +666,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u2",
@@ -619,7 +677,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u3",
@@ -629,14 +688,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-016",
-    "boardRows": 3,
-    "boardCols": 4,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 22,
     "rotateCharges": 0,
@@ -649,7 +710,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -659,7 +721,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
@@ -674,8 +737,9 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-017",
-    "boardRows": 4,
-    "boardCols": 5,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 25,
     "rotateCharges": 0,
@@ -688,7 +752,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -698,7 +763,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u2",
@@ -708,14 +774,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-018",
-    "boardRows": 3,
-    "boardCols": 6,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 28,
     "rotateCharges": 0,
@@ -728,7 +796,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -738,7 +807,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u2",
@@ -748,7 +818,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u3",
@@ -758,14 +829,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-019",
-    "boardRows": 4,
-    "boardCols": 4,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 22,
     "rotateCharges": 0,
@@ -778,7 +851,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -788,14 +862,16 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-020",
-    "boardRows": 3,
-    "boardCols": 5,
+    "phase": 1,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
     "timeLimit": 25,
     "rotateCharges": 0,
@@ -808,7 +884,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u1",
@@ -818,7 +895,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "u2",
@@ -828,7 +906,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
@@ -843,57 +922,107 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-021",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 2,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
-    "timeLimit": 30,
-    "rotateCharges": 0,
+    "timeLimit": 34,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u0_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 4,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 4,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 4,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
-        "col": 5,
-        "width": 1,
-        "height": 1
-      },
-      {
-        "id": "o1",
-        "type": "obstacle",
-        "assetKey": "rock",
         "row": 0,
-        "col": 0,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -901,106 +1030,106 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-022",
-    "boardRows": 5,
+    "phase": 2,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 3,
     "timeLimit": 34,
-    "rotateCharges": 0,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u0_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "u0_3",
         "type": "unit",
         "assetKey": "villager-4",
         "row": 1,
         "col": 4,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 4,
-        "col": 6,
-        "width": 1,
-        "height": 1
-      }
-    ]
-  },
-  {
-    "id": "level-023",
-    "boardRows": 4,
-    "boardCols": 6,
-    "lives": 3,
-    "timeLimit": 30,
-    "rotateCharges": 0,
-    "entities": [
-      {
-        "id": "u0",
+        "id": "u0_4",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-5",
         "row": 1,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u1_1",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
+        "assetKey": "villager-5",
+        "row": 4,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u1_2",
         "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
+        "assetKey": "villager-6",
+        "row": 4,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 0,
         "col": 5,
         "width": 1,
         "height": 1
@@ -1008,59 +1137,130 @@ export const LEVELS: readonly TribeOutLevel[] = [
     ]
   },
   {
-    "id": "level-024",
-    "boardRows": 5,
+    "id": "level-023",
+    "phase": 2,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 3,
-    "timeLimit": 34,
-    "rotateCharges": 0,
+    "timeLimit": 38,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
-        "width": 2,
+        "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_2",
+        "type": "unit",
+        "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u0_3",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "u1_0",
         "type": "unit",
         "assetKey": "villager-4",
-        "row": 1,
-        "col": 4,
+        "row": 3,
+        "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 4,
-        "col": 6,
+        "row": 0,
+        "col": 5,
         "width": 1,
         "height": 1
       },
@@ -1069,7 +1269,115 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "type": "obstacle",
         "assetKey": "rock",
         "row": 0,
+        "col": 4,
+        "width": 1,
+        "height": 1
+      }
+    ]
+  },
+  {
+    "id": "level-024",
+    "phase": 2,
+    "boardRows": 7,
+    "boardCols": 7,
+    "lives": 3,
+    "timeLimit": 34,
+    "rotateCharges": 1,
+    "entities": [
+      {
+        "id": "u0_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
         "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 4,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 4,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 4,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "o0",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 0,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -1077,47 +1385,106 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-025",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 2,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
-    "timeLimit": 30,
-    "rotateCharges": 0,
+    "timeLimit": 34,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
-        "width": 1,
+        "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
-        "row": 1,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_4",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 1,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 4,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 4,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 0,
         "col": 5,
         "width": 1,
         "height": 1
@@ -1126,58 +1493,138 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-026",
-    "boardRows": 5,
+    "phase": 2,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 3,
-    "timeLimit": 34,
-    "rotateCharges": 0,
+    "timeLimit": 38,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
-        "width": 2,
+        "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_2",
+        "type": "unit",
+        "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u0_3",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "u1_0",
         "type": "unit",
         "assetKey": "villager-4",
-        "row": 1,
-        "col": 4,
+        "row": 3,
+        "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 4,
-        "col": 6,
+        "row": 0,
+        "col": 5,
+        "width": 1,
+        "height": 1
+      },
+      {
+        "id": "o1",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 0,
+        "col": 4,
         "width": 1,
         "height": 1
       }
@@ -1185,57 +1632,107 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-027",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 2,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 3,
-    "timeLimit": 30,
-    "rotateCharges": 0,
+    "timeLimit": 34,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u0_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 4,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 4,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 4,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
-        "col": 5,
-        "width": 1,
-        "height": 1
-      },
-      {
-        "id": "o1",
-        "type": "obstacle",
-        "assetKey": "rock",
         "row": 0,
-        "col": 0,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -1243,106 +1740,106 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-028",
-    "boardRows": 5,
+    "phase": 2,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 3,
     "timeLimit": 34,
-    "rotateCharges": 0,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u0_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "u0_3",
         "type": "unit",
         "assetKey": "villager-4",
         "row": 1,
         "col": 4,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 4,
-        "col": 6,
-        "width": 1,
-        "height": 1
-      }
-    ]
-  },
-  {
-    "id": "level-029",
-    "boardRows": 4,
-    "boardCols": 6,
-    "lives": 3,
-    "timeLimit": 30,
-    "rotateCharges": 0,
-    "entities": [
-      {
-        "id": "u0",
+        "id": "u0_4",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-5",
         "row": 1,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u1_1",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
+        "assetKey": "villager-5",
+        "row": 4,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u1_2",
         "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
+        "assetKey": "villager-6",
+        "row": 4,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 0,
         "col": 5,
         "width": 1,
         "height": 1
@@ -1350,59 +1847,130 @@ export const LEVELS: readonly TribeOutLevel[] = [
     ]
   },
   {
-    "id": "level-030",
-    "boardRows": 5,
+    "id": "level-029",
+    "phase": 2,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 3,
-    "timeLimit": 34,
-    "rotateCharges": 0,
+    "timeLimit": 38,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
-        "width": 2,
+        "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_2",
+        "type": "unit",
+        "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u0_3",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "u1_0",
         "type": "unit",
         "assetKey": "villager-4",
-        "row": 1,
-        "col": 4,
+        "row": 3,
+        "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 4,
-        "col": 6,
+        "row": 0,
+        "col": 5,
         "width": 1,
         "height": 1
       },
@@ -1411,7 +1979,115 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "type": "obstacle",
         "assetKey": "rock",
         "row": 0,
+        "col": 4,
+        "width": 1,
+        "height": 1
+      }
+    ]
+  },
+  {
+    "id": "level-030",
+    "phase": 2,
+    "boardRows": 7,
+    "boardCols": 7,
+    "lives": 3,
+    "timeLimit": 34,
+    "rotateCharges": 1,
+    "entities": [
+      {
+        "id": "u0_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
         "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 4,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 4,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 4,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "o0",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 0,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -1419,47 +2095,106 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-031",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 2,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 4,
-    "timeLimit": 30,
-    "rotateCharges": 0,
+    "timeLimit": 34,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
-        "width": 1,
+        "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
-        "row": 1,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_4",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 1,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 4,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 4,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 0,
         "col": 5,
         "width": 1,
         "height": 1
@@ -1468,58 +2203,138 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-032",
-    "boardRows": 5,
+    "phase": 2,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
-    "timeLimit": 34,
-    "rotateCharges": 0,
+    "timeLimit": 38,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
-        "width": 2,
+        "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_2",
+        "type": "unit",
+        "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u0_3",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "u1_0",
         "type": "unit",
         "assetKey": "villager-4",
-        "row": 1,
-        "col": 4,
+        "row": 3,
+        "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 4,
-        "col": 6,
+        "row": 0,
+        "col": 5,
+        "width": 1,
+        "height": 1
+      },
+      {
+        "id": "o1",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 0,
+        "col": 4,
         "width": 1,
         "height": 1
       }
@@ -1527,57 +2342,107 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-033",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 2,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 4,
-    "timeLimit": 30,
-    "rotateCharges": 0,
+    "timeLimit": 34,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u0_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 4,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 4,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 4,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
-        "col": 5,
-        "width": 1,
-        "height": 1
-      },
-      {
-        "id": "o1",
-        "type": "obstacle",
-        "assetKey": "rock",
         "row": 0,
-        "col": 0,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -1585,106 +2450,106 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-034",
-    "boardRows": 5,
+    "phase": 2,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
     "timeLimit": 34,
-    "rotateCharges": 0,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u0_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "u0_3",
         "type": "unit",
         "assetKey": "villager-4",
         "row": 1,
         "col": 4,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 4,
-        "col": 6,
-        "width": 1,
-        "height": 1
-      }
-    ]
-  },
-  {
-    "id": "level-035",
-    "boardRows": 4,
-    "boardCols": 6,
-    "lives": 4,
-    "timeLimit": 30,
-    "rotateCharges": 0,
-    "entities": [
-      {
-        "id": "u0",
+        "id": "u0_4",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-5",
         "row": 1,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u1_1",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
+        "assetKey": "villager-5",
+        "row": 4,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u1_2",
         "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
+        "assetKey": "villager-6",
+        "row": 4,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 0,
         "col": 5,
         "width": 1,
         "height": 1
@@ -1692,59 +2557,130 @@ export const LEVELS: readonly TribeOutLevel[] = [
     ]
   },
   {
-    "id": "level-036",
-    "boardRows": 5,
+    "id": "level-035",
+    "phase": 2,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
-    "timeLimit": 34,
-    "rotateCharges": 0,
+    "timeLimit": 38,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
-        "width": 2,
+        "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_2",
+        "type": "unit",
+        "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u0_3",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "u1_0",
         "type": "unit",
         "assetKey": "villager-4",
-        "row": 1,
-        "col": 4,
+        "row": 3,
+        "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 4,
-        "col": 6,
+        "row": 0,
+        "col": 5,
         "width": 1,
         "height": 1
       },
@@ -1753,7 +2689,115 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "type": "obstacle",
         "assetKey": "rock",
         "row": 0,
+        "col": 4,
+        "width": 1,
+        "height": 1
+      }
+    ]
+  },
+  {
+    "id": "level-036",
+    "phase": 2,
+    "boardRows": 7,
+    "boardCols": 7,
+    "lives": 4,
+    "timeLimit": 34,
+    "rotateCharges": 1,
+    "entities": [
+      {
+        "id": "u0_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
         "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 4,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 4,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 4,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "o0",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 0,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -1761,47 +2805,106 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-037",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 2,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 4,
-    "timeLimit": 30,
-    "rotateCharges": 0,
+    "timeLimit": 34,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
-        "width": 1,
+        "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
-        "row": 1,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_4",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 1,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 4,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 4,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 0,
         "col": 5,
         "width": 1,
         "height": 1
@@ -1810,106 +2913,128 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-038",
-    "boardRows": 5,
+    "phase": 2,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
-    "timeLimit": 34,
-    "rotateCharges": 0,
+    "timeLimit": 38,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
-        "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 2,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 3,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 1,
-        "col": 4,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 4,
-        "col": 6,
-        "width": 1,
-        "height": 1
-      }
-    ]
-  },
-  {
-    "id": "level-039",
-    "boardRows": 4,
-    "boardCols": 6,
-    "lives": 4,
-    "timeLimit": 30,
-    "rotateCharges": 0,
-    "entities": [
-      {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u0_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u2_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 0,
         "col": 5,
         "width": 1,
         "height": 1
@@ -1919,7 +3044,115 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "type": "obstacle",
         "assetKey": "rock",
         "row": 0,
+        "col": 4,
+        "width": 1,
+        "height": 1
+      }
+    ]
+  },
+  {
+    "id": "level-039",
+    "phase": 2,
+    "boardRows": 7,
+    "boardCols": 7,
+    "lives": 4,
+    "timeLimit": 34,
+    "rotateCharges": 1,
+    "entities": [
+      {
+        "id": "u0_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
         "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 4,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 4,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 4,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "o0",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 0,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -1927,58 +3160,107 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-040",
-    "boardRows": 5,
+    "phase": 2,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
     "timeLimit": 34,
-    "rotateCharges": 0,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "u0_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "u0_1",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "u0_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "u0_3",
         "type": "unit",
         "assetKey": "villager-4",
         "row": 1,
         "col": 4,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u0_4",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 1,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 4,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "u1_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 4,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
         "id": "o0",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 4,
-        "col": 6,
+        "row": 0,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -1986,1368 +3268,3375 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-041",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 3,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 54,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k41_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-5",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k41_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k41_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h41_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h41_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g41_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g41_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g41_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g41_3",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g41_4",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s41",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-41",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-41",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 5,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m41",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
+        "assetKey": "villager-7",
+        "row": 4,
         "col": 0,
-        "width": 1,
+        "width": 2,
         "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-042",
-    "boardRows": 4,
+    "phase": 3,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 60,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k42_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "targetId": "g0",
-        "activated": false
-      },
-      {
-        "id": "g0",
-        "type": "gate",
-        "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "open": false
-      },
-      {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-1",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k42_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k42_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 2,
+        "id": "h42_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h42_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h42_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g42_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g42_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g42_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g42_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g42_4",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g42_5",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s42",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-42",
+        "activated": false
+      },
+      {
+        "id": "gate-42",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
         "col": 6,
         "width": 1,
-        "height": 1
+        "height": 1,
+        "open": false
       }
     ]
   },
   {
     "id": "level-043",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 3,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 54,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k43_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-4",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k43_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h43_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h43_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h43_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g43_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g43_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g43_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g43_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g43_4",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s43",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-43",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-43",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 5,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m43",
         "type": "unit",
         "assetKey": "villager-2",
-        "row": 1,
+        "row": 4,
         "col": 0,
-        "width": 1,
+        "width": 2,
         "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-044",
-    "boardRows": 4,
+    "phase": 3,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 57,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k44_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-7",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k44_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k44_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h44_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h44_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g44_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g44_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g44_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g44_3",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g44_4",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g44_5",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s44",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-44",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-44",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 6,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
+        "id": "m44",
         "type": "unit",
         "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
+        "row": 4,
+        "col": 0,
+        "width": 2,
         "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 2,
-        "col": 6,
-        "width": 1,
-        "height": 1
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-045",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 3,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 54,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k45_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-3",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k45_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k45_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h45_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h45_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g45_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g45_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g45_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g45_3",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g45_4",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s45",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-45",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-45",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 5,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m45",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
+        "assetKey": "villager-4",
+        "row": 4,
         "col": 0,
-        "width": 1,
+        "width": 2,
         "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-046",
-    "boardRows": 4,
+    "phase": 3,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 60,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k46_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "targetId": "g0",
-        "activated": false
-      },
-      {
-        "id": "g0",
-        "type": "gate",
-        "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "open": false
-      },
-      {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-6",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k46_1",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-7",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k46_2",
+        "type": "unit",
+        "assetKey": "villager-1",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 2,
+        "id": "h46_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h46_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h46_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g46_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g46_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g46_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g46_3",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g46_4",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g46_5",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s46",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-46",
+        "activated": false
+      },
+      {
+        "id": "gate-46",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
         "col": 6,
         "width": 1,
-        "height": 1
+        "height": 1,
+        "open": false
       }
     ]
   },
   {
     "id": "level-047",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 3,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 54,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k47_0",
         "type": "unit",
         "assetKey": "villager-2",
-        "row": 0,
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k47_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h47_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h47_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h47_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g47_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g47_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g47_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g47_3",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g47_4",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s47",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-47",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-47",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 5,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m47",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
+        "assetKey": "villager-6",
+        "row": 4,
         "col": 0,
-        "width": 1,
+        "width": 2,
         "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-048",
-    "boardRows": 4,
+    "phase": 3,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 57,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k48_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-5",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k48_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k48_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h48_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h48_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g48_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g48_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g48_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g48_3",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g48_4",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g48_5",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s48",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-48",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-48",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 6,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m48",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
+        "assetKey": "villager-7",
+        "row": 4,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 2,
-        "col": 6,
-        "width": 1,
-        "height": 1
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-049",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 3,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 54,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k49_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "targetId": "g0",
-        "activated": false
-      },
-      {
-        "id": "g0",
-        "type": "gate",
-        "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "open": false
-      },
-      {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-1",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k49_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k49_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h49_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h49_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g49_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g49_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g49_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g49_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g49_4",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s49",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-49",
+        "activated": false
+      },
+      {
+        "id": "gate-49",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "m49",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 4,
+        "col": 0,
+        "width": 2,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-050",
-    "boardRows": 4,
+    "phase": 3,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 60,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k50_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "targetId": "g0",
-        "activated": false
-      },
-      {
-        "id": "g0",
-        "type": "gate",
-        "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "open": false
-      },
-      {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k50_1",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-5",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k50_2",
+        "type": "unit",
+        "assetKey": "villager-6",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 2,
+        "id": "h50_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h50_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h50_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g50_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g50_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g50_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g50_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g50_4",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g50_5",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s50",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-50",
+        "activated": false
+      },
+      {
+        "id": "gate-50",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
         "col": 6,
         "width": 1,
-        "height": 1
+        "height": 1,
+        "open": false
       }
     ]
   },
   {
     "id": "level-051",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 3,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 54,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k51_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-7",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k51_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h51_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h51_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h51_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g51_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g51_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g51_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g51_3",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g51_4",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s51",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-51",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-51",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 5,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
+        "id": "m51",
         "type": "unit",
         "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
+        "row": 4,
+        "col": 0,
+        "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-052",
-    "boardRows": 4,
+    "phase": 3,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 57,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k52_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-3",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k52_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k52_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h52_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h52_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g52_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g52_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g52_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g52_3",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g52_4",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g52_5",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s52",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-52",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-52",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 6,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m52",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
+        "assetKey": "villager-4",
+        "row": 4,
         "col": 0,
-        "width": 1,
+        "width": 2,
         "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 2,
-        "col": 6,
-        "width": 1,
-        "height": 1
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-053",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 3,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 54,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k53_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-6",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k53_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k53_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h53_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h53_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g53_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g53_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g53_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g53_3",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g53_4",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s53",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-53",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-53",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 5,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m53",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
+        "assetKey": "villager-5",
+        "row": 4,
         "col": 0,
-        "width": 1,
+        "width": 2,
         "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-054",
-    "boardRows": 4,
+    "phase": 3,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 60,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
-        "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "targetId": "g0",
-        "activated": false
-      },
-      {
-        "id": "g0",
-        "type": "gate",
-        "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "open": false
-      },
-      {
-        "id": "u1",
+        "id": "k54_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k54_1",
         "type": "unit",
         "assetKey": "villager-3",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k54_2",
+        "type": "unit",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 2,
+        "id": "h54_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h54_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h54_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g54_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g54_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g54_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g54_3",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g54_4",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g54_5",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s54",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-54",
+        "activated": false
+      },
+      {
+        "id": "gate-54",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
         "col": 6,
         "width": 1,
-        "height": 1
+        "height": 1,
+        "open": false
       }
     ]
   },
   {
     "id": "level-055",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 3,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 54,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k55_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-5",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k55_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h55_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h55_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h55_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g55_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g55_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g55_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g55_3",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g55_4",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s55",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-55",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-55",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 5,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m55",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
+        "assetKey": "villager-7",
+        "row": 4,
         "col": 0,
-        "width": 1,
+        "width": 2,
         "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-056",
-    "boardRows": 4,
+    "phase": 3,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 57,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k56_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "targetId": "g0",
-        "activated": false
-      },
-      {
-        "id": "g0",
-        "type": "gate",
-        "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "open": false
-      },
-      {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-1",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k56_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k56_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 2,
+        "id": "h56_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h56_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g56_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g56_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g56_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g56_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g56_4",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g56_5",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s56",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-56",
+        "activated": false
+      },
+      {
+        "id": "gate-56",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
         "col": 6,
         "width": 1,
-        "height": 1
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "m56",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 4,
+        "col": 0,
+        "width": 2,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-057",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 3,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 54,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k57_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-4",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k57_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k57_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h57_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h57_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g57_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g57_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g57_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g57_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g57_4",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s57",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-57",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-57",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 5,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m57",
         "type": "unit",
         "assetKey": "villager-2",
-        "row": 1,
+        "row": 4,
         "col": 0,
-        "width": 1,
+        "width": 2,
         "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-058",
-    "boardRows": 4,
+    "phase": 3,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 60,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k58_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "targetId": "g0",
-        "activated": false
-      },
-      {
-        "id": "g0",
-        "type": "gate",
-        "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
-        "width": 1,
-        "height": 1,
-        "open": false
-      },
-      {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-7",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k58_1",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-1",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k58_2",
+        "type": "unit",
+        "assetKey": "villager-2",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 2,
+        "id": "h58_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h58_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h58_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g58_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g58_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g58_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g58_3",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g58_4",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g58_5",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s58",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-58",
+        "activated": false
+      },
+      {
+        "id": "gate-58",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
         "col": 6,
         "width": 1,
-        "height": 1
+        "height": 1,
+        "open": false
       }
     ]
   },
   {
     "id": "level-059",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 3,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 54,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k59_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-3",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k59_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h59_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h59_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h59_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g59_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g59_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g59_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g59_3",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g59_4",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s59",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-59",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-59",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 5,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m59",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
+        "assetKey": "villager-4",
+        "row": 4,
         "col": 0,
-        "width": 1,
+        "width": 2,
         "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-060",
-    "boardRows": 4,
+    "phase": 3,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 4,
-    "timeLimit": 24,
-    "rotateCharges": 0,
+    "timeLimit": 57,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k60_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-6",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k60_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k60_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 1,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h60_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h60_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g60_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g60_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g60_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g60_3",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g60_4",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g60_5",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s60",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-60",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-60",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 6,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m60",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
+        "assetKey": "villager-5",
+        "row": 4,
         "col": 0,
-        "width": 1,
+        "width": 2,
         "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 2,
-        "col": 6,
-        "width": 1,
-        "height": 1
+        "direction": "right",
+        "escaped": false
       }
     ]
   },
   {
     "id": "level-061",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
-    "rotateCharges": 1,
+    "timeLimit": 63,
+    "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k61_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k61_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-3",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k61_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h61_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h61_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h61_2",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g61_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g61_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g61_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g61_3",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g61_4",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g61_5",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g61_6",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s61",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-61",
+        "activated": false
       },
       {
-        "id": "o0",
+        "id": "gate-61",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "m61",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 4,
+        "col": 0,
+        "width": 2,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r61",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or61",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "row": 1,
+        "col": 4,
         "width": 1,
         "height": 1
       }
@@ -3355,58 +6644,194 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-062",
-    "boardRows": 5,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
+    "timeLimit": 63,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k62_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-5",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k62_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-6",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k62_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-7",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "k62_3",
         "type": "unit",
-        "assetKey": "villager-4",
+        "assetKey": "villager-1",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
+        "id": "h62_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h62_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h62_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g62_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g62_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g62_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g62_3",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g62_4",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g62_5",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s62",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-62",
+        "activated": false
+      },
+      {
+        "id": "gate-62",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "r62",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or62",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "row": 1,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -3414,67 +6839,216 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-063",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
-    "rotateCharges": 1,
+    "timeLimit": 66,
+    "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k63_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-1",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "down"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k63_1",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k63_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h63_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h63_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h63_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h63_3",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 3,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g63_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g63_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g63_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g63_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g63_4",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g63_5",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g63_6",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s63",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-63",
+        "activated": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "id": "gate-63",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
         "width": 1,
-        "height": 1
+        "height": 1,
+        "open": false
       },
       {
-        "id": "o1",
+        "id": "m63",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 4,
+        "col": 0,
+        "width": 2,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r63",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or63",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 2,
-        "col": 0,
+        "row": 1,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -3482,58 +7056,183 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-064",
-    "boardRows": 5,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
+    "timeLimit": 60,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k64_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k64_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-5",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k64_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-6",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h64_0",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h64_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g64_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g64_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g64_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g64_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g64_4",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g64_5",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g64_6",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s64",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-64",
+        "activated": false
       },
       {
-        "id": "o0",
+        "id": "gate-64",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "r64",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or64",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "row": 1,
+        "col": 4,
         "width": 1,
         "height": 1
       }
@@ -3541,58 +7240,205 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-065",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
-    "rotateCharges": 1,
+    "timeLimit": 63,
+    "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k65_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-7",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k65_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-1",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k65_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-2",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h65_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h65_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h65_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g65_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g65_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g65_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g65_3",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g65_4",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g65_5",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g65_6",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s65",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-65",
+        "activated": false
       },
       {
-        "id": "o0",
+        "id": "gate-65",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "m65",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 4,
+        "col": 0,
+        "width": 2,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r65",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or65",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "row": 1,
+        "col": 4,
         "width": 1,
         "height": 1
       }
@@ -3600,67 +7446,194 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-066",
-    "boardRows": 5,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
+    "timeLimit": 63,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k66_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-3",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "down"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k66_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k66_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-5",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "k66_3",
         "type": "unit",
-        "assetKey": "villager-4",
+        "assetKey": "villager-6",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 0,
+        "id": "h66_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
         "col": 0,
         "width": 1,
-        "height": 1
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o1",
+        "id": "h66_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h66_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g66_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g66_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g66_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g66_3",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g66_4",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g66_5",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s66",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-66",
+        "activated": false
+      },
+      {
+        "id": "gate-66",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "r66",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or66",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 2,
-        "col": 0,
+        "row": 1,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -3668,58 +7641,216 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-067",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
-    "rotateCharges": 1,
+    "timeLimit": 66,
+    "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k67_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-6",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k67_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-7",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k67_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-1",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h67_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h67_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h67_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h67_3",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g67_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g67_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g67_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g67_3",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g67_4",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g67_5",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g67_6",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s67",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-67",
+        "activated": false
       },
       {
-        "id": "o0",
+        "id": "gate-67",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "m67",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 4,
+        "col": 0,
+        "width": 2,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r67",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or67",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "row": 1,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -3727,58 +7858,183 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-068",
-    "boardRows": 5,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
+    "timeLimit": 60,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k68_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k68_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-3",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k68_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h68_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h68_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g68_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g68_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g68_2",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g68_3",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g68_4",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g68_5",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g68_6",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s68",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-68",
+        "activated": false
       },
       {
-        "id": "o0",
+        "id": "gate-68",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "r68",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or68",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "row": 1,
+        "col": 4,
         "width": 1,
         "height": 1
       }
@@ -3786,67 +8042,205 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-069",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
-    "rotateCharges": 1,
+    "timeLimit": 63,
+    "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k69_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-5",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "down"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k69_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-6",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k69_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-7",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h69_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h69_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h69_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g69_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g69_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g69_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g69_3",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g69_4",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g69_5",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g69_6",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s69",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-69",
+        "activated": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "id": "gate-69",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
         "width": 1,
-        "height": 1
+        "height": 1,
+        "open": false
       },
       {
-        "id": "o1",
+        "id": "m69",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 4,
+        "col": 0,
+        "width": 2,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r69",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or69",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 2,
-        "col": 0,
+        "row": 1,
+        "col": 4,
         "width": 1,
         "height": 1
       }
@@ -3854,58 +8248,194 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-070",
-    "boardRows": 5,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
+    "timeLimit": 63,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k70_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-1",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k70_1",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k70_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "k70_3",
         "type": "unit",
         "assetKey": "villager-4",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
+        "id": "h70_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h70_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h70_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g70_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g70_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g70_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g70_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g70_4",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g70_5",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s70",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-70",
+        "activated": false
+      },
+      {
+        "id": "gate-70",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "r70",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or70",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "row": 1,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -3913,58 +8443,216 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-071",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
-    "rotateCharges": 1,
+    "timeLimit": 66,
+    "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k71_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k71_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-5",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k71_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-6",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h71_0",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h71_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h71_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h71_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g71_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g71_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g71_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g71_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g71_4",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g71_5",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g71_6",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s71",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-71",
+        "activated": false
       },
       {
-        "id": "o0",
+        "id": "gate-71",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "m71",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 4,
+        "col": 0,
+        "width": 2,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r71",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or71",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "row": 1,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -3972,67 +8660,183 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-072",
-    "boardRows": 5,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
+    "timeLimit": 60,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k72_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-7",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "down"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k72_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-1",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k72_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-2",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h72_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h72_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g72_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g72_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g72_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g72_3",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g72_4",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g72_5",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g72_6",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s72",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-72",
+        "activated": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "id": "gate-72",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
         "width": 1,
-        "height": 1
+        "height": 1,
+        "open": false
       },
       {
-        "id": "o1",
+        "id": "r72",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or72",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 2,
-        "col": 0,
+        "row": 1,
+        "col": 4,
         "width": 1,
         "height": 1
       }
@@ -4040,58 +8844,205 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-073",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
-    "rotateCharges": 1,
+    "timeLimit": 63,
+    "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k73_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-3",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k73_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k73_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-5",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h73_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h73_1",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h73_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g73_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g73_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g73_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g73_3",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g73_4",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g73_5",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g73_6",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s73",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-73",
+        "activated": false
       },
       {
-        "id": "o0",
+        "id": "gate-73",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "m73",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 4,
+        "col": 0,
+        "width": 2,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r73",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or73",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "row": 1,
+        "col": 4,
         "width": 1,
         "height": 1
       }
@@ -4099,58 +9050,194 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-074",
-    "boardRows": 5,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
+    "timeLimit": 63,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k74_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-6",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k74_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-7",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k74_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-1",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "k74_3",
         "type": "unit",
-        "assetKey": "villager-4",
+        "assetKey": "villager-2",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
+        "id": "h74_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h74_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h74_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g74_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g74_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g74_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g74_3",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g74_4",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g74_5",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s74",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-74",
+        "activated": false
+      },
+      {
+        "id": "gate-74",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "r74",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or74",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "row": 1,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -4158,67 +9245,216 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-075",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
-    "rotateCharges": 1,
+    "timeLimit": 66,
+    "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k75_0",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "down"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k75_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-3",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k75_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h75_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h75_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h75_2",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h75_3",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g75_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g75_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g75_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g75_3",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g75_4",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g75_5",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g75_6",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s75",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-75",
+        "activated": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "id": "gate-75",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
         "width": 1,
-        "height": 1
+        "height": 1,
+        "open": false
       },
       {
-        "id": "o1",
+        "id": "m75",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 4,
+        "col": 0,
+        "width": 2,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r75",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or75",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 2,
-        "col": 0,
+        "row": 1,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -4226,58 +9462,183 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-076",
-    "boardRows": 5,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
+    "timeLimit": 60,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k76_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-5",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k76_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-6",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k76_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-7",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h76_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h76_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g76_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g76_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g76_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g76_3",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g76_4",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g76_5",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g76_6",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s76",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-76",
+        "activated": false
       },
       {
-        "id": "o0",
+        "id": "gate-76",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "r76",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or76",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "row": 1,
+        "col": 4,
         "width": 1,
         "height": 1
       }
@@ -4285,58 +9646,205 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-077",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
-    "rotateCharges": 1,
+    "timeLimit": 63,
+    "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k77_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-1",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k77_1",
         "type": "unit",
         "assetKey": "villager-2",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k77_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h77_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h77_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h77_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g77_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g77_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g77_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g77_3",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g77_4",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g77_5",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g77_6",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s77",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-77",
+        "activated": false
       },
       {
-        "id": "o0",
+        "id": "gate-77",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "m77",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 4,
+        "col": 0,
+        "width": 2,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r77",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or77",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "row": 1,
+        "col": 4,
         "width": 1,
         "height": 1
       }
@@ -4344,67 +9852,194 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-078",
-    "boardRows": 5,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
+    "timeLimit": 63,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k78_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "down"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k78_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-5",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k78_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-6",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "k78_3",
         "type": "unit",
-        "assetKey": "villager-4",
+        "assetKey": "villager-7",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
-        "type": "obstacle",
-        "assetKey": "rock",
-        "row": 0,
+        "id": "h78_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
         "col": 0,
         "width": 1,
-        "height": 1
+        "height": 1,
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o1",
+        "id": "h78_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h78_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g78_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g78_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g78_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g78_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g78_4",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g78_5",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s78",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-78",
+        "activated": false
+      },
+      {
+        "id": "gate-78",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "r78",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or78",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 2,
-        "col": 0,
+        "row": 1,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -4412,58 +10047,216 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-079",
-    "boardRows": 4,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
-    "rotateCharges": 1,
+    "timeLimit": 66,
+    "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k79_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-7",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k79_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-1",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k79_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-2",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h79_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h79_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h79_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h79_3",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g79_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g79_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g79_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g79_3",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g79_4",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g79_5",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g79_6",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s79",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-79",
+        "activated": false
       },
       {
-        "id": "o0",
+        "id": "gate-79",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "m79",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 4,
+        "col": 0,
+        "width": 2,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r79",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or79",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "row": 1,
+        "col": 5,
         "width": 1,
         "height": 1
       }
@@ -4471,58 +10264,183 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-080",
-    "boardRows": 5,
-    "boardCols": 6,
+    "phase": 4,
+    "boardRows": 7,
+    "boardCols": 7,
     "lives": 5,
-    "timeLimit": 28,
+    "timeLimit": 60,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k80_0",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-3",
         "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
+        "id": "k80_1",
         "type": "unit",
-        "assetKey": "villager-2",
+        "assetKey": "villager-4",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u2",
+        "id": "k80_2",
         "type": "unit",
-        "assetKey": "villager-3",
+        "assetKey": "villager-5",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h80_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h80_1",
         "type": "unit",
         "assetKey": "villager-4",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g80_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g80_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g80_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g80_3",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g80_4",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g80_5",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g80_6",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s80",
+        "type": "switch",
+        "assetKey": "switch-inactive",
         "row": 1,
         "col": 3,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "targetId": "gate-80",
+        "activated": false
       },
       {
-        "id": "o0",
+        "id": "gate-80",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "r80",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or80",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 0,
-        "col": 0,
+        "row": 1,
+        "col": 4,
         "width": 1,
         "height": 1
       }
@@ -4530,78 +10448,215 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-081",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 5,
-    "timeLimit": 32,
+    "timeLimit": 66,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k81_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-6",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k81_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k81_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k81_3",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h81_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h81_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h81_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g81_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g81_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g81_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g81_3",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g81_4",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g81_5",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g81_6",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s81",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-81",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-81",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m81",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "assetKey": "villager-5",
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
+        "id": "r81",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or81",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 1,
         "col": 5,
         "width": 1,
         "height": 1
@@ -4610,149 +10665,432 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-082",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 5,
-    "timeLimit": 32,
+    "timeLimit": 66,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k82_0",
         "type": "unit",
         "assetKey": "villager-2",
-        "row": 0,
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k82_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k82_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h82_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h82_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h82_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h82_3",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g82_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g82_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g82_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g82_3",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g82_4",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g82_5",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g82_6",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s82",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-82",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-82",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m82",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "assetKey": "villager-6",
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r82",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or82",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 1,
+        "col": 5,
+        "width": 1,
+        "height": 1
       }
     ]
   },
   {
     "id": "level-083",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 5,
-    "timeLimit": 32,
-    "rotateCharges": 2,
+    "timeLimit": 66,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k83_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-5",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k83_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k83_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k83_3",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h83_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h83_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h83_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g83_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g83_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g83_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g83_3",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g83_4",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g83_5",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g83_6",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s83",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-83",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-83",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m83",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "assetKey": "villager-7",
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
+        "id": "r83",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or83",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 1,
         "col": 5,
         "width": 1,
         "height": 1
@@ -4761,149 +11099,421 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-084",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 5,
-    "timeLimit": 32,
+    "timeLimit": 63,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k84_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-1",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "targetId": "g0",
-        "activated": false
-      },
-      {
-        "id": "g0",
-        "type": "gate",
-        "assetKey": "gate-closed",
+        "id": "k84_1",
+        "type": "unit",
+        "assetKey": "villager-2",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "open": false
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
+        "id": "k84_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h84_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h84_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h84_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g84_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g84_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g84_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g84_3",
         "type": "unit",
         "assetKey": "villager-4",
-        "row": 2,
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g84_4",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g84_5",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g84_6",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s84",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-84",
+        "activated": false
+      },
+      {
+        "id": "gate-84",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "m84",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r84",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or84",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1
       }
     ]
   },
   {
     "id": "level-085",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 5,
-    "timeLimit": 32,
+    "timeLimit": 66,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k85_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-4",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k85_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k85_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k85_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h85_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h85_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h85_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g85_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g85_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g85_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g85_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g85_4",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g85_5",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g85_6",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s85",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-85",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-85",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m85",
         "type": "unit",
         "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
+        "id": "r85",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or85",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 1,
         "col": 5,
         "width": 1,
         "height": 1
@@ -4912,149 +11522,432 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-086",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 5,
-    "timeLimit": 32,
+    "timeLimit": 66,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k86_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-7",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k86_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k86_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h86_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h86_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h86_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h86_3",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g86_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g86_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g86_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g86_3",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g86_4",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g86_5",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g86_6",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s86",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-86",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-86",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
+        "id": "m86",
         "type": "unit",
         "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r86",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or86",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 1,
+        "col": 5,
+        "width": 1,
+        "height": 1
       }
     ]
   },
   {
     "id": "level-087",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 5,
-    "timeLimit": 32,
-    "rotateCharges": 2,
+    "timeLimit": 66,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k87_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-3",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k87_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k87_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k87_3",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h87_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h87_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h87_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g87_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g87_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g87_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g87_3",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g87_4",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g87_5",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g87_6",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s87",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-87",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-87",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
+        "id": "m87",
         "type": "unit",
         "assetKey": "villager-4",
-        "row": 2,
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
+        "id": "r87",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or87",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 1,
         "col": 5,
         "width": 1,
         "height": 1
@@ -5063,149 +11956,421 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-088",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 5,
-    "timeLimit": 32,
+    "timeLimit": 63,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k88_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-6",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k88_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k88_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h88_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h88_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h88_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g88_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g88_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g88_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g88_3",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g88_4",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g88_5",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g88_6",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s88",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-88",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-88",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m88",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "assetKey": "villager-5",
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r88",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or88",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1
       }
     ]
   },
   {
     "id": "level-089",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 5,
-    "timeLimit": 32,
+    "timeLimit": 66,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k89_0",
         "type": "unit",
         "assetKey": "villager-2",
-        "row": 0,
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k89_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k89_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k89_3",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h89_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h89_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h89_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g89_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g89_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g89_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g89_3",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g89_4",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g89_5",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g89_6",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s89",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-89",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-89",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m89",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "assetKey": "villager-6",
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
+        "id": "r89",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or89",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 1,
         "col": 5,
         "width": 1,
         "height": 1
@@ -5214,149 +12379,432 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-090",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 5,
-    "timeLimit": 32,
+    "timeLimit": 66,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k90_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-5",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k90_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k90_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h90_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h90_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h90_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h90_3",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g90_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g90_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g90_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g90_3",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g90_4",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g90_5",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g90_6",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s90",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-90",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-90",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m90",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "assetKey": "villager-7",
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r90",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or90",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 1,
+        "col": 5,
+        "width": 1,
+        "height": 1
       }
     ]
   },
   {
     "id": "level-091",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 6,
-    "timeLimit": 32,
-    "rotateCharges": 2,
+    "timeLimit": 66,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k91_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-1",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "targetId": "g0",
-        "activated": false
-      },
-      {
-        "id": "g0",
-        "type": "gate",
-        "assetKey": "gate-closed",
+        "id": "k91_1",
+        "type": "unit",
+        "assetKey": "villager-2",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "open": false
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
+        "id": "k91_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "k91_3",
         "type": "unit",
         "assetKey": "villager-4",
-        "row": 2,
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h91_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h91_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h91_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g91_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g91_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g91_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g91_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g91_4",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g91_5",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g91_6",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s91",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-91",
+        "activated": false
+      },
+      {
+        "id": "gate-91",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "m91",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
+        "id": "r91",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or91",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 1,
         "col": 5,
         "width": 1,
         "height": 1
@@ -5365,149 +12813,421 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-092",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 6,
-    "timeLimit": 32,
+    "timeLimit": 63,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k92_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-4",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k92_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k92_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h92_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h92_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h92_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g92_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g92_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g92_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g92_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g92_4",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g92_5",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g92_6",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s92",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-92",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-92",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m92",
         "type": "unit",
         "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r92",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or92",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1
       }
     ]
   },
   {
     "id": "level-093",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 6,
-    "timeLimit": 32,
+    "timeLimit": 66,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k93_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-7",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k93_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k93_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k93_3",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h93_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h93_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h93_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g93_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g93_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g93_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g93_3",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g93_4",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g93_5",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g93_6",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s93",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-93",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-93",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
+        "id": "m93",
         "type": "unit",
         "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
+        "id": "r93",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or93",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 1,
         "col": 5,
         "width": 1,
         "height": 1
@@ -5516,149 +13236,432 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-094",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 6,
-    "timeLimit": 32,
+    "timeLimit": 66,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k94_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-3",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k94_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k94_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h94_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h94_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h94_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h94_3",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g94_0",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g94_1",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g94_2",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g94_3",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g94_4",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g94_5",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g94_6",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s94",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-94",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-94",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
+        "id": "m94",
         "type": "unit",
         "assetKey": "villager-4",
-        "row": 2,
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r94",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or94",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 1,
+        "col": 5,
+        "width": 1,
+        "height": 1
       }
     ]
   },
   {
     "id": "level-095",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 6,
-    "timeLimit": 32,
-    "rotateCharges": 2,
+    "timeLimit": 66,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k95_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-6",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k95_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k95_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k95_3",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h95_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h95_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h95_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g95_0",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g95_1",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g95_2",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g95_3",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g95_4",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g95_5",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g95_6",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s95",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-95",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-95",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m95",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "assetKey": "villager-5",
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
+        "id": "r95",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or95",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 1,
         "col": 5,
         "width": 1,
         "height": 1
@@ -5667,149 +13670,421 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-096",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 6,
-    "timeLimit": 32,
+    "timeLimit": 63,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k96_0",
         "type": "unit",
         "assetKey": "villager-2",
-        "row": 0,
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k96_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k96_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h96_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h96_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h96_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g96_0",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g96_1",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g96_2",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g96_3",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g96_4",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g96_5",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g96_6",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s96",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-96",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-96",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m96",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "assetKey": "villager-6",
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r96",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or96",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1
       }
     ]
   },
   {
     "id": "level-097",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 6,
-    "timeLimit": 32,
+    "timeLimit": 66,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k97_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-5",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k97_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k97_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k97_3",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h97_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h97_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h97_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g97_0",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g97_1",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g97_2",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g97_3",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g97_4",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g97_5",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g97_6",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s97",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-97",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-97",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m97",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "assetKey": "villager-7",
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
+        "id": "r97",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or97",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 1,
         "col": 5,
         "width": 1,
         "height": 1
@@ -5818,149 +14093,432 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-098",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 6,
-    "timeLimit": 32,
+    "timeLimit": 66,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k98_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-1",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "targetId": "g0",
-        "activated": false
-      },
-      {
-        "id": "g0",
-        "type": "gate",
-        "assetKey": "gate-closed",
+        "id": "k98_1",
+        "type": "unit",
+        "assetKey": "villager-2",
         "row": 1,
         "col": 1,
         "width": 1,
         "height": 1,
-        "open": false
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
+        "id": "k98_2",
         "type": "unit",
         "assetKey": "villager-3",
         "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "u3",
+        "id": "h98_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h98_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h98_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h98_3",
         "type": "unit",
         "assetKey": "villager-4",
-        "row": 2,
+        "row": 3,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g98_0",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g98_1",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g98_2",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g98_3",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g98_4",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g98_5",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g98_6",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s98",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-98",
+        "activated": false
+      },
+      {
+        "id": "gate-98",
+        "type": "gate",
+        "assetKey": "gate-closed",
+        "row": 5,
+        "col": 7,
+        "width": 1,
+        "height": 1,
+        "open": false
+      },
+      {
+        "id": "m98",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r98",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or98",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 1,
+        "col": 5,
+        "width": 1,
+        "height": 1
       }
     ]
   },
   {
     "id": "level-099",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 6,
-    "timeLimit": 32,
-    "rotateCharges": 2,
+    "timeLimit": 66,
+    "rotateCharges": 1,
     "entities": [
       {
-        "id": "u0",
+        "id": "k99_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-4",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k99_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k99_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k99_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h99_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h99_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h99_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g99_0",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g99_1",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g99_2",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g99_3",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g99_4",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g99_5",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g99_6",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s99",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-99",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-99",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
+        "id": "m99",
         "type": "unit",
         "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
-        "type": "unit",
-        "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "o0",
+        "id": "r99",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 2,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or99",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 3,
+        "row": 1,
         "col": 5,
         "width": 1,
         "height": 1
@@ -5969,72 +14527,207 @@ export const LEVELS: readonly TribeOutLevel[] = [
   },
   {
     "id": "level-100",
-    "boardRows": 5,
+    "phase": 5,
+    "boardRows": 7,
     "boardCols": 7,
     "lives": 6,
-    "timeLimit": 32,
+    "timeLimit": 63,
     "rotateCharges": 2,
     "entities": [
       {
-        "id": "u0",
+        "id": "k100_0",
         "type": "unit",
-        "assetKey": "villager-2",
-        "row": 0,
+        "assetKey": "villager-7",
+        "row": 1,
         "col": 0,
         "width": 1,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
       },
       {
-        "id": "s0",
-        "type": "switch",
-        "assetKey": "switch-inactive",
-        "row": 0,
+        "id": "k100_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 1,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "k100_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 1,
         "col": 2,
         "width": 1,
         "height": 1,
-        "targetId": "g0",
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h100_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 3,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h100_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 3,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "h100_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 3,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g100_0",
+        "type": "unit",
+        "assetKey": "villager-7",
+        "row": 5,
+        "col": 0,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g100_1",
+        "type": "unit",
+        "assetKey": "villager-1",
+        "row": 5,
+        "col": 1,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g100_2",
+        "type": "unit",
+        "assetKey": "villager-2",
+        "row": 5,
+        "col": 2,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g100_3",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 5,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g100_4",
+        "type": "unit",
+        "assetKey": "villager-4",
+        "row": 5,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g100_5",
+        "type": "unit",
+        "assetKey": "villager-5",
+        "row": 5,
+        "col": 5,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "g100_6",
+        "type": "unit",
+        "assetKey": "villager-6",
+        "row": 5,
+        "col": 6,
+        "width": 1,
+        "height": 1,
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "s100",
+        "type": "switch",
+        "assetKey": "switch-inactive",
+        "row": 1,
+        "col": 3,
+        "width": 1,
+        "height": 1,
+        "targetId": "gate-100",
         "activated": false
       },
       {
-        "id": "g0",
+        "id": "gate-100",
         "type": "gate",
         "assetKey": "gate-closed",
-        "row": 1,
-        "col": 1,
+        "row": 5,
+        "col": 7,
         "width": 1,
         "height": 1,
         "open": false
       },
       {
-        "id": "u1",
-        "type": "unit",
-        "assetKey": "villager-2",
-        "row": 1,
-        "col": 0,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u2",
+        "id": "m100",
         "type": "unit",
         "assetKey": "villager-3",
-        "row": 1,
-        "col": 2,
-        "width": 1,
-        "height": 1,
-        "direction": "right"
-      },
-      {
-        "id": "u3",
-        "type": "unit",
-        "assetKey": "villager-4",
-        "row": 2,
+        "row": 4,
         "col": 0,
         "width": 2,
         "height": 1,
-        "direction": "right"
+        "direction": "right",
+        "escaped": false
+      },
+      {
+        "id": "r100",
+        "type": "unit",
+        "assetKey": "villager-3",
+        "row": 2,
+        "col": 4,
+        "width": 1,
+        "height": 1,
+        "direction": "up",
+        "escaped": false
+      },
+      {
+        "id": "or100",
+        "type": "obstacle",
+        "assetKey": "rock",
+        "row": 1,
+        "col": 4,
+        "width": 1,
+        "height": 1
       }
     ]
   }

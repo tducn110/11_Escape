@@ -8,44 +8,44 @@
 @keyframes tribeEscapeRight {
   0%   { transform: translate(0, 0); opacity: 1; }
   70%  { opacity: 0.9; }
-  100% { transform: translate(220px, 110px); opacity: 0; }
+  100% { transform: translate(220px, 0); opacity: 0; }
 }
 @keyframes tribeEscapeLeft {
   0%   { transform: translate(0, 0); opacity: 1; }
   70%  { opacity: 0.9; }
-  100% { transform: translate(-220px, -110px); opacity: 0; }
+  100% { transform: translate(-220px, 0); opacity: 0; }
 }
 @keyframes tribeEscapeUp {
   0%   { transform: translate(0, 0); opacity: 1; }
   70%  { opacity: 0.9; }
-  100% { transform: translate(220px, -110px); opacity: 0; }
+  100% { transform: translate(0, -220px); opacity: 0; }
 }
 @keyframes tribeEscapeDown {
   0%   { transform: translate(0, 0); opacity: 1; }
   70%  { opacity: 0.9; }
-  100% { transform: translate(-220px, 110px); opacity: 0; }
+  100% { transform: translate(0, 220px); opacity: 0; }
 }
 
 /* ─── Bump ───────────────────────────────────────── */
 @keyframes tribeBumpRight {
   0%, 100% { transform: translate(0, 0); }
-  30%       { transform: translate(14px, 7px); }
-  65%       { transform: translate(-5px, -2.5px); }
+  30%       { transform: translate(14px, 0); }
+  65%       { transform: translate(-5px, 0); }
 }
 @keyframes tribeBumpLeft {
   0%, 100% { transform: translate(0, 0); }
-  30%       { transform: translate(-14px, -7px); }
-  65%       { transform: translate(5px, 2.5px); }
+  30%       { transform: translate(-14px, 0); }
+  65%       { transform: translate(5px, 0); }
 }
 @keyframes tribeBumpUp {
   0%, 100% { transform: translate(0, 0); }
-  30%       { transform: translate(14px, -7px); }
-  65%       { transform: translate(-5px, 2.5px); }
+  30%       { transform: translate(0, -14px); }
+  65%       { transform: translate(0, 5px); }
 }
 @keyframes tribeBumpDown {
   0%, 100% { transform: translate(0, 0); }
-  30%       { transform: translate(-14px, 7px); }
-  65%       { transform: translate(5px, -2.5px); }
+  30%       { transform: translate(0, 14px); }
+  65%       { transform: translate(0, -5px); }
 }
 
 /* ─── HUD score pop ──────────────────────────────── */
@@ -102,7 +102,7 @@
 .tribe-game-root {
   width: 100%;
   height: 100%;
-  max-width: 1280px;
+  max-width: none;
   min-height: 0;
   display: flex;
   align-items: center;
@@ -180,6 +180,7 @@
   flex-shrink: 0;
   max-width: 100%;
   max-height: 100%;
+
 }
 
 .tribe-game-header {
@@ -455,6 +456,8 @@
     padding: 0 0 max(8px, env(safe-area-inset-bottom));
   }
 
+
+
   .game-shell__controls {
     gap: 8px;
     padding: 8px 10px 10px;
@@ -531,6 +534,8 @@
     align-items: center;
     gap: 16px;
   }
+
+
 
   .tribe-game-hud__meta {
     gap: 9px;

@@ -3,7 +3,6 @@ import { AnimalSprite } from "../AnimalSprite";
 import { IMAGE_ASSETS } from "./assetRegistry";
 import type { Direction } from "../types";
 
-const ARROW_ROT: Record<Direction, number> = { up: 45, right: 135, down: 225, left: 315 };
 
 interface GameSpriteProps {
   assetKey: string;
@@ -32,12 +31,11 @@ export function GameSprite({ assetKey, isObstacle, direction, size }: GameSprite
             position: "absolute",
             inset: 0,
             pointerEvents: "none",
-            transform: `rotate(${ARROW_ROT[direction]}deg)`
           }}>
              <svg width={size} height={size} viewBox="0 0 100 100">
-                <g transform="translate(50 12)">
+                <g transform={`rotate(${{ down: 0, left: 90, up: 180, right: 270 }[direction]} 50 50) translate(50 85)`}>
                   <circle r="10" fill="#fff" stroke="#2a2418" strokeWidth="2" />
-                  <path d="M0 -4.5 L4.5 3 L-4.5 3 Z" fill="#2a2418" />
+                  <path d="M0 4.5 L-4.5 -3 L4.5 -3 Z" fill="#2a2418" />
                 </g>
              </svg>
           </div>

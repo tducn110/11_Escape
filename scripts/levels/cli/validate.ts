@@ -1,8 +1,13 @@
 import { LEVELS } from "../domain";
-import { validateCatalog } from "../validator";
+import { generateManifests } from "../catalog/manifests";
+import { validateCatalog, validateManifestCatalog } from "../validator";
 import { writeValidationReport } from "../reports";
 
-const issues = validateCatalog(LEVELS);
+const manifests = generateManifests(LEVELS);
+const issues = [
+  ...validateCatalog(LEVELS),
+  ...validateManifestCatalog(LEVELS, manifests),
+];
 writeValidationReport(issues);
 if (issues.length > 0) {
   console.error(JSON.stringify({ valid: false, issues }, null, 2));
