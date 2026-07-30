@@ -13,6 +13,7 @@
     "levels:solve": "tsx scripts/levels/cli/solve.ts",
     "levels:report": "tsx scripts/levels/cli/report.ts",
     "levels:generate": "tsx scripts/levels/cli/generate.ts",
+    "goal:verify": "tsx scripts/levels/cli/verify.ts",
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest"
   },

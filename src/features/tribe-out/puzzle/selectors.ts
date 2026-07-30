@@ -28,19 +28,40 @@ export function canExitUnit(level: Pick<PuzzleLevel, "boardRows" | "boardCols">,
   return true;
 }
 
-export function listLegalPuzzleActions(level: Pick<PuzzleLevel, "boardRows" | "boardCols">, state: PuzzleState): PuzzleAction[] {
-  const actions: PuzzleAction[] = [];
+function compareByEntityId<T extends { entityId: EntityId }>(left: T, right: T): number {
+  return left.entityId.localeCompare(right.entityId);
+}
 
+export function listLegalExitActions(
+  level: Pick<PuzzleLevel, "boardRows" | "boardCols">,
+  state: PuzzleState,
+): Array<{ type: "exit"; entityId: EntityId }> {
+  const actions: Array<{ type: "exit"; entityId: EntityId }> = [];
   for (const entity of state.entities) {
     if (entity.type !== "unit" || entity.escaped) continue;
-
-    actions.push({ type: "rotate", entityId: entity.id });
     if (canExitUnit(level, state, entity)) {
       actions.push({ type: "exit", entityId: entity.id });
     }
   }
+  return actions.sort(compareByEntityId);
+}
 
-  return actions;
+export function listLegalRotateActions(state: PuzzleState): Array<{ type: "rotate"; entityId: EntityId }> {
+  if (state.rotateChargesRemaining <= 0) {
+    return [];
+  }
+
+  return state.entities
+    .filter((entity): entity is UnitEntity => entity.type === "unit" && !entity.escaped)
+    .map(entity => ({ type: "rotate" as const, entityId: entity.id }))
+    .sort(compareByEntityId);
+}
+
+export function listLegalPuzzleActions(level: Pick<PuzzleLevel, "boardRows" | "boardCols">, state: PuzzleState): PuzzleAction[] {
+  return [
+    ...listLegalExitActions(level, state),
+    ...listLegalRotateActions(state),
+  ];
 }
 
 export function isPuzzleComplete(state: PuzzleState): boolean {

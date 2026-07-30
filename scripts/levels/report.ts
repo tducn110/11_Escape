@@ -11,7 +11,8 @@ export interface CatalogReport {
 
 export function buildCatalogReport() {
   const issues = validateCatalog(LEVELS);
-  const solvedLevels = LEVELS.reduce((count, level) => count + (solveLevel(level).solved ? 1 : 0), 0);
+  const solveResults = LEVELS.map(level => solveLevel(level));
+  const solvedLevels = solveResults.reduce((count, result) => count + (result.status === "SOLVABLE" ? 1 : 0), 0);
   const validLevelCount = LEVELS.filter(level => issues.every(issue => issue.levelId !== level.id)).length;
 
   const report: CatalogReport = {

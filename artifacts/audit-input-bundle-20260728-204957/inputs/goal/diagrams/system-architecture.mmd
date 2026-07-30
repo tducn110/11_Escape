@@ -1,0 +1,15 @@
+flowchart TD
+    L[100-level catalog] --> V[Static validator]
+    L --> P[Pure puzzle engine]
+    P --> R[React runtime adapter]
+    P --> H[Free hint selector]
+    P --> F[Monotonic exit closure]
+    P --> D[Stateful lexicographic search]
+    F --> S[Hybrid solver result]
+    D --> S
+    S --> A[Difficulty analyzer]
+    A --> Q[Five-phase quality gate]
+    M[Manifests + blueprints + seeds] --> G[Phase-specific generators]
+    G --> V
+    Q -->|accept| L
+    Q -->|reject| G

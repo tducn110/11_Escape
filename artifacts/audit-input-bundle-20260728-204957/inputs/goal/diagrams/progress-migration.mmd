@@ -1,0 +1,14 @@
+flowchart TD
+    L[Load progress] --> C{Canonical payload exists?}
+    C -->|No| G[Read legacy indexes/stars/coins]
+    G --> U[Map highest/current to stable level IDs]
+    U --> X[Discard coins and reset all old stars]
+    X --> P[Persist canonical schema]
+    P --> K[Remove legacy keys]
+    C -->|Yes| S[Sanitize canonical payload]
+    S --> V{Older levelSetVersion?}
+    V -->|Yes| R[Preserve unlock/current; reset listed level stars once]
+    R --> P2[Persist new levelSetVersion]
+    V -->|No| O[Return sanitized progress]
+    K --> O
+    P2 --> O

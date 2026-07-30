@@ -30,7 +30,7 @@ export function createInitialPuzzleState(level: PuzzleLevel): PuzzleState {
       }
       return cloneEntity(entity);
     }),
-    rotateChargesRemaining: level.rotateCharges ?? 1,
+    rotateChargesRemaining: level.rotateCharges,
   };
 }
 
@@ -40,7 +40,18 @@ function applyExit(level: PuzzleLevel, state: PuzzleState, unit: UnitEntity): Pu
   for (const cell of pathCells) {
     const occupantId = occupancyMap.get(cellKey(cell.row, cell.col));
     if (occupantId && occupantId !== unit.id) {
-      return { nextState: state, outcome: "blocked_path" };
+      return {
+        action: { type: "exit", entityId: unit.id },
+        nextState: state,
+        outcome: "blocked_path",
+        accepted: false,
+        details: {
+          activatedSwitchIds: [],
+          openedGateIds: [],
+          consumedRotateCharge: false,
+          completedPuzzle: false,
+        },
+      };
     }
   }
 
@@ -75,14 +86,33 @@ function applyExit(level: PuzzleLevel, state: PuzzleState, unit: UnitEntity): Pu
   });
 
   return {
+    action: { type: "exit", entityId: unit.id },
     nextState: { ...state, entities: nextEntities },
     outcome: "accepted",
+    accepted: true,
+    details: {
+      activatedSwitchIds: [...activatedSwitchIds].sort(),
+      openedGateIds: [...openGateIds].sort(),
+      consumedRotateCharge: false,
+      completedPuzzle: isPuzzleComplete({ ...state, entities: nextEntities }),
+    },
   };
 }
 
 function applyRotate(state: PuzzleState, unit: UnitEntity): PuzzleActionResult {
   if (state.rotateChargesRemaining <= 0) {
-    return { nextState: state, outcome: "no_charges" };
+    return {
+      action: { type: "rotate", entityId: unit.id },
+      nextState: state,
+      outcome: "no_charges",
+      accepted: false,
+      details: {
+        activatedSwitchIds: [],
+        openedGateIds: [],
+        consumedRotateCharge: false,
+        completedPuzzle: false,
+      },
+    };
   }
 
   const nextEntities = state.entities.map(entity => {
@@ -93,27 +123,72 @@ function applyRotate(state: PuzzleState, unit: UnitEntity): PuzzleActionResult {
   });
 
   return {
+    action: { type: "rotate", entityId: unit.id },
     nextState: {
       ...state,
       entities: nextEntities,
       rotateChargesRemaining: state.rotateChargesRemaining - 1,
     },
     outcome: "accepted",
+    accepted: true,
+    details: {
+      activatedSwitchIds: [],
+      openedGateIds: [],
+      consumedRotateCharge: true,
+      completedPuzzle: false,
+    },
   };
 }
 
 export function applyPuzzleAction(level: PuzzleLevel, state: PuzzleState, action: PuzzleAction): PuzzleActionResult {
+  if (isPuzzleComplete(state)) {
+    return {
+      action,
+      nextState: state,
+      outcome: "already_complete",
+      accepted: false,
+      details: {
+        activatedSwitchIds: [],
+        openedGateIds: [],
+        consumedRotateCharge: false,
+        completedPuzzle: true,
+      },
+    };
+  }
+
   if (action.type === "exit") {
     const unit = getLiveUnitById(state, action.entityId);
     if (!unit) {
-      return { nextState: state, outcome: "invalid_target" };
+      return {
+        action,
+        nextState: state,
+        outcome: "invalid_target",
+        accepted: false,
+        details: {
+          activatedSwitchIds: [],
+          openedGateIds: [],
+          consumedRotateCharge: false,
+          completedPuzzle: false,
+        },
+      };
     }
     return applyExit(level, state, unit);
   }
 
   const unit = getLiveUnitById(state, action.entityId);
   if (!unit) {
-    return { nextState: state, outcome: "invalid_target" };
+    return {
+      action,
+      nextState: state,
+      outcome: "invalid_target",
+      accepted: false,
+      details: {
+        activatedSwitchIds: [],
+        openedGateIds: [],
+        consumedRotateCharge: false,
+        completedPuzzle: false,
+      },
+    };
   }
   return applyRotate(state, unit);
 }

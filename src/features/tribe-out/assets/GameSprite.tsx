@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { AnimalSprite } from "../AnimalSprite";
 import { IMAGE_ASSETS } from "./assetRegistry";
 import type { Direction } from "../types";
 
-const ARROW_ROT: Record<Direction, number> = { up: 45, right: 135, down: 225, left: 315 };
 
 interface GameSpriteProps {
   assetKey: string;
@@ -15,13 +13,18 @@ interface GameSpriteProps {
 
 export function GameSprite({ assetKey, isObstacle, direction, size }: GameSpriteProps) {
   const [imageError, setImageError] = useState(false);
-  const imageUrl = IMAGE_ASSETS[assetKey];
+  const characterFallbackUrl = IMAGE_ASSETS["villager-1"];
+  const isCharacter = !isObstacle;
+  const imageUrl = IMAGE_ASSETS[assetKey] ?? (isCharacter ? characterFallbackUrl : undefined);
+  const resolvedImageUrl = imageError
+    ? (isCharacter && imageUrl !== characterFallbackUrl ? characterFallbackUrl : undefined)
+    : imageUrl;
 
-  if (imageUrl && !imageError) {
+  if (resolvedImageUrl) {
     return (
       <div style={{ width: size, height: size, position: "relative" }}>
         <img 
-          src={imageUrl} 
+          src={resolvedImageUrl}
           alt={assetKey}
           style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }}
           onError={() => setImageError(true)}
@@ -32,12 +35,11 @@ export function GameSprite({ assetKey, isObstacle, direction, size }: GameSprite
             position: "absolute",
             inset: 0,
             pointerEvents: "none",
-            transform: `rotate(${ARROW_ROT[direction]}deg)`
           }}>
              <svg width={size} height={size} viewBox="0 0 100 100">
-                <g transform="translate(50 12)">
+                <g transform={`rotate(${{ down: 0, left: 90, up: 180, right: 270 }[direction]} 50 50) translate(50 85)`}>
                   <circle r="10" fill="#fff" stroke="#2a2418" strokeWidth="2" />
-                  <path d="M0 -4.5 L4.5 3 L-4.5 3 Z" fill="#2a2418" />
+                  <path d="M0 4.5 L-4.5 -3 L4.5 -3 Z" fill="#2a2418" />
                 </g>
              </svg>
           </div>
@@ -55,7 +57,7 @@ export function GameSprite({ assetKey, isObstacle, direction, size }: GameSprite
   if (isObstacle) {
     return <ObstacleSprite size={size} />;
   }
-  return <AnimalSprite assetKey={assetKey} direction={direction} size={size} />;
+  return null;
 }
 
 function ObstacleSprite({ size }: { size: number }) {

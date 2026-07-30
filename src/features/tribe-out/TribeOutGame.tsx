@@ -1,18 +1,19 @@
-import { useEffect, useRef, useState, type CSSProperties } from "react";
-import { Trophy, Settings, RotateCcw } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Pause, Settings } from "lucide-react";
 import { GameShell } from "../../components/game/GameShell";
 import { Button } from "../../components/shared/Button";
 import { IconButton } from "../../components/shared/IconButton";
 import { useMeasuredElementSize } from "../../components/game/useMeasuredElementSize";
 import { TribeOutHUD } from "./TribeOutHUD";
 import { TribeOutBoard } from "./TribeOutBoard";
+import { TribeOutPauseOverlay } from "./TribeOutPauseOverlay";
 import { WinOverlay, LoseOverlay } from "./TribeOutOverlay";
 import {
   buildInitialGameState,
   buildNextLevelState,
   resetLevel,
   applyTapUnit,
-  getAvailableUnits,
+  getRepresentativeHintAction,
   applyRotateUnit,
   buildWinProgressSnapshot,
 } from "./gameLogic";
@@ -24,19 +25,11 @@ import type { GameState, TribeOutProgressSnapshot } from "./types";
 import { LEVEL_INDEX_BY_ID } from "./levels";
 import "./tribeOut.css";
 
-const HUD_ACTION_STYLE: CSSProperties = {
-  borderRadius: 8,
-  border: "1px solid rgba(255,255,255,0.2)",
-  background: "rgba(25, 77, 65, 0.86)",
-  color: "#ffffff",
-  boxShadow: "0 8px 18px rgba(20, 86, 58, 0.24)",
-  backdropFilter: "blur(8px)",
-};
+const HINT_CHARGES_PER_LEVEL = 3;
 
 interface Props {
   isActive?: boolean;
   onBoom?: () => void;
-  onDashboard?: () => void;
   onSettings?: () => void;
 }
 
@@ -44,12 +37,13 @@ function resolveLevelIndexById(levelId: GameState["currentLevelId"]): number {
   return LEVEL_INDEX_BY_ID.get(levelId) ?? 0;
 }
 
-export function TribeOutGame({ isActive = true, onBoom, onDashboard, onSettings }: Props = {}) {
+export function TribeOutGame({ isActive = true, onBoom, onSettings }: Props = {}) {
   const initialProgressRef = useRef<TribeOutProgressSnapshot>(loadTribeOutProgress(LEVELS));
   const [gameState, setGameState] = useState(() => buildInitialGameState(initialProgressRef.current.currentLevelId));
   const [bumpingId, setBumpingId] = useState<string | null>(null);
   const [bumpNonce, setBumpNonce] = useState(0);
   const [hintedId, setHintedId] = useState<string | null>(null);
+  const [isPaused, setIsPaused] = useState(false);
   const bumpTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const hintTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const gameStateRef = useRef(gameState);
@@ -59,6 +53,7 @@ export function TribeOutGame({ isActive = true, onBoom, onDashboard, onSettings 
   const levelIndex = resolveLevelIndexById(gameState.currentLevelId);
   const level = LEVELS[levelIndex] ?? LEVELS[0];
   const layout = getIsoBoardLayout(level.boardRows, level.boardCols, boardAreaSize.width, boardAreaSize.height);
+  const hintChargesRemaining = Math.max(0, HINT_CHARGES_PER_LEVEL - gameState.hintsUsed);
 
   useEffect(() => {
     const handleVisibilityChange = () => setIsVisible(!document.hidden);
@@ -75,7 +70,7 @@ export function TribeOutGame({ isActive = true, onBoom, onDashboard, onSettings 
 
   useEffect(() => {
     if (gameState.status !== "playing" || gameState.timeRemaining === undefined) return;
-    if (!isActive || !isVisible) return;
+    if (!isActive || !isVisible || isPaused) return;
     if (gameState.timeRemaining <= 0) return;
 
     const timer = setTimeout(() => {
@@ -83,9 +78,11 @@ export function TribeOutGame({ isActive = true, onBoom, onDashboard, onSettings 
         if (prev.status !== "playing" || prev.timeRemaining === undefined || prev.timeRemaining <= 0) {
           return prev;
         }
-        const nextState = {
+        const timeRemaining = Math.max(0, prev.timeRemaining - 1);
+        const nextState: GameState = {
           ...prev,
-          timeRemaining: prev.timeRemaining - 1,
+          timeRemaining,
+          status: timeRemaining === 0 ? "lost" : "playing",
         };
         gameStateRef.current = nextState;
         return nextState;
@@ -93,7 +90,16 @@ export function TribeOutGame({ isActive = true, onBoom, onDashboard, onSettings 
     }, 1000);
 
     return () => clearTimeout(timer);
-  }, [gameState.status, gameState.timeRemaining, isActive, isVisible]);
+  }, [gameState.status, gameState.timeRemaining, isActive, isPaused, isVisible]);
+
+  useEffect(() => {
+    if (gameState.status === "lost") {
+      tribeOutAudio.playGameOver();
+    }
+    if (gameState.status !== "playing" && isPaused) {
+      setIsPaused(false);
+    }
+  }, [gameState.status, isPaused]);
 
   const clearBumpTimer = () => {
     if (bumpTimerRef.current) {
@@ -110,7 +116,7 @@ export function TribeOutGame({ isActive = true, onBoom, onDashboard, onSettings 
   };
 
   const handleTap = (unitId: string) => {
-    if (gameState.status !== "playing") return;
+    if (gameState.status !== "playing" || isPaused) return;
 
     if (gameState.selectedTool === "rotate") {
       const nextState = applyRotateUnit(gameState, unitId);
@@ -153,6 +159,7 @@ export function TribeOutGame({ isActive = true, onBoom, onDashboard, onSettings 
     clearHintTimer();
     setBumpingId(null);
     setHintedId(null);
+    setIsPaused(false);
     const nextState = resetLevel(gameStateRef.current);
     gameStateRef.current = nextState;
     setGameState(nextState);
@@ -163,6 +170,7 @@ export function TribeOutGame({ isActive = true, onBoom, onDashboard, onSettings 
     clearHintTimer();
     setBumpingId(null);
     setHintedId(null);
+    setIsPaused(false);
     const currentState = gameStateRef.current;
     const nextLevelIndex = (resolveLevelIndexById(currentState.currentLevelId) + 1) % LEVELS.length;
     const nextLevelId = LEVELS[nextLevelIndex].id;
@@ -182,12 +190,11 @@ export function TribeOutGame({ isActive = true, onBoom, onDashboard, onSettings 
   };
 
   const handleHint = () => {
-    if (gameState.status !== "playing" || hintedId !== null) return;
+    if (gameState.status !== "playing" || isPaused || hintedId !== null || hintChargesRemaining <= 0) return;
 
-    const available = getAvailableUnits(gameState, level.boardRows, level.boardCols);
-    if (available.length === 0) return;
+    const targetId = getRepresentativeHintAction(level, gameState.puzzle);
+    if (!targetId) return;
 
-    const targetId = available[0];
     setGameState(prev => ({
       ...prev,
       hintsUsed: prev.hintsUsed + 1,
@@ -206,7 +213,7 @@ export function TribeOutGame({ isActive = true, onBoom, onDashboard, onSettings 
   };
 
   const handleRotateToggle = () => {
-    if (gameState.status !== "playing" || gameState.puzzle.rotateChargesRemaining <= 0) return;
+    if (gameState.status !== "playing" || isPaused || gameState.puzzle.rotateChargesRemaining <= 0) return;
     setGameState(prev => {
       const nextState = {
         ...prev,
@@ -217,29 +224,32 @@ export function TribeOutGame({ isActive = true, onBoom, onDashboard, onSettings 
     });
   };
 
+  const handlePause = () => {
+    if (gameState.status === "playing") {
+      setIsPaused(true);
+    }
+  };
+
   return (
     <div className="tribe-game-root">
       <GameShell
         header={(
           <div className="tribe-game-header">
             <div className="tribe-game-header__top">
-              <div className="tribe-game-header__identity">
+              <div className="tribe-game-header__identity" aria-label={`Thoát Khỏi Rừng, màn ${levelIndex + 1}`}>
                 <div className="tribe-game-header__title">
                   Thoát Khỏi Rừng
                 </div>
                 <div className="tribe-game-header__level">
-                  Màn {levelIndex + 1} · 11 Escape
+                  Màn {levelIndex + 1}
                 </div>
               </div>
               <div className="tribe-game-header__actions">
-                <IconButton label="Thành Tích" onClick={onDashboard} size={42} style={HUD_ACTION_STYLE}>
-                  <Trophy size={19} />
+                <IconButton label="Cài đặt" onClick={onSettings} size={58} className="tribe-hud-icon-button">
+                  <Settings size={29} strokeWidth={2.6} />
                 </IconButton>
-                <IconButton label="Cài đặt" onClick={onSettings} size={42} style={HUD_ACTION_STYLE}>
-                  <Settings size={20} />
-                </IconButton>
-                <IconButton label="Chơi lại" onClick={handleRestart} size={42} style={HUD_ACTION_STYLE}>
-                  <RotateCcw size={19} />
+                <IconButton label="Tạm dừng" onClick={handlePause} size={58} className="tribe-hud-icon-button">
+                  <Pause size={29} fill="currentColor" strokeWidth={2.6} />
                 </IconButton>
               </div>
             </div>
@@ -253,27 +263,35 @@ export function TribeOutGame({ isActive = true, onBoom, onDashboard, onSettings 
             />
           </div>
         )}
-        notice={
-          level.tutorialText && gameState.escapedCount === 0 && gameState.status === "playing" ? (
-            <div className="tribe-tutorial-banner">{level.tutorialText}</div>
-          ) : undefined
-        }
+        notice={undefined}
         controls={
-          <div style={{ padding: "0 16px", display: "flex", justifyContent: "center", gap: 16 }}>
-            <Button variant="secondary" onClick={handleHint} disabled={gameState.status !== "playing" || hintedId !== null}>
-              💡 Gợi ý
+          <div className="tribe-game-tools">
+            <Button
+              variant="secondary"
+              className="tribe-tool-button tribe-tool-button--hint"
+              onClick={handleHint}
+              disabled={gameState.status !== "playing" || isPaused || hintedId !== null || hintChargesRemaining <= 0}
+            >
+              <span className="tribe-tool-button__label">Gợi ý</span>
+              <span className="tribe-tool-button__count" aria-label={`Còn ${hintChargesRemaining} gợi ý`}>
+                {hintChargesRemaining}
+              </span>
             </Button>
             <Button
-              variant={gameState.selectedTool === "rotate" ? "primary" : "ghost"}
+              variant="ghost"
+              className="tribe-tool-button tribe-tool-button--rotate"
               onClick={handleRotateToggle}
-              disabled={gameState.status !== "playing" || gameState.puzzle.rotateChargesRemaining <= 0}
+              disabled={gameState.status !== "playing" || isPaused || gameState.puzzle.rotateChargesRemaining <= 0}
+              aria-pressed={gameState.selectedTool === "rotate"}
             >
-              🔄 Xoay ({gameState.puzzle.rotateChargesRemaining})
+              <span className="tribe-tool-button__label">Xoay</span>
+              <span className="tribe-tool-button__count" aria-label={`Còn ${gameState.puzzle.rotateChargesRemaining} lượt xoay`}>
+                {gameState.puzzle.rotateChargesRemaining}
+              </span>
             </Button>
           </div>
         }
         boardAreaRef={boardAreaRef}
-        boardAreaStyle={{ position: "relative" }}
       >
         <div className="tribe-board-center" style={{ width: layout.stageWidth, height: layout.stageHeight }}>
           <TribeOutBoard
@@ -302,6 +320,7 @@ export function TribeOutGame({ isActive = true, onBoom, onDashboard, onSettings 
           )}
         </div>
       </GameShell>
+      {isPaused ? <TribeOutPauseOverlay onResume={() => setIsPaused(false)} /> : null}
     </div>
   );
 }

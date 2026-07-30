@@ -1,0 +1,17 @@
+Area,Result,Severity,Evidence summary
+Repository provenance,FAIL,CRITICAL,No complete pre-run baseline. 54-file commit mixed agent work with pre-existing dirty work; 6 snapshot files already matched final commit exactly and 16 were dirty intermediates.
+One-time triage,FAIL,HIGH,Required skill name was unavailable; spec required GOAL_BLOCKED. Agent substituted another skill and resolution omitted HudStat.tsx and LogoBubble.tsx.
+Pure domain architecture,PARTIAL,HIGH,"Geometry/occupancy skeleton is useful, but types, transition result, action sorting, explicit rotate charges, complete-puzzle rejection and serialization contracts are incomplete."
+Runtime interaction,PARTIAL,HIGH,"Unit-only interaction and timer cleanup improved, but hints are not solver-derived and legal rotate actions are emitted at zero charge."
+Economy removal,MOSTLY PASS,MEDIUM,Coin UI/state was largely removed. Full repo/document scan and complete migration behavior were not proven.
+Progress migration,FAIL,CRITICAL,"Legacy indexes are interpreted ambiguously/incorrectly, unlock prefix is not preserved, canonical migration is not persisted, old stars can reset repeatedly, and storage exceptions can still escape."
+Validator,FAIL,CRITICAL,"Only duplicate IDs, bounds, overlap and missing switch target are checked; required issue schema and manifest/catalog/entity contracts are absent."
+Solver,FAIL,CRITICAL,"Bounded BFS scaffold with solved:boolean; no exit closure, Dijkstra, lexicographic cost, dominance, INCONCLUSIVE or replay verification."
+Difficulty analyzer,FAIL,CRITICAL,Metrics are placeholders and phase acceptance is hard-coded IN_BAND.
+100-level catalog,FAIL,CRITICAL,"No manifests, seeds, blueprints or target-band rejection; five small repeated templates contradict phase requirements."
+Generator,FAIL,CRITICAL,"Writes levels.ts directly without validate/solve/replay/analyze, temporary output or atomic promotion."
+Automated tests,FAIL,CRITICAL,Only 14 tests across three files; mandatory validator/solver/analyzer/performance/UI/migration fixtures are absent.
+Generated reports,FAIL,CRITICAL,"Reports mirror fabricated status fields; 100 FAST_EXIT_CLOSURE, null costs and zero diagnostics do not reflect the real solver."
+Viewport/manual QA,FAIL,HIGH,"Viewport audit did not run successfully, and its nonUnitButtons condition rejects valid game controls."
+Clean checkout,FAIL,HIGH,Worktrees used a node_modules symlink instead of npm ci; clean-install reproducibility was not demonstrated.
+Release/merge,FAIL,CRITICAL,"codex -> dev -> main promotion occurred despite failed manual QA, missing clean checkout and unmet hard gates."

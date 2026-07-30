@@ -1,4 +1,215 @@
 {
-  "valid": true,
-  "issues": []
+  "valid": false,
+  "issues": [
+    {
+      "levelId": "level-061",
+      "code": "out-of-bounds",
+      "message": "Entity gate-61 occupies 5,7 outside 7x7",
+      "entityId": "gate-61"
+    },
+    {
+      "levelId": "level-063",
+      "code": "out-of-bounds",
+      "message": "Entity gate-63 occupies 5,7 outside 7x7",
+      "entityId": "gate-63"
+    },
+    {
+      "levelId": "level-064",
+      "code": "out-of-bounds",
+      "message": "Entity gate-64 occupies 5,7 outside 7x7",
+      "entityId": "gate-64"
+    },
+    {
+      "levelId": "level-065",
+      "code": "out-of-bounds",
+      "message": "Entity gate-65 occupies 5,7 outside 7x7",
+      "entityId": "gate-65"
+    },
+    {
+      "levelId": "level-067",
+      "code": "out-of-bounds",
+      "message": "Entity gate-67 occupies 5,7 outside 7x7",
+      "entityId": "gate-67"
+    },
+    {
+      "levelId": "level-068",
+      "code": "out-of-bounds",
+      "message": "Entity gate-68 occupies 5,7 outside 7x7",
+      "entityId": "gate-68"
+    },
+    {
+      "levelId": "level-069",
+      "code": "out-of-bounds",
+      "message": "Entity gate-69 occupies 5,7 outside 7x7",
+      "entityId": "gate-69"
+    },
+    {
+      "levelId": "level-071",
+      "code": "out-of-bounds",
+      "message": "Entity gate-71 occupies 5,7 outside 7x7",
+      "entityId": "gate-71"
+    },
+    {
+      "levelId": "level-072",
+      "code": "out-of-bounds",
+      "message": "Entity gate-72 occupies 5,7 outside 7x7",
+      "entityId": "gate-72"
+    },
+    {
+      "levelId": "level-073",
+      "code": "out-of-bounds",
+      "message": "Entity gate-73 occupies 5,7 outside 7x7",
+      "entityId": "gate-73"
+    },
+    {
+      "levelId": "level-075",
+      "code": "out-of-bounds",
+      "message": "Entity gate-75 occupies 5,7 outside 7x7",
+      "entityId": "gate-75"
+    },
+    {
+      "levelId": "level-076",
+      "code": "out-of-bounds",
+      "message": "Entity gate-76 occupies 5,7 outside 7x7",
+      "entityId": "gate-76"
+    },
+    {
+      "levelId": "level-077",
+      "code": "out-of-bounds",
+      "message": "Entity gate-77 occupies 5,7 outside 7x7",
+      "entityId": "gate-77"
+    },
+    {
+      "levelId": "level-079",
+      "code": "out-of-bounds",
+      "message": "Entity gate-79 occupies 5,7 outside 7x7",
+      "entityId": "gate-79"
+    },
+    {
+      "levelId": "level-080",
+      "code": "out-of-bounds",
+      "message": "Entity gate-80 occupies 5,7 outside 7x7",
+      "entityId": "gate-80"
+    },
+    {
+      "levelId": "level-081",
+      "code": "out-of-bounds",
+      "message": "Entity gate-81 occupies 5,7 outside 7x7",
+      "entityId": "gate-81"
+    },
+    {
+      "levelId": "level-082",
+      "code": "out-of-bounds",
+      "message": "Entity gate-82 occupies 5,7 outside 7x7",
+      "entityId": "gate-82"
+    },
+    {
+      "levelId": "level-083",
+      "code": "out-of-bounds",
+      "message": "Entity gate-83 occupies 5,7 outside 7x7",
+      "entityId": "gate-83"
+    },
+    {
+      "levelId": "level-084",
+      "code": "out-of-bounds",
+      "message": "Entity gate-84 occupies 5,7 outside 7x7",
+      "entityId": "gate-84"
+    },
+    {
+      "levelId": "level-085",
+      "code": "out-of-bounds",
+      "message": "Entity gate-85 occupies 5,7 outside 7x7",
+      "entityId": "gate-85"
+    },
+    {
+      "levelId": "level-086",
+      "code": "out-of-bounds",
+      "message": "Entity gate-86 occupies 5,7 outside 7x7",
+      "entityId": "gate-86"
+    },
+    {
+      "levelId": "level-087",
+      "code": "out-of-bounds",
+      "message": "Entity gate-87 occupies 5,7 outside 7x7",
+      "entityId": "gate-87"
+    },
+    {
+      "levelId": "level-088",
+      "code": "out-of-bounds",
+      "message": "Entity gate-88 occupies 5,7 outside 7x7",
+      "entityId": "gate-88"
+    },
+    {
+      "levelId": "level-089",
+      "code": "out-of-bounds",
+      "message": "Entity gate-89 occupies 5,7 outside 7x7",
+      "entityId": "gate-89"
+    },
+    {
+      "levelId": "level-090",
+      "code": "out-of-bounds",
+      "message": "Entity gate-90 occupies 5,7 outside 7x7",
+      "entityId": "gate-90"
+    },
+    {
+      "levelId": "level-091",
+      "code": "out-of-bounds",
+      "message": "Entity gate-91 occupies 5,7 outside 7x7",
+      "entityId": "gate-91"
+    },
+    {
+      "levelId": "level-092",
+      "code": "out-of-bounds",
+      "message": "Entity gate-92 occupies 5,7 outside 7x7",
+      "entityId": "gate-92"
+    },
+    {
+      "levelId": "level-093",
+      "code": "out-of-bounds",
+      "message": "Entity gate-93 occupies 5,7 outside 7x7",
+      "entityId": "gate-93"
+    },
+    {
+      "levelId": "level-094",
+      "code": "out-of-bounds",
+      "message": "Entity gate-94 occupies 5,7 outside 7x7",
+      "entityId": "gate-94"
+    },
+    {
+      "levelId": "level-095",
+      "code": "out-of-bounds",
+      "message": "Entity gate-95 occupies 5,7 outside 7x7",
+      "entityId": "gate-95"
+    },
+    {
+      "levelId": "level-096",
+      "code": "out-of-bounds",
+      "message": "Entity gate-96 occupies 5,7 outside 7x7",
+      "entityId": "gate-96"
+    },
+    {
+      "levelId": "level-097",
+      "code": "out-of-bounds",
+      "message": "Entity gate-97 occupies 5,7 outside 7x7",
+      "entityId": "gate-97"
+    },
+    {
+      "levelId": "level-098",
+      "code": "out-of-bounds",
+      "message": "Entity gate-98 occupies 5,7 outside 7x7",
+      "entityId": "gate-98"
+    },
+    {
+      "levelId": "level-099",
+      "code": "out-of-bounds",
+      "message": "Entity gate-99 occupies 5,7 outside 7x7",
+      "entityId": "gate-99"
+    },
+    {
+      "levelId": "level-100",
+      "code": "out-of-bounds",
+      "message": "Entity gate-100 occupies 5,7 outside 7x7",
+      "entityId": "gate-100"
+    }
+  ]
 }

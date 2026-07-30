@@ -24,8 +24,8 @@ export function TribeOutHUD({
       className="tribe-game-hud"
       aria-label={`Màn ${level}, còn ${lives} mạng, đã thoát ${escapedCount} trên ${totalUnits}`}
     >
-      <div className="tribe-game-hud__status">
-        <div className="tribe-game-hud__hearts" aria-label={`${lives} trên ${maxLives} mạng`}>
+      <div className="tribe-game-hud__lives" aria-label={`${lives} trên ${maxLives} mạng`}>
+        <div className="tribe-game-hud__hearts">
           {Array.from({ length: maxLives }).map((_, index) => {
             const full = index < lives;
             return (
@@ -39,18 +39,6 @@ export function TribeOutHUD({
               />
             );
           })}
-        </div>
-
-        <div className="tribe-game-hud__meta">
-          {timeRemaining !== undefined ? (
-            <span
-              className="tribe-game-hud__metric"
-              data-danger={timeRemaining <= 5 ? "true" : undefined}
-            >
-              <Clock3 size={17} aria-hidden="true" />
-              <strong>{timeRemaining}s</strong>
-            </span>
-          ) : null}
         </div>
       </div>
 
@@ -71,6 +59,16 @@ export function TribeOutHUD({
           {escapedCount}/{totalUnits}
         </strong>
       </div>
+
+      {timeRemaining !== undefined ? (
+        <span
+          className="tribe-game-hud__metric"
+          data-danger={timeRemaining <= 5 ? "true" : undefined}
+        >
+          <Clock3 size={22} aria-hidden="true" />
+          <strong>{timeRemaining}s</strong>
+        </span>
+      ) : null}
     </div>
   );
 }

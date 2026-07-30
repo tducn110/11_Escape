@@ -17,7 +17,22 @@ body {
   font-family: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   touch-action: manipulation;
+}
+
+.app-container {
   background-color: #74d77c;
+  background-image: url('/background/PC.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    background-image: url('/background/Phone.png');
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 #root {

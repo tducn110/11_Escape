@@ -1,6 +1,7 @@
 export type Direction = "up" | "right" | "down" | "left";
 export type EntityId = string;
-export type LevelId = string;
+export type LevelId = `level-${string}`;
+export type DifficultyPhase = 1 | 2 | 3 | 4 | 5;
 export type StarRating = 0 | 1 | 2 | 3;
 
 export type EntityType = "unit" | "obstacle" | "gate" | "switch";
@@ -39,12 +40,13 @@ export type PuzzleEntity = UnitEntity | ObstacleEntity | GateEntity | SwitchEnti
 
 export interface TribeOutLevel {
   id: LevelId;
+  phase: DifficultyPhase;
   boardRows: number;
   boardCols: number;
   lives: number;
-  timeLimit?: number;
+  timeLimit: number;
   tutorialText?: string;
-  rotateCharges?: number;
+  rotateCharges: number;
   entities: PuzzleEntity[];
 }
 
@@ -59,9 +61,24 @@ export type PuzzleAction =
   | { type: "exit"; entityId: EntityId }
   | { type: "rotate"; entityId: EntityId };
 
-export type PuzzleActionOutcome = "accepted" | "blocked_path" | "invalid_target" | "no_charges";
+export type PuzzleActionOutcome =
+  | "accepted"
+  | "blocked_path"
+  | "invalid_target"
+  | "no_charges"
+  | "already_complete";
+
+export interface PuzzleTransitionDetails {
+  activatedSwitchIds: EntityId[];
+  openedGateIds: EntityId[];
+  consumedRotateCharge: boolean;
+  completedPuzzle: boolean;
+}
 
 export interface PuzzleActionResult {
+  action: PuzzleAction;
   nextState: PuzzleState;
   outcome: PuzzleActionOutcome;
+  accepted: boolean;
+  details: PuzzleTransitionDetails;
 }

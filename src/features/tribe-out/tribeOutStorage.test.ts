@@ -54,13 +54,30 @@ describe("tribeOutStorage", () => {
 
   it("migrates legacy numeric keys and resets stars once", () => {
     store.tribeout_current_level = "3";
-    store.tribeout_highest_level = "4";
+    store.tribeout_highest_level = "9";
     store.tribeout_level_stars = JSON.stringify({ 1: 3, 4: 2 });
 
     const progress = migrateLegacyProgress(storage, LEVELS);
-    expect(progress.currentLevelId).toBe(LEVELS[2].id);
-    expect(progress.unlockedLevelIds).toContain(LEVELS[3].id);
+    expect(progress.currentLevelId).toBe(LEVELS[3].id);
+    expect(progress.unlockedLevelIds).toEqual(LEVELS.slice(0, 10).map(level => level.id));
     expect(progress.starsByLevelId).toEqual({});
+    expect(store.tribeout_progress).toBeDefined();
+    expect(store.tribeout_current_level).toBeUndefined();
+    expect(store.tribeout_highest_level).toBeUndefined();
+  });
+
+  it("normalizes canonical unlocks to a contiguous prefix and keeps current unlocked", () => {
+    const progress = sanitizeProgress({
+      schemaVersion: 2,
+      levelSetVersion: 2,
+      unlockedLevelIds: [LEVELS[0].id, LEVELS[3].id, "bad-id"],
+      currentLevelId: LEVELS[8].id,
+      starsByLevelId: { [LEVELS[0].id]: 2.5, [LEVELS[2].id]: 3, "bad-id": 2 },
+    }, LEVELS);
+
+    expect(progress.unlockedLevelIds).toEqual(LEVELS.slice(0, 4).map(level => level.id));
+    expect(progress.currentLevelId).toBe(LEVELS[3].id);
+    expect(progress.starsByLevelId).toEqual({ [LEVELS[2].id]: 3 });
   });
 
   it("clear removes canonical and legacy keys", () => {

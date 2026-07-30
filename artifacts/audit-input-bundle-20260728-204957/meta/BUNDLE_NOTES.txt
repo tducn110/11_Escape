@@ -1,0 +1,12 @@
+Included:
+- doc/goal
+- doc/audit
+- repomix-output.xml
+- reports/goal-execution
+- reports/levels
+- git status/diff/commit snapshot
+- raw outputs: typecheck, test, build, levels:validate, levels:solve, levels:report, goal:verify
+
+Missing as a workspace file:
+- full agent transcript/completion report
+

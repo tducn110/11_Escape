@@ -1,7 +1,28 @@
-import type { PuzzleLevel, PuzzleEntity, Direction, EntityId } from "../../src/features/tribe-out/types";
+import type { DifficultyPhase, Direction, EntityId, PuzzleEntity, PuzzleLevel } from "../../src/features/tribe-out/types";
+
+type SegmentSpec = {
+  id: EntityId;
+  width: number;
+  height?: number;
+};
+
+type ChainSpec = {
+  row: number;
+  startCol: number;
+  direction?: Direction;
+  segments: SegmentSpec[];
+};
 
 function levelId(index: number): PuzzleLevel["id"] {
-  return `level-${String(index).padStart(3, "0")}`;
+  return `level-${String(index).padStart(3, "0")}` as PuzzleLevel["id"];
+}
+
+function phaseFor(index: number): DifficultyPhase {
+  if (index <= 20) return 1;
+  if (index <= 40) return 2;
+  if (index <= 60) return 3;
+  if (index <= 80) return 4;
+  return 5;
 }
 
 function unit(
@@ -13,7 +34,7 @@ function unit(
   height = 1,
   assetKey = `villager-${((Number(id.replace(/\D+/g, "")) || 1) % 7) + 1}`,
 ): PuzzleEntity {
-  return { id, type: "unit", assetKey, row, col, width, height, direction };
+  return { id, type: "unit", assetKey, row, col, width, height, direction, escaped: false };
 }
 
 function obstacle(id: EntityId, row: number, col: number, width = 1, height = 1): PuzzleEntity {
@@ -28,19 +49,29 @@ function switchEntity(id: EntityId, row: number, col: number, targetId: EntityId
   return { id, type: "switch", assetKey: activated ? "switch-active" : "switch-inactive", row, col, width: 1, height: 1, targetId, activated };
 }
 
-function createLevel(index: number, level: Omit<PuzzleLevel, "id">): PuzzleLevel {
-  return { id: levelId(index), ...level };
+function createLevel(index: number, level: Omit<PuzzleLevel, "id" | "phase">): PuzzleLevel {
+  return { id: levelId(index), phase: phaseFor(index), ...level };
 }
 
-function phaseFor(index: number): 1 | 2 | 3 | 4 | 5 {
-  if (index <= 20) return 1;
-  if (index <= 40) return 2;
-  if (index <= 60) return 3;
-  if (index <= 80) return 4;
-  return 5;
+function buildChain(spec: ChainSpec): PuzzleEntity[] {
+  const direction = spec.direction ?? "right";
+  const entities: PuzzleEntity[] = [];
+  let col = spec.startCol;
+
+  for (const segment of spec.segments) {
+    const height = segment.height ?? 1;
+    entities.push(unit(segment.id, spec.row, col, direction, segment.width, height));
+    col += segment.width;
+  }
+
+  return entities;
 }
 
-function tutorialText(index: number): string | undefined {
+function baseLives(index: number): number {
+  return 3 + Math.floor((index - 1) / 30);
+}
+
+function phaseTutorial(index: number): string | undefined {
   switch (index) {
     case 1: return "Chạm vào nhân vật để họ chạy thoát!";
     case 2: return "Nhân vật này đang cản đường nhân vật kia!";
@@ -51,20 +82,17 @@ function tutorialText(index: number): string | undefined {
   }
 }
 
-function baseLives(index: number): number {
-  return 3 + Math.floor((index - 1) / 30);
-}
-
 function makePhase1(index: number): PuzzleLevel {
   const count = 2 + ((index - 1) % 3);
   const boardRows = 3 + (index % 2);
   const boardCols = count + 2;
-  const chainRow = 1;
-  const entities: PuzzleEntity[] = [];
-
-  for (let i = 0; i < count; i += 1) {
-    entities.push(unit(`u${i}`, chainRow, i, "right"));
-  }
+  const entities: PuzzleEntity[] = [
+    ...buildChain({
+      row: 1,
+      startCol: 0,
+      segments: Array.from({ length: count }, (_, i) => ({ id: `u${i}`, width: 1 })),
+    }),
+  ];
 
   if (index % 4 === 0) {
     entities.push(obstacle("o0", 0, boardCols - 1));
@@ -75,138 +103,374 @@ function makePhase1(index: number): PuzzleLevel {
     boardCols,
     lives: baseLives(index),
     timeLimit: 16 + count * 3,
-    tutorialText: tutorialText(index),
+    tutorialText: phaseTutorial(index),
     rotateCharges: 0,
     entities,
   });
 }
 
-function makePhase2(index: number): PuzzleLevel {
-  const count = 3 + ((index - 21) % 2);
-  const boardRows = 4 + ((index - 21) % 2);
-  const boardCols = count + 3;
-  const chainRow = 1;
+function makeParallelChainsLevel(
+  index: number,
+  chainLengths: number[],
+  options: {
+    boardRows: number;
+    boardCols: number;
+    rotateCharges: number;
+    obstacleCount?: number;
+    wideRoot?: boolean;
+  },
+): PuzzleLevel {
   const entities: PuzzleEntity[] = [];
-  const usesWideLeader = index % 2 === 0;
+  const rowGap = chainLengths.length >= 3 ? 2 : 3;
 
-  for (let i = 0; i < count; i += 1) {
-    const width = i === 0 && usesWideLeader ? 2 : 1;
-    const col = usesWideLeader ? (i === 0 ? 0 : i + 1) : i;
-    entities.push(unit(`u${i}`, chainRow, col, "right", width, 1));
-  }
+  chainLengths.forEach((length, chainIndex) => {
+    const row = 1 + chainIndex * rowGap;
+    const widths = Array.from({ length }, (_, segmentIndex) => {
+      if (options.wideRoot && chainIndex === 0 && segmentIndex === 0) {
+        return 2;
+      }
+      return 1;
+    });
+    entities.push(
+      ...buildChain({
+        row,
+        startCol: 0,
+        segments: widths.map((width, segmentIndex) => ({ id: `u${chainIndex}_${segmentIndex}`, width })),
+      }),
+    );
+  });
 
-  entities.push(obstacle("o0", boardRows - 1, boardCols - 1));
-  if (index % 3 === 0) {
-    entities.push(obstacle("o1", 0, 0));
+  for (let obstacleIndex = 0; obstacleIndex < (options.obstacleCount ?? 0); obstacleIndex += 1) {
+    entities.push(obstacle(`o${obstacleIndex}`, 0, options.boardCols - 1 - obstacleIndex));
   }
 
   return createLevel(index, {
-    boardRows,
-    boardCols,
+    boardRows: options.boardRows,
+    boardCols: options.boardCols,
     lives: baseLives(index),
-    timeLimit: 18 + count * 4,
-    rotateCharges: 0,
+    timeLimit: 18 + chainLengths.reduce((sum, value) => sum + value, 0) * 2,
+    rotateCharges: options.rotateCharges,
     entities,
   });
 }
 
-function makePhase3(index: number): PuzzleLevel {
-  const boardRows = 4;
-  const boardCols = 6 + ((index - 41) % 2);
-  const gateId = "g0";
-  const entities: PuzzleEntity[] = [
-    unit("u0", 0, 0, "right"),
-    switchEntity("s0", 0, 1, gateId),
-    gate(gateId, 1, 1, false),
-    unit("u1", 1, 0, "right"),
-    unit("u2", 1, 2, "right"),
-  ];
+function makeStatefulLevel(
+  index: number,
+  config: {
+    boardRows: number;
+    boardCols: number;
+    rotateCharges: number;
+    keyChain: number[];
+    helperChain: number[];
+    gatedChain: number[];
+    includeGate: boolean;
+    includeSwitch: boolean;
+    includeWideUnit: boolean;
+    includeRotateDecoy: boolean;
+    includeObstacle: boolean;
+  },
+): PuzzleLevel {
+  const entities: PuzzleEntity[] = [];
+  const keyRow = 1;
+  const helperRow = 3;
+  const gatedRow = 5;
 
-  if (index % 2 === 0) {
-    entities.push(obstacle("o0", 2, boardCols - 1));
+  const keySegments = config.keyChain.map((width, segmentIndex) => ({
+    id: `k${index}_${segmentIndex}`,
+    width,
+  }));
+  const helperSegments = config.helperChain.map((width, segmentIndex) => ({
+    id: `h${index}_${segmentIndex}`,
+    width,
+  }));
+  const gatedSegments = config.gatedChain.map((width, segmentIndex) => ({
+    id: `g${index}_${segmentIndex}`,
+    width,
+  }));
+
+  entities.push(
+    ...buildChain({
+      row: keyRow,
+      startCol: 0,
+      segments: keySegments,
+    }),
+    ...buildChain({
+      row: helperRow,
+      startCol: 0,
+      segments: helperSegments,
+    }),
+    ...buildChain({
+      row: gatedRow,
+      startCol: 0,
+      segments: gatedSegments,
+    }),
+  );
+
+  const keyRootEndCol = config.keyChain.reduce((sum, width) => sum + width, 0);
+  const helperRootEndCol = config.helperChain.reduce((sum, width) => sum + width, 0);
+  const gatedRootEndCol = config.gatedChain.reduce((sum, width) => sum + width, 0);
+
+  if (config.includeSwitch) {
+    entities.push(switchEntity(`s${index}`, keyRow, keyRootEndCol, `gate-${index}`));
+  }
+
+  if (config.includeGate) {
+    entities.push(gate(`gate-${index}`, gatedRow, gatedRootEndCol, false));
+  }
+
+  if (config.includeWideUnit) {
+    entities.push(unit(`m${index}`, helperRow + 1, 0, "right", 2, 1));
+  }
+
+  if (config.includeRotateDecoy) {
+    const decoyCol = Math.min(config.boardCols - 1, Math.max(keyRootEndCol, helperRootEndCol) + 1);
+    entities.push(unit(`r${index}`, 2, decoyCol, "up"));
+    entities.push(obstacle(`or${index}`, 1, decoyCol));
   }
 
   return createLevel(index, {
-    boardRows,
-    boardCols,
+    boardRows: config.boardRows,
+    boardCols: config.boardCols,
     lives: baseLives(index),
-    timeLimit: 24,
-    rotateCharges: 0,
+    timeLimit: 24 + (config.keyChain.length + config.helperChain.length + config.gatedChain.length) * 3,
+    rotateCharges: config.rotateCharges,
     entities,
   });
 }
 
-function makePhase4(index: number): PuzzleLevel {
-  const boardRows = 4 + ((index - 61) % 2);
-  const boardCols = 6;
-  const entities: PuzzleEntity[] = [
-    unit("u0", 1, 0, "right"),
-    unit("u1", 1, 1, "right"),
-    unit("u2", 1, 2, "right"),
-    unit("u3", 1, 3, "right"),
-    obstacle("o0", 0, 0),
-  ];
-
-  if (index % 3 === 0) {
-    entities[0] = unit("u0", 1, 0, "down");
-    entities.push(obstacle("o1", 2, 0));
+function phase2Level(index: number): PuzzleLevel {
+  const variant = (index - 21) % 3;
+  if (variant === 0) {
+    return makeParallelChainsLevel(index, [4, 4], {
+      boardRows: 5,
+      boardCols: 6,
+      rotateCharges: 1,
+      obstacleCount: 1,
+    });
   }
-
-  return createLevel(index, {
-    boardRows,
-    boardCols,
-    lives: baseLives(index),
-    timeLimit: 28,
-    rotateCharges: index % 2 === 0 ? 2 : 1,
-    entities,
+  if (variant === 1) {
+    return makeParallelChainsLevel(index, [5, 3], {
+      boardRows: 5,
+      boardCols: 6,
+      rotateCharges: 1,
+      obstacleCount: 1,
+      wideRoot: true,
+    });
+  }
+  return makeParallelChainsLevel(index, [4, 3, 3], {
+    boardRows: 7,
+    boardCols: 6,
+    rotateCharges: 1,
+    obstacleCount: 2,
   });
 }
 
-function makePhase5(index: number): PuzzleLevel {
-  const boardRows = 5;
-  const boardCols = 7;
-  const gateId = "g0";
-  const entities: PuzzleEntity[] = [
-    unit("u0", 0, 0, "right"),
-    switchEntity("s0", 0, 2, gateId),
-    gate(gateId, 1, 1, false),
-    unit("u1", 1, 0, "right"),
-    unit("u2", 1, 2, "right"),
-    unit("u3", 2, 0, "right", 2, 1),
-  ];
-
-  if (index % 2 === 1) {
-    entities.push(obstacle("o0", 3, 5));
+function phase3Level(index: number): PuzzleLevel {
+  const variant = (index - 41) % 4;
+  if (variant === 0) {
+    return makeStatefulLevel(index, {
+      boardRows: 6,
+      boardCols: 6,
+      rotateCharges: 1,
+      keyChain: [1, 1, 1],
+      helperChain: [1, 1],
+      gatedChain: [1, 1, 1, 1, 1],
+      includeGate: true,
+      includeSwitch: true,
+      includeWideUnit: true,
+      includeRotateDecoy: false,
+      includeObstacle: true,
+    });
   }
+  if (variant === 1) {
+    return makeStatefulLevel(index, {
+      boardRows: 6,
+      boardCols: 7,
+      rotateCharges: 1,
+      keyChain: [1, 1, 1],
+      helperChain: [1, 1, 1],
+      gatedChain: [1, 1, 1, 1, 1, 1],
+      includeGate: true,
+      includeSwitch: true,
+      includeWideUnit: false,
+      includeRotateDecoy: false,
+      includeObstacle: true,
+    });
+  }
+  if (variant === 2) {
+    return makeStatefulLevel(index, {
+      boardRows: 7,
+      boardCols: 7,
+      rotateCharges: 1,
+      keyChain: [1, 1],
+      helperChain: [1, 1, 1],
+      gatedChain: [1, 1, 1, 1, 1],
+      includeGate: true,
+      includeSwitch: true,
+      includeWideUnit: true,
+      includeRotateDecoy: false,
+      includeObstacle: false,
+    });
+  }
+  return makeStatefulLevel(index, {
+    boardRows: 6,
+    boardCols: 7,
+    rotateCharges: 1,
+    keyChain: [1, 1, 1],
+    helperChain: [1, 1],
+    gatedChain: [1, 1, 1, 1, 1, 1],
+    includeGate: true,
+    includeSwitch: true,
+    includeWideUnit: true,
+    includeRotateDecoy: false,
+    includeObstacle: true,
+  });
+}
 
-  return createLevel(index, {
-    boardRows,
-    boardCols,
-    lives: baseLives(index),
-    timeLimit: 32,
+function phase4Level(index: number): PuzzleLevel {
+  const variant = (index - 61) % 4;
+  if (variant === 0) {
+    return makeStatefulLevel(index, {
+      boardRows: 6,
+      boardCols: 8,
+      rotateCharges: 2,
+      keyChain: [1, 1, 1],
+      helperChain: [1, 1, 1],
+      gatedChain: [1, 1, 1, 1, 1, 1, 1],
+      includeGate: true,
+      includeSwitch: true,
+      includeWideUnit: true,
+      includeRotateDecoy: true,
+      includeObstacle: true,
+    });
+  }
+  if (variant === 1) {
+    return makeStatefulLevel(index, {
+      boardRows: 7,
+      boardCols: 8,
+      rotateCharges: 2,
+      keyChain: [1, 1, 1, 1],
+      helperChain: [1, 1, 1],
+      gatedChain: [1, 1, 1, 1, 1, 1],
+      includeGate: true,
+      includeSwitch: true,
+      includeWideUnit: false,
+      includeRotateDecoy: true,
+      includeObstacle: true,
+    });
+  }
+  if (variant === 2) {
+    return makeStatefulLevel(index, {
+      boardRows: 7,
+      boardCols: 8,
+      rotateCharges: 2,
+      keyChain: [1, 1, 1],
+      helperChain: [1, 1, 1, 1],
+      gatedChain: [1, 1, 1, 1, 1, 1, 1],
+      includeGate: true,
+      includeSwitch: true,
+      includeWideUnit: true,
+      includeRotateDecoy: true,
+      includeObstacle: false,
+    });
+  }
+  return makeStatefulLevel(index, {
+    boardRows: 6,
+    boardCols: 8,
     rotateCharges: 2,
-    entities,
+    keyChain: [1, 1, 1],
+    helperChain: [1, 1],
+    gatedChain: [1, 1, 1, 1, 1, 1, 1],
+    includeGate: true,
+    includeSwitch: true,
+    includeWideUnit: false,
+    includeRotateDecoy: true,
+    includeObstacle: true,
+  });
+}
+
+function phase5Level(index: number): PuzzleLevel {
+  const variant = (index - 81) % 4;
+  if (variant === 0) {
+    return makeStatefulLevel(index, {
+      boardRows: 7,
+      boardCols: 8,
+      rotateCharges: 2,
+      keyChain: [1, 1, 1, 1],
+      helperChain: [1, 1, 1],
+      gatedChain: [1, 1, 1, 1, 1, 1, 1],
+      includeGate: true,
+      includeSwitch: true,
+      includeWideUnit: true,
+      includeRotateDecoy: true,
+      includeObstacle: true,
+    });
+  }
+  if (variant === 1) {
+    return makeStatefulLevel(index, {
+      boardRows: 8,
+      boardCols: 8,
+      rotateCharges: 2,
+      keyChain: [1, 1, 1],
+      helperChain: [1, 1, 1, 1],
+      gatedChain: [1, 1, 1, 1, 1, 1, 1],
+      includeGate: true,
+      includeSwitch: true,
+      includeWideUnit: true,
+      includeRotateDecoy: true,
+      includeObstacle: true,
+    });
+  }
+  if (variant === 2) {
+    return makeStatefulLevel(index, {
+      boardRows: 8,
+      boardCols: 8,
+      rotateCharges: 1,
+      keyChain: [1, 1, 1, 1],
+      helperChain: [1, 1, 1],
+      gatedChain: [1, 1, 1, 1, 1, 1, 1],
+      includeGate: true,
+      includeSwitch: true,
+      includeWideUnit: true,
+      includeRotateDecoy: true,
+      includeObstacle: true,
+    });
+  }
+  return makeStatefulLevel(index, {
+    boardRows: 7,
+    boardCols: 8,
+    rotateCharges: 2,
+    keyChain: [1, 1, 1],
+    helperChain: [1, 1, 1],
+    gatedChain: [1, 1, 1, 1, 1, 1, 1],
+    includeGate: true,
+    includeSwitch: true,
+    includeWideUnit: true,
+    includeRotateDecoy: true,
+    includeObstacle: true,
   });
 }
 
 export function generateLevels(): readonly PuzzleLevel[] {
   const levels: PuzzleLevel[] = [];
+
   for (let index = 1; index <= 100; index += 1) {
     const phase = phaseFor(index);
     const level = phase === 1
       ? makePhase1(index)
       : phase === 2
-        ? makePhase2(index)
+        ? phase2Level(index)
         : phase === 3
-          ? makePhase3(index)
+          ? phase3Level(index)
           : phase === 4
-            ? makePhase4(index)
-            : makePhase5(index);
+            ? phase4Level(index)
+            : phase5Level(index);
 
     levels.push({
       ...level,
       entities: level.entities.map(entity => ({ ...entity })) as PuzzleEntity[],
     });
   }
+
   return levels;
 }
