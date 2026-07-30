@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { AnimalSprite } from "../AnimalSprite";
 import { IMAGE_ASSETS } from "./assetRegistry";
 import type { Direction } from "../types";
 
@@ -14,13 +13,18 @@ interface GameSpriteProps {
 
 export function GameSprite({ assetKey, isObstacle, direction, size }: GameSpriteProps) {
   const [imageError, setImageError] = useState(false);
-  const imageUrl = IMAGE_ASSETS[assetKey];
+  const characterFallbackUrl = IMAGE_ASSETS["villager-1"];
+  const isCharacter = !isObstacle;
+  const imageUrl = IMAGE_ASSETS[assetKey] ?? (isCharacter ? characterFallbackUrl : undefined);
+  const resolvedImageUrl = imageError
+    ? (isCharacter && imageUrl !== characterFallbackUrl ? characterFallbackUrl : undefined)
+    : imageUrl;
 
-  if (imageUrl && !imageError) {
+  if (resolvedImageUrl) {
     return (
       <div style={{ width: size, height: size, position: "relative" }}>
         <img 
-          src={imageUrl} 
+          src={resolvedImageUrl}
           alt={assetKey}
           style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }}
           onError={() => setImageError(true)}
@@ -53,7 +57,7 @@ export function GameSprite({ assetKey, isObstacle, direction, size }: GameSprite
   if (isObstacle) {
     return <ObstacleSprite size={size} />;
   }
-  return <AnimalSprite assetKey={assetKey} direction={direction} size={size} />;
+  return null;
 }
 
 function ObstacleSprite({ size }: { size: number }) {

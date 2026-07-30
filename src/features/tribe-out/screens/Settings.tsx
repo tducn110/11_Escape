@@ -1,4 +1,4 @@
-import { Music, Settings as SettingsIcon, Volume2, VolumeX } from "lucide-react";
+import { Music, RotateCcw, Settings as SettingsIcon, Volume2 } from "lucide-react";
 import { Button } from "../../../components/shared/Button";
 
 interface SettingsProps {
@@ -11,49 +11,62 @@ interface SettingsProps {
 
 export function SettingsScreen({ musicEnabled, sfxEnabled, onMusicChange, onSfxChange, onBack }: SettingsProps) {
   return (
-    <div
-      className="bg-[#fdf6ea] rounded-[24px] p-[32px_24px] border-[2px] border-[#8a7d65]/15 shadow-[0_14px_40px_rgba(42,36,24,0.18),0_2px_0_rgba(255,255,255,0.6)_inset] flex flex-col gap-[24px] relative w-full box-border max-h-[calc(100dvh-32px)] min-h-0 overflow-y-auto overscroll-contain"
-    >
-      <div className="flex items-center justify-center gap-3">
-        <SettingsIcon size={28} className="text-[#2a2418]" />
-        <h1 className="font-['Be_Vietnam_Pro',sans-serif] font-extrabold text-[clamp(24px,5vw,28px)] text-[#2a2418] m-0 leading-[1.2]">
-          Cài Đặt
-        </h1>
-      </div>
+    <section className="tribe-settings" aria-labelledby="tribe-settings-title">
+      <header className="tribe-settings__brand">
+        <div className="tribe-settings__game-title">Thoát Khỏi Rừng</div>
+        <div className="tribe-settings__title-plaque">
+          <SettingsIcon size={28} aria-hidden="true" />
+          <h1 id="tribe-settings-title">Cài đặt</h1>
+        </div>
+      </header>
 
-      <div className="flex flex-col gap-4">
-        <div className="flex justify-between items-center p-4 bg-[#8a7d65]/10 rounded-[16px]">
-          <div className="font-semibold text-[#2a2418] flex items-center gap-2">
-            {musicEnabled ? <Music size={20} /> : <VolumeX size={20} />}
-            Nhạc nền
+      <div className="tribe-settings__panel">
+        <div className="tribe-settings__badge" aria-hidden="true">
+          <SettingsIcon size={48} strokeWidth={2.3} />
+        </div>
+        <div className="tribe-settings__rows">
+          <div className="tribe-settings__row">
+            <div className="tribe-settings__label">
+              <Music size={42} strokeWidth={2.25} aria-hidden="true" />
+              <span>Âm nhạc</span>
+            </div>
+            <button
+              type="button"
+              className={`tribe-settings-toggle${musicEnabled ? "" : " is-off"}`}
+              role="switch"
+              aria-checked={musicEnabled}
+              aria-label="Bật hoặc tắt âm nhạc"
+              onClick={() => onMusicChange(!musicEnabled)}
+            >
+              <span>{musicEnabled ? "Bật" : "Tắt"}</span>
+              <i aria-hidden="true" />
+            </button>
           </div>
-          <Button 
-            variant={musicEnabled ? "primary" : "secondary"} 
-            size="sm" 
-            onClick={() => onMusicChange(!musicEnabled)}
-          >
-            {musicEnabled ? "Bật" : "Tắt"}
-          </Button>
+
+          <div className="tribe-settings__row">
+            <div className="tribe-settings__label">
+              <Volume2 size={42} strokeWidth={2.25} aria-hidden="true" />
+              <span>Hiệu ứng</span>
+            </div>
+            <button
+              type="button"
+              className={`tribe-settings-toggle${sfxEnabled ? "" : " is-off"}`}
+              role="switch"
+              aria-checked={sfxEnabled}
+              aria-label="Bật hoặc tắt hiệu ứng âm thanh"
+              onClick={() => onSfxChange(!sfxEnabled)}
+            >
+              <span>{sfxEnabled ? "Bật" : "Tắt"}</span>
+              <i aria-hidden="true" />
+            </button>
+          </div>
         </div>
 
-        <div className="flex justify-between items-center p-4 bg-[#8a7d65]/10 rounded-[16px]">
-          <div className="font-semibold text-[#2a2418] flex items-center gap-2">
-            {sfxEnabled ? <Volume2 size={20} /> : <VolumeX size={20} />}
-            Hiệu ứng âm thanh
-          </div>
-          <Button 
-            variant={sfxEnabled ? "primary" : "secondary"} 
-            size="sm" 
-            onClick={() => onSfxChange(!sfxEnabled)}
-          >
-            {sfxEnabled ? "Bật" : "Tắt"}
-          </Button>
-        </div>
+        <Button onClick={onBack} size="lg" variant="primary" className="tribe-settings__back">
+          <RotateCcw size={28} strokeWidth={2.7} aria-hidden="true" />
+          Quay về
+        </Button>
       </div>
-
-      <Button onClick={onBack} size="md" variant="secondary" className="mt-2">
-        ← Quay lại
-      </Button>
-    </div>
+    </section>
   );
 }

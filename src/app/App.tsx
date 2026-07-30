@@ -1,17 +1,12 @@
 import { useState, useEffect } from "react";
 import { TribeOutGame } from "../features/tribe-out/TribeOutGame";
-import { DashboardScreen } from "../features/tribe-out/screens/Dashboard";
 import { SettingsScreen } from "../features/tribe-out/screens/Settings";
-import { LEVELS } from "../features/tribe-out/levels";
-import { loadTribeOutProgress } from "../features/tribe-out/tribeOutStorage";
 import { tribeOutAudio } from "../features/tribe-out/audio/tribeOutAudio";
 
-type Screen = "game" | "dashboard" | "settings";
+type Screen = "game" | "settings";
 
 export default function App() {
   const [screen, setScreen] = useState<Screen>("game");
-  const [progress, setProgress] = useState(() => loadTribeOutProgress(LEVELS));
-
   const [sfxEnabled, setSfxEnabled] = useState(() => tribeOutAudio.isSfxEnabled());
   const [musicEnabled, setMusicEnabled] = useState(() => tribeOutAudio.isMusicEnabled());
 
@@ -28,13 +23,6 @@ export default function App() {
   useEffect(() => {
     tribeOutAudio.preload();
   }, []);
-
-  // Sync progress occasionally
-  useEffect(() => {
-    if (screen === "dashboard") {
-      setProgress(loadTribeOutProgress(LEVELS));
-    }
-  }, [screen]);
 
   return (
     <div
@@ -58,7 +46,7 @@ export default function App() {
           position: "relative",
           zIndex: 1,
           width: "100%",
-          maxWidth: screen === "game" ? "none" : 460,
+          maxWidth: "none",
           height: "100%",
           minHeight: 0,
           display: "flex",
@@ -70,28 +58,6 @@ export default function App() {
           overscrollBehavior: "none",
         }}
       >
-        {screen === "dashboard" && (
-          <div
-            style={{
-              width: "100%",
-              height: "100%",
-              padding: "16px 12px",
-              paddingTop: "max(16px, env(safe-area-inset-top))",
-              paddingRight: "max(12px, env(safe-area-inset-right))",
-              paddingBottom: "max(16px, env(safe-area-inset-bottom))",
-              paddingLeft: "max(12px, env(safe-area-inset-left))",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <DashboardScreen 
-              progress={progress}
-              onBack={() => setScreen("game")}
-            />
-          </div>
-        )}
-
         {screen === "settings" && (
           <div
             style={{
@@ -130,7 +96,6 @@ export default function App() {
         >
           <TribeOutGame 
             isActive={screen === "game"}
-            onDashboard={() => setScreen("dashboard")}
             onSettings={() => setScreen("settings")}
           />
         </div>

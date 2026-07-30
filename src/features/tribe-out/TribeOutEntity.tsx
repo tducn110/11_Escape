@@ -115,6 +115,7 @@ export const TribeOutEntityComponent = memo(function TribeOutEntityComponent({
   const height = Math.max(32, Math.round(projected.height));
   const left = Math.round(projected.x - width / 2);
   const top = Math.round(projected.y - height / 2);
+  const spriteOffsetX = isUnit && entity.width > 1 ? -((entity.width - 1) * layout.stepX) / 2 : 0;
 
   let animation = "";
   if (animState === "escape" && dir) {
@@ -187,19 +188,21 @@ export const TribeOutEntityComponent = memo(function TribeOutEntityComponent({
         <div style={{
           width: "100%",
           height: "100%",
-          transform: "none",
+          transform: spriteOffsetX === 0 ? "none" : `translateX(${spriteOffsetX}px)`,
           transformOrigin: "center",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
         }}>
-          <GameSprite 
-            assetKey={assetKey}
-            isObstacle={blocksPointer}
-            isSwitch={isSwitch}
-            direction={dir}
-            size={spriteSize}
-          />
+          {!(entity.type === "gate" && entity.open) && (
+            <GameSprite
+              assetKey={assetKey}
+              isObstacle={blocksPointer}
+              isSwitch={isSwitch}
+              direction={dir}
+              size={spriteSize}
+            />
+          )}
         </div>
       </div>
     </div>
