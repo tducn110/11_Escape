@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Pause, Settings } from "lucide-react";
+import { Pause } from "lucide-react";
 import { GameShell } from "../../components/game/GameShell";
 import { Button } from "../../components/shared/Button";
 import { IconButton } from "../../components/shared/IconButton";
@@ -30,20 +30,21 @@ const HINT_CHARGES_PER_LEVEL = 3;
 interface Props {
   isActive?: boolean;
   onBoom?: () => void;
-  onSettings?: () => void;
 }
 
 function resolveLevelIndexById(levelId: GameState["currentLevelId"]): number {
   return LEVEL_INDEX_BY_ID.get(levelId) ?? 0;
 }
 
-export function TribeOutGame({ isActive = true, onBoom, onSettings }: Props = {}) {
+export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
   const initialProgressRef = useRef<TribeOutProgressSnapshot>(loadTribeOutProgress(LEVELS));
   const [gameState, setGameState] = useState(() => buildInitialGameState(initialProgressRef.current.currentLevelId));
   const [bumpingId, setBumpingId] = useState<string | null>(null);
   const [bumpNonce, setBumpNonce] = useState(0);
   const [hintedId, setHintedId] = useState<string | null>(null);
   const [isPaused, setIsPaused] = useState(false);
+  const [musicEnabled, setMusicEnabled] = useState(() => tribeOutAudio.isMusicEnabled());
+  const [sfxEnabled, setSfxEnabled] = useState(() => tribeOutAudio.isSfxEnabled());
   const bumpTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const hintTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const gameStateRef = useRef(gameState);
@@ -230,6 +231,22 @@ export function TribeOutGame({ isActive = true, onBoom, onSettings }: Props = {}
     }
   };
 
+  const handleMusicToggle = () => {
+    setMusicEnabled(prev => {
+      const next = !prev;
+      tribeOutAudio.setMusicEnabled(next);
+      return next;
+    });
+  };
+
+  const handleSfxToggle = () => {
+    setSfxEnabled(prev => {
+      const next = !prev;
+      tribeOutAudio.setSfxEnabled(next);
+      return next;
+    });
+  };
+
   return (
     <div className="tribe-game-root">
       <GameShell
@@ -245,9 +262,6 @@ export function TribeOutGame({ isActive = true, onBoom, onSettings }: Props = {}
                 </div>
               </div>
               <div className="tribe-game-header__actions">
-                <IconButton label="Cài đặt" onClick={onSettings} size={58} className="tribe-hud-icon-button">
-                  <Settings size={29} strokeWidth={2.6} />
-                </IconButton>
                 <IconButton label="Tạm dừng" onClick={handlePause} size={58} className="tribe-hud-icon-button">
                   <Pause size={29} fill="currentColor" strokeWidth={2.6} />
                 </IconButton>
@@ -320,7 +334,16 @@ export function TribeOutGame({ isActive = true, onBoom, onSettings }: Props = {}
           )}
         </div>
       </GameShell>
-      {isPaused ? <TribeOutPauseOverlay onResume={() => setIsPaused(false)} /> : null}
+      {isPaused ? (
+        <TribeOutPauseOverlay
+          onResume={() => setIsPaused(false)}
+          onRestart={handleRestart}
+          musicEnabled={musicEnabled}
+          sfxEnabled={sfxEnabled}
+          onToggleMusic={handleMusicToggle}
+          onToggleSfx={handleSfxToggle}
+        />
+      ) : null}
     </div>
   );
 }

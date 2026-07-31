@@ -1,25 +1,8 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { TribeOutGame } from "../features/tribe-out/TribeOutGame";
-import { SettingsScreen } from "../features/tribe-out/screens/Settings";
 import { tribeOutAudio } from "../features/tribe-out/audio/tribeOutAudio";
 
-type Screen = "game" | "settings";
-
 export default function App() {
-  const [screen, setScreen] = useState<Screen>("game");
-  const [sfxEnabled, setSfxEnabled] = useState(() => tribeOutAudio.isSfxEnabled());
-  const [musicEnabled, setMusicEnabled] = useState(() => tribeOutAudio.isMusicEnabled());
-
-  const handleMusicChange = (enabled: boolean) => {
-    setMusicEnabled(enabled);
-    tribeOutAudio.setMusicEnabled(enabled);
-  };
-
-  const handleSfxChange = (enabled: boolean) => {
-    setSfxEnabled(enabled);
-    tribeOutAudio.setSfxEnabled(enabled);
-  };
-
   useEffect(() => {
     tribeOutAudio.preload();
   }, []);
@@ -58,35 +41,10 @@ export default function App() {
           overscrollBehavior: "none",
         }}
       >
-        {screen === "settings" && (
-          <div
-            style={{
-              width: "100%",
-              height: "100%",
-              padding: "16px 12px",
-              paddingTop: "max(16px, env(safe-area-inset-top))",
-              paddingRight: "max(12px, env(safe-area-inset-right))",
-              paddingBottom: "max(16px, env(safe-area-inset-bottom))",
-              paddingLeft: "max(12px, env(safe-area-inset-left))",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <SettingsScreen
-              musicEnabled={musicEnabled}
-              sfxEnabled={sfxEnabled}
-              onMusicChange={handleMusicChange}
-              onSfxChange={handleSfxChange}
-              onBack={() => setScreen("game")}
-            />
-          </div>
-        )}
-
         <div
           className="tribe-game-mount"
           style={{
-            display: screen === "game" ? "flex" : "none",
+            display: "flex",
             width: "100%",
             height: "100%",
             minHeight: 0,
@@ -94,10 +52,7 @@ export default function App() {
             justifyContent: "center",
           }}
         >
-          <TribeOutGame 
-            isActive={screen === "game"}
-            onSettings={() => setScreen("settings")}
-          />
+          <TribeOutGame />
         </div>
       </main>
     </div>
