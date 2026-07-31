@@ -1,0 +1,544 @@
+=== SNAPSHOT TIME ===
+2026-07-31T15:47:21+07:00
+
+=== REPOSITORY ===
+/home/pro/Downloads/intern/11_Escape
+
+=== BRANCH ===
+main
+
+=== HEAD ===
+39cdccef44058375c1dc091ff9987f6967fab895
+
+=== STATUS ===
+ M .gitignore
+ D 11_escape_audit_bundle.zip
+ D 11_escape_audit_inputs_20260728-204957.zip
+ D artifacts/audit-input-bundle-2026-07-28/git/commit-bd5c16a-summary.txt
+ D artifacts/audit-input-bundle-2026-07-28/git/commit-bd5c16a.patch
+ D artifacts/audit-input-bundle-2026-07-28/git/diff-stat-working-tree.txt
+ D artifacts/audit-input-bundle-2026-07-28/git/diff-working-tree.patch
+ D artifacts/audit-input-bundle-2026-07-28/git/name-status-working-tree.txt
+ D artifacts/audit-input-bundle-2026-07-28/git/status-current.txt
+ D artifacts/audit-input-bundle-2026-07-28/git/untracked-files.txt
+ D artifacts/audit-input-bundle-2026-07-28/inputs/audit-docs/PREVIOUS_SCREEN_REUSE_AUDIT.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/audit-docs/animal-escape-full-audit/FULL_AUDIT.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/audit-docs/animal-escape-full-audit/audit-summary.json
+ D artifacts/audit-input-bundle-2026-07-28/inputs/audit-docs/animal-escape-full-audit/commit-provenance.csv
+ D artifacts/audit-input-bundle-2026-07-28/inputs/audit-docs/animal-escape-full-audit/requirement-matrix.csv
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/AGENT_INSTRUCTIONS.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/IMPLEMENTATION_ORDER.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/MANIFEST.json
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/MASTER_EXECUTION_SPEC.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/README.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/SPECIFICATION_STATUS.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/START_HERE.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/TRACEABILITY_MATRIX.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/contracts/01_CURRENT_STATE.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/contracts/02_TARGET_ARCHITECTURE.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/contracts/03_DOMAIN_CONTRACT.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/contracts/04_AUTHORING_AND_REPORT_SCHEMAS.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/diagrams/action-transition.mmd
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/diagrams/goal-dependency-graph.mmd
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/diagrams/level-generation-pipeline.mmd
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/diagrams/progress-migration.mmd
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/diagrams/solver-selection.mmd
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/diagrams/system-architecture.mmd
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/00_ONE_TIME_TRIAGE.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/01_FILE_BY_FILE_SPECIFICATION.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/02_VALIDATOR_AND_TOOLCHAIN.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/03_HYBRID_SOLVER.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/04_DIFFICULTY_ANALYZER.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/05_100_LEVEL_CATALOG.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/06_PROGRESS_AND_ECONOMY_REMOVAL.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/07_RUNTIME_INTEGRATION.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/08_GENERATOR_ALGORITHMS.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/quality/01_TEST_MATRIX.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/quality/02_COMMANDS_AND_QUALITY_GATES.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/quality/03_MANUAL_QA.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/quality/04_EVIDENCE_AND_COMPLETION_PROTOCOL.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/quality/05_GLOBAL_DEFINITION_OF_DONE.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/source/Logic.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/source/OVERRIDES_AND_DECISIONS.md
+ D artifacts/audit-input-bundle-2026-07-28/inputs/goal/source/repomix-output.xml
+ D artifacts/audit-input-bundle-2026-07-28/inputs/repomix-output.xml
+ D artifacts/audit-input-bundle-2026-07-28/meta/current-branch.txt
+ D artifacts/audit-input-bundle-2026-07-28/meta/current-head.txt
+ D artifacts/audit-input-bundle-2026-07-28/meta/head-commit.txt
+ D artifacts/audit-input-bundle-2026-07-28/meta/remotes.txt
+ D artifacts/audit-input-bundle-2026-07-28/meta/repo-root.txt
+ D artifacts/audit-input-bundle-2026-07-28/reports/goal-execution/final-verification.txt
+ D artifacts/audit-input-bundle-2026-07-28/reports/goal-execution/manual-qa.md
+ D artifacts/audit-input-bundle-2026-07-28/reports/goal-execution/triage-initial.txt
+ D artifacts/audit-input-bundle-2026-07-28/reports/goal-execution/triage-resolution.md
+ D artifacts/audit-input-bundle-2026-07-28/reports/levels/difficulty.csv
+ D artifacts/audit-input-bundle-2026-07-28/reports/levels/difficulty.json
+ D artifacts/audit-input-bundle-2026-07-28/reports/levels/difficulty.md
+ D artifacts/audit-input-bundle-2026-07-28/reports/levels/solutions.json
+ D artifacts/audit-input-bundle-2026-07-28/reports/levels/solutions.md
+ D artifacts/audit-input-bundle-2026-07-28/reports/levels/validation.json
+ D artifacts/audit-input-bundle-20260728-204957/git/commit-bd5c16a-summary.txt
+ D artifacts/audit-input-bundle-20260728-204957/git/commit-bd5c16a.patch
+ D artifacts/audit-input-bundle-20260728-204957/git/diff-stat-working-tree.txt
+ D artifacts/audit-input-bundle-20260728-204957/git/diff-working-tree.patch
+ D artifacts/audit-input-bundle-20260728-204957/git/name-status-working-tree.txt
+ D artifacts/audit-input-bundle-20260728-204957/git/status-current.txt
+ D artifacts/audit-input-bundle-20260728-204957/git/untracked-files.txt
+ D artifacts/audit-input-bundle-20260728-204957/inputs/audit-docs/PREVIOUS_SCREEN_REUSE_AUDIT.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/audit-docs/animal-escape-full-audit/FULL_AUDIT.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/audit-docs/animal-escape-full-audit/audit-summary.json
+ D artifacts/audit-input-bundle-20260728-204957/inputs/audit-docs/animal-escape-full-audit/commit-provenance.csv
+ D artifacts/audit-input-bundle-20260728-204957/inputs/audit-docs/animal-escape-full-audit/requirement-matrix.csv
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/AGENT_INSTRUCTIONS.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/IMPLEMENTATION_ORDER.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/MANIFEST.json
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/MASTER_EXECUTION_SPEC.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/README.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/SPECIFICATION_STATUS.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/START_HERE.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/TRACEABILITY_MATRIX.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/contracts/01_CURRENT_STATE.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/contracts/02_TARGET_ARCHITECTURE.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/contracts/03_DOMAIN_CONTRACT.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/contracts/04_AUTHORING_AND_REPORT_SCHEMAS.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/diagrams/action-transition.mmd
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/diagrams/goal-dependency-graph.mmd
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/diagrams/level-generation-pipeline.mmd
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/diagrams/progress-migration.mmd
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/diagrams/solver-selection.mmd
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/diagrams/system-architecture.mmd
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/00_ONE_TIME_TRIAGE.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/01_FILE_BY_FILE_SPECIFICATION.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/02_VALIDATOR_AND_TOOLCHAIN.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/03_HYBRID_SOLVER.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/04_DIFFICULTY_ANALYZER.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/05_100_LEVEL_CATALOG.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/06_PROGRESS_AND_ECONOMY_REMOVAL.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/07_RUNTIME_INTEGRATION.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/08_GENERATOR_ALGORITHMS.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/quality/01_TEST_MATRIX.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/quality/02_COMMANDS_AND_QUALITY_GATES.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/quality/03_MANUAL_QA.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/quality/04_EVIDENCE_AND_COMPLETION_PROTOCOL.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/quality/05_GLOBAL_DEFINITION_OF_DONE.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/source/Logic.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/source/OVERRIDES_AND_DECISIONS.md
+ D artifacts/audit-input-bundle-20260728-204957/inputs/goal/source/repomix-output.xml
+ D artifacts/audit-input-bundle-20260728-204957/inputs/repomix-output.xml
+ D artifacts/audit-input-bundle-20260728-204957/meta/BUNDLE_NOTES.txt
+ D artifacts/audit-input-bundle-20260728-204957/meta/current-branch.txt
+ D artifacts/audit-input-bundle-20260728-204957/meta/current-head.txt
+ D artifacts/audit-input-bundle-20260728-204957/meta/head-commit.txt
+ D artifacts/audit-input-bundle-20260728-204957/meta/remotes.txt
+ D artifacts/audit-input-bundle-20260728-204957/meta/repo-root.txt
+ D artifacts/audit-input-bundle-20260728-204957/raw-outputs/build.txt
+ D artifacts/audit-input-bundle-20260728-204957/raw-outputs/goal-verify.txt
+ D artifacts/audit-input-bundle-20260728-204957/raw-outputs/levels-report.txt
+ D artifacts/audit-input-bundle-20260728-204957/raw-outputs/levels-solve.txt
+ D artifacts/audit-input-bundle-20260728-204957/raw-outputs/levels-validate.txt
+ D artifacts/audit-input-bundle-20260728-204957/raw-outputs/test.txt
+ D artifacts/audit-input-bundle-20260728-204957/raw-outputs/typecheck.txt
+ D artifacts/audit-input-bundle-20260728-204957/reports/goal-execution/final-verification.txt
+ D artifacts/audit-input-bundle-20260728-204957/reports/goal-execution/manual-qa.md
+ D artifacts/audit-input-bundle-20260728-204957/reports/goal-execution/triage-initial.txt
+ D artifacts/audit-input-bundle-20260728-204957/reports/goal-execution/triage-resolution.md
+ D artifacts/audit-input-bundle-20260728-204957/reports/levels/difficulty.csv
+ D artifacts/audit-input-bundle-20260728-204957/reports/levels/difficulty.json
+ D artifacts/audit-input-bundle-20260728-204957/reports/levels/difficulty.md
+ D artifacts/audit-input-bundle-20260728-204957/reports/levels/solutions.json
+ D artifacts/audit-input-bundle-20260728-204957/reports/levels/solutions.md
+ D artifacts/audit-input-bundle-20260728-204957/reports/levels/validation.json
+ D check_img.py
+ D check_img2.py
+ D check_real_bg.py
+ D doc/general/ATTRIBUTIONS.md
+ D doc/general/Guidelines.md
+ D doc/general/README.md
+ D find_board.py
+ D fix_levels.py
+ M repomix-output.xml
+ D reports/goal-execution/final-verification.txt
+ D reports/goal-execution/manual-qa.md
+ D reports/goal-execution/triage-initial.txt
+ D reports/goal-execution/triage-resolution.md
+ D reports/levels/difficulty.csv
+ D reports/levels/difficulty.json
+ D reports/levels/difficulty.md
+ D reports/levels/solutions.json
+ D reports/levels/solutions.md
+ D reports/levels/validation.json
+ M src/features/tribe-out/TribeOutGame.tsx
+ M src/features/tribe-out/TribeOutOverlay.tsx
+ M src/features/tribe-out/TribeOutPauseOverlay.tsx
+ M src/features/tribe-out/levels.ts
+ M src/features/tribe-out/tribeOut.css
+?? public/EndGameScreen/
+?? public/loseGamescreen/
+?? repo-context.txt
+
+=== DIFF STAT ===
+ .gitignore                                         |     3 +
+ 11_escape_audit_bundle.zip                         |   Bin 465336 -> 0 bytes
+ 11_escape_audit_inputs_20260728-204957.zip         |   Bin 433207 -> 0 bytes
+ .../git/commit-bd5c16a-summary.txt                 |    97 -
+ .../git/commit-bd5c16a.patch                       | 52722 ----------
+ .../git/diff-stat-working-tree.txt                 |    29 -
+ .../git/diff-working-tree.patch                    | 11198 ---
+ .../git/name-status-working-tree.txt               |    28 -
+ .../git/status-current.txt                         |    40 -
+ .../git/untracked-files.txt                        |   122 -
+ .../audit-docs/PREVIOUS_SCREEN_REUSE_AUDIT.md      |   174 -
+ .../animal-escape-full-audit/FULL_AUDIT.md         |   690 -
+ .../animal-escape-full-audit/audit-summary.json    |    26 -
+ .../animal-escape-full-audit/commit-provenance.csv |    55 -
+ .../requirement-matrix.csv                         |    17 -
+ .../inputs/goal/AGENT_INSTRUCTIONS.md              |    38 -
+ .../inputs/goal/IMPLEMENTATION_ORDER.md            |   114 -
+ .../inputs/goal/MANIFEST.json                      |   180 -
+ .../inputs/goal/MASTER_EXECUTION_SPEC.md           |    85 -
+ .../inputs/goal/README.md                          |    48 -
+ .../inputs/goal/SPECIFICATION_STATUS.md            |    25 -
+ .../inputs/goal/START_HERE.md                      |    72 -
+ .../inputs/goal/TRACEABILITY_MATRIX.md             |    27 -
+ .../inputs/goal/contracts/01_CURRENT_STATE.md      |   148 -
+ .../goal/contracts/02_TARGET_ARCHITECTURE.md       |   182 -
+ .../inputs/goal/contracts/03_DOMAIN_CONTRACT.md    |   260 -
+ .../contracts/04_AUTHORING_AND_REPORT_SCHEMAS.md   |   142 -
+ .../inputs/goal/diagrams/action-transition.mmd     |    15 -
+ .../inputs/goal/diagrams/goal-dependency-graph.mmd |    15 -
+ .../goal/diagrams/level-generation-pipeline.mmd    |    16 -
+ .../inputs/goal/diagrams/progress-migration.mmd    |    14 -
+ .../inputs/goal/diagrams/solver-selection.mmd      |    16 -
+ .../inputs/goal/diagrams/system-architecture.mmd   |    15 -
+ .../goal/implementation/00_ONE_TIME_TRIAGE.md      |    75 -
+ .../01_FILE_BY_FILE_SPECIFICATION.md               |   308 -
+ .../implementation/02_VALIDATOR_AND_TOOLCHAIN.md   |   149 -
+ .../inputs/goal/implementation/03_HYBRID_SOLVER.md |   191 -
+ .../goal/implementation/04_DIFFICULTY_ANALYZER.md  |   189 -
+ .../goal/implementation/05_100_LEVEL_CATALOG.md    |   249 -
+ .../06_PROGRESS_AND_ECONOMY_REMOVAL.md             |   150 -
+ .../goal/implementation/07_RUNTIME_INTEGRATION.md  |   156 -
+ .../goal/implementation/08_GENERATOR_ALGORITHMS.md |   199 -
+ .../inputs/goal/quality/01_TEST_MATRIX.md          |   133 -
+ .../goal/quality/02_COMMANDS_AND_QUALITY_GATES.md  |    94 -
+ .../inputs/goal/quality/03_MANUAL_QA.md            |    80 -
+ .../quality/04_EVIDENCE_AND_COMPLETION_PROTOCOL.md |   145 -
+ .../goal/quality/05_GLOBAL_DEFINITION_OF_DONE.md   |    85 -
+ .../inputs/goal/source/Logic.md                    |   687 -
+ .../inputs/goal/source/OVERRIDES_AND_DECISIONS.md  |    90 -
+ .../inputs/goal/source/repomix-output.xml          | 45089 ---------
+ .../inputs/repomix-output.xml                      | 45089 ---------
+ .../meta/current-branch.txt                        |     1 -
+ .../meta/current-head.txt                          |     1 -
+ .../meta/head-commit.txt                           |     4 -
+ .../audit-input-bundle-2026-07-28/meta/remotes.txt |     2 -
+ .../meta/repo-root.txt                             |     1 -
+ .../reports/goal-execution/final-verification.txt  |    21 -
+ .../reports/goal-execution/manual-qa.md            |    21 -
+ .../reports/goal-execution/triage-initial.txt      |   109 -
+ .../reports/goal-execution/triage-resolution.md    |    17 -
+ .../reports/levels/difficulty.csv                  |   101 -
+ .../reports/levels/difficulty.json                 |  5415 -
+ .../reports/levels/difficulty.md                   |     4 -
+ .../reports/levels/solutions.json                  |  4793 -
+ .../reports/levels/solutions.md                    |     6 -
+ .../reports/levels/validation.json                 |     4 -
+ .../git/commit-bd5c16a-summary.txt                 |    97 -
+ .../git/commit-bd5c16a.patch                       | 52722 ----------
+ .../git/diff-stat-working-tree.txt                 |    29 -
+ .../git/diff-working-tree.patch                    | 11198 ---
+ .../git/name-status-working-tree.txt               |    28 -
+ .../git/status-current.txt                         |    40 -
+ .../git/untracked-files.txt                        |   185 -
+ .../audit-docs/PREVIOUS_SCREEN_REUSE_AUDIT.md      |   174 -
+ .../animal-escape-full-audit/FULL_AUDIT.md         |   690 -
+ .../animal-escape-full-audit/audit-summary.json    |    26 -
+ .../animal-escape-full-audit/commit-provenance.csv |    55 -
+ .../requirement-matrix.csv                         |    17 -
+ .../inputs/goal/AGENT_INSTRUCTIONS.md              |    38 -
+ .../inputs/goal/IMPLEMENTATION_ORDER.md            |   114 -
+ .../inputs/goal/MANIFEST.json                      |   180 -
+ .../inputs/goal/MASTER_EXECUTION_SPEC.md           |    85 -
+ .../inputs/goal/README.md                          |    48 -
+ .../inputs/goal/SPECIFICATION_STATUS.md            |    25 -
+ .../inputs/goal/START_HERE.md                      |    72 -
+ .../inputs/goal/TRACEABILITY_MATRIX.md             |    27 -
+ .../inputs/goal/contracts/01_CURRENT_STATE.md      |   148 -
+ .../goal/contracts/02_TARGET_ARCHITECTURE.md       |   182 -
+ .../inputs/goal/contracts/03_DOMAIN_CONTRACT.md    |   260 -
+ .../contracts/04_AUTHORING_AND_REPORT_SCHEMAS.md   |   142 -
+ .../inputs/goal/diagrams/action-transition.mmd     |    15 -
+ .../inputs/goal/diagrams/goal-dependency-graph.mmd |    15 -
+ .../goal/diagrams/level-generation-pipeline.mmd    |    16 -
+ .../inputs/goal/diagrams/progress-migration.mmd    |    14 -
+ .../inputs/goal/diagrams/solver-selection.mmd      |    16 -
+ .../inputs/goal/diagrams/system-architecture.mmd   |    15 -
+ .../goal/implementation/00_ONE_TIME_TRIAGE.md      |    75 -
+ .../01_FILE_BY_FILE_SPECIFICATION.md               |   308 -
+ .../implementation/02_VALIDATOR_AND_TOOLCHAIN.md   |   149 -
+ .../inputs/goal/implementation/03_HYBRID_SOLVER.md |   191 -
+ .../goal/implementation/04_DIFFICULTY_ANALYZER.md  |   189 -
+ .../goal/implementation/05_100_LEVEL_CATALOG.md    |   249 -
+ .../06_PROGRESS_AND_ECONOMY_REMOVAL.md             |   150 -
+ .../goal/implementation/07_RUNTIME_INTEGRATION.md  |   156 -
+ .../goal/implementation/08_GENERATOR_ALGORITHMS.md |   199 -
+ .../inputs/goal/quality/01_TEST_MATRIX.md          |   133 -
+ .../goal/quality/02_COMMANDS_AND_QUALITY_GATES.md  |    94 -
+ .../inputs/goal/quality/03_MANUAL_QA.md            |    80 -
+ .../quality/04_EVIDENCE_AND_COMPLETION_PROTOCOL.md |   145 -
+ .../goal/quality/05_GLOBAL_DEFINITION_OF_DONE.md   |    85 -
+ .../inputs/goal/source/Logic.md                    |   687 -
+ .../inputs/goal/source/OVERRIDES_AND_DECISIONS.md  |    90 -
+ .../inputs/goal/source/repomix-output.xml          | 45089 ---------
+ .../inputs/repomix-output.xml                      | 45089 ---------
+ .../meta/BUNDLE_NOTES.txt                          |    12 -
+ .../meta/current-branch.txt                        |     1 -
+ .../meta/current-head.txt                          |     1 -
+ .../meta/head-commit.txt                           |     4 -
+ .../meta/remotes.txt                               |     2 -
+ .../meta/repo-root.txt                             |     1 -
+ .../raw-outputs/build.txt                          |    31 -
+ .../raw-outputs/goal-verify.txt                    |    11 -
+ .../raw-outputs/levels-report.txt                  |    14 -
+ .../raw-outputs/levels-solve.txt                   |  4797 -
+ .../raw-outputs/levels-validate.txt                |     8 -
+ .../raw-outputs/test.txt                           |    18 -
+ .../raw-outputs/typecheck.txt                      |    12 -
+ .../reports/goal-execution/final-verification.txt  |    21 -
+ .../reports/goal-execution/manual-qa.md            |    21 -
+ .../reports/goal-execution/triage-initial.txt      |   109 -
+ .../reports/goal-execution/triage-resolution.md    |    17 -
+ .../reports/levels/difficulty.csv                  |   101 -
+ .../reports/levels/difficulty.json                 |  5415 -
+ .../reports/levels/difficulty.md                   |     4 -
+ .../reports/levels/solutions.json                  |  4793 -
+ .../reports/levels/solutions.md                    |     6 -
+ .../reports/levels/validation.json                 |     4 -
+ check_img.py                                       |    15 -
+ check_img2.py                                      |    14 -
+ check_real_bg.py                                   |    12 -
+ doc/general/ATTRIBUTIONS.md                        |     3 -
+ doc/general/Guidelines.md                          |    61 -
+ doc/general/README.md                              |    40 -
+ find_board.py                                      |    24 -
+ fix_levels.py                                      |     9 -
+ repomix-output.xml                                 | 98016 +++++++++++++++----
+ reports/goal-execution/final-verification.txt      |    21 -
+ reports/goal-execution/manual-qa.md                |    21 -
+ reports/goal-execution/triage-initial.txt          |   109 -
+ reports/goal-execution/triage-resolution.md        |    17 -
+ reports/levels/difficulty.csv                      |   101 -
+ reports/levels/difficulty.json                     |  5385 -
+ reports/levels/difficulty.md                       |     4 -
+ reports/levels/solutions.json                      |  5375 -
+ reports/levels/solutions.md                        |     6 -
+ reports/levels/validation.json                     |   215 -
+ src/features/tribe-out/TribeOutGame.tsx            |    21 +-
+ src/features/tribe-out/TribeOutOverlay.tsx         |   241 +-
+ src/features/tribe-out/TribeOutPauseOverlay.tsx    |   122 +-
+ src/features/tribe-out/levels.ts                   |     2 +-
+ src/features/tribe-out/tribeOut.css                |   738 +
+ 161 files changed, 77177 insertions(+), 378900 deletions(-)
+
+=== CHANGED FILES ===
+M	.gitignore
+D	11_escape_audit_bundle.zip
+D	11_escape_audit_inputs_20260728-204957.zip
+D	artifacts/audit-input-bundle-2026-07-28/git/commit-bd5c16a-summary.txt
+D	artifacts/audit-input-bundle-2026-07-28/git/commit-bd5c16a.patch
+D	artifacts/audit-input-bundle-2026-07-28/git/diff-stat-working-tree.txt
+D	artifacts/audit-input-bundle-2026-07-28/git/diff-working-tree.patch
+D	artifacts/audit-input-bundle-2026-07-28/git/name-status-working-tree.txt
+D	artifacts/audit-input-bundle-2026-07-28/git/status-current.txt
+D	artifacts/audit-input-bundle-2026-07-28/git/untracked-files.txt
+D	artifacts/audit-input-bundle-2026-07-28/inputs/audit-docs/PREVIOUS_SCREEN_REUSE_AUDIT.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/audit-docs/animal-escape-full-audit/FULL_AUDIT.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/audit-docs/animal-escape-full-audit/audit-summary.json
+D	artifacts/audit-input-bundle-2026-07-28/inputs/audit-docs/animal-escape-full-audit/commit-provenance.csv
+D	artifacts/audit-input-bundle-2026-07-28/inputs/audit-docs/animal-escape-full-audit/requirement-matrix.csv
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/AGENT_INSTRUCTIONS.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/IMPLEMENTATION_ORDER.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/MANIFEST.json
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/MASTER_EXECUTION_SPEC.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/README.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/SPECIFICATION_STATUS.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/START_HERE.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/TRACEABILITY_MATRIX.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/contracts/01_CURRENT_STATE.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/contracts/02_TARGET_ARCHITECTURE.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/contracts/03_DOMAIN_CONTRACT.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/contracts/04_AUTHORING_AND_REPORT_SCHEMAS.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/diagrams/action-transition.mmd
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/diagrams/goal-dependency-graph.mmd
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/diagrams/level-generation-pipeline.mmd
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/diagrams/progress-migration.mmd
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/diagrams/solver-selection.mmd
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/diagrams/system-architecture.mmd
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/00_ONE_TIME_TRIAGE.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/01_FILE_BY_FILE_SPECIFICATION.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/02_VALIDATOR_AND_TOOLCHAIN.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/03_HYBRID_SOLVER.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/04_DIFFICULTY_ANALYZER.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/05_100_LEVEL_CATALOG.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/06_PROGRESS_AND_ECONOMY_REMOVAL.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/07_RUNTIME_INTEGRATION.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/implementation/08_GENERATOR_ALGORITHMS.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/quality/01_TEST_MATRIX.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/quality/02_COMMANDS_AND_QUALITY_GATES.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/quality/03_MANUAL_QA.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/quality/04_EVIDENCE_AND_COMPLETION_PROTOCOL.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/quality/05_GLOBAL_DEFINITION_OF_DONE.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/source/Logic.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/source/OVERRIDES_AND_DECISIONS.md
+D	artifacts/audit-input-bundle-2026-07-28/inputs/goal/source/repomix-output.xml
+D	artifacts/audit-input-bundle-2026-07-28/inputs/repomix-output.xml
+D	artifacts/audit-input-bundle-2026-07-28/meta/current-branch.txt
+D	artifacts/audit-input-bundle-2026-07-28/meta/current-head.txt
+D	artifacts/audit-input-bundle-2026-07-28/meta/head-commit.txt
+D	artifacts/audit-input-bundle-2026-07-28/meta/remotes.txt
+D	artifacts/audit-input-bundle-2026-07-28/meta/repo-root.txt
+D	artifacts/audit-input-bundle-2026-07-28/reports/goal-execution/final-verification.txt
+D	artifacts/audit-input-bundle-2026-07-28/reports/goal-execution/manual-qa.md
+D	artifacts/audit-input-bundle-2026-07-28/reports/goal-execution/triage-initial.txt
+D	artifacts/audit-input-bundle-2026-07-28/reports/goal-execution/triage-resolution.md
+D	artifacts/audit-input-bundle-2026-07-28/reports/levels/difficulty.csv
+D	artifacts/audit-input-bundle-2026-07-28/reports/levels/difficulty.json
+D	artifacts/audit-input-bundle-2026-07-28/reports/levels/difficulty.md
+D	artifacts/audit-input-bundle-2026-07-28/reports/levels/solutions.json
+D	artifacts/audit-input-bundle-2026-07-28/reports/levels/solutions.md
+D	artifacts/audit-input-bundle-2026-07-28/reports/levels/validation.json
+D	artifacts/audit-input-bundle-20260728-204957/git/commit-bd5c16a-summary.txt
+D	artifacts/audit-input-bundle-20260728-204957/git/commit-bd5c16a.patch
+D	artifacts/audit-input-bundle-20260728-204957/git/diff-stat-working-tree.txt
+D	artifacts/audit-input-bundle-20260728-204957/git/diff-working-tree.patch
+D	artifacts/audit-input-bundle-20260728-204957/git/name-status-working-tree.txt
+D	artifacts/audit-input-bundle-20260728-204957/git/status-current.txt
+D	artifacts/audit-input-bundle-20260728-204957/git/untracked-files.txt
+D	artifacts/audit-input-bundle-20260728-204957/inputs/audit-docs/PREVIOUS_SCREEN_REUSE_AUDIT.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/audit-docs/animal-escape-full-audit/FULL_AUDIT.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/audit-docs/animal-escape-full-audit/audit-summary.json
+D	artifacts/audit-input-bundle-20260728-204957/inputs/audit-docs/animal-escape-full-audit/commit-provenance.csv
+D	artifacts/audit-input-bundle-20260728-204957/inputs/audit-docs/animal-escape-full-audit/requirement-matrix.csv
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/AGENT_INSTRUCTIONS.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/IMPLEMENTATION_ORDER.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/MANIFEST.json
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/MASTER_EXECUTION_SPEC.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/README.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/SPECIFICATION_STATUS.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/START_HERE.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/TRACEABILITY_MATRIX.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/contracts/01_CURRENT_STATE.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/contracts/02_TARGET_ARCHITECTURE.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/contracts/03_DOMAIN_CONTRACT.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/contracts/04_AUTHORING_AND_REPORT_SCHEMAS.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/diagrams/action-transition.mmd
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/diagrams/goal-dependency-graph.mmd
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/diagrams/level-generation-pipeline.mmd
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/diagrams/progress-migration.mmd
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/diagrams/solver-selection.mmd
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/diagrams/system-architecture.mmd
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/00_ONE_TIME_TRIAGE.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/01_FILE_BY_FILE_SPECIFICATION.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/02_VALIDATOR_AND_TOOLCHAIN.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/03_HYBRID_SOLVER.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/04_DIFFICULTY_ANALYZER.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/05_100_LEVEL_CATALOG.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/06_PROGRESS_AND_ECONOMY_REMOVAL.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/07_RUNTIME_INTEGRATION.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/implementation/08_GENERATOR_ALGORITHMS.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/quality/01_TEST_MATRIX.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/quality/02_COMMANDS_AND_QUALITY_GATES.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/quality/03_MANUAL_QA.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/quality/04_EVIDENCE_AND_COMPLETION_PROTOCOL.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/quality/05_GLOBAL_DEFINITION_OF_DONE.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/source/Logic.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/source/OVERRIDES_AND_DECISIONS.md
+D	artifacts/audit-input-bundle-20260728-204957/inputs/goal/source/repomix-output.xml
+D	artifacts/audit-input-bundle-20260728-204957/inputs/repomix-output.xml
+D	artifacts/audit-input-bundle-20260728-204957/meta/BUNDLE_NOTES.txt
+D	artifacts/audit-input-bundle-20260728-204957/meta/current-branch.txt
+D	artifacts/audit-input-bundle-20260728-204957/meta/current-head.txt
+D	artifacts/audit-input-bundle-20260728-204957/meta/head-commit.txt
+D	artifacts/audit-input-bundle-20260728-204957/meta/remotes.txt
+D	artifacts/audit-input-bundle-20260728-204957/meta/repo-root.txt
+D	artifacts/audit-input-bundle-20260728-204957/raw-outputs/build.txt
+D	artifacts/audit-input-bundle-20260728-204957/raw-outputs/goal-verify.txt
+D	artifacts/audit-input-bundle-20260728-204957/raw-outputs/levels-report.txt
+D	artifacts/audit-input-bundle-20260728-204957/raw-outputs/levels-solve.txt
+D	artifacts/audit-input-bundle-20260728-204957/raw-outputs/levels-validate.txt
+D	artifacts/audit-input-bundle-20260728-204957/raw-outputs/test.txt
+D	artifacts/audit-input-bundle-20260728-204957/raw-outputs/typecheck.txt
+D	artifacts/audit-input-bundle-20260728-204957/reports/goal-execution/final-verification.txt
+D	artifacts/audit-input-bundle-20260728-204957/reports/goal-execution/manual-qa.md
+D	artifacts/audit-input-bundle-20260728-204957/reports/goal-execution/triage-initial.txt
+D	artifacts/audit-input-bundle-20260728-204957/reports/goal-execution/triage-resolution.md
+D	artifacts/audit-input-bundle-20260728-204957/reports/levels/difficulty.csv
+D	artifacts/audit-input-bundle-20260728-204957/reports/levels/difficulty.json
+D	artifacts/audit-input-bundle-20260728-204957/reports/levels/difficulty.md
+D	artifacts/audit-input-bundle-20260728-204957/reports/levels/solutions.json
+D	artifacts/audit-input-bundle-20260728-204957/reports/levels/solutions.md
+D	artifacts/audit-input-bundle-20260728-204957/reports/levels/validation.json
+D	check_img.py
+D	check_img2.py
+D	check_real_bg.py
+D	doc/general/ATTRIBUTIONS.md
+D	doc/general/Guidelines.md
+D	doc/general/README.md
+D	find_board.py
+D	fix_levels.py
+M	repomix-output.xml
+D	reports/goal-execution/final-verification.txt
+D	reports/goal-execution/manual-qa.md
+D	reports/goal-execution/triage-initial.txt
+D	reports/goal-execution/triage-resolution.md
+D	reports/levels/difficulty.csv
+D	reports/levels/difficulty.json
+D	reports/levels/difficulty.md
+D	reports/levels/solutions.json
+D	reports/levels/solutions.md
+D	reports/levels/validation.json
+M	src/features/tribe-out/TribeOutGame.tsx
+M	src/features/tribe-out/TribeOutOverlay.tsx
+M	src/features/tribe-out/TribeOutPauseOverlay.tsx
+M	src/features/tribe-out/levels.ts
+M	src/features/tribe-out/tribeOut.css
+
+=== RECENT COMMITS ===
+39cdcce (HEAD -> main) style: update overlay modal and buttons to match jungle UI theme
+a05c386 (origin/main) chore: migrate from pnpm to npm for vercel compatibility
+c555f65 chore: remove deprecated pnpm field
+74c2c1c chore: set packageManager to pnpm@11.9.0
+6d0a326 Merge branch 'codex' into main
+d328d70 (codex) Refactor pause overlay to include settings toggles and restart
+7e103e5 Merge branch 'codex' into main
+35b9eb0 (origin/codex) feat: complete UI and levels
+5dc0b8c chore: checkpoint
+7f403f5 Merge dev into main
+e53b74c (origin/dev, dev) Merge codex into dev
+bd5c16a Implement TribeOut spec and tooling
+e86ed43 (origin/stabilize-tribe-out, origin/agy, stabilize-tribe-out, agy) Deploy update
+f6ab8ae checkpoint: document current game architecture
+db2492d checkpoint: single-screen lock and screen reuse audit
+8178b53 checkpoint: final production cleanup
+5aafb75 checkpoint: generated scaffold cleanup
+075afc0 checkpoint: responsive shell and accessibility stable
+dac802e checkpoint: gameplay logic tests stable
+d9a5514 checkpoint: project validation baseline
+f41414c checkpoint: planning docs and codegraph initialized
+bfb3a7f checkpoint: raw figma make tribe out export
+
+=== PACKAGE SCRIPTS ===
+{
+  "dev": "vite",
+  "build": "vite build",
+  "typecheck:app": "tsc -p tsconfig.json --noEmit",
+  "typecheck:tools": "tsc -p tsconfig.tools.json --noEmit",
+  "typecheck": "npm run typecheck:app && npm run typecheck:tools",
+  "levels:validate": "tsx scripts/levels/cli/validate.ts",
+  "levels:solve": "tsx scripts/levels/cli/solve.ts",
+  "levels:report": "tsx scripts/levels/cli/report.ts",
+  "levels:generate": "tsx scripts/levels/cli/generate.ts",
+  "goal:verify": "tsx scripts/levels/cli/verify.ts",
+  "test": "vitest run --passWithNoTests",
+  "test:watch": "vitest"
+}

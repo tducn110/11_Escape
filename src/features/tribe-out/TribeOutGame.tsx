@@ -43,8 +43,7 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
   const [bumpNonce, setBumpNonce] = useState(0);
   const [hintedId, setHintedId] = useState<string | null>(null);
   const [isPaused, setIsPaused] = useState(false);
-  const [musicEnabled, setMusicEnabled] = useState(() => tribeOutAudio.isMusicEnabled());
-  const [sfxEnabled, setSfxEnabled] = useState(() => tribeOutAudio.isSfxEnabled());
+
   const bumpTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const hintTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const gameStateRef = useRef(gameState);
@@ -83,7 +82,6 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
         const nextState: GameState = {
           ...prev,
           timeRemaining,
-          status: timeRemaining === 0 ? "lost" : "playing",
         };
         gameStateRef.current = nextState;
         return nextState;
@@ -231,21 +229,7 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
     }
   };
 
-  const handleMusicToggle = () => {
-    setMusicEnabled(prev => {
-      const next = !prev;
-      tribeOutAudio.setMusicEnabled(next);
-      return next;
-    });
-  };
 
-  const handleSfxToggle = () => {
-    setSfxEnabled(prev => {
-      const next = !prev;
-      tribeOutAudio.setSfxEnabled(next);
-      return next;
-    });
-  };
 
   return (
     <div className="tribe-game-root">
@@ -338,10 +322,6 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
         <TribeOutPauseOverlay
           onResume={() => setIsPaused(false)}
           onRestart={handleRestart}
-          musicEnabled={musicEnabled}
-          sfxEnabled={sfxEnabled}
-          onToggleMusic={handleMusicToggle}
-          onToggleSfx={handleSfxToggle}
         />
       ) : null}
     </div>

@@ -1,8 +1,0 @@
-
-> 11-escape@0.0.1 levels:validate
-> tsx scripts/levels/cli/validate.ts
-
-{
-  "valid": true,
-  "levels": 100
-}

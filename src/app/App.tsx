@@ -8,50 +8,9 @@ export default function App() {
   }, []);
 
   return (
-    <div
-      className="app-container"
-      style={{
-        position: "relative",
-        height: "100dvh",
-        minHeight: "100dvh",
-        width: "100%",
-        overflow: "hidden",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        flexDirection: "column",
-        fontFamily: "'Be Vietnam Pro', sans-serif",
-        boxSizing: "border-box",
-      }}
-    >
-      <main
-        style={{
-          position: "relative",
-          zIndex: 1,
-          width: "100%",
-          maxWidth: "none",
-          height: "100%",
-          minHeight: 0,
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          boxSizing: "border-box",
-          overflowY: "hidden",
-          overscrollBehavior: "none",
-        }}
-      >
-        <div
-          className="tribe-game-mount"
-          style={{
-            display: "flex",
-            width: "100%",
-            height: "100%",
-            minHeight: 0,
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
+    <div className="app-container relative flex h-dvh min-h-dvh w-full flex-col items-center justify-center overflow-hidden">
+      <main className="relative z-[1] flex h-full min-h-0 w-full flex-col items-center justify-center overflow-hidden overscroll-none">
+        <div className="flex h-full min-h-0 w-full items-center justify-center">
           <TribeOutGame />
         </div>
       </main>

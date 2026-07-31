@@ -1,0 +1,18 @@
+threshold: alpha > 128
+
+=== public/EndGameScreen ===
+public/EndGameScreen/again.png | canvas=1536x1024 | bbox=(259,351)->(1279,634) | artwork=1020x283 | ratio=3.6042 | fill=18.35%
+public/EndGameScreen/bangten.png | canvas=1536x1024 | bbox=(143,337)->(1386,640) | artwork=1243x303 | ratio=4.1023 | fill=23.95%
+public/EndGameScreen/continue.png | canvas=1536x1024 | bbox=(201,310)->(1333,674) | artwork=1132x364 | ratio=3.1099 | fill=26.20%
+public/EndGameScreen/decorate.png | canvas=1536x1024 | bbox=(378,115)->(1040,817) | artwork=662x702 | ratio=0.9430 | fill=29.55%
+public/EndGameScreen/decorate2.png | canvas=1536x1024 | bbox=(320,197)->(1202,753) | artwork=882x556 | ratio=1.5863 | fill=31.18%
+public/EndGameScreen/khung.png | canvas=1536x1024 | bbox=(139,200)->(1388,827) | artwork=1249x627 | ratio=1.9920 | fill=49.79%
+public/EndGameScreen/sao.png | canvas=1536x1024 | bbox=(523,225)->(1005,691) | artwork=482x466 | ratio=1.0343 | fill=14.28%
+
+=== public/loseGamescreen ===
+public/loseGamescreen/Endgame.png | canvas=1536x1024 | bbox=(295,270)->(1256,528) | artwork=961x258 | ratio=3.7248 | fill=15.76%
+public/loseGamescreen/Gotohomescreen.png | canvas=1536x1024 | bbox=(298,367)->(1234,569) | artwork=936x202 | ratio=4.6337 | fill=12.02%
+public/loseGamescreen/again.png | canvas=1536x1024 | bbox=(263,335)->(1277,582) | artwork=1014x247 | ratio=4.1053 | fill=15.92%
+public/loseGamescreen/decorate1.png | canvas=1536x1024 | bbox=(444,234)->(1082,666) | artwork=638x432 | ratio=1.4769 | fill=17.52%
+public/loseGamescreen/khung.png | canvas=1536x1024 | bbox=(293,201)->(1231,805) | artwork=938x604 | ratio=1.5530 | fill=36.02%
+

@@ -6635,7 +6635,7 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "id": "or61",
         "type": "obstacle",
         "assetKey": "rock",
-        "row": 1,
+        "row": 0,
         "col": 4,
         "width": 1,
         "height": 1
