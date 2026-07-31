@@ -43,29 +43,36 @@ export function WinOverlay({ level, escapedCount, stars, isLastLevel, onNextLeve
           description={`Thoát ${escapedCount} nhân vật`}
           badge={
             <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
-              <span style={{ color: "#ffd700", fontSize: 20 }}>
+              <span style={{ 
+                color: "#ffc107", 
+                fontSize: 52, 
+                letterSpacing: 8,
+                WebkitTextStroke: "2px #b05c00",
+                textShadow: "0 5px 0 #b05c00, 0 10px 14px rgba(0,0,0,0.35)",
+                lineHeight: 1
+              }}>
                 {"★".repeat(stars)}{"☆".repeat(3 - stars)}
               </span>
             </div>
           }
           actions={
-            <div className="flex flex-col gap-2.5 w-full">
+            <div className="flex flex-col gap-3 w-full">
               {!isLastLevel ? (
                 <Button
                   aria-label="Sang màn tiếp theo"
                   variant="primary"
-                  size="md"
-                  style={{ width: "100%" }}
+                  size="lg"
+                  style={{ width: "100%", fontSize: 18, padding: "16px 20px", minHeight: 56 }}
                   onClick={onNextLevel}
                 >
-                  Màn Tiếp →
+                  Màn Tiếp ➔
                 </Button>
               ) : (
                 <Button
                   aria-label="Chơi lại từ đầu"
                   variant="primary"
-                  size="md"
-                  style={{ width: "100%" }}
+                  size="lg"
+                  style={{ width: "100%", fontSize: 18, padding: "16px 20px", minHeight: 56 }}
                   onClick={onNextLevel}
                 >
                   Chơi Lại Từ Đầu 🔄
@@ -73,12 +80,12 @@ export function WinOverlay({ level, escapedCount, stars, isLastLevel, onNextLeve
               )}
               <Button
                 aria-label="Chơi lại màn hiện tại"
-                variant="ghost"
-                size="md"
-                style={{ width: "100%" }}
+                variant="secondary"
+                size="lg"
+                style={{ width: "100%", fontSize: 18, padding: "16px 20px", minHeight: 56 }}
                 onClick={onReplay}
               >
-                Chơi Lại Màn Này
+                Chơi Lại Màn Này ↺
               </Button>
             </div>
           }
@@ -108,11 +115,11 @@ export function LoseOverlay({ onRestart }: LoseProps) {
             <Button
               aria-label="Chơi lại màn hiện tại"
               variant="danger"
-              size="md"
-              style={{ width: "100%" }}
+              size="lg"
+              style={{ width: "100%", fontSize: 18, padding: "16px 20px", minHeight: 56 }}
               onClick={onRestart}
             >
-              Thử Lại 🔄
+              Thử Lại ↺
             </Button>
           }
         />
