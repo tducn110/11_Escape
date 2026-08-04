@@ -23,6 +23,10 @@ export function CroppedAsset({
   preserveAspectRatio = "xMidYMid meet",
   ...svgProps
 }: CroppedAssetProps) {
+  const resolvedSrc = src.startsWith("/") 
+    ? import.meta.env.BASE_URL + src.slice(1)
+    : src;
+
   return (
     <svg
       {...svgProps}
@@ -32,7 +36,7 @@ export function CroppedAsset({
       focusable="false"
     >
       <image
-        href={src}
+        href={resolvedSrc}
         width={canvasWidth}
         height={canvasHeight}
       />

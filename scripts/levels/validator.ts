@@ -135,9 +135,13 @@ export function validateLevel(level: PuzzleLevel): ValidationIssue[] {
   return issues;
 }
 
+import { generateSignature } from "./analyzer";
+
 export function validateCatalog(levels: readonly PuzzleLevel[]): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const seenLevelIds = new Set<PuzzleLevel["id"]>();
+  const seenStructSigs = new Set<string>();
+  const seenTransSigs = new Set<string>();
 
   if (levels.length !== 100) {
     issues.push({
@@ -163,6 +167,18 @@ export function validateCatalog(levels: readonly PuzzleLevel[]): ValidationIssue
     if (level.phase !== expectedPhase) {
       pushIssue(issues, level.id, "phase-mismatch", `Expected phase ${expectedPhase} at catalog index ${index}, received ${level.phase}`);
     }
+
+    const structSig = generateSignature(level, false);
+    if (seenStructSigs.has(structSig)) {
+      pushIssue(issues, level.id, "duplicate-structure", `Exact duplicate structure found`);
+    }
+    seenStructSigs.add(structSig);
+
+    const transSig = generateSignature(level, true);
+    if (seenTransSigs.has(transSig)) {
+      pushIssue(issues, level.id, "duplicate-transform", `Transform duplicate structure found`);
+    }
+    seenTransSigs.add(transSig);
 
     issues.push(...validateLevel(level));
   }

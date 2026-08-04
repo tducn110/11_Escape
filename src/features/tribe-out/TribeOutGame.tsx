@@ -269,6 +269,7 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
               className="tribe-tool-button tribe-tool-button--hint"
               onClick={handleHint}
               disabled={gameState.status !== "playing" || isPaused || hintedId !== null || hintChargesRemaining <= 0}
+              style={{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/tribe-out/hud/hint-button.png)` }}
             >
               <span className="tribe-tool-button__label">Gợi ý</span>
               <span className="tribe-tool-button__count" aria-label={`Còn ${hintChargesRemaining} gợi ý`}>
@@ -281,6 +282,7 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
               onClick={handleRotateToggle}
               disabled={gameState.status !== "playing" || isPaused || gameState.puzzle.rotateChargesRemaining <= 0}
               aria-pressed={gameState.selectedTool === "rotate"}
+              style={{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/tribe-out/hud/rotate-button.png)` }}
             >
               <span className="tribe-tool-button__label">Xoay</span>
               <span className="tribe-tool-button__count" aria-label={`Còn ${gameState.puzzle.rotateChargesRemaining} lượt xoay`}>

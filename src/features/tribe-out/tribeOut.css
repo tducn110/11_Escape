@@ -410,11 +410,9 @@
 }
 
 .tribe-tool-button--hint {
-  background-image: url("/assets/tribe-out/hud/hint-button.png") !important;
 }
 
 .tribe-tool-button--rotate {
-  background-image: url("/assets/tribe-out/hud/rotate-button.png") !important;
 }
 
 .tribe-tool-button__label {

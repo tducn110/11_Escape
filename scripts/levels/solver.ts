@@ -109,8 +109,8 @@ export function applyDeterministicExitClosure(level: PuzzleLevel, initialState: 
   return { state, steps };
 }
 
-function verifyReplay(level: PuzzleLevel, steps: SolveStep[], expectedFinalStateKey: string): boolean {
-  let state = createInitialPuzzleState(level);
+function verifyReplay(level: PuzzleLevel, startState: EngineState, steps: SolveStep[], expectedFinalStateKey: string): boolean {
+  let state = startState;
 
   for (const step of steps) {
     const result = applyPuzzleAction(level, state, step.action);
@@ -184,7 +184,7 @@ function solveFromInitialState(
 
   if (isPuzzleComplete(initialClosure.state)) {
     const result = buildSolveResult(level, "SOLVABLE", "FAST_EXIT_CLOSURE", initialClosure.steps, baseDiagnostics(), null);
-    if (!result.finalStateKey || !verifyReplay(level, result.actions, result.finalStateKey)) {
+    if (!result.finalStateKey || !verifyReplay(level, initialState, result.actions, result.finalStateKey)) {
       return buildSolveResult(level, "INCONCLUSIVE", "FAST_EXIT_CLOSURE", [], baseDiagnostics(), "replay-verification-failed");
     }
     return result;
@@ -222,7 +222,7 @@ function solveFromInitialState(
 
     if (isPuzzleComplete(current.state)) {
       const result = buildSolveResult(level, "SOLVABLE", "STATEFUL_ROTATE_SEARCH", current.actions, baseDiagnostics(), null);
-      if (!result.finalStateKey || !verifyReplay(level, result.actions, result.finalStateKey)) {
+      if (!result.finalStateKey || !verifyReplay(level, initialState, result.actions, result.finalStateKey)) {
         return buildSolveResult(level, "INCONCLUSIVE", "STATEFUL_ROTATE_SEARCH", [], baseDiagnostics(), "replay-verification-failed");
       }
       return result;

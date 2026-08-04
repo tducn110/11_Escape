@@ -186,7 +186,7 @@ export function IsometricBoardBackdrop({ layout, boardRows, boardCols }: Props) 
       );
       
       try {
-        const tex = await Assets.load("/assets/tribe-out/board/leaf-tile.png");
+        const tex = await Assets.load(import.meta.env.BASE_URL + "assets/tribe-out/board/leaf-tile.png");
         textureRef.current = tex;
       } catch (err) {
         console.warn("Could not load the leaf tile texture", err);

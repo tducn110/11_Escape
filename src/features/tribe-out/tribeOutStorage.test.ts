@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import { LEVELS } from "./levels";
+import { LEVELS, LEVEL_SET_VERSION } from "./levels";
 import {
   clearTribeOutProgress,
   loadTribeOutProgress,
@@ -39,7 +39,7 @@ describe("tribeOutStorage", () => {
   it("persists and reloads canonical progress", () => {
     const progress = sanitizeProgress({
       schemaVersion: 2,
-      levelSetVersion: 2,
+      levelSetVersion: LEVEL_SET_VERSION,
       unlockedLevelIds: [LEVELS[0].id, LEVELS[1].id],
       currentLevelId: LEVELS[1].id,
       starsByLevelId: { [LEVELS[1].id]: 3 },
@@ -69,7 +69,7 @@ describe("tribeOutStorage", () => {
   it("normalizes canonical unlocks to a contiguous prefix and keeps current unlocked", () => {
     const progress = sanitizeProgress({
       schemaVersion: 2,
-      levelSetVersion: 2,
+      levelSetVersion: LEVEL_SET_VERSION,
       unlockedLevelIds: [LEVELS[0].id, LEVELS[3].id, "bad-id"],
       currentLevelId: LEVELS[8].id,
       starsByLevelId: { [LEVELS[0].id]: 2.5, [LEVELS[2].id]: 3, "bad-id": 2 },
@@ -83,7 +83,7 @@ describe("tribeOutStorage", () => {
   it("clear removes canonical and legacy keys", () => {
     store.tribeout_progress = JSON.stringify({
       schemaVersion: 2,
-      levelSetVersion: 2,
+      levelSetVersion: LEVEL_SET_VERSION,
       unlockedLevelIds: [LEVELS[0].id],
       currentLevelId: LEVELS[0].id,
       starsByLevelId: {},

@@ -1,6 +1,7 @@
 import { LEVELS } from "../domain";
 import { analyzeLevel } from "../analyzer";
-import { generateManifests, GENERATOR_VERSION } from "../catalog/manifests";
+import { generateManifests } from "../catalog/manifests";
+import { GENERATOR_VERSION } from "../catalog/version";
 import { solveLevel } from "../solver";
 import { validateCatalog, validateManifestCatalog } from "../validator";
 

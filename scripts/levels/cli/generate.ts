@@ -2,7 +2,8 @@ import { mkdtempSync, mkdirSync, renameSync, rmSync, writeFileSync } from "node:
 import { join, resolve } from "node:path";
 import { analyzeLevel } from "../analyzer";
 import { generateLevels } from "../catalog";
-import { generateManifests, GENERATOR_VERSION } from "../catalog/manifests";
+import { generateManifests } from "../catalog/manifests";
+import { GENERATOR_VERSION, LEVEL_SET_VERSION } from "../catalog/version";
 import { writeDifficultyReports, writeManifestReport, writeSolutionsReport, writeValidationReport } from "../reports";
 import { solveLevel } from "../solver";
 import { validateCatalog, validateManifestCatalog } from "../validator";
@@ -13,7 +14,7 @@ function serializeLevels(levels: readonly ReturnType<typeof generateLevels>[numb
     "",
     `export const LEVELS: readonly TribeOutLevel[] = ${JSON.stringify(levels, null, 2)};`,
     "",
-    "export const LEVEL_SET_VERSION = 2;",
+    `export const LEVEL_SET_VERSION = ${LEVEL_SET_VERSION};`,
     'export const LEVEL_BY_ID: ReadonlyMap<TribeOutLevel["id"], TribeOutLevel> = new Map(LEVELS.map(level => [level.id, level] as const));',
     'export const LEVEL_INDEX_BY_ID: ReadonlyMap<TribeOutLevel["id"], number> = new Map(LEVELS.map((level, index) => [level.id, index] as const));',
     "",

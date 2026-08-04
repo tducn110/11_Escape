@@ -1,0 +1,5205 @@
+{
+  "totalLevels": 100,
+  "reports": [
+    {
+      "levelId": "level-001",
+      "phase": 1,
+      "unitCount": 1,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 1,
+      "criticalPathLength": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "unit:1x1@0,0:right",
+      "normalizedTransformSignature": "unit:1x1@0,0:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-002",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "unit:1x1@0,0:right|unit:1x1@2,0:up",
+      "normalizedTransformSignature": "unit:1x1@0,0:any|unit:1x1@2,0:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-003",
+      "phase": 1,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 1,
+      "criticalPathLength": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "unit:1x1@0,0:right|unit:1x1@1,1:down|unit:1x1@2,2:up",
+      "normalizedTransformSignature": "unit:1x1@0,0:any|unit:1x1@1,1:any|unit:1x1@2,2:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-004",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "unit:1x1@0,0:right|unit:1x1@1,0:up",
+      "normalizedTransformSignature": "unit:1x1@0,0:any|unit:1x1@1,0:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-005",
+      "phase": 1,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "unit:1x1@0,0:right|unit:1x1@1,0:right|unit:1x1@2,0:up",
+      "normalizedTransformSignature": "unit:1x1@0,0:any|unit:1x1@1,0:any|unit:1x1@2,0:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-006",
+      "phase": 1,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "unit:1x1@0,0:right|unit:1x1@0,1:up|unit:1x1@1,0:down",
+      "normalizedTransformSignature": "unit:1x1@0,0:any|unit:1x1@0,1:any|unit:1x1@1,0:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-007",
+      "phase": 1,
+      "unitCount": 3,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.6666666666666666,
+      "criticalPathLength": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "unit:1x1@0,0:right|unit:1x1@0,1:right|unit:1x1@1,1:up",
+      "normalizedTransformSignature": "unit:1x1@0,0:any|unit:1x1@0,1:any|unit:1x1@1,1:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-008",
+      "phase": 1,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "unit:1x1@0,0:right|unit:1x1@0,1:down|unit:1x1@1,0:down|unit:1x1@1,1:left",
+      "normalizedTransformSignature": "unit:1x1@0,0:any|unit:1x1@0,1:any|unit:1x1@1,0:any|unit:1x1@1,1:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-009",
+      "phase": 1,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "unit:1x1@0,0:down|unit:1x1@1,0:left|unit:1x1@1,1:up|unit:1x1@1,2:right",
+      "normalizedTransformSignature": "unit:1x1@0,0:any|unit:1x1@1,0:any|unit:1x1@1,1:any|unit:1x1@1,2:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-010",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "unit:1x1@1,0:up|unit:1x2@0,0:right",
+      "normalizedTransformSignature": "unit:1x1@1,0:any|unit:1x2@0,0:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-011",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 0.6666666666666666,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666666,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@3,0:undefined|unit:1x1@2,0:up|unit:2x1@0,0:right",
+      "normalizedTransformSignature": "obstacle:1x1@3,0:any|unit:1x1@2,0:any|unit:2x1@0,0:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-012",
+      "phase": 1,
+      "unitCount": 4,
+      "obstacleCount": 0,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 2,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "unit:1x1@2,0:up|unit:1x1@2,1:down|unit:2x1@0,0:right|unit:2x1@0,1:right",
+      "normalizedTransformSignature": "unit:1x1@2,0:any|unit:1x1@2,1:any|unit:2x1@0,0:any|unit:2x1@0,1:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-013",
+      "phase": 1,
+      "unitCount": 1,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 0,
+      "initialAvailableRatio": 0,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 0.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@1,0:undefined|unit:1x1@0,0:right",
+      "normalizedTransformSignature": "obstacle:1x1@1,0:any|unit:1x1@0,0:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-014",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 0,
+      "initialAvailableRatio": 0,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 0.6666666666666666,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.6666666666666666,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@1,0:undefined|unit:1x1@0,1:right|unit:1x1@1,1:up",
+      "normalizedTransformSignature": "obstacle:1x1@1,0:any|unit:1x1@0,1:any|unit:1x1@1,1:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-015",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@1,0:undefined|switch:1x1@1,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right",
+      "normalizedTransformSignature": "gate:1x1@1,0:any|switch:1x1@1,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-016",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@1,0:undefined|switch:1x1@2,1:undefined|unit:1x1@0,0:right|unit:1x1@2,2:up",
+      "normalizedTransformSignature": "gate:1x1@1,0:any|switch:1x1@2,1:any|unit:1x1@0,0:any|unit:1x1@2,2:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-017",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@1,0:undefined|switch:1x1@2,1:undefined|unit:1x1@2,2:up|unit:1x2@0,0:right",
+      "normalizedTransformSignature": "gate:1x1@1,0:any|switch:1x1@2,1:any|unit:1x1@2,2:any|unit:1x2@0,0:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-018",
+      "phase": 1,
+      "unitCount": 2,
+      "obstacleCount": 0,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.5,
+      "criticalPathLength": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 1,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 0,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@1,0:undefined|switch:1x1@0,1:undefined|unit:1x1@0,0:down|unit:2x1@1,1:up",
+      "normalizedTransformSignature": "gate:1x1@1,0:any|switch:1x1@0,1:any|unit:1x1@0,0:any|unit:2x1@1,1:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-019",
+      "phase": 1,
+      "unitCount": 3,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0.6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@2,0:undefined|obstacle:1x1@4,2:undefined|switch:1x1@0,1:undefined|unit:1x1@0,0:down|unit:1x1@2,1:up|unit:1x1@3,2:right",
+      "normalizedTransformSignature": "gate:1x1@2,0:any|obstacle:1x1@4,2:any|switch:1x1@0,1:any|unit:1x1@0,0:any|unit:1x1@2,1:any|unit:1x1@3,2:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-020",
+      "phase": 1,
+      "unitCount": 4,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 0,
+      "initialAvailableMoves": 1,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 0.8,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.8,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0.6666666666666666,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@1,1:undefined|obstacle:1x1@3,3:undefined|switch:1x1@2,0:undefined|unit:1x1@0,0:right|unit:1x1@1,2:up|unit:1x1@1,3:up|unit:1x1@3,4:up",
+      "normalizedTransformSignature": "gate:1x1@1,1:any|obstacle:1x1@3,3:any|switch:1x1@2,0:any|unit:1x1@0,0:any|unit:1x1@1,2:any|unit:1x1@1,3:any|unit:1x1@3,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-021",
+      "phase": 2,
+      "unitCount": 8,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.375,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-022",
+      "phase": 2,
+      "unitCount": 7,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.42857142857142855,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.625,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.375,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-023",
+      "phase": 2,
+      "unitCount": 8,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.375,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@1,0:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,0:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-024",
+      "phase": 2,
+      "unitCount": 8,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.375,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-025",
+      "phase": 2,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.42857142857142855,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5555555555555556,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-026",
+      "phase": 2,
+      "unitCount": 7,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.42857142857142855,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.375,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@1,0:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@3,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,0:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@3,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-027",
+      "phase": 2,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.42857142857142855,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-028",
+      "phase": 2,
+      "unitCount": 8,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.375,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.7777777777777777,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@1,0:right|unit:1x1@1,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,0:any|unit:1x1@1,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-029",
+      "phase": 2,
+      "unitCount": 8,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.375,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.7777777777777777,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@1,0:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,0:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-030",
+      "phase": 2,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.42857142857142855,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-031",
+      "phase": 2,
+      "unitCount": 6,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.125,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.375,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-032",
+      "phase": 2,
+      "unitCount": 8,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.375,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@1,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-033",
+      "phase": 2,
+      "unitCount": 8,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.375,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.7777777777777777,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-034",
+      "phase": 2,
+      "unitCount": 8,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.375,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-035",
+      "phase": 2,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.42857142857142855,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5555555555555556,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-036",
+      "phase": 2,
+      "unitCount": 8,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.375,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-037",
+      "phase": 2,
+      "unitCount": 9,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 8,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@1,0:right|unit:1x1@1,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,0:any|unit:1x1@1,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-038",
+      "phase": 2,
+      "unitCount": 8,
+      "obstacleCount": 2,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.375,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-039",
+      "phase": 2,
+      "unitCount": 7,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.42857142857142855,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.75,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.375,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-040",
+      "phase": 2,
+      "unitCount": 8,
+      "obstacleCount": 1,
+      "gateCount": 0,
+      "switchCount": 0,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 3,
+      "initialAvailableRatio": 0.375,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "obstacle:1x1@0,1:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "obstacle:1x1@0,1:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-041",
+      "phase": 3,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.1111111111111112,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-042",
+      "phase": 3,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-043",
+      "phase": 3,
+      "unitCount": 8,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.2222222222222222,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@1,0:right|unit:1x1@1,2:right|unit:1x1@2,0:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,0:any|unit:1x1@1,2:any|unit:1x1@2,0:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-044",
+      "phase": 3,
+      "unitCount": 6,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.125,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.375,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-045",
+      "phase": 3,
+      "unitCount": 8,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.7777777777777777,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@1,0:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@3,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,0:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@3,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-046",
+      "phase": 3,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.1111111111111112,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-047",
+      "phase": 3,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-048",
+      "phase": 3,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.1111111111111112,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-049",
+      "phase": 3,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.1111111111111112,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-050",
+      "phase": 3,
+      "unitCount": 7,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.625,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.375,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-051",
+      "phase": 3,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.2222222222222223,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-052",
+      "phase": 3,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.2222222222222223,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-053",
+      "phase": 3,
+      "unitCount": 7,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.25,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-054",
+      "phase": 3,
+      "unitCount": 8,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5555555555555556,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-055",
+      "phase": 3,
+      "unitCount": 6,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.125,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.375,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-056",
+      "phase": 3,
+      "unitCount": 8,
+      "obstacleCount": 1,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 3,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 1,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@1,0:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,0:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-057",
+      "phase": 3,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.1111111111111112,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-058",
+      "phase": 3,
+      "unitCount": 6,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.3333333333333333,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.125,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.375,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@3,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@3,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-059",
+      "phase": 3,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-060",
+      "phase": 3,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@6,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@6,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@6,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@6,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-061",
+      "phase": 4,
+      "unitCount": 11,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.18181818181818182,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6153846153846154,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3076923076923077,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8461538461538461,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 10,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@3,0:right|unit:1x1@3,2:right|unit:1x1@3,4:right|unit:1x1@4,4:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@3,0:any|unit:1x1@3,2:any|unit:1x1@3,4:any|unit:1x1@4,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-062",
+      "phase": 4,
+      "unitCount": 9,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2222222222222222,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.2727272727272727,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.36363636363636365,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8181818181818182,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 8,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-063",
+      "phase": 4,
+      "unitCount": 11,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.18181818181818182,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6923076923076923,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3076923076923077,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8461538461538461,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 10,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-064",
+      "phase": 4,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-065",
+      "phase": 4,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.1111111111111112,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.7777777777777778,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-066",
+      "phase": 4,
+      "unitCount": 11,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.18181818181818182,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6923076923076923,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3076923076923077,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8461538461538461,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 10,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-067",
+      "phase": 4,
+      "unitCount": 8,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@3,0:right|unit:1x1@3,4:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@3,0:any|unit:1x1@3,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-068",
+      "phase": 4,
+      "unitCount": 11,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.18181818181818182,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.7692307692307692,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.23076923076923078,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8461538461538461,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 10,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-069",
+      "phase": 4,
+      "unitCount": 9,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2222222222222222,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.7272727272727273,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.2727272727272727,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8181818181818182,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 8,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-070",
+      "phase": 4,
+      "unitCount": 11,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.18181818181818182,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6923076923076923,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3076923076923077,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8461538461538461,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 10,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-071",
+      "phase": 4,
+      "unitCount": 9,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2222222222222222,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5454545454545454,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.36363636363636365,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8181818181818182,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 8,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@4,0:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@4,0:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-072",
+      "phase": 4,
+      "unitCount": 9,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2222222222222222,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.3636363636363635,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.45454545454545453,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8181818181818182,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 8,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x1@5,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x1@5,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-073",
+      "phase": 4,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.7777777777777778,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-074",
+      "phase": 4,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5833333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-075",
+      "phase": 4,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4166666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-076",
+      "phase": 4,
+      "unitCount": 9,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2222222222222222,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5454545454545454,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.36363636363636365,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8181818181818182,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 8,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@4,0:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@4,0:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-077",
+      "phase": 4,
+      "unitCount": 11,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.18181818181818182,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6153846153846154,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3076923076923077,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8461538461538461,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 10,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,4:right|unit:1x1@4,2:right|unit:1x1@5,0:right|unit:1x1@5,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,4:any|unit:1x1@4,2:any|unit:1x1@5,0:any|unit:1x1@5,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-078",
+      "phase": 4,
+      "unitCount": 8,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.25,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 7,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-079",
+      "phase": 4,
+      "unitCount": 7,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2857142857142857,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.1111111111111112,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4444444444444444,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.7777777777777778,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 6,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-080",
+      "phase": 4,
+      "unitCount": 9,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2222222222222222,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.3636363636363635,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.45454545454545453,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8181818181818182,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 8,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-081",
+      "phase": 5,
+      "unitCount": 13,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.15384615384615385,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.8,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.2,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 12,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-082",
+      "phase": 5,
+      "unitCount": 12,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.16666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.7857142857142858,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.21428571428571427,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8571428571428571,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 11,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-083",
+      "phase": 5,
+      "unitCount": 11,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.18181818181818182,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6153846153846154,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3076923076923077,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8461538461538461,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 10,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,2:right|unit:1x1@4,4:right|unit:1x1@5,0:right|unit:1x1@5,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,2:any|unit:1x1@4,4:any|unit:1x1@5,0:any|unit:1x1@5,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-084",
+      "phase": 5,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4166666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-085",
+      "phase": 5,
+      "unitCount": 11,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.18181818181818182,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6153846153846154,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3076923076923077,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8461538461538461,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 10,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x1@5,0:right|unit:1x1@5,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x1@5,0:any|unit:1x1@5,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-086",
+      "phase": 5,
+      "unitCount": 12,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.16666666666666666,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6428571428571428,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.2857142857142857,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8571428571428571,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 11,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,2:right|unit:1x1@3,4:right|unit:1x1@4,4:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,2:any|unit:1x1@3,4:any|unit:1x1@4,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-087",
+      "phase": 5,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4166666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@3,0:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x1@5,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@3,0:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x1@5,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-088",
+      "phase": 5,
+      "unitCount": 11,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.18181818181818182,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6153846153846154,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3076923076923077,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8461538461538461,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 10,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,2:right|unit:1x1@4,4:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,2:any|unit:1x1@4,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-089",
+      "phase": 5,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-090",
+      "phase": 5,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6666666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-091",
+      "phase": 5,
+      "unitCount": 11,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.18181818181818182,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.6153846153846154,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3076923076923077,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8461538461538461,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 10,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,4:right|unit:1x1@4,0:right|unit:1x1@5,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,4:any|unit:1x1@4,0:any|unit:1x1@5,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-092",
+      "phase": 5,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5833333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,2:right|unit:1x1@3,4:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,2:any|unit:1x1@3,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-093",
+      "phase": 5,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5833333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,2:right|unit:1x1@4,4:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,2:any|unit:1x1@4,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-094",
+      "phase": 5,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5833333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@4,0:right|unit:1x1@4,2:right|unit:1x1@4,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@4,0:any|unit:1x1@4,2:any|unit:1x1@4,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-095",
+      "phase": 5,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5833333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,2:right|unit:1x1@2,0:right|unit:1x1@2,4:right|unit:1x1@3,2:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,2:any|unit:1x1@2,0:any|unit:1x1@2,4:any|unit:1x1@3,2:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-096",
+      "phase": 5,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4166666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-097",
+      "phase": 5,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5833333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.3333333333333333,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,2:right|unit:1x1@3,4:right|unit:1x1@5,0:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,2:any|unit:1x1@3,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-098",
+      "phase": 5,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.5,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4166666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@1,4:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@3,0:right|unit:1x1@3,4:right|unit:1x1@5,0:right|unit:1x1@5,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@1,4:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@3,0:any|unit:1x1@3,4:any|unit:1x1@5,0:any|unit:1x1@5,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-099",
+      "phase": 5,
+      "unitCount": 10,
+      "obstacleCount": 2,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.2,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 4,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 1.4166666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4166666666666667,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 2,
+      "deadEndRisk": {
+        "value": 0.8333333333333334,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 9,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:right|unit:1x1@0,2:right|unit:1x1@2,0:right|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,2:right|unit:1x1@4,0:right|unit:1x1@4,4:right|unit:1x1@5,4:right|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,2:any|unit:1x1@4,0:any|unit:1x1@4,4:any|unit:1x1@5,4:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    },
+    {
+      "levelId": "level-100",
+      "phase": 5,
+      "unitCount": 11,
+      "obstacleCount": 4,
+      "gateCount": 1,
+      "switchCount": 1,
+      "multiCellUnitCount": 1,
+      "initialAvailableMoves": 2,
+      "initialAvailableRatio": 0.18181818181818182,
+      "criticalPathLength": {
+        "value": null,
+        "coverage": "not-applicable",
+        "sampleCount": null,
+        "seed": null
+      },
+      "causalUnlockDepth": {
+        "value": 10,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "averageAvailableMoves": {
+        "value": 0.9375,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "forcedStateRatio": {
+        "value": 0.4375,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "minRotateRequired": 5,
+      "deadEndRisk": {
+        "value": 0.3974358974358974,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "meaningfulDecisionProxy": {
+        "value": 10,
+        "coverage": "exact",
+        "sampleCount": null,
+        "seed": null
+      },
+      "structuralSignature": "gate:1x1@7,0:undefined|obstacle:1x1@0,1:undefined|obstacle:1x1@1,0:undefined|obstacle:1x1@4,0:undefined|obstacle:1x1@5,1:undefined|switch:1x1@7,2:undefined|unit:1x1@0,0:down|unit:1x1@0,2:right|unit:1x1@2,0:left|unit:1x1@2,2:right|unit:1x1@2,4:right|unit:1x1@3,0:right|unit:1x1@3,4:right|unit:1x1@4,2:right|unit:1x1@4,4:right|unit:1x1@5,0:down|unit:1x2@0,4:right",
+      "normalizedTransformSignature": "gate:1x1@7,0:any|obstacle:1x1@0,1:any|obstacle:1x1@1,0:any|obstacle:1x1@4,0:any|obstacle:1x1@5,1:any|switch:1x1@7,2:any|unit:1x1@0,0:any|unit:1x1@0,2:any|unit:1x1@2,0:any|unit:1x1@2,2:any|unit:1x1@2,4:any|unit:1x1@3,0:any|unit:1x1@3,4:any|unit:1x1@4,2:any|unit:1x1@4,4:any|unit:1x1@5,0:any|unit:1x2@0,4:any",
+      "phaseTargetStatus": "IN_BAND",
+      "outOfBandReasons": []
+    }
+  ]
+}

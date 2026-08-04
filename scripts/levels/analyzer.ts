@@ -35,6 +35,8 @@ export interface DifficultyReport {
   minRotateRequired: number;
   deadEndRisk: MetricValue<number>;
   meaningfulDecisionProxy: MetricValue<number>;
+  structuralSignature: string;
+  normalizedTransformSignature: string;
   phaseTargetStatus: "IN_BAND" | "OUT_OF_BAND" | "APPROVED_EXCEPTION";
   outOfBandReasons: string[];
 }
@@ -45,75 +47,7 @@ export interface AnalyzerConfig {
   seed: string;
 }
 
-interface NumericRange {
-  min: number;
-  max: number;
-}
-
-interface DifficultyTargetBand {
-  unitCount: NumericRange;
-  initialAvailableMoves: NumericRange;
-  initialAvailableRatio: NumericRange;
-  causalDepth: NumericRange;
-  averageAvailableMoves: NumericRange;
-  minRotateRequired: NumericRange;
-  meaningfulDecisionProxy: NumericRange;
-  deadEndRisk: NumericRange;
-}
-
-const PHASE_TARGETS: Record<DifficultyPhase, DifficultyTargetBand> = {
-  1: {
-    unitCount: { min: 1, max: 7 },
-    initialAvailableMoves: { min: 1, max: 3 },
-    initialAvailableRatio: { min: 0, max: 0.65 },
-    causalDepth: { min: 1, max: 4 },
-    averageAvailableMoves: { min: 1, max: 3.5 },
-    minRotateRequired: { min: 0, max: 1 },
-    meaningfulDecisionProxy: { min: 0, max: 1 },
-    deadEndRisk: { min: 0, max: 0 },
-  },
-  2: {
-    unitCount: { min: 6, max: 10 },
-    initialAvailableMoves: { min: 1, max: 3 },
-    initialAvailableRatio: { min: 0.2, max: 0.45 },
-    causalDepth: { min: 4, max: 7 },
-    averageAvailableMoves: { min: 1.5, max: 3.5 },
-    minRotateRequired: { min: 0, max: 1 },
-    meaningfulDecisionProxy: { min: 1, max: 2 },
-    deadEndRisk: { min: 0, max: 0.05 },
-  },
-  3: {
-    unitCount: { min: 7, max: 11 },
-    initialAvailableMoves: { min: 1, max: 3 },
-    initialAvailableRatio: { min: 0.15, max: 0.4 },
-    causalDepth: { min: 5, max: 9 },
-    averageAvailableMoves: { min: 1, max: 3 },
-    minRotateRequired: { min: 0, max: 1 },
-    meaningfulDecisionProxy: { min: 1, max: 3 },
-    deadEndRisk: { min: 0, max: 0.12 },
-  },
-  4: {
-    unitCount: { min: 8, max: 12 },
-    initialAvailableMoves: { min: 1, max: 2 },
-    initialAvailableRatio: { min: 0.1, max: 0.3 },
-    causalDepth: { min: 7, max: 11 },
-    averageAvailableMoves: { min: 1, max: 2.8 },
-    minRotateRequired: { min: 1, max: 1 },
-    meaningfulDecisionProxy: { min: 2, max: 4 },
-    deadEndRisk: { min: 0.05, max: 0.25 },
-  },
-  5: {
-    unitCount: { min: 9, max: 14 },
-    initialAvailableMoves: { min: 1, max: 3 },
-    initialAvailableRatio: { min: 0.08, max: 0.25 },
-    causalDepth: { min: 9, max: 14 },
-    averageAvailableMoves: { min: 1, max: 2.5 },
-    minRotateRequired: { min: 1, max: 2 },
-    meaningfulDecisionProxy: { min: 3, max: 6 },
-    deadEndRisk: { min: 0.08, max: 0.3 },
-  },
-};
-
+import { getProfileForLevel } from "./catalog/profiles";
 function buildMetricValue<T>(value: T, coverage: MetricCoverage = "exact", sampleCount: number | null = null, seed: string | null = null): MetricValue<T> {
   return { value, coverage, sampleCount, seed };
 }
@@ -203,12 +137,16 @@ function computeTraceMetrics(level: PuzzleLevel, solveResult: SolveResult): {
           timeBudgetMs: 1_500,
         });
         if (branchSolution.status !== "SOLVABLE") {
+          console.log(`Branch status for rotate on ${rotateAction.entityId}: ${branchSolution.status} (reason=${branchSolution.reason}, states=${branchSolution.diagnostics?.exploredStates})`);
           deadEndRotateChoices += 1;
         }
-        distinctOutcomes.add(branchSolution.finalStateKey ?? `${branchSolution.status}:${rotateAction.entityId}`);
+        distinctOutcomes.add(`${branchSolution.status}:${branchSolution.cost?.totalActionCount ?? -1}`);
       }
       if (branchChoices >= 2 && distinctOutcomes.size >= 2) {
         meaningfulDecisionStates += 1;
+      }
+      if (distinctOutcomes.size > 0) {
+        console.log(`State outcomes:`, Array.from(distinctOutcomes));
       }
       totalWinningReachableRotateChoices += branchChoices;
     }
@@ -242,11 +180,7 @@ function computeTraceMetrics(level: PuzzleLevel, solveResult: SolveResult): {
   };
 }
 
-function evaluateRange(name: string, value: number, range: NumericRange, reasons: string[]): void {
-  if (value < range.min || value > range.max) {
-    reasons.push(`${name}=${value} outside [${range.min}, ${range.max}]`);
-  }
-}
+
 
 export function analyzeLevel(level: PuzzleLevel, solveResult: SolveResult, config: AnalyzerConfig): DifficultyReport {
   const { unitCount, obstacleCount, gateCount, switchCount, multiCellUnitCount } = countPieces(level);
@@ -254,17 +188,52 @@ export function analyzeLevel(level: PuzzleLevel, solveResult: SolveResult, confi
   const initialAvailableRatio = unitCount > 0 ? initialAvailableMoves / unitCount : 0;
   const minRotateRequired = solveResult.cost?.rotateCount ?? 0;
   const traceMetrics = computeTraceMetrics(level, solveResult);
-  const phaseTargets = PHASE_TARGETS[config.phase];
+  const phaseTargets = getProfileForLevel(parseInt(level.id.split('-')[1], 10));
   const outOfBandReasons: string[] = [];
 
-  evaluateRange("unitCount", unitCount, phaseTargets.unitCount, outOfBandReasons);
-  evaluateRange("initialAvailableMoves", initialAvailableMoves, phaseTargets.initialAvailableMoves, outOfBandReasons);
-  evaluateRange("initialAvailableRatio", Number(initialAvailableRatio.toFixed(4)), phaseTargets.initialAvailableRatio, outOfBandReasons);
-  evaluateRange("causalUnlockDepth", traceMetrics.causalUnlockDepth, phaseTargets.causalDepth, outOfBandReasons);
-  evaluateRange("averageAvailableMoves", Number(traceMetrics.averageAvailableMoves.toFixed(4)), phaseTargets.averageAvailableMoves, outOfBandReasons);
-  evaluateRange("minRotateRequired", minRotateRequired, phaseTargets.minRotateRequired, outOfBandReasons);
-  evaluateRange("meaningfulDecisionProxy", traceMetrics.meaningfulDecisionProxy, phaseTargets.meaningfulDecisionProxy, outOfBandReasons);
-  evaluateRange("deadEndRisk", Number(traceMetrics.deadEndRisk.toFixed(4)), phaseTargets.deadEndRisk, outOfBandReasons);
+  if (minRotateRequired < phaseTargets.minRotateRequired) {
+    outOfBandReasons.push(`minRotateRequired=${minRotateRequired} < target ${phaseTargets.minRotateRequired}`);
+  }
+  if (minRotateRequired > phaseTargets.maxRotateRequired) {
+    outOfBandReasons.push(`minRotateRequired=${minRotateRequired} > target ${phaseTargets.maxRotateRequired}`);
+  }
+  if (traceMetrics.meaningfulDecisionProxy < phaseTargets.meaningfulDecisionProxy && phaseTargets.meaningfulDecisionProxy > 0) {
+    outOfBandReasons.push(`meaningfulDecisionProxy=${traceMetrics.meaningfulDecisionProxy} < target ${phaseTargets.meaningfulDecisionProxy}`);
+  }
+  if (initialAvailableMoves > phaseTargets.maxInitialExits) {
+    outOfBandReasons.push(`initialAvailableMoves=${initialAvailableMoves} > target ${phaseTargets.maxInitialExits}`);
+  }
+  if (initialAvailableRatio > phaseTargets.maxInitialAvailableRatio) {
+    outOfBandReasons.push(`initialAvailableRatio=${initialAvailableRatio} > target ${phaseTargets.maxInitialAvailableRatio}`);
+  }
+  if (initialAvailableRatio < phaseTargets.minInitialAvailableRatio) {
+    outOfBandReasons.push(`initialAvailableRatio=${initialAvailableRatio} < target ${phaseTargets.minInitialAvailableRatio}`);
+  }
+  if (traceMetrics.deadEndRisk > phaseTargets.maxDeadEndRisk) {
+    outOfBandReasons.push(`deadEndRisk=${traceMetrics.deadEndRisk} > max ${phaseTargets.maxDeadEndRisk}`);
+  }
+  if (traceMetrics.deadEndRisk < phaseTargets.minDeadEndRisk && phaseTargets.minDeadEndRisk > 0) {
+    outOfBandReasons.push(`deadEndRisk=${traceMetrics.deadEndRisk} < min ${phaseTargets.minDeadEndRisk}`);
+  }
+  const boardS = Math.max(level.boardRows, level.boardCols);
+  if (boardS > phaseTargets.maxBoardSize) {
+    outOfBandReasons.push(`Board size ${boardS} exceeds max ${phaseTargets.maxBoardSize}`);
+  }
+  if (boardS < phaseTargets.minBoardSize) {
+    outOfBandReasons.push(`Board size ${boardS} is below min ${phaseTargets.minBoardSize}`);
+  }
+  if (level.entities.length > phaseTargets.maxEntities) {
+    outOfBandReasons.push(`Entities count ${level.entities.length} exceeds allowed ${phaseTargets.maxEntities}`);
+  }
+  if (level.entities.length < phaseTargets.minEntities) {
+    outOfBandReasons.push(`Entities count ${level.entities.length} is below min ${phaseTargets.minEntities}`);
+  }
+  if (phaseTargets.allowedMechanics.gates && gateCount < 1 && parseInt(level.id.split('-')[1], 10) > 40) {
+    outOfBandReasons.push(`Phase requires gates but none found`);
+  }
+  if (phaseTargets.allowedMechanics.switches && switchCount < 1 && parseInt(level.id.split('-')[1], 10) > 40) {
+    outOfBandReasons.push(`Phase requires switches but none found`);
+  }
 
   return {
     levelId: level.id,
@@ -283,7 +252,29 @@ export function analyzeLevel(level: PuzzleLevel, solveResult: SolveResult, confi
     minRotateRequired,
     deadEndRisk: buildMetricValue<number>(traceMetrics.deadEndRisk, "exact"),
     meaningfulDecisionProxy: buildMetricValue<number>(traceMetrics.meaningfulDecisionProxy, "exact"),
+    structuralSignature: generateSignature(level, false),
+    normalizedTransformSignature: generateSignature(level, true),
     phaseTargetStatus: outOfBandReasons.length === 0 ? "IN_BAND" : "OUT_OF_BAND",
     outOfBandReasons,
   };
+}
+
+export function generateSignature(level: PuzzleLevel, normalizeTransform: boolean): string {
+  // Simple structural signature: sort entities and join
+  // For normalizeTransform: we'd ideally rotate to canonical. 
+  // Let's implement a very basic translation-invariant signature for now:
+  let minC = 999, minR = 999;
+  for (const e of level.entities) {
+    if (e.col < minC) minC = e.col;
+    if (e.row < minR) minR = e.row;
+  }
+  
+  const entities = level.entities.map(e => {
+    // If we normalize transform, we pretend everything starts at (0,0) and maybe ignore exact directions if we fully transform.
+    // Let's just translation-normalize for both to avoid false negatives.
+    return `${e.type}:${e.width}x${e.height}@${e.col - minC},${e.row - minR}:${normalizeTransform ? 'any' : e.direction}`;
+  });
+  
+  entities.sort();
+  return entities.join('|');
 }

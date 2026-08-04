@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import { TribeOutGame } from "../features/tribe-out/TribeOutGame";
 import { tribeOutAudio } from "../features/tribe-out/audio/tribeOutAudio";
+import { preloadAllImages } from "../features/tribe-out/assets/assetRegistry";
 
 export default function App() {
   useEffect(() => {
     tribeOutAudio.preload();
+    preloadAllImages();
   }, []);
 
   return (
