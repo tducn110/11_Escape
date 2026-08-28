@@ -20,6 +20,7 @@ import {
 import { LEVELS } from "./levels";
 import { loadTribeOutProgress, persistTribeOutProgress } from "./tribeOutStorage";
 import { tribeOutAudio } from "./audio/tribeOutAudio";
+import { showInterstitial } from "../../integrations/ads/googleH5Ads";
 import { getIsoBoardLayout } from "./isometric";
 import type { GameState, TribeOutProgressSnapshot } from "./types";
 import { LEVEL_INDEX_BY_ID } from "./levels";
@@ -164,7 +165,19 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
     setGameState(nextState);
   };
 
-  const handleNextLevel = () => {
+  const adTransitionRef = useRef(false);
+  const handleTerminalRestart = async () => {
+    if (adTransitionRef.current) return;
+    adTransitionRef.current = true;
+    await showInterstitial({ type: "next", name: "replay_tribe_level" });
+    handleRestart();
+    adTransitionRef.current = false;
+  };
+
+  const handleNextLevel = async () => {
+    if (adTransitionRef.current) return;
+    adTransitionRef.current = true;
+    await showInterstitial({ type: "next", name: "next_tribe_level" });
     clearBumpTimer();
     clearHintTimer();
     setBumpingId(null);
@@ -186,6 +199,7 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
     };
     initialProgressRef.current = persistedProgress;
     persistTribeOutProgress(persistedProgress);
+    adTransitionRef.current = false;
   };
 
   const handleHint = () => {
@@ -312,11 +326,11 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
               stars={gameState.stars}
               isLastLevel={levelIndex === LEVELS.length - 1}
               onNextLevel={handleNextLevel}
-              onReplay={handleRestart}
+              onReplay={handleTerminalRestart}
             />
           )}
           {gameState.status === "lost" && (
-            <LoseOverlay onRestart={handleRestart} />
+            <LoseOverlay onRestart={handleTerminalRestart} />
           )}
         </div>
       </GameShell>

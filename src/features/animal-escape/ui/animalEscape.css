@@ -1,0 +1,377 @@
+.animal-escape-root {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(46, 107, 79, 0.55) 0%, rgba(18, 58, 43, 0) 55%),
+    linear-gradient(180deg, #0e2a1e 0%, #123a2b 55%, #0a1f16 100%);
+  color: #f4f0e6;
+  font-family: system-ui, "Segoe UI", "Noto Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.animal-escape-hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding:
+    calc(10px + env(safe-area-inset-top, 0px))
+    12px
+    calc(10px + env(safe-area-inset-bottom, 0px))
+    calc(12px + env(safe-area-inset-left, 0px));
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Compact HUD on short landscape screens so the board keeps most of the viewport. */
+@media (max-height: 480px) {
+  .animal-escape-hud {
+    padding: 4px 8px;
+  }
+
+  .animal-escape-hud__badge {
+    min-width: 52px;
+    padding: 2px 8px;
+  }
+}
+
+.animal-escape-hud__left,
+.animal-escape-hud__right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.animal-escape-hud__right {
+  justify-content: flex-end;
+}
+
+.animal-escape-hud__badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(244, 240, 230, 0.18);
+  border-radius: 12px;
+  padding: 4px 12px;
+  min-width: 64px;
+}
+
+.animal-escape-hud__level-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.animal-escape-hud__level-number {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.animal-escape-hud__time {
+  font-size: 20px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(244, 240, 230, 0.18);
+  border-radius: 12px;
+  padding: 4px 12px;
+  min-width: 62px;
+  text-align: center;
+}
+
+.animal-escape-hud__time--danger {
+  color: #ff8f6b;
+  animation: animal-escape-pulse 1s ease-in-out infinite;
+}
+
+.animal-escape-hud__hearts {
+  display: flex;
+  gap: 3px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.animal-escape-hud__hearts span {
+  opacity: 0.25;
+  filter: grayscale(1);
+}
+
+.animal-escape-hud__hearts span.is-alive {
+  opacity: 1;
+  filter: none;
+}
+
+.animal-escape-hud__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(244, 240, 230, 0.22);
+  border-radius: 12px;
+  color: #f4f0e6;
+  font: inherit;
+  font-weight: 600;
+  padding: 8px 12px;
+  min-width: 44px;
+  cursor: pointer;
+  transition: transform 0.08s ease, background 0.15s ease;
+}
+
+.animal-escape-hud__button:active {
+  transform: scale(0.94);
+}
+
+.animal-escape-hud__button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.animal-escape-hud__button--active {
+  background: rgba(242, 210, 74, 0.22);
+  border-color: rgba(242, 210, 74, 0.7);
+}
+
+.animal-escape-hud__button--danger {
+  color: #ff8f6b;
+}
+
+.animal-escape-hud__button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.animal-escape-board-container {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+}
+
+.animal-escape-board-canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.animal-escape-rotate-banner {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(242, 210, 74, 0.16);
+  border: 1px solid rgba(242, 210, 74, 0.75);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  pointer-events: none;
+  animation: animal-escape-pulse 1.2s ease-in-out infinite;
+}
+
+.animal-escape-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(6, 20, 14, 0.72);
+  backdrop-filter: blur(4px);
+  padding:
+    calc(20px + env(safe-area-inset-top, 0px))
+    calc(20px + env(safe-area-inset-right, 0px))
+    calc(20px + env(safe-area-inset-bottom, 0px))
+    calc(20px + env(safe-area-inset-left, 0px));
+}
+
+.animal-escape-overlay__card {
+  width: min(360px, 100%);
+  background: linear-gradient(180deg, #1d4a36 0%, #143628 100%);
+  border: 1px solid rgba(244, 240, 230, 0.2);
+  border-radius: 20px;
+  padding: 24px 20px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+.animal-escape-overlay__title {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.animal-escape-overlay__text {
+  font-size: 14px;
+  line-height: 1.55;
+  opacity: 0.85;
+  margin: 0 0 18px;
+  white-space: pre-line;
+}
+
+.animal-escape-stars {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  font-size: 38px;
+  margin: 6px 0 10px;
+}
+
+.animal-escape-stars span {
+  opacity: 0.25;
+  filter: grayscale(1);
+  transform: scale(0.8);
+  transition: all 0.25s ease;
+}
+
+.animal-escape-stars span.is-earned {
+  opacity: 1;
+  filter: none;
+  transform: scale(1);
+  animation: animal-escape-star-pop 0.4s ease backwards;
+}
+
+.animal-escape-stars span.is-earned:nth-child(2) {
+  animation-delay: 0.12s;
+}
+
+.animal-escape-stars span.is-earned:nth-child(3) {
+  animation-delay: 0.24s;
+}
+
+.animal-escape-overlay__score {
+  font-size: 16px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 14px;
+}
+
+.animal-escape-overlay__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.animal-escape-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid rgba(244, 240, 230, 0.25);
+  border-radius: 14px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: transform 0.08s ease, background 0.15s ease;
+}
+
+.animal-escape-button:active {
+  transform: scale(0.97);
+}
+
+.animal-escape-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.animal-escape-button--primary {
+  background: #f2d24a;
+  color: #3a2a05;
+  border-color: #f2d24a;
+}
+
+.animal-escape-button--primary:hover {
+  background: #f7dd6d;
+}
+
+.animal-escape-button--ghost {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.animal-escape-button--ghost:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.animal-escape-button--danger {
+  background: rgba(255, 143, 107, 0.14);
+  border-color: rgba(255, 143, 107, 0.55);
+}
+
+.animal-escape-save-status {
+  font-size: 12px;
+  opacity: 0.75;
+  min-height: 16px;
+}
+
+.animal-escape-save-status--error {
+  color: #ff8f6b;
+  opacity: 1;
+}
+
+.animal-escape-toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.animal-escape-toggle {
+  position: relative;
+  width: 46px;
+  height: 26px;
+  border-radius: 999px;
+  border: 1px solid rgba(244, 240, 230, 0.3);
+  background: rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.animal-escape-toggle::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #f4f0e6;
+  transition: transform 0.15s ease;
+}
+
+.animal-escape-toggle.is-on {
+  background: #f2d24a;
+}
+
+.animal-escape-toggle.is-on::after {
+  transform: translateX(20px);
+}
+
+.animal-escape-divider {
+  border: none;
+  border-top: 1px solid rgba(244, 240, 230, 0.15);
+  margin: 14px 0;
+}
+
+@keyframes animal-escape-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+@keyframes animal-escape-star-pop {
+  0% { transform: scale(0.4); opacity: 0; }
+  70% { transform: scale(1.15); }
+  100% { transform: scale(1); opacity: 1; }
+}

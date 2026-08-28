@@ -1,4 +1,5 @@
 import { useId, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { CroppedAsset } from "./CroppedAsset";
 import { tribeOutAudio } from "./audio/tribeOutAudio";
 import { PauseRoundImageButton } from "./PauseRoundImageButton";
@@ -22,6 +23,9 @@ export function TribeOutPauseOverlay({
   onResume,
   onRestart,
 }: TribeOutPauseOverlayProps) {
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.resolvedLanguage?.startsWith("en") ? "en" : "vi";
+  const nextLanguage = currentLanguage === "vi" ? "en" : "vi";
   const titleId = useId();
   const [sfxEnabled, setSfxEnabled] = useState(() => tribeOutAudio.isSfxEnabled());
   const [musicEnabled, setMusicEnabled] = useState(() => tribeOutAudio.isMusicEnabled());
@@ -63,13 +67,13 @@ export function TribeOutPauseOverlay({
             landscape:max-h-[600px]:text-[clamp(20px,4vw,28px)]
           "
         >
-          TẠM DỪNG
+          {t("common.pause")}
         </h2>
 
         <div className="flex w-full items-center justify-center mt-2 max-sm:mt-1 landscape:max-h-[600px]:mt-1">
           <PauseAction
-            label="CHƠI TIẾP"
-            ariaLabel="Chơi tiếp"
+            label={t("common.resume")}
+            ariaLabel={t("common.resume")}
             src="/EndGameScreen/continue.png"
             crop={PAUSE_CROPS.resumeButton}
             onClick={onResume}
@@ -79,26 +83,33 @@ export function TribeOutPauseOverlay({
 
         <div className="grid grid-cols-3 place-items-center gap-[clamp(14px,2vw,18px)] mt-1 max-sm:mt-1 landscape:max-h-[600px]:mt-1">
           <PauseRoundImageButton
-            label="Chơi lại"
+            label={t("common.retry")}
             onClick={onRestart}
             assetSrc="/ buttons/again.png"
             crop={PAUSE_CROPS.againButton}
           />
 
           <PauseRoundImageButton
-            label={sfxEnabled ? "Tắt âm thanh" : "Bật âm thanh"}
+            label={sfxEnabled ? t("settings.off") : t("settings.on")}
             onClick={toggleSfx}
             assetSrc={sfxEnabled ? "/ buttons/sfx.png" : "/ buttons/nosfx.png"}
             crop={sfxEnabled ? PAUSE_CROPS.sfxButton : PAUSE_CROPS.sfxMutedButton}
           />
 
           <PauseRoundImageButton
-            label={musicEnabled ? "Tắt nhạc" : "Bật nhạc"}
+            label={musicEnabled ? t("settings.off") : t("settings.on")}
             onClick={toggleMusic}
             assetSrc={musicEnabled ? "/ buttons/music.png" : "/ buttons/nomusic.png"}
             crop={musicEnabled ? PAUSE_CROPS.musicButton : PAUSE_CROPS.musicMutedButton}
           />
         </div>
+        <button
+          type="button"
+          className="rounded-full border-2 border-[#bc7924] bg-[#fff2c9] px-4 py-2 text-xs font-black uppercase tracking-[0.08em] text-[#5d2b0a]"
+          onClick={() => void i18n.changeLanguage(nextLanguage)}
+        >
+          {t("settings.language")}: {nextLanguage.toUpperCase()}
+        </button>
       </section>
     </div>
   );
