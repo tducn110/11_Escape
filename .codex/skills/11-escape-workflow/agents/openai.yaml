@@ -1,3 +1,0 @@
-display_name: 11 Escape Codex Workflow
-short_description: Route Codex work and deploys through codex -> dev -> main.
-default_prompt: Use this skill for any Codex-owned change or deploy in 11_Escape. Work on codex, push codex, merge to dev for test, then merge dev to main only after verification.

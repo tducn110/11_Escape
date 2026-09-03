@@ -434,7 +434,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "ob1",
         "type": "obstacle",
-        "assetKey": "rock",
         "row": 2,
         "col": 4,
         "width": 1,
@@ -532,7 +531,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "ob1",
         "type": "obstacle",
-        "assetKey": "rock",
         "row": 1,
         "col": 2,
         "width": 1,
@@ -563,7 +561,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "ob1",
         "type": "obstacle",
-        "assetKey": "rock",
         "row": 1,
         "col": 2,
         "width": 1,
@@ -606,7 +603,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "g1",
         "type": "gate",
-        "assetKey": "gate-closed",
         "row": 1,
         "col": 2,
         "width": 1,
@@ -627,7 +623,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "s1",
         "type": "switch",
-        "assetKey": "switch-inactive",
         "row": 3,
         "col": 2,
         "width": 1,
@@ -660,7 +655,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "g1",
         "type": "gate",
-        "assetKey": "gate-closed",
         "row": 1,
         "col": 2,
         "width": 1,
@@ -681,7 +675,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "s1",
         "type": "switch",
-        "assetKey": "switch-inactive",
         "row": 2,
         "col": 3,
         "width": 1,
@@ -714,7 +707,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "g1",
         "type": "gate",
-        "assetKey": "gate-closed",
         "row": 1,
         "col": 2,
         "width": 1,
@@ -735,7 +727,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "s1",
         "type": "switch",
-        "assetKey": "switch-inactive",
         "row": 2,
         "col": 3,
         "width": 1,
@@ -768,7 +759,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "g1",
         "type": "gate",
-        "assetKey": "gate-closed",
         "row": 1,
         "col": 2,
         "width": 1,
@@ -789,7 +779,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "s1",
         "type": "switch",
-        "assetKey": "switch-inactive",
         "row": 2,
         "col": 1,
         "width": 1,
@@ -822,7 +811,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "g1",
         "type": "gate",
-        "assetKey": "gate-closed",
         "row": 1,
         "col": 2,
         "width": 1,
@@ -843,7 +831,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "s1",
         "type": "switch",
-        "assetKey": "switch-inactive",
         "row": 2,
         "col": 0,
         "width": 1,
@@ -865,7 +852,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "ob1",
         "type": "obstacle",
-        "assetKey": "rock",
         "row": 3,
         "col": 4,
         "width": 1,
@@ -896,7 +882,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "g1",
         "type": "gate",
-        "assetKey": "gate-closed",
         "row": 1,
         "col": 2,
         "width": 1,
@@ -928,7 +913,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "s1",
         "type": "switch",
-        "assetKey": "switch-inactive",
         "row": 0,
         "col": 3,
         "width": 1,
@@ -950,7 +934,6 @@ export const LEVELS: readonly TribeOutLevel[] = [
       {
         "id": "ob1",
         "type": "obstacle",
-        "assetKey": "rock",
         "row": 3,
         "col": 4,
         "width": 1,
@@ -974,7 +957,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -991,7 +975,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -1000,7 +985,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -1009,7 +995,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -1018,7 +1005,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -1027,7 +1015,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -1036,7 +1025,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -1045,7 +1035,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -1073,7 +1064,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -1090,7 +1082,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -1099,7 +1092,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -1108,7 +1102,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -1117,7 +1112,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -1126,7 +1122,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -1135,7 +1132,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -1155,7 +1153,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -1172,7 +1171,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -1181,7 +1181,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -1190,7 +1191,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -1199,7 +1201,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -1208,7 +1211,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -1217,7 +1221,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -1226,7 +1231,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -1246,7 +1252,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -1263,7 +1270,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -1272,7 +1280,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -1281,7 +1290,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -1290,7 +1300,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -1299,7 +1310,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -1308,7 +1320,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -1317,7 +1330,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -1345,7 +1359,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -1362,7 +1377,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -1371,7 +1387,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -1380,7 +1397,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -1389,7 +1407,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -1398,7 +1417,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -1407,7 +1427,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -1435,7 +1456,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -1452,7 +1474,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -1461,7 +1484,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -1470,7 +1494,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -1479,7 +1504,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -1488,7 +1514,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -1497,7 +1524,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -1517,7 +1545,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -1534,7 +1563,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -1543,7 +1573,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -1552,7 +1583,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -1561,7 +1593,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -1570,7 +1603,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -1579,7 +1613,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -1607,7 +1642,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -1624,7 +1660,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -1633,7 +1670,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -1642,7 +1680,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -1651,7 +1690,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -1660,7 +1700,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -1669,7 +1710,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -1678,7 +1720,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -1698,7 +1741,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -1715,7 +1759,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -1724,7 +1769,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -1733,7 +1779,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -1742,7 +1789,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -1751,7 +1799,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -1760,7 +1809,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -1769,7 +1819,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -1789,7 +1840,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -1806,7 +1858,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -1815,7 +1868,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -1824,7 +1878,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -1833,7 +1888,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -1842,7 +1898,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -1851,7 +1908,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -1888,7 +1946,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -1905,7 +1964,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -1914,7 +1974,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -1933,7 +1994,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -1942,7 +2004,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -1951,7 +2014,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -1979,7 +2043,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -1996,7 +2061,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -2005,7 +2071,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -2014,7 +2081,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -2023,7 +2091,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -2032,7 +2101,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -2041,7 +2111,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -2050,7 +2121,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -2070,7 +2142,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -2087,7 +2160,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -2096,7 +2170,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -2105,7 +2180,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -2114,7 +2190,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -2123,7 +2200,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -2132,7 +2210,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -2141,7 +2220,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -2161,7 +2241,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -2178,7 +2259,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -2187,7 +2269,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -2196,7 +2279,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -2205,7 +2289,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -2214,7 +2299,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -2223,7 +2309,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -2232,7 +2319,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -2260,7 +2348,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -2277,7 +2366,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -2286,7 +2376,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -2295,7 +2386,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -2304,7 +2396,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -2313,7 +2406,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -2322,7 +2416,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -2350,7 +2445,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -2367,7 +2463,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -2376,7 +2473,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -2385,7 +2483,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -2394,7 +2493,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -2403,7 +2503,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -2412,7 +2513,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -2421,7 +2523,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -2449,7 +2552,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -2466,7 +2570,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -2475,7 +2580,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -2484,7 +2590,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -2493,7 +2600,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -2502,7 +2610,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -2511,7 +2620,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -2520,7 +2630,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -2529,7 +2640,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -2549,7 +2661,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -2566,7 +2679,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -2575,7 +2689,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -2584,7 +2699,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -2593,7 +2709,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -2602,7 +2719,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -2611,7 +2729,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -2620,7 +2739,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -2648,7 +2768,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -2665,7 +2786,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -2674,7 +2796,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -2683,7 +2806,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -2692,7 +2816,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -2701,7 +2826,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -2710,7 +2836,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -2730,7 +2857,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -2747,7 +2875,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -2756,7 +2885,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -2765,7 +2895,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -2774,7 +2905,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -2783,7 +2915,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -2792,7 +2925,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -2801,7 +2935,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -2830,7 +2965,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -2847,7 +2983,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -2856,7 +2993,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -2875,7 +3013,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -2884,7 +3023,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -2893,7 +3033,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -2902,7 +3043,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -2939,7 +3081,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -2956,7 +3099,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -2965,7 +3109,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -2984,7 +3129,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -2993,7 +3139,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -3002,7 +3149,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -3011,7 +3159,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -3048,7 +3197,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -3065,7 +3215,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -3074,7 +3225,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -3083,7 +3235,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -3092,7 +3245,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -3111,7 +3265,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -3120,7 +3275,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -3129,7 +3285,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -3158,7 +3315,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -3175,7 +3333,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -3184,7 +3343,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -3203,7 +3363,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -3212,7 +3373,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -3221,7 +3383,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -3258,7 +3421,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -3275,7 +3439,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -3284,7 +3449,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -3293,7 +3459,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -3312,7 +3479,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -3321,7 +3489,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -3330,7 +3499,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -3339,7 +3509,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -3368,7 +3539,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -3385,7 +3557,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -3394,7 +3567,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -3413,7 +3587,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -3422,7 +3597,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -3431,7 +3607,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -3440,7 +3617,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -3477,7 +3655,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -3494,7 +3673,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -3503,7 +3683,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -3522,7 +3703,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -3531,7 +3713,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -3540,7 +3723,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -3549,7 +3733,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -3586,7 +3771,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -3603,7 +3789,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -3612,7 +3799,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -3631,7 +3819,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -3640,7 +3829,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -3649,7 +3839,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -3658,7 +3849,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -3695,7 +3887,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -3712,7 +3905,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -3721,7 +3915,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -3740,7 +3935,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -3749,7 +3945,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -3758,7 +3955,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -3767,7 +3965,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -3804,7 +4003,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -3821,7 +4021,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -3830,7 +4031,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -3849,7 +4051,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -3858,7 +4061,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -3867,7 +4071,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -3876,7 +4081,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -3905,7 +4111,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -3922,7 +4129,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -3931,7 +4139,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -3940,7 +4149,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -3959,7 +4169,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -3968,7 +4179,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -3977,7 +4189,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -4014,7 +4227,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -4031,7 +4245,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -4040,7 +4255,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -4049,7 +4265,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -4068,7 +4285,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -4077,7 +4295,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -4086,7 +4305,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -4123,7 +4343,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -4140,7 +4361,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -4149,7 +4371,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -4168,7 +4391,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -4177,7 +4401,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -4186,7 +4411,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -4195,7 +4421,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -4224,7 +4451,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -4241,7 +4469,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -4250,7 +4479,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -4269,7 +4499,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -4278,7 +4509,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -4287,7 +4519,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -4296,7 +4529,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -4305,7 +4539,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -4334,7 +4569,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -4351,7 +4587,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -4360,7 +4597,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -4379,7 +4617,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -4388,7 +4627,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -4397,7 +4637,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -4434,7 +4675,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -4451,7 +4693,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -4460,7 +4703,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -4469,7 +4713,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -4488,7 +4733,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -4497,7 +4743,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -4506,7 +4753,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -4515,7 +4763,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   },
@@ -4544,7 +4793,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -4561,7 +4811,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -4570,7 +4821,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -4589,7 +4841,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -4598,7 +4851,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -4607,7 +4861,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -4616,7 +4871,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -4653,7 +4909,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -4670,7 +4927,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -4679,7 +4937,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -4698,7 +4957,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -4707,7 +4967,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -4716,7 +4977,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -4753,7 +5015,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -4770,7 +5033,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -4779,7 +5043,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -4798,7 +5063,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -4807,7 +5073,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -4816,7 +5083,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -4825,7 +5093,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -4862,7 +5131,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -4879,7 +5149,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -4888,7 +5159,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -4907,7 +5179,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -4916,7 +5189,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -4925,7 +5199,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -4934,7 +5209,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -4971,7 +5247,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -4988,7 +5265,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -4997,7 +5275,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -5006,7 +5285,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -5025,7 +5305,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -5034,7 +5315,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -5043,7 +5325,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -5052,7 +5335,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -5061,7 +5345,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -5070,7 +5355,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u10",
@@ -5079,7 +5365,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -5116,7 +5403,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -5133,7 +5421,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -5142,7 +5431,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -5151,7 +5441,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -5160,7 +5451,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -5179,7 +5471,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -5188,7 +5481,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -5197,7 +5491,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -5206,7 +5501,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -5243,7 +5539,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -5260,7 +5557,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -5269,7 +5567,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -5278,7 +5577,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -5287,7 +5587,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -5306,7 +5607,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -5315,7 +5617,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -5324,7 +5627,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -5333,7 +5637,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -5342,7 +5647,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u10",
@@ -5351,7 +5657,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -5388,7 +5695,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -5405,7 +5713,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -5414,7 +5723,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -5423,7 +5733,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -5432,7 +5743,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -5451,7 +5763,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -5460,7 +5773,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -5469,7 +5783,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -5478,7 +5793,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -5487,7 +5803,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -5524,7 +5841,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -5541,7 +5859,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -5550,7 +5869,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -5569,7 +5889,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -5578,7 +5899,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -5587,7 +5909,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -5596,7 +5919,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -5633,7 +5957,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -5650,7 +5975,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -5659,7 +5985,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -5668,7 +5995,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -5677,7 +6005,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -5696,7 +6025,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -5705,7 +6035,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -5714,7 +6045,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -5723,7 +6055,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -5732,7 +6065,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u10",
@@ -5741,7 +6075,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -5778,7 +6113,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -5795,7 +6131,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -5804,7 +6141,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -5813,7 +6151,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -5832,7 +6171,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -5841,7 +6181,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -5850,7 +6191,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -5859,7 +6201,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -5896,7 +6239,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -5913,7 +6257,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -5922,7 +6267,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -5931,7 +6277,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -5940,7 +6287,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -5959,7 +6307,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -5968,7 +6317,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -5977,7 +6327,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -5986,7 +6337,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -5995,7 +6347,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u10",
@@ -6004,7 +6357,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -6041,7 +6395,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -6058,7 +6413,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -6067,7 +6423,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -6076,7 +6433,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -6085,7 +6443,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -6104,7 +6463,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -6113,7 +6473,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -6122,7 +6483,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -6131,7 +6493,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -6168,7 +6531,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -6185,7 +6549,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -6194,7 +6559,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -6203,7 +6569,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -6212,7 +6579,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -6231,7 +6599,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -6240,7 +6609,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -6249,7 +6619,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -6258,7 +6629,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -6267,7 +6639,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u10",
@@ -6276,7 +6649,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -6313,7 +6687,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -6330,7 +6705,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -6339,7 +6715,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -6348,7 +6725,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -6367,7 +6745,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -6376,7 +6755,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -6385,7 +6765,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -6394,7 +6775,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -6403,7 +6785,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -6440,7 +6823,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -6457,7 +6841,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -6466,7 +6851,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -6485,7 +6871,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -6494,7 +6881,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -6503,7 +6891,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -6512,7 +6901,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -6521,7 +6911,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -6530,7 +6921,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -6567,7 +6959,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -6584,7 +6977,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -6593,7 +6987,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -6612,7 +7007,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -6621,7 +7017,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -6630,7 +7027,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -6639,7 +7037,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -6676,7 +7075,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -6693,7 +7093,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -6702,7 +7103,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -6711,7 +7113,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -6730,7 +7133,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -6739,7 +7143,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -6748,7 +7153,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -6757,7 +7163,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -6766,7 +7173,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -6775,7 +7183,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -6812,7 +7221,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -6829,7 +7239,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -6838,7 +7249,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -6847,7 +7259,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -6866,7 +7279,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -6875,7 +7289,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -6884,7 +7299,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -6893,7 +7309,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -6902,7 +7319,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -6911,7 +7329,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -6948,7 +7367,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -6965,7 +7385,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -6974,7 +7395,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -6983,7 +7405,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -7002,7 +7425,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -7011,7 +7435,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -7020,7 +7445,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -7029,7 +7455,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -7038,7 +7465,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -7075,7 +7503,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -7092,7 +7521,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -7101,7 +7531,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -7110,7 +7541,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -7129,7 +7561,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -7138,7 +7571,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -7147,7 +7581,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -7156,7 +7591,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -7165,7 +7601,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -7174,7 +7611,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u10",
@@ -7183,7 +7621,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -7220,7 +7659,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -7237,7 +7677,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -7246,7 +7687,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -7255,7 +7697,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -7274,7 +7717,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -7283,7 +7727,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -7292,7 +7737,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -7301,7 +7747,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -7338,7 +7785,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -7355,7 +7803,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -7364,7 +7813,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -7383,7 +7833,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -7392,7 +7843,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -7401,7 +7853,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -7410,7 +7863,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -7447,7 +7901,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -7464,7 +7919,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -7473,7 +7929,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -7492,7 +7949,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -7501,7 +7959,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -7510,7 +7969,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -7519,7 +7979,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -7528,7 +7989,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -7537,7 +7999,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -7574,7 +8037,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -7591,7 +8055,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -7600,7 +8065,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -7609,7 +8075,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -7618,7 +8085,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -7637,7 +8105,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -7646,7 +8115,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -7655,7 +8125,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -7664,7 +8135,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -7673,7 +8145,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u10",
@@ -7682,7 +8155,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u11",
@@ -7691,7 +8165,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u12",
@@ -7700,7 +8175,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -7737,7 +8213,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -7754,7 +8231,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -7763,7 +8241,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -7772,7 +8251,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -7781,7 +8261,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -7800,7 +8281,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -7809,7 +8291,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -7818,7 +8301,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -7827,7 +8311,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -7836,7 +8321,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u10",
@@ -7845,7 +8331,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u11",
@@ -7854,7 +8341,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -7891,7 +8379,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -7908,7 +8397,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -7917,7 +8407,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -7926,7 +8417,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -7945,7 +8437,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -7954,7 +8447,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -7963,7 +8457,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -7972,7 +8467,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -7981,7 +8477,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -7990,7 +8487,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u10",
@@ -7999,7 +8497,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -8036,7 +8535,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -8053,7 +8553,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -8062,7 +8563,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -8071,7 +8573,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -8090,7 +8593,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -8099,7 +8603,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -8108,7 +8613,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -8117,7 +8623,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -8126,7 +8633,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -8135,7 +8643,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -8172,7 +8681,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -8189,7 +8699,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -8198,7 +8709,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -8207,7 +8719,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -8226,7 +8739,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -8235,7 +8749,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -8244,7 +8759,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -8253,7 +8769,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -8262,7 +8779,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -8271,7 +8789,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u10",
@@ -8280,7 +8799,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -8317,7 +8837,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -8334,7 +8855,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -8343,7 +8865,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -8352,7 +8875,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -8371,7 +8895,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -8380,7 +8905,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -8389,7 +8915,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -8398,7 +8925,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -8407,7 +8935,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -8416,7 +8945,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u10",
@@ -8425,7 +8955,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u11",
@@ -8434,7 +8965,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -8471,7 +9003,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -8488,7 +9021,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -8497,7 +9031,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -8506,7 +9041,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -8525,7 +9061,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -8534,7 +9071,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -8543,7 +9081,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -8552,7 +9091,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -8561,7 +9101,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -8570,7 +9111,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -8607,7 +9149,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -8624,7 +9167,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -8633,7 +9177,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -8642,7 +9187,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -8661,7 +9207,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -8670,7 +9217,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -8679,7 +9227,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -8688,7 +9237,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -8697,7 +9247,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -8706,7 +9257,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u10",
@@ -8715,7 +9267,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -8752,7 +9305,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -8769,7 +9323,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -8778,7 +9333,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -8787,7 +9343,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -8796,7 +9353,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -8815,7 +9373,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -8824,7 +9383,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -8833,7 +9393,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -8842,7 +9403,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -8851,7 +9413,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -8888,7 +9451,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -8905,7 +9469,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -8914,7 +9479,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -8923,7 +9489,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -8932,7 +9499,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -8951,7 +9519,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -8960,7 +9529,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -8969,7 +9539,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -8978,7 +9549,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -8987,7 +9559,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -9024,7 +9597,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -9041,7 +9615,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -9050,7 +9625,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -9059,7 +9635,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -9078,7 +9655,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -9087,7 +9665,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -9096,7 +9675,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -9105,7 +9685,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -9114,7 +9695,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -9123,7 +9705,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u10",
@@ -9132,7 +9715,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -9169,7 +9753,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -9186,7 +9771,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -9195,7 +9781,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -9204,7 +9791,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -9223,7 +9811,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -9232,7 +9821,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -9241,7 +9831,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -9250,7 +9841,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -9259,7 +9851,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -9268,7 +9861,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -9305,7 +9899,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -9322,7 +9917,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -9331,7 +9927,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -9340,7 +9937,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -9359,7 +9957,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -9368,7 +9967,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -9377,7 +9977,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -9386,7 +9987,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -9395,7 +9997,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -9404,7 +10007,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -9441,7 +10045,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -9458,7 +10063,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -9467,7 +10073,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -9476,7 +10083,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -9495,7 +10103,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -9504,7 +10113,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -9513,7 +10123,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -9522,7 +10133,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -9531,7 +10143,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -9540,7 +10153,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -9577,7 +10191,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -9594,7 +10209,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -9603,7 +10219,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -9612,7 +10229,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -9631,7 +10249,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -9640,7 +10259,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -9649,7 +10269,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -9658,7 +10279,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -9667,7 +10289,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -9676,7 +10299,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -9713,7 +10337,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -9730,7 +10355,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -9739,7 +10365,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -9748,7 +10375,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -9767,7 +10395,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -9776,7 +10405,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -9785,7 +10415,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -9794,7 +10425,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -9803,7 +10435,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -9812,7 +10445,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -9849,7 +10483,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -9866,7 +10501,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -9875,7 +10511,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -9884,7 +10521,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -9903,7 +10541,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -9912,7 +10551,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -9921,7 +10561,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -9930,7 +10571,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -9939,7 +10581,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -9948,7 +10591,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -9985,7 +10629,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -10002,7 +10647,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -10011,7 +10657,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u3",
@@ -10020,7 +10667,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -10039,7 +10687,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -10048,7 +10697,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -10057,7 +10707,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -10066,7 +10717,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 1,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -10075,7 +10727,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -10084,7 +10737,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -10121,7 +10775,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -10138,7 +10793,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u2",
@@ -10147,7 +10803,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "sw1",
@@ -10166,7 +10823,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u4",
@@ -10175,7 +10833,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -10184,7 +10843,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -10193,7 +10853,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -10202,7 +10863,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -10211,7 +10873,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -10220,7 +10883,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "proxy_obs",
@@ -10257,7 +10921,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs0",
@@ -10274,7 +10939,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "left",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs1",
@@ -10291,7 +10957,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs2",
@@ -10308,7 +10975,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 5,
         "direction": "down",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "obs3",
@@ -10335,7 +11003,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u5",
@@ -10344,7 +11013,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u6",
@@ -10353,7 +11023,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u7",
@@ -10362,7 +11033,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 0,
         "direction": "right",
         "width": 1,
-        "height": 2
+        "height": 2,
+        "assetKey": "villager-1"
       },
       {
         "id": "u8",
@@ -10371,7 +11043,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 2,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u9",
@@ -10380,7 +11053,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 3,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       },
       {
         "id": "u10",
@@ -10389,7 +11063,8 @@ export const LEVELS: readonly TribeOutLevel[] = [
         "col": 4,
         "direction": "right",
         "width": 1,
-        "height": 1
+        "height": 1,
+        "assetKey": "villager-1"
       }
     ]
   }

@@ -26,6 +26,10 @@ export function setGoogleH5AdSound(sound: AdSound): void {
   configuredSound = sound;
 }
 
+export function getGoogleH5AdSound(): AdSound {
+  return configuredSound;
+}
+
 export async function showRewardedVideo(options: RewardedAdOptions): Promise<boolean> {
   if (activeBreak) return false;
   activeBreak = true;

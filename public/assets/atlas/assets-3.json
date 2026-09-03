@@ -1,0 +1,37 @@
+{"frames": {
+
+"Characters/cr7.png":
+{
+	"frame": {"x":3,"y":3,"w":830,"h":721},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":99,"y":159,"w":830,"h":721},
+	"sourceSize": {"w":1024,"h":1024}
+},
+"Characters/meocanhsat.png":
+{
+	"frame": {"x":3,"y":728,"w":754,"h":840},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":135,"y":96,"w":754,"h":840},
+	"sourceSize": {"w":1024,"h":1024}
+},
+"tribe-out/hud/hint-button.png":
+{
+	"frame": {"x":3,"y":1572,"w":668,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":50,"y":47,"w":668,"h":226},
+	"sourceSize": {"w":768,"h":320}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "assets-3.png",
+	"format": "RGBA8888",
+	"size": {"w":836,"h":1801},
+	"scale": "1",
+	"related_multi_packs": [ "assets-0.json", "assets-1.json", "assets-2.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:8238d7253f36437c8686f7e1db7c157c:59b560d343298895708feddb5e95082e:47de0aced06eef255012df0508fee050$"
+}
+}

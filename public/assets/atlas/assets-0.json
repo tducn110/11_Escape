@@ -1,0 +1,45 @@
+{"frames": {
+
+"Characters/bear.png":
+{
+	"frame": {"x":1026,"y":1018,"w":1003,"h":987},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":19,"y":5,"w":1003,"h":987},
+	"sourceSize": {"w":1024,"h":1024}
+},
+"Characters/meo.png":
+{
+	"frame": {"x":3,"y":1026,"w":1019,"h":1011},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":5,"w":1019,"h":1011},
+	"sourceSize": {"w":1024,"h":1024}
+},
+"Characters/trau.png":
+{
+	"frame": {"x":1026,"y":3,"w":979,"h":1011},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":43,"y":5,"w":979,"h":1011},
+	"sourceSize": {"w":1024,"h":1024}
+},
+"Characters/ys.png":
+{
+	"frame": {"x":3,"y":3,"w":1019,"h":1019},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":3,"y":5,"w":1019,"h":1019},
+	"sourceSize": {"w":1024,"h":1024}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "assets-0.png",
+	"format": "RGBA8888",
+	"size": {"w":2032,"h":2040},
+	"scale": "1",
+	"related_multi_packs": [ "assets-1.json", "assets-2.json", "assets-3.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:8238d7253f36437c8686f7e1db7c157c:59b560d343298895708feddb5e95082e:47de0aced06eef255012df0508fee050$"
+}
+}

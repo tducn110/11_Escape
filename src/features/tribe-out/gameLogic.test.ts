@@ -56,7 +56,7 @@ describe("gameLogic", () => {
   it("gate open does not block, closed gate blocks", () => {
     const entities: TribeOutEntity[] = [
       { id: "u1", type: "unit", direction: "right", row: 0, col: 0, width: 1, height: 1, assetKey: "villager-1" },
-      { id: "g1", type: "gate", row: 0, col: 1, width: 1, height: 1, open: false, assetKey: "gate-closed" },
+      { id: "g1", type: "gate", row: 0, col: 1, width: 1, height: 1, open: false },
     ];
     const state = buildState(entities);
 
@@ -72,8 +72,8 @@ describe("gameLogic", () => {
   it("switch activates only on a successful exit", () => {
     const state = buildState([
       { id: "u1", type: "unit", direction: "right", row: 0, col: 0, width: 1, height: 1, assetKey: "villager-1" },
-      { id: "s1", type: "switch", row: 0, col: 1, width: 1, height: 1, targetId: "g1", activated: false, assetKey: "switch-inactive" },
-      { id: "g1", type: "gate", row: 1, col: 1, width: 1, height: 1, open: false, assetKey: "gate-closed" },
+      { id: "s1", type: "switch", row: 0, col: 1, width: 1, height: 1, targetId: "g1", activated: false },
+      { id: "g1", type: "gate", row: 1, col: 1, width: 1, height: 1, open: false },
     ]);
     const progress: TribeOutProgressSnapshot = {
       schemaVersion: 2,
@@ -92,9 +92,9 @@ describe("gameLogic", () => {
   it("switch does not activate if the path is blocked", () => {
     const state = buildState([
       { id: "u1", type: "unit", direction: "right", row: 0, col: 0, width: 1, height: 1, assetKey: "villager-1" },
-      { id: "s1", type: "switch", row: 0, col: 1, width: 1, height: 1, targetId: "g1", activated: false, assetKey: "switch-inactive" },
-      { id: "o1", type: "obstacle", row: 0, col: 2, width: 1, height: 1, assetKey: "rock" },
-      { id: "g1", type: "gate", row: 1, col: 1, width: 1, height: 1, open: false, assetKey: "gate-closed" },
+      { id: "s1", type: "switch", row: 0, col: 1, width: 1, height: 1, targetId: "g1", activated: false },
+      { id: "o1", type: "obstacle", row: 0, col: 2, width: 1, height: 1 },
+      { id: "g1", type: "gate", row: 1, col: 1, width: 1, height: 1, open: false },
     ]);
     const progress: TribeOutProgressSnapshot = {
       schemaVersion: 2,
@@ -128,8 +128,8 @@ describe("gameLogic", () => {
   it("buildOccupancyMap ignores switches and open gates", () => {
     const map = buildOccupancyMap([
       { id: "u1", type: "unit", direction: "right", row: 0, col: 0, width: 1, height: 1, assetKey: "villager-1" },
-      { id: "s1", type: "switch", row: 0, col: 1, width: 1, height: 1, targetId: "g1", activated: false, assetKey: "switch-inactive" },
-      { id: "g1", type: "gate", row: 0, col: 2, width: 1, height: 1, open: true, assetKey: "gate-open" },
+      { id: "s1", type: "switch", row: 0, col: 1, width: 1, height: 1, targetId: "g1", activated: false },
+      { id: "g1", type: "gate", row: 0, col: 2, width: 1, height: 1, open: true },
     ]);
 
     expect(map.has("0,1")).toBe(false);

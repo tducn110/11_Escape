@@ -1,3 +1,0 @@
-display_name: 11 Escape Gemini Workflow
-short_description: Route AGY work and deploys through agy -> dev -> main.
-default_prompt: Use this skill for any Gemini/AGY-owned change or deploy in 11_Escape. Work on agy, push agy, merge to dev for test, then merge dev to main only after verification.

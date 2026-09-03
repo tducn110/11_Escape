@@ -1,0 +1,101 @@
+{"frames": {
+
+"Characters/batman.png":
+{
+	"frame": {"x":943,"y":3,"w":859,"h":875},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":101,"w":859,"h":875},
+	"sourceSize": {"w":1024,"h":1024}
+},
+"Characters/dog.png":
+{
+	"frame": {"x":3,"y":3,"w":936,"h":962},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":5,"w":936,"h":962},
+	"sourceSize": {"w":1024,"h":1024}
+},
+"Characters/frog.png":
+{
+	"frame": {"x":922,"y":969,"w":963,"h":835},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":43,"y":101,"w":963,"h":835},
+	"sourceSize": {"w":1024,"h":1024}
+},
+"Characters/monkey.png":
+{
+	"frame": {"x":3,"y":969,"w":915,"h":931},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":107,"y":5,"w":915,"h":931},
+	"sourceSize": {"w":1024,"h":1024}
+},
+"tribe-out/board/leaf-tile.png":
+{
+	"frame": {"x":1603,"y":1808,"w":215,"h":218},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":19,"w":215,"h":218},
+	"sourceSize": {"w":256,"h":256}
+},
+"tribe-out/hud/rotate-button.png":
+{
+	"frame": {"x":922,"y":1808,"w":677,"h":223},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":45,"y":48,"w":677,"h":223},
+	"sourceSize": {"w":768,"h":320}
+},
+"tribe-out/mechanics/gate-closed.png":
+{
+	"frame": {"x":1822,"y":1808,"w":202,"h":206},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":24,"w":202,"h":206},
+	"sourceSize": {"w":256,"h":256}
+},
+"tribe-out/mechanics/gate-hole.png":
+{
+	"frame": {"x":1806,"y":461,"w":214,"h":217},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":20,"w":214,"h":217},
+	"sourceSize": {"w":256,"h":256}
+},
+"tribe-out/mechanics/gate-open.png":
+{
+	"frame": {"x":1806,"y":682,"w":214,"h":217},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":20,"w":214,"h":217},
+	"sourceSize": {"w":256,"h":256}
+},
+"tribe-out/mechanics/switch-active.png":
+{
+	"frame": {"x":1806,"y":3,"w":226,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":16,"w":226,"h":225},
+	"sourceSize": {"w":256,"h":256}
+},
+"tribe-out/mechanics/switch-inactive.png":
+{
+	"frame": {"x":1806,"y":232,"w":226,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":16,"w":226,"h":225},
+	"sourceSize": {"w":256,"h":256}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "assets-2.png",
+	"format": "RGBA8888",
+	"size": {"w":2035,"h":2034},
+	"scale": "1",
+	"related_multi_packs": [ "assets-0.json", "assets-1.json", "assets-3.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:8238d7253f36437c8686f7e1db7c157c:59b560d343298895708feddb5e95082e:47de0aced06eef255012df0508fee050$"
+}
+}

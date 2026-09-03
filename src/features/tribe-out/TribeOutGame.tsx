@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { AtlasImage } from "./assets/AtlasImage";
 import { Pause } from "lucide-react";
 import { GameShell } from "../../components/game/GameShell";
 import { Button } from "../../components/shared/Button";
@@ -283,8 +284,11 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
               className="tribe-tool-button tribe-tool-button--hint"
               onClick={handleHint}
               disabled={gameState.status !== "playing" || isPaused || hintedId !== null || hintChargesRemaining <= 0}
-              style={{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/tribe-out/hud/hint-button.png)` }}
             >
+              <AtlasImage 
+                frameName="tribe-out/hud/hint-button.png" 
+                style={{ position: "absolute", inset: 0, zIndex: -1, width: "100%", height: "100%" }} 
+              />
               <span className="tribe-tool-button__label">Gợi ý</span>
               <span className="tribe-tool-button__count" aria-label={`Còn ${hintChargesRemaining} gợi ý`}>
                 {hintChargesRemaining}
@@ -296,8 +300,11 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
               onClick={handleRotateToggle}
               disabled={gameState.status !== "playing" || isPaused || gameState.puzzle.rotateChargesRemaining <= 0}
               aria-pressed={gameState.selectedTool === "rotate"}
-              style={{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/tribe-out/hud/rotate-button.png)` }}
             >
+              <AtlasImage 
+                frameName="tribe-out/hud/rotate-button.png" 
+                style={{ position: "absolute", inset: 0, zIndex: -1, width: "100%", height: "100%" }} 
+              />
               <span className="tribe-tool-button__label">Xoay</span>
               <span className="tribe-tool-button__count" aria-label={`Còn ${gameState.puzzle.rotateChargesRemaining} lượt xoay`}>
                 {gameState.puzzle.rotateChargesRemaining}

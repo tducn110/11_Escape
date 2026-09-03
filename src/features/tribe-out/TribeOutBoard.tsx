@@ -1,7 +1,6 @@
-import { TribeOutEntityComponent } from "./TribeOutEntity";
 import type { TribeOutEntity } from "./types";
 import type { IsoBoardLayout } from "./isometric";
-import { IsometricBoardBackdrop } from "./pixi/IsometricBoardBackdrop";
+import { PixiGameRenderer } from "./pixi/PixiGameRenderer";
 
 interface Props {
   entities: readonly TribeOutEntity[];
@@ -31,20 +30,16 @@ export function TribeOutBoard({ entities, boardRows, boardCols, layout, bumpingI
         isolation: "isolate",
       }}
     >
-      <IsometricBoardBackdrop layout={layout} boardRows={boardRows} boardCols={boardCols} />
-
-      {/* Entities */}
-      {entities.map(entity => (
-        <TribeOutEntityComponent
-          key={entity.id}
-          entity={entity}
-          layout={layout}
-          isBumping={bumpingId === entity.id}
-          bumpNonce={bumpingId === entity.id ? bumpNonce : 0}
-          isHinted={hintedId === entity.id}
-          onTap={onTap}
-        />
-      ))}
+      <PixiGameRenderer
+        layout={layout}
+        boardRows={boardRows}
+        boardCols={boardCols}
+        entities={entities}
+        bumpingId={bumpingId}
+        bumpNonce={bumpNonce}
+        hintedId={hintedId}
+        onTap={onTap}
+      />
     </div>
   );
 }

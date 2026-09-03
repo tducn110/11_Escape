@@ -8,7 +8,6 @@ export type EntityType = "unit" | "obstacle" | "gate" | "switch";
 
 export interface PuzzleBaseEntity {
   id: EntityId;
-  assetKey: string;
   row: number;
   col: number;
   width: number;
@@ -17,6 +16,7 @@ export interface PuzzleBaseEntity {
 
 export interface UnitEntity extends PuzzleBaseEntity {
   type: "unit";
+  assetKey: string;
   direction: Direction;
   escaped?: boolean;
 }
