@@ -21,7 +21,7 @@ body {
 
 .app-container {
   background-color: #74d77c;
-  background-image: url('/background/PC.png');
+  background-image: url('/background/Phone.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
