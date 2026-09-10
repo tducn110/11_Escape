@@ -56,7 +56,7 @@ export function AnimalEscapeGame({ initialLevelId, onProgressChange }: AnimalEsc
   const gameRef = useRef(game);
   const progressRef = useRef(progress);
   const overlayRef = useRef<Overlay>(null);
-  const roundRef = useRef<WinkRound>(winkGame.startRound());
+  const roundRef = useRef<WinkRound | null>(null);
   const submittedScoreKeysRef = useRef<Set<string>>(new Set());
   const hintTimerRef = useRef<number | null>(null);
   const lifecycleStopRef = useRef<(() => void) | null>(null);
@@ -72,9 +72,18 @@ export function AnimalEscapeGame({ initialLevelId, onProgressChange }: AnimalEsc
 
   /** Each semantic round (first level, restart, next level) gets a fresh round id. */
   const startNewRound = useCallback(() => {
-    roundRef.current = winkGame.startRound();
+    const round = winkGame.startRound();
+    roundRef.current = round;
     submittedScoreKeysRef.current = new Set();
+    return round;
   }, []);
+
+  const ensureRound = useCallback(() => {
+    if (!roundRef.current) {
+      return startNewRound();
+    }
+    return roundRef.current;
+  }, [startNewRound]);
 
   const syncProgress = useCallback((next: ProgressSnapshot) => {
     setProgress(next);
@@ -95,7 +104,6 @@ export function AnimalEscapeGame({ initialLevelId, onProgressChange }: AnimalEsc
     let cancelled = false;
     animalEscapeAudio.preload();
     animalEscapeAudio.unlockFromGesture();
-    startNewRound();
     setBootState("loading");
 
     const boot = async () => {
@@ -116,6 +124,9 @@ export function AnimalEscapeGame({ initialLevelId, onProgressChange }: AnimalEsc
           textures,
         );
         setBootState("ready");
+        if (hasSeenTutorial(progressRef.current, initialLevelId)) {
+          ensureRound();
+        }
       } catch {
         if (!cancelled) {
           setBootState("error");
@@ -141,6 +152,9 @@ export function AnimalEscapeGame({ initialLevelId, onProgressChange }: AnimalEsc
       if (current.phase !== "playing" || overlayRef.current !== null) return;
       const next = tickTimer(current);
       if (next.phase === "lost") {
+        if (roundRef.current) {
+          winkGame.completeRound(roundRef.current);
+        }
         animalEscapeAudio.playGameOver();
         updateOverlay("lost");
       }
@@ -230,6 +244,7 @@ export function AnimalEscapeGame({ initialLevelId, onProgressChange }: AnimalEsc
       .at(0);
 
     if (!entity) return;
+    const currentRound = ensureRound();
 
     if (entity.type === "unit") {
       if (rotateMode) {
@@ -264,7 +279,7 @@ export function AnimalEscapeGame({ initialLevelId, onProgressChange }: AnimalEsc
       }
 
       if (next.phase === "won") {
-        winkGame.completeRound(roundRef.current);
+        winkGame.completeRound(currentRound);
         animalEscapeAudio.playWin();
         updateOverlay("won");
       }
@@ -334,15 +349,17 @@ export function AnimalEscapeGame({ initialLevelId, onProgressChange }: AnimalEsc
   const handleDismissTutorial = useCallback(() => {
     const levelId = gameRef.current.currentLevelId;
     syncProgress(markTutorialSeen(progressRef.current, levelId));
+    ensureRound();
     updateOverlay(null);
-  }, [syncProgress, updateOverlay]);
+  }, [ensureRound, syncProgress, updateOverlay]);
 
   const handleSaveScore = useCallback(() => {
     const current = gameRef.current;
     if (current.phase !== "won" || !winkGame.canSubmitScore) return;
     // Exactly one submit per round + level pair: retries are allowed only
     // after a failed attempt, never a second submit for the same result.
-    const scoreKey = `${roundRef.current.roundId}:${current.currentLevelId}`;
+    const roundId = roundRef.current?.roundId ?? 'round-1';
+    const scoreKey = `${roundId}:${current.currentLevelId}`;
     if (submittedScoreKeysRef.current.has(scoreKey)) return;
     setSaveState("saving");
     winkGame

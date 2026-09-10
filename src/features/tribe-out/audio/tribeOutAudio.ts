@@ -346,13 +346,13 @@ class TribeOutAudio {
 
   private audioConfig() {
     const isMobile = () => {
-      if (typeof window === "undefined") return false;
+      if (typeof window === "undefined" || typeof navigator === "undefined") return false;
       const uaMatch = /Mobi|Android|iPhone|iPad|iPod|IEMobile|BlackBerry|Opera Mini/i.test(
-        navigator.userAgent
+        navigator.userAgent || ""
       );
-      const widthMatch = window.matchMedia("(max-width: 1024px)").matches;
-      const touchMatch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
-      return uaMatch || widthMatch || touchMatch;
+      const widthMatch = window.matchMedia ? window.matchMedia("(max-width: 1024px)").matches : false;
+      const touchMatch = "ontouchstart" in window || (Boolean(navigator.maxTouchPoints) && navigator.maxTouchPoints > 0);
+      return Boolean(uaMatch || widthMatch || touchMatch);
     };
     const forceMobile = this.mobileAudioMode || isMobile();
     return forceMobile ? MOBILE_AUDIO : DESKTOP_AUDIO;

@@ -1,1 +1,16 @@
-{"projectId":"prj_gO5vNh0vRVsW8j3mL8fdPgugdr3D","orgId":"team_v45EcXKD15Ga23viqEgfGnrB","projectName":"escape-11"}
+{
+  "projectId": "prj_gO5vNh0vRVsW8j3mL8fdPgugdr3D",
+  "orgId": "team_v45EcXKD15Ga23viqEgfGnrB",
+  "projectName": "escape-11",
+  "settings": {
+    "createdAt": 1785136855345,
+    "framework": "vite",
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": null,
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "24.x"
+  }
+}
