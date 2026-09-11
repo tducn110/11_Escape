@@ -2,8 +2,26 @@ import { useEffect, useState } from "react";
 import { TribeOutGame } from "../features/tribe-out/TribeOutGame";
 import { tribeOutAudio } from "../features/tribe-out/audio/tribeOutAudio";
 import { preloadAllImages } from "../features/tribe-out/assets/assetRegistry";
+import { preloadCriticalResources, preloadNonCriticalResources } from "../utils/game-loader";
+import { completeGameLoading, onGameLoadingDismiss, setGameLoadingProgress } from "../utils/loading-controller";
+
 
 export default function App() {
+  // Unified PapaStudio loading screen lifecycle barrier
+  useEffect(() => {
+    setGameLoadingProgress(25);
+    const criticalPromise = preloadCriticalResources((pct) => {
+      setGameLoadingProgress(Math.min(95, pct));
+    });
+    void Promise.allSettled([criticalPromise]).then(() => {
+      completeGameLoading();
+    });
+    const unbind = onGameLoadingDismiss(() => {
+      preloadNonCriticalResources();
+    });
+    return unbind;
+  }, []);
+
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -30,4 +48,3 @@ export default function App() {
     </div>
   );
 }
-

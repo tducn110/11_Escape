@@ -1,4 +1,7 @@
-/** Google H5 Game Ads adapter - Mocked to bypass external SDK loading while keeping UI/Game transitions. */
+// Mock Ads adapter - No external Google SDK required.
+// Preserves UI triggers and reward mechanics without external blockers.
+// ponytail: simple mock provider without over-engineered queue
+
 export type AdSound = "on" | "off";
 
 export interface AdLifecycle {
@@ -34,29 +37,25 @@ export async function showRewardedVideo(options: RewardedAdOptions): Promise<boo
   if (activeBreak) return false;
   activeBreak = true;
   options.beforeAd?.();
-  return new Promise<boolean>((resolve) => {
-    window.setTimeout(() => {
-      options.afterAd?.();
-      activeBreak = false;
-      resolve(true);
-    }, 120);
-  });
+  
+  await new Promise((resolve) => setTimeout(resolve, 250));
+  
+  options.afterAd?.();
+  activeBreak = false;
+  return true;
 }
 
 export async function showInterstitial(options: InterstitialAdOptions): Promise<void> {
   if (activeBreak) return;
   activeBreak = true;
   options.beforeAd?.();
-  await new Promise<void>((resolve) => {
-    window.setTimeout(() => {
-      options.afterAd?.();
-      activeBreak = false;
-      resolve();
-    }, 120);
-  });
+  
+  await new Promise((resolve) => setTimeout(resolve, 150));
+  
+  options.afterAd?.();
+  activeBreak = false;
 }
 
 export function isAdBreakActive(): boolean {
   return activeBreak;
 }
-
