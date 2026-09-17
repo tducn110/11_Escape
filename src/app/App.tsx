@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { TribeOutGame } from "../features/tribe-out/TribeOutGame";
 import { tribeOutAudio } from "../features/tribe-out/audio/tribeOutAudio";
 import { preloadAllImages } from "../features/tribe-out/assets/assetRegistry";
@@ -31,6 +32,7 @@ export default function App() {
     return unbind;
   }, []);
 
+  const { t } = useTranslation();
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -49,7 +51,7 @@ export default function App() {
           ) : (
             <div className="flex flex-col items-center justify-center gap-3 text-white">
               <div className="h-8 w-8 animate-spin rounded-full border-4 border-amber-300 border-t-transparent" />
-              <p className="font-bold text-sm tracking-wide text-amber-200">Đang tải tài nguyên...</p>
+              <p className="font-bold text-sm tracking-wide text-amber-200">{t("common.loadingResources", "Đang tải tài nguyên...")}</p>
             </div>
           )}
         </div>

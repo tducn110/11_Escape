@@ -1,4 +1,5 @@
 import { Clock3, Heart } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface Props {
   level: number;
@@ -17,14 +18,28 @@ export function TribeOutHUD({
   totalUnits,
   timeRemaining,
 }: Props) {
+  const { t } = useTranslation();
   const progress = totalUnits > 0 ? Math.min(100, (escapedCount / totalUnits) * 100) : 0;
 
   return (
     <div
       className="tribe-game-hud"
-      aria-label={`Màn ${level}, còn ${lives} mạng, đã thoát ${escapedCount} trên ${totalUnits}`}
+      aria-label={t("game.hudAria", {
+        level,
+        lives,
+        escaped: escapedCount,
+        total: totalUnits,
+        defaultValue: `Level ${level}, ${lives} lives left, escaped ${escapedCount} of ${totalUnits}`,
+      })}
     >
-      <div className="tribe-game-hud__lives" aria-label={`${lives} trên ${maxLives} mạng`}>
+      <div
+        className="tribe-game-hud__lives"
+        aria-label={t("game.livesAria", {
+          lives,
+          max: maxLives,
+          defaultValue: `${lives} of ${maxLives} lives`,
+        })}
+      >
         <div className="tribe-game-hud__hearts">
           {Array.from({ length: maxLives }).map((_, index) => {
             const full = index < lives;

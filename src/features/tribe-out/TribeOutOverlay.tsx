@@ -1,4 +1,5 @@
 import { useId, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { CroppedAsset } from "./CroppedAsset";
 import "./tribeOutOverlay.css";
 
@@ -55,6 +56,7 @@ export function WinOverlay({
   onNextLevel,
   onReplay,
 }: WinProps) {
+  const { t } = useTranslation();
   const titleId = useId();
   const descriptionId = useId();
   const [starVisible, setStarVisible] = useState([false, false, false]);
@@ -85,10 +87,10 @@ export function WinOverlay({
     >
       {/* Accessible labels */}
       <h2 id={titleId} className="sr-only">
-        Màn {level} Hoàn Thành!
+        {t("win.levelComplete", { level, defaultValue: `Màn ${level} Hoàn Thành!` })}
       </h2>
       <p id={descriptionId} className="sr-only">
-        Thoát {escapedCount} nhân vật
+        {t("win.escapedCount", { count: escapedCount, defaultValue: `Thoát ${escapedCount} nhân vật` })}
       </p>
 
       {/* Stage — sized by CSS geometry class */}
@@ -125,7 +127,7 @@ export function WinOverlay({
                 [text-shadow:0_2px_0_rgba(255,226,163,0.72),0_4px_7px_rgba(86,41,4,0.2)]
               "
             >
-              HOÀN THÀNH!
+              {t("win.completed", "HOÀN THÀNH!")}
             </h2>
 
             <p
@@ -136,13 +138,13 @@ export function WinOverlay({
                 [text-shadow:0_1px_0_rgba(255,220,150,0.4)]
               "
             >
-              Thoát {escapedCount} nhân vật
+              {t("win.escapedCount", { count: escapedCount, defaultValue: `Thoát ${escapedCount} nhân vật` })}
             </p>
 
             {/* Stars row */}
             <div
               className="flex items-center justify-center gap-[clamp(2px,1.2vw,8px)]"
-              aria-label={`${stars} sao`}
+              aria-label={t("win.starsAria", { count: stars, defaultValue: `${stars} sao` })}
             >
               {[0, 1, 2].map(i => (
                 <CroppedAsset
@@ -154,7 +156,7 @@ export function WinOverlay({
                     i < stars ? "" : "opacity-30 grayscale",
                     starVisible[i] ? "eg-win-star--visible" : "opacity-0",
                   ].join(" ")}
-                  aria-label={i < stars ? "Sao đầy" : "Sao rỗng"}
+                  aria-label={i < stars ? t("win.starFull", "Sao đầy") : t("win.starEmpty", "Sao rỗng")}
                   aria-hidden={undefined}
                   focusable={undefined}
                 />
@@ -164,15 +166,15 @@ export function WinOverlay({
             {/* Action buttons row */}
             <div className="flex w-full items-center justify-center gap-[clamp(4px,1.8vw,12px)]">
               <WinAction
-                label={isLastLevel ? "TỪ ĐẦU" : "MÀN TIẾP"}
-                ariaLabel={isLastLevel ? "Chơi lại từ đầu" : "Sang màn tiếp theo"}
+                label={isLastLevel ? t("win.restartAll", "TỪ ĐẦU") : t("win.nextLevel", "MÀN TIẾP")}
+                ariaLabel={isLastLevel ? t("win.restartAllAria", "Chơi lại từ đầu") : t("win.nextAria", "Sang màn tiếp theo")}
                 src="/EndGameScreen/continue.png"
                 crop={WIN_CROPS.nextButton}
                 onClick={onNextLevel}
               />
               <WinAction
-                label="CHƠI LẠI"
-                ariaLabel="Chơi lại màn hiện tại"
+                label={t("win.replay", "CHƠI LẠI")}
+                ariaLabel={t("win.replayAria", "Chơi lại màn hiện tại")}
                 src="/EndGameScreen/again.png"
                 crop={WIN_CROPS.replayButton}
                 onClick={onReplay}
@@ -197,7 +199,7 @@ export function WinOverlay({
           "
           aria-hidden="true"
         >
-          MÀN {level}
+          {t("win.levelTitle", { level, defaultValue: `MÀN ${level}` })}
         </span>
 
         {/* Vine decorations */}
@@ -271,6 +273,7 @@ interface LoseProps {
 }
 
 export function LoseOverlay({ onRestart }: LoseProps) {
+  const { t } = useTranslation();
   const titleId = useId();
   const descriptionId = useId();
 
@@ -287,7 +290,7 @@ export function LoseOverlay({ onRestart }: LoseProps) {
     >
       <section className="eg-lose-stage overlay-pop relative isolate">
         <h2 id={titleId} className="sr-only">
-          Hết mạng
+          {t("lose.title", "Hết mạng")}
         </h2>
 
         {/* Frame */}
@@ -313,7 +316,7 @@ export function LoseOverlay({ onRestart }: LoseProps) {
                 [text-shadow:0_2px_0_rgba(71,26,4,0.85)]
               "
             >
-              Bộ lạc cần bạn thử lại!
+              {t("lose.description", "Bộ lạc cần bạn thử lại!")}
             </p>
 
             <button
@@ -328,7 +331,7 @@ export function LoseOverlay({ onRestart }: LoseProps) {
                 focus-visible:outline-4 focus-visible:outline-white
               "
               onClick={onRestart}
-              aria-label="Thử lại màn hiện tại"
+              aria-label={t("lose.retryAria", "Thử lại màn hiện tại")}
             >
               <CroppedAsset
                 src="/loseGamescreen/again.png"

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { AtlasImage } from "./assets/AtlasImage";
 import { Pause } from "lucide-react";
 import { GameShell } from "../../components/game/GameShell";
@@ -39,6 +40,7 @@ function resolveLevelIndexById(levelId: GameState["currentLevelId"]): number {
 }
 
 export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
+  const { t } = useTranslation();
   const initialProgressRef = useRef<TribeOutProgressSnapshot>(loadTribeOutProgress(LEVELS));
   const [gameState, setGameState] = useState(() => buildInitialGameState(initialProgressRef.current.currentLevelId));
   const [bumpingId, setBumpingId] = useState<string | null>(null);
@@ -254,16 +256,19 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
         header={(
           <div className="tribe-game-header">
             <div className="tribe-game-header__top">
-              <div className="tribe-game-header__identity" aria-label={`Thoát Khỏi Rừng, màn ${levelIndex + 1}`}>
+              <div
+                className="tribe-game-header__identity"
+                aria-label={`${t("game.title", "Thoát Khỏi Rừng")}, ${t("game.level", { level: levelIndex + 1, defaultValue: `Màn ${levelIndex + 1}` })}`}
+              >
                 <div className="tribe-game-header__title">
-                  Thoát Khỏi Rừng
+                  {t("game.title", "Thoát Khỏi Rừng")}
                 </div>
                 <div className="tribe-game-header__level">
-                  Màn {levelIndex + 1}
+                  {t("game.level", { level: levelIndex + 1, defaultValue: `Màn ${levelIndex + 1}` })}
                 </div>
               </div>
               <div className="tribe-game-header__actions">
-                <IconButton label="Tạm dừng" onClick={handlePause} size={58} className="tribe-hud-icon-button">
+                <IconButton label={t("common.pause", "Tạm dừng")} onClick={handlePause} size={58} className="tribe-hud-icon-button">
                   <Pause size={29} fill="currentColor" strokeWidth={2.6} />
                 </IconButton>
               </div>
@@ -291,8 +296,8 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
                 frameName="tribe-out/hud/hint-button.png" 
                 style={{ position: "absolute", inset: 0, zIndex: -1, width: "100%", height: "100%" }} 
               />
-              <span className="tribe-tool-button__label">Gợi ý</span>
-              <span className="tribe-tool-button__count" aria-label={`Còn ${hintChargesRemaining} gợi ý`}>
+              <span className="tribe-tool-button__label">{t("game.hint", "Gợi ý")}</span>
+              <span className="tribe-tool-button__count" aria-label={t("game.hintsRemaining", { count: hintChargesRemaining, defaultValue: `Còn ${hintChargesRemaining} gợi ý` })}>
                 {hintChargesRemaining}
               </span>
             </Button>
@@ -307,8 +312,8 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
                 frameName="tribe-out/hud/rotate-button.png" 
                 style={{ position: "absolute", inset: 0, zIndex: -1, width: "100%", height: "100%" }} 
               />
-              <span className="tribe-tool-button__label">Xoay</span>
-              <span className="tribe-tool-button__count" aria-label={`Còn ${gameState.puzzle.rotateChargesRemaining} lượt xoay`}>
+              <span className="tribe-tool-button__label">{t("game.rotate", "Xoay")}</span>
+              <span className="tribe-tool-button__count" aria-label={t("game.rotatesRemaining", { count: gameState.puzzle.rotateChargesRemaining, defaultValue: `Còn ${gameState.puzzle.rotateChargesRemaining} lượt xoay` })}>
                 {gameState.puzzle.rotateChargesRemaining}
               </span>
             </Button>
