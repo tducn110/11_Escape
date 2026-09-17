@@ -18,6 +18,11 @@ export const PRELOAD_OVERLAY_IMAGES = [
   "loseGamescreen/Endgame.png",
   "loseGamescreen/decorate1.png",
   "loseGamescreen/again.png",
+  "buttons/again.png",
+  "buttons/music.png",
+  "buttons/nomusic.png",
+  "buttons/nosfx.png",
+  "buttons/sfx.png",
 ];
 
 export async function preloadAllImages(): Promise<void> {

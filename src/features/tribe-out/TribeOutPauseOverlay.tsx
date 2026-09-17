@@ -85,21 +85,21 @@ export function TribeOutPauseOverlay({
           <PauseRoundImageButton
             label={t("common.retry")}
             onClick={onRestart}
-            assetSrc="/ buttons/again.png"
+            assetSrc="/buttons/again.png"
             crop={PAUSE_CROPS.againButton}
           />
 
           <PauseRoundImageButton
             label={sfxEnabled ? t("settings.off") : t("settings.on")}
             onClick={toggleSfx}
-            assetSrc={sfxEnabled ? "/ buttons/sfx.png" : "/ buttons/nosfx.png"}
+            assetSrc={sfxEnabled ? "/buttons/sfx.png" : "/buttons/nosfx.png"}
             crop={sfxEnabled ? PAUSE_CROPS.sfxButton : PAUSE_CROPS.sfxMutedButton}
           />
 
           <PauseRoundImageButton
             label={musicEnabled ? t("settings.off") : t("settings.on")}
             onClick={toggleMusic}
-            assetSrc={musicEnabled ? "/ buttons/music.png" : "/ buttons/nomusic.png"}
+            assetSrc={musicEnabled ? "/buttons/music.png" : "/buttons/nomusic.png"}
             crop={musicEnabled ? PAUSE_CROPS.musicButton : PAUSE_CROPS.musicMutedButton}
           />
         </div>

@@ -10,14 +10,20 @@ export const isSupportedLanguage = (value: string | null): value is SupportedLan
   value === "vi" || value === "en";
 
 export const getInitialLanguage = (): SupportedLanguage => {
-  if (typeof window === "undefined") return DEFAULT_LANGUAGE;
-
+  if (typeof window === 'undefined') return DEFAULT_LANGUAGE;
   try {
     const savedLanguage = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
-    return isSupportedLanguage(savedLanguage) ? savedLanguage : DEFAULT_LANGUAGE;
+    if (isSupportedLanguage(savedLanguage)) return savedLanguage;
   } catch {
-    return DEFAULT_LANGUAGE;
+    // Storage read failure fallback
   }
+  // Contract: Wink-hosted initial language = Wink.locale if supported, otherwise English.
+  const winkLocale = (window as any).Wink?.locale;
+  if (typeof winkLocale === 'string') {
+    const normalized = winkLocale.split('-')[0];
+    if (isSupportedLanguage(normalized)) return normalized;
+  }
+  return DEFAULT_LANGUAGE;
 };
 
 export const persistLanguage = (language: string): void => {

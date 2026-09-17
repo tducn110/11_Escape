@@ -135,4 +135,32 @@ describe("gameLogic", () => {
     expect(map.has("0,1")).toBe(false);
     expect(map.has("0,2")).toBe(false);
   });
+
+  it("level catalog has 100 levels with diverse animal assetKeys", async () => {
+    const { LEVELS } = await import("./levels");
+    expect(LEVELS.length).toBe(100);
+
+    const distinctKeys = new Set<string>();
+    for (const lvl of LEVELS) {
+      expect(lvl.boardRows).toBeGreaterThanOrEqual(3);
+      expect(lvl.boardCols).toBeGreaterThanOrEqual(3);
+      expect(lvl.lives).toBeGreaterThanOrEqual(1);
+      expect(lvl.timeLimit).toBeGreaterThan(0);
+      for (const entity of lvl.entities) {
+        if (entity.type === "unit") {
+          distinctKeys.add(entity.assetKey);
+        }
+      }
+    }
+
+    // Must have all 7 villagers represented across levels
+    expect(distinctKeys.size).toBe(7);
+    expect(distinctKeys.has("villager-1")).toBe(true);
+    expect(distinctKeys.has("villager-2")).toBe(true);
+    expect(distinctKeys.has("villager-3")).toBe(true);
+    expect(distinctKeys.has("villager-4")).toBe(true);
+    expect(distinctKeys.has("villager-5")).toBe(true);
+    expect(distinctKeys.has("villager-6")).toBe(true);
+    expect(distinctKeys.has("villager-7")).toBe(true);
+  });
 });

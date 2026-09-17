@@ -28,43 +28,60 @@ export function AtlasImage({ frameName, style }: { frameName: string; style?: Re
 
     // Pixi v8 TextureSource resource handling
     const sourceObj = texture.source as any;
-    const image =
-      sourceObj?.resource?.source ||
-      sourceObj?.resource?.image ||
-      sourceObj?.resource ||
-      sourceObj?.source ||
-      sourceObj?.image;
+    const rawResource = sourceObj?.resource;
+    let image: CanvasImageSource | null = null;
+
+    if (
+      (typeof HTMLImageElement !== "undefined" && rawResource instanceof HTMLImageElement) ||
+      (typeof ImageBitmap !== "undefined" && rawResource instanceof ImageBitmap) ||
+      (typeof HTMLCanvasElement !== "undefined" && rawResource instanceof HTMLCanvasElement)
+    ) {
+      image = rawResource;
+    } else if (rawResource?.source) {
+      image = rawResource.source;
+    } else if (rawResource?.image) {
+      image = rawResource.image;
+    }
 
     if (!image) return;
 
-    const frame = texture.frame;
-    const trim = texture.trim;
-    const orig = texture.orig;
+    const draw = () => {
+      if (!canvas || !ctx) return;
+      const frame = texture.frame;
+      const trim = texture.trim;
+      const orig = texture.orig;
 
-    const targetW = orig ? orig.width : (trim ? trim.width : frame.width);
-    const targetH = orig ? orig.height : (trim ? trim.height : frame.height);
+      const targetW = orig ? orig.width : (trim ? trim.width : frame.width);
+      const targetH = orig ? orig.height : (trim ? trim.height : frame.height);
 
-    canvas.width = targetW;
-    canvas.height = targetH;
+      canvas.width = targetW;
+      canvas.height = targetH;
 
-    ctx.clearRect(0, 0, targetW, targetH);
-    const dx = trim ? trim.x : 0;
-    const dy = trim ? trim.y : 0;
+      ctx.clearRect(0, 0, targetW, targetH);
+      const dx = trim ? trim.x : 0;
+      const dy = trim ? trim.y : 0;
 
-    try {
-      ctx.drawImage(
-        image,
-        frame.x,
-        frame.y,
-        frame.width,
-        frame.height,
-        dx,
-        dy,
-        frame.width,
-        frame.height
-      );
-    } catch (e) {
-      console.error("[AtlasImage] Failed to draw frame:", frameName, e);
+      try {
+        ctx.drawImage(
+          image!,
+          frame.x,
+          frame.y,
+          frame.width,
+          frame.height,
+          dx,
+          dy,
+          frame.width,
+          frame.height
+        );
+      } catch (e) {
+        console.error("[AtlasImage] Failed to draw frame:", frameName, e);
+      }
+    };
+
+    if (typeof HTMLImageElement !== "undefined" && image instanceof HTMLImageElement && !image.complete) {
+      image.addEventListener("load", draw, { once: true });
+    } else {
+      draw();
     }
   }, [frameName, atlasReady]);
 

@@ -81,9 +81,11 @@ export function TribeOutGame({ isActive = true, onBoom }: Props = {}) {
           return prev;
         }
         const timeRemaining = Math.max(0, prev.timeRemaining - 1);
+        const isTimeOut = timeRemaining === 0;
         const nextState: GameState = {
           ...prev,
           timeRemaining,
+          status: isTimeOut ? "lost" : prev.status,
         };
         gameStateRef.current = nextState;
         return nextState;

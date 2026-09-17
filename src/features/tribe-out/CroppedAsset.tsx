@@ -1,45 +1,55 @@
-import type { SVGProps } from "react";
+import type { ImgHTMLAttributes } from "react";
 
 export interface AssetCropRect {
-  x: number;
-  y: number;
-  width: number;
-  height: number;
-}
-
-interface CroppedAssetProps
-  extends Omit<SVGProps<SVGSVGElement>, "viewBox"> {
-  src: string;
-  crop: AssetCropRect;
+  x?: number;
+  y?: number;
+  width?: number;
+  height?: number;
   canvasWidth?: number;
   canvasHeight?: number;
 }
 
+interface CroppedAssetProps
+  extends Omit<ImgHTMLAttributes<HTMLImageElement>, "src"> {
+  src: string;
+  crop?: AssetCropRect;
+  canvasWidth?: number;
+  canvasHeight?: number;
+  preserveAspectRatio?: string;
+  focusable?: any;
+}
+
 export function CroppedAsset({
   src,
-  crop,
-  canvasWidth = 1536,
-  canvasHeight = 1024,
+  crop: _crop,
+  canvasWidth: _canvasWidth,
+  canvasHeight: _canvasHeight,
   preserveAspectRatio = "xMidYMid meet",
-  ...svgProps
+  className = "",
+  style,
+  alt = "",
+  ...imgProps
 }: CroppedAssetProps) {
-  const resolvedSrc = src.startsWith("/") 
-    ? import.meta.env.BASE_URL + src.slice(1)
-    : src;
+  // Normalize path if pointing to legacy space-prefixed folder
+  const normalizedSrc = src.replace("/ buttons/", "/buttons/");
+  const resolvedSrc = normalizedSrc.startsWith("/")
+    ? import.meta.env.BASE_URL + normalizedSrc.slice(1)
+    : normalizedSrc;
 
   return (
-    <svg
-      {...svgProps}
-      viewBox={`${crop.x} ${crop.y} ${crop.width} ${crop.height}`}
-      preserveAspectRatio={preserveAspectRatio}
+    <img
+      src={resolvedSrc}
+      alt={alt}
       aria-hidden="true"
-      focusable="false"
-    >
-      <image
-        href={resolvedSrc}
-        width={canvasWidth}
-        height={canvasHeight}
-      />
-    </svg>
+      draggable={false}
+      className={className}
+      style={{
+        display: "block",
+        objectFit: preserveAspectRatio === "none" ? "fill" : "contain",
+        ...style,
+      }}
+      {...imgProps}
+    />
   );
 }
+

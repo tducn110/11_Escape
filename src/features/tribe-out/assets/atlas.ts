@@ -26,40 +26,33 @@ export function loadGameAtlases(): Promise<void> {
   if (!loadPromise) {
     loadPromise = (async () => {
       try {
-        const rootUrl = import.meta.env.BASE_URL + "assets/atlas/assets-0.json";
-        const sheet = await Assets.load<Spritesheet>(rootUrl);
-
-        const registerSheet = (s: Spritesheet) => {
-          if (!s || !s.textures) return;
-          for (const [name, tex] of Object.entries(s.textures)) {
+        const registerSheet = (s: any) => {
+          if (!s) return;
+          const sheetObj = (s.textures ? s : Object.values(s)[0]) as Spritesheet | undefined;
+          if (!sheetObj?.textures) return;
+          for (const [name, tex] of Object.entries(sheetObj.textures)) {
             textureCache.set(name, tex);
             const baseName = name.split("/").pop();
             if (baseName) textureCache.set(baseName, tex);
           }
         };
 
-        registerSheet(sheet);
-        if (Array.isArray(sheet?.linkedSheets)) {
-          for (const linked of sheet.linkedSheets) {
-            registerSheet(linked);
-          }
-        }
-
-        // Fallback: If linked sheets were not automatically loaded, load them explicitly
-        if (textureCache.size <= 4) {
-          for (let i = 1; i <= 3; i++) {
+        // Explicitly load all 4 multipack sheets (0 to 3) to guarantee all textures are loaded
+        const packIndices = [0, 1, 2, 3];
+        await Promise.all(
+          packIndices.map(async (i) => {
             try {
               const url = import.meta.env.BASE_URL + `assets/atlas/assets-${i}.json`;
-              const subSheet = await Assets.load<Spritesheet>({
+              const sheet = await Assets.load<Spritesheet>({
                 src: url,
                 data: { ignoreMultiPack: true },
               });
-              registerSheet(subSheet);
+              registerSheet(sheet);
             } catch (err) {
-              console.warn(`[Atlas] Sub-pack ${i} explicit load warning:`, err);
+              console.warn(`[Atlas] Atlas pack ${i} load warning:`, err);
             }
-          }
-        }
+          })
+        );
 
         // Register aliases for game entities
         for (const [alias, target] of Object.entries(IMAGE_ASSETS)) {
