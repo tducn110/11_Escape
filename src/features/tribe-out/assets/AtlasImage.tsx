@@ -1,16 +1,22 @@
 import { useEffect, useRef, useState } from "react";
 import { getTexture, isGameAtlasesLoaded, loadGameAtlases } from "./atlas";
+import { resolveAssetUrl } from "./assetRegistry";
 
 export function AtlasImage({ frameName, style }: { frameName: string; style?: React.CSSProperties }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [atlasReady, setAtlasReady] = useState(isGameAtlasesLoaded());
+  const [useFallbackImg, setUseFallbackImg] = useState(false);
 
   useEffect(() => {
     let active = true;
     if (!atlasReady) {
-      loadGameAtlases().then(() => {
-        if (active) setAtlasReady(true);
-      });
+      loadGameAtlases()
+        .then(() => {
+          if (active) setAtlasReady(true);
+        })
+        .catch(() => {
+          if (active) setUseFallbackImg(true);
+        });
     }
     return () => {
       active = false;
@@ -18,17 +24,21 @@ export function AtlasImage({ frameName, style }: { frameName: string; style?: Re
   }, [atlasReady]);
 
   useEffect(() => {
+    if (useFallbackImg) return;
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
     const texture = getTexture(frameName);
-    if (!texture) return;
+    if (!texture) {
+      if (atlasReady) setUseFallbackImg(true);
+      return;
+    }
 
     // Pixi v8 TextureSource resource handling
     const sourceObj = texture.source as any;
-    const rawResource = sourceObj?.resource;
+    const rawResource = sourceObj?.resource ?? sourceObj?.source ?? sourceObj;
     let image: CanvasImageSource | null = null;
 
     if (
@@ -38,12 +48,22 @@ export function AtlasImage({ frameName, style }: { frameName: string; style?: Re
     ) {
       image = rawResource;
     } else if (rawResource?.source) {
-      image = rawResource.source;
+      const inner = rawResource.source;
+      if (
+        (typeof HTMLImageElement !== "undefined" && inner instanceof HTMLImageElement) ||
+        (typeof ImageBitmap !== "undefined" && inner instanceof ImageBitmap) ||
+        (typeof HTMLCanvasElement !== "undefined" && inner instanceof HTMLCanvasElement)
+      ) {
+        image = inner;
+      }
     } else if (rawResource?.image) {
       image = rawResource.image;
     }
 
-    if (!image) return;
+    if (!image) {
+      if (atlasReady) setUseFallbackImg(true);
+      return;
+    }
 
     const draw = () => {
       if (!canvas || !ctx) return;
@@ -75,6 +95,7 @@ export function AtlasImage({ frameName, style }: { frameName: string; style?: Re
         );
       } catch (e) {
         console.error("[AtlasImage] Failed to draw frame:", frameName, e);
+        setUseFallbackImg(true);
       }
     };
 
@@ -83,8 +104,25 @@ export function AtlasImage({ frameName, style }: { frameName: string; style?: Re
     } else {
       draw();
     }
-  }, [frameName, atlasReady]);
+  }, [frameName, atlasReady, useFallbackImg]);
+
+  if (useFallbackImg) {
+    const fallbackPath = `assets/${frameName}`;
+    return (
+      <img
+        src={resolveAssetUrl(fallbackPath)}
+        alt=""
+        aria-hidden="true"
+        style={{
+          display: "block",
+          objectFit: "contain",
+          ...style,
+        }}
+      />
+    );
+  }
 
   return <canvas ref={canvasRef} style={style} />;
 }
+
 

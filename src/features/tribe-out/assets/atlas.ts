@@ -10,8 +10,12 @@ export const IMAGE_ASSETS: Record<string, string> = {
   "villager-7": "Characters/monkey.png",
   "gate-closed": "tribe-out/mechanics/gate-hole.png",
   "gate-open": "tribe-out/board/leaf-tile.png",
+  "gate-open-alt": "tribe-out/mechanics/gate-open.png",
   "switch-inactive": "tribe-out/mechanics/switch-inactive.png",
   "switch-active": "tribe-out/mechanics/switch-active.png",
+  "hint-button": "tribe-out/hud/hint-button.png",
+  "rotate-button": "tribe-out/hud/rotate-button.png",
+  "leaf-tile": "tribe-out/board/leaf-tile.png",
 };
 
 const textureCache = new Map<string, Texture>();
@@ -28,21 +32,33 @@ export function loadGameAtlases(): Promise<void> {
       try {
         const registerSheet = (s: any) => {
           if (!s) return;
-          const sheetObj = (s.textures ? s : Object.values(s)[0]) as Spritesheet | undefined;
-          if (!sheetObj?.textures) return;
-          for (const [name, tex] of Object.entries(sheetObj.textures)) {
-            textureCache.set(name, tex);
-            const baseName = name.split("/").pop();
-            if (baseName) textureCache.set(baseName, tex);
+          if (s.textures) {
+            for (const [name, tex] of Object.entries(s.textures)) {
+              if (tex) {
+                textureCache.set(name, tex as Texture);
+                const baseName = name.split("/").pop();
+                if (baseName) textureCache.set(baseName, tex as Texture);
+              }
+            }
+            if (Array.isArray(s.linkedSheets)) {
+              for (const linked of s.linkedSheets) {
+                registerSheet(linked);
+              }
+            }
+          } else if (typeof s === "object") {
+            for (const item of Object.values(s)) {
+              registerSheet(item);
+            }
           }
         };
 
+        const base = (import.meta.env.BASE_URL || "/").replace(/\/+$/, "") + "/";
         // Explicitly load all 4 multipack sheets (0 to 3) to guarantee all textures are loaded
         const packIndices = [0, 1, 2, 3];
         await Promise.all(
           packIndices.map(async (i) => {
             try {
-              const url = import.meta.env.BASE_URL + `assets/atlas/assets-${i}.json`;
+              const url = `${base}assets/atlas/assets-${i}.json`;
               const sheet = await Assets.load<Spritesheet>({
                 src: url,
                 data: { ignoreMultiPack: true },
@@ -78,6 +94,8 @@ export function loadGameAtlases(): Promise<void> {
 }
 
 export function getTexture(frameNameOrKey: string): Texture | undefined {
+  if (!frameNameOrKey) return undefined;
+
   // Direct map hit
   let tex = textureCache.get(frameNameOrKey);
   if (tex) return tex;
@@ -109,7 +127,37 @@ export function getTexture(frameNameOrKey: string): Texture | undefined {
     }
   }
 
+  // Try matching base name (e.g. "hint-button.png")
+  const baseName = frameNameOrKey.split("/").pop();
+  if (baseName && baseName !== frameNameOrKey) {
+    tex = textureCache.get(baseName) || Assets.get(baseName);
+    if (tex) {
+      textureCache.set(frameNameOrKey, tex);
+      return tex;
+    }
+  }
+
+  // Check prefix variations
+  const prefixes = ["Characters/", "tribe-out/board/", "tribe-out/hud/", "tribe-out/mechanics/"];
+  for (const prefix of prefixes) {
+    const candidate = `${prefix}${baseName || frameNameOrKey}`;
+    tex = textureCache.get(candidate) || Assets.get(candidate);
+    if (tex) {
+      textureCache.set(frameNameOrKey, tex);
+      return tex;
+    }
+    if (!candidate.endsWith(".png")) {
+      const candidatePng = candidate + ".png";
+      tex = textureCache.get(candidatePng) || Assets.get(candidatePng);
+      if (tex) {
+        textureCache.set(frameNameOrKey, tex);
+        return tex;
+      }
+    }
+  }
+
   console.warn(`[Atlas] Texture not found for: "${frameNameOrKey}"`);
   return undefined;
 }
+
 

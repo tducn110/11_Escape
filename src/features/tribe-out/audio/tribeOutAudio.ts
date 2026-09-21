@@ -1,3 +1,5 @@
+import { AUDIO_ASSETS, resolveAssetUrl } from "../assets/assetRegistry";
+
 type ToneOptions = {
   waveform?: OscillatorType;
   volume?: number;
@@ -48,11 +50,11 @@ class TribeOutAudio {
   async preloadExternalAudio() {
     if (typeof window === "undefined") return;
     try {
-      const { AUDIO_ASSETS } = await import("../assets/assetRegistry");
       const context = this.ensureContext();
       if (!context) return;
       
-      for (const [key, url] of Object.entries(AUDIO_ASSETS)) {
+      for (const [key, rawUrl] of Object.entries(AUDIO_ASSETS)) {
+        const url = resolveAssetUrl(rawUrl);
         if (!this.audioBuffers.has(key)) {
           fetch(url)
             .then(res => res.arrayBuffer())

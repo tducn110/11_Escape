@@ -1,4 +1,5 @@
 import type { ImgHTMLAttributes } from "react";
+import { resolveAssetUrl } from "./assets/assetRegistry";
 
 export interface AssetCropRect {
   x?: number;
@@ -30,11 +31,7 @@ export function CroppedAsset({
   alt = "",
   ...imgProps
 }: CroppedAssetProps) {
-  // Normalize path if pointing to legacy space-prefixed folder
-  const normalizedSrc = src.replace("/ buttons/", "/buttons/");
-  const resolvedSrc = normalizedSrc.startsWith("/")
-    ? import.meta.env.BASE_URL + normalizedSrc.slice(1)
-    : normalizedSrc;
+  const resolvedSrc = resolveAssetUrl(src);
 
   return (
     <img

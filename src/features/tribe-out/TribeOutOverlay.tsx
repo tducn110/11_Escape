@@ -97,7 +97,7 @@ export function WinOverlay({
       <section className="eg-win-stage overlay-pop relative isolate">
         {/* Confetti behind everything */}
         <CroppedAsset
-          src="/EndGameScreen/decorate2.png"
+          src="EndGameScreen/decorate2.png"
           crop={WIN_CROPS.confetti}
           className="eg-win-confetti"
         />
@@ -105,7 +105,7 @@ export function WinOverlay({
         {/* Bamboo frame */}
         <div className="eg-win-frame relative z-10 w-full">
           <CroppedAsset
-            src="/EndGameScreen/khung.png"
+            src="EndGameScreen/khung.png"
             crop={WIN_CROPS.frame}
             className="pointer-events-none absolute inset-0 h-full w-full"
           />
@@ -149,7 +149,7 @@ export function WinOverlay({
               {[0, 1, 2].map(i => (
                 <CroppedAsset
                   key={i}
-                  src="/EndGameScreen/sao.png"
+                  src="EndGameScreen/sao.png"
                   crop={WIN_CROPS.star}
                   className={[
                     "h-[clamp(38px,8vw,68px)] w-[clamp(38px,8vw,68px)] flex-shrink-0 transition-none",
@@ -168,14 +168,14 @@ export function WinOverlay({
               <WinAction
                 label={isLastLevel ? t("win.restartAll", "TỪ ĐẦU") : t("win.nextLevel", "MÀN TIẾP")}
                 ariaLabel={isLastLevel ? t("win.restartAllAria", "Chơi lại từ đầu") : t("win.nextAria", "Sang màn tiếp theo")}
-                src="/EndGameScreen/continue.png"
+                src="EndGameScreen/continue.png"
                 crop={WIN_CROPS.nextButton}
                 onClick={onNextLevel}
               />
               <WinAction
                 label={t("win.replay", "CHƠI LẠI")}
                 ariaLabel={t("win.replayAria", "Chơi lại màn hiện tại")}
-                src="/EndGameScreen/again.png"
+                src="EndGameScreen/again.png"
                 crop={WIN_CROPS.replayButton}
                 onClick={onReplay}
               />
@@ -185,7 +185,7 @@ export function WinOverlay({
 
         {/* Banner on top of frame */}
         <CroppedAsset
-          src="/EndGameScreen/bangten.png"
+          src="EndGameScreen/bangten.png"
           crop={WIN_CROPS.banner}
           className="eg-win-banner"
         />
@@ -204,12 +204,12 @@ export function WinOverlay({
 
         {/* Vine decorations */}
         <CroppedAsset
-          src="/EndGameScreen/decorate.png"
+          src="EndGameScreen/decorate.png"
           crop={WIN_CROPS.vine}
           className="eg-win-vine eg-win-vine--top"
         />
         <CroppedAsset
-          src="/EndGameScreen/decorate.png"
+          src="EndGameScreen/decorate.png"
           crop={WIN_CROPS.vine}
           className="eg-win-vine eg-win-vine--bottom"
         />
@@ -296,7 +296,7 @@ export function LoseOverlay({ onRestart }: LoseProps) {
         {/* Frame */}
         <div className="eg-lose-frame relative z-10 w-full">
           <CroppedAsset
-            src="/loseGamescreen/khung.png"
+            src="loseGamescreen/khung.png"
             crop={LOSE_CROPS.frame}
             className="pointer-events-none absolute inset-0 h-full w-full"
           />
@@ -334,7 +334,7 @@ export function LoseOverlay({ onRestart }: LoseProps) {
               aria-label={t("lose.retryAria", "Thử lại màn hiện tại")}
             >
               <CroppedAsset
-                src="/loseGamescreen/again.png"
+                src="loseGamescreen/again.png"
                 crop={LOSE_CROPS.retryButton}
                 preserveAspectRatio="none"
                 className="pointer-events-none absolute inset-0 h-full w-full"
@@ -345,7 +345,7 @@ export function LoseOverlay({ onRestart }: LoseProps) {
 
         {/* Title art floats above frame */}
         <CroppedAsset
-          src="/loseGamescreen/Endgame.png"
+          src="loseGamescreen/Endgame.png"
           crop={LOSE_CROPS.title}
           className="eg-lose-title-art"
         />
@@ -353,7 +353,7 @@ export function LoseOverlay({ onRestart }: LoseProps) {
         {/* Heart decoration – single centred instance */}
         <div className="eg-lose-heart-wrap" aria-hidden="true">
           <CroppedAsset
-            src="/loseGamescreen/decorate1.png"
+            src="loseGamescreen/decorate1.png"
             crop={LOSE_CROPS.heart}
             className="eg-lose-heart-art"
           />

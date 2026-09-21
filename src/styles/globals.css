@@ -21,7 +21,7 @@ body {
 
 .app-container {
   background-color: #74d77c;
-  background-image: url('/background/Phone.png');
+  background-image: var(--bg-phone, url('/background/Phone.png'));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@ body {
 
 @media (max-width: 768px) {
   .app-container {
-    background-image: url('/background/Phone.png');
+    background-image: var(--bg-phone, url('/background/Phone.png'));
     background-size: cover;
     background-position: center;
   }
