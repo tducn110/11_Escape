@@ -171,6 +171,9 @@ export function AnimalEscapeGame({ initialLevelId, onProgressChange }: AnimalEsc
         const current = gameRef.current;
         if (current.phase !== "playing") return;
         setGame(pauseGame(current));
+        // §9: pause must stop game audio. setPlatformMuted composes with player
+        // preference correctly — unmuting host will not unmute a player-muted game.
+        animalEscapeAudio.setPlatformMuted(true);
         // A tutorial that is being read must not be replaced by the pause card;
         // the paused phase already freezes its timer.
         if (overlayRef.current === "tutorial") return;
@@ -180,6 +183,7 @@ export function AnimalEscapeGame({ initialLevelId, onProgressChange }: AnimalEsc
         const current = gameRef.current;
         if (current.phase === "paused") {
           setGame(resumeGame(current));
+          animalEscapeAudio.setPlatformMuted(false);
           if (overlayRef.current === "paused") {
             updateOverlay(null);
           }
